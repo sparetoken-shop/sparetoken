@@ -190,3 +190,14 @@ canal: indiehackers x402 thread (human-needed) — sem X, sem segundo Pix, sem Z
 - Copy na fila. Google signup = login wall, não captcha — sem WhatsApp.
 - D+8: 10/09 julga `s0902`. leftoverpzero e `/pulse`+github não voltam à roleta.
 
+## 2026-09-02 noite (human-needed notify)
+
+```
+tokens_pulso: ~magro (notify + OSS captcha assist)
+canal: github PR grokoloko · slack C0BSDQDMZ71 thread 1788232177.124409
+```
+
+- Silent human-needed morreu: s002 (Indie Hackers Google wall, UTM s0902) fica flag durável em QUEUE.md + PROGRESS.md + `data/human-needed-alert.json`.
+- leftoverpzero s001 permanece morto (captcha stale, 0 visit).
+- Assist: Tesseract/Buster; Ollama vision só se já estiver no cache. Sem pull. Sem solver pago. Soft-fail = ping.
+- Testes: `tests/test_human_needed.py`. Wrappers sell.sh + heartbeat.sh chamam pulse-hook.

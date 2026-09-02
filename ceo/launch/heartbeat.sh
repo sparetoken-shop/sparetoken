@@ -36,6 +36,11 @@ mkdir -p "$(dirname "$LOG")"
 "$ROOT/ceo/launch/run-cursor-agent.sh" heartbeat 2>&1 | tee -a "$LOG"
 
 {
+  echo "--- human-needed (silent queue is dead) ---"
+} | tee -a "$LOG"
+python3 "$ROOT/scripts/human_needed.py" pulse-hook --pulse heartbeat --root "$ROOT" 2>&1 | tee -a "$LOG" || true
+
+{
   echo "PULSE_OK $STAMP"
   echo "AGENT: on"
   echo "NEXT: 23:30 tomorrow = one feature. 11:30 = one publish. Do not touch pay.py."

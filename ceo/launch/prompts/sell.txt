@@ -6,7 +6,7 @@ Do this, in order:
 
 1. Read ceo/CEO.md, ceo/VENUES.md, ceo/QUEUE.md, ceo/SALES-7D.md, ceo/HEARTBEAT.md.
 2. Run or read ceo/launch/track-report.sh. Kill a venue that brought no visit.
-3. ONE destination. One UTM. Publish a live URL outside Twitter, or write a human-needed line in the queue. Annotating and leaving = fail.
+3. ONE destination. One UTM. Publish a live URL outside Twitter, or write a human-needed line in the queue. Annotating and leaving = fail. If captcha / Google login wall / VNC click: run `python3 scripts/human_needed.py persist --pulse sell --reason <captcha|google_login_wall|vnc_click> --id sNNN` then `pulse-hook`. Silent human-needed is dead. Groko Slack-pings C0BSDQDMZ71 thread 1788232177.124409 from data/human-needed-alert.json. OSS assist = Tesseract/Buster; Ollama vision only if already cached — never pull an Ollama model, never a paid solver.
 4. Plant D+8 of sales in SALES-7D.md.
 5. One line in ceo/RESEARCH.md: what went out, not what could.
 6. Append ceo/PROGRESS.md (no PII).

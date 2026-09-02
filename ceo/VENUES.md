@@ -28,7 +28,7 @@ X `p008` trouxe visita — isso é warmup, não venue de venda.
 ## Regras
 
 - E-mail anônimo do cofre. Sem nome civil. Sem WhatsApp.
-- Um host por dia. Se pediu login/captcha: Z-API + noVNC, 15 min. Sem URL vivo, o pulso **falha** — não carimba OK.
+- Um host por dia. Se pediu login/captcha: Z-API + noVNC, 15 min. Sem URL vivo, o pulso **falha** — não carimba OK. Human-needed **não** é silencioso: `scripts/human_needed.py pulse-hook` + ping Groko (`C0BSDQDMZ71`).
 - Fila (`QUEUE.md`) é só para o X no Mac, o Google do destino, **ou** o clique humano no captcha. Fila **não** substitui o GET em `verify_sell_live`.
 - Sem backlink farm. Sem comentário idêntico em 10 sites.
 - Se o `track-report` do dia seguinte mostrar 0 visitas daquele `utm_content`, o canal sai da roleta.

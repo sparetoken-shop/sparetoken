@@ -42,3 +42,13 @@ https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&u
 ```
 
 `data/sell-queue.jsonl` na VPS é o carimbo operacional (sem PII). Só `verified-live` conta.
+
+## Human-needed (durable)
+
+Silent human-needed is dead. Pulse writes this table **and** `data/human-needed-alert.json` so Groko Slack-pings `C0BSDQDMZ71` thread `1788232177.124409`. Webhook only if `SLACK_WEBHOOK_URL` / `WDTSOT_SLACK_WEBHOOK_URL` already exists.
+
+| stamped | id | pulse | reason | slack |
+|---|---|---|---|---|
+| 2026-09-02 | s002 | sell | google_login_wall | alert json + thread ping |
+
+s002 = Indie Hackers x402, UTM `s0902`. leftoverpzero s001 stays **killed**. Assist OSS (Tesseract/Buster; Ollama vision só se já estiver no cache) — se falhar, ping, não solver pago.

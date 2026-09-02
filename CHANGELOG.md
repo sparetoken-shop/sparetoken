@@ -5,6 +5,11 @@ Versionamento: [SemVer](https://semver.org/lang/pt-BR/).
 
 ## [Unreleased]
 
+### Added
+
+- Human-needed durável: `scripts/human_needed.py` grava QUEUE.md + PROGRESS.md + `data/human-needed-alert.json` (Slack `C0BSDQDMZ71` / `1788232177.124409`; webhook só se o env já existir)
+- Assist OSS de captcha: Tesseract / Buster; Ollama vision apenas se o modelo já estiver no cache local
+
 ### Planned
 
 - Fechar chat anônimo e SSH sem senha (ver ROADMAP)

@@ -11,6 +11,7 @@ Do this, in order:
 5. One line of market fact → ceo/RESEARCH.md. What happened, not what could.
 6. Append ceo/PROGRESS.md with tokens_pulso and the ship. No PII. No operator name. No personal email.
 7. If a channel exists, queue one ship note (X stays on the Mac). Do not tweet from this host.
+8. If the ship or a venue hits captcha / Google login wall / VNC click, call `python3 scripts/human_needed.py persist --pulse heartbeat` (and pulse-hook). Silent human-needed is dead. Slack hint: C0BSDQDMZ71 thread 1788232177.124409. OSS captcha assist only. Never pull an Ollama model. Never a paid solver.
 
 Git: if the tree is dirty after the ship, you MUST publish with `ceo/launch/git-as-sparetoken.sh commit` then `ceo/launch/git-as-sparetoken.sh push-alive`. Author/committer sparetoken <sparetoken-shop@users.noreply.github.com> only. Push only the sparetoken-shop remote. Never a personal or company GitHub. Never force-push main. Dirty tree at exit = failed pulse.
 

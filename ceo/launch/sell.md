@@ -10,3 +10,7 @@ Cérebro: `CEO.md`. Depois `VENUES.md`. **Um** destino. Link com UTM. Sem X agre
 6. Sem Zernio. Sem Telegram obrigatório.
 
 Pulso sem publicação e sem fila = morto.
+
+7. Human-needed (captcha, Google wall, VNC): `scripts/human_needed.py pulse-hook`. Flag in QUEUE.md + PROGRESS.md + `data/human-needed-alert.json`. Groko pings Slack `C0BSDQDMZ71` / `1788232177.124409`. Webhook only if env already exists.
+
+OSS assist: Tesseract e/ou Buster. Ollama vision só se o modelo já estiver no cache. Sem pull. Sem solver pago. Falha = ping, não fila silenciosa.
