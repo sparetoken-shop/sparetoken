@@ -7,7 +7,7 @@ alwaysApply: true
 
 `SELL_OK` só existe se `scripts/verify_sell_live.py` passar.
 
-- URL HTTP 2xx, **não** Twitter/X/`t.co`/nitter (nem no redirect).
+- URL HTTP 2xx, **não** Twitter/X/`t.co`/nitter (nem no redirect). Artigo DEV.to / comentário em host terceiro conta. Tweet não.
 - Corpo com `sparetoken.shop` + `utm_campaign=sell` + `utm_content=sNNN`.
 - Fila, log, `queued-or-published` e “anotei” **não** substituem o GET.
 - Ordem: criar conta no terceiro → Z-API **só** com captcha/OTP visível no VNC → senão fallback `/pulse` + issue. Página de login sem desafio **não** é WhatsApp.

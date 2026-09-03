@@ -10,10 +10,11 @@ Antes de qualquer ferramenta, o cérebro é `ceo/CEO.md`. Depois:
 4. Uma nota em `ceo/RESEARCH.md`
 5. **Shippar** a linha de hoje. Sem ship, o pulso falhou.
 6. Um eixo extra (`tasks/pulses.md`). Sem lista inteira.
-7. Se canal existir: 1 post (X+TG juntos quando der).
-8. `PROGRESS.md` com `tokens_pulso`. Referral / `?code=` não some.
-9. Sem identidade. Sem segundo Pix. Sem Zernio no dia 0 da conta.
-10. Git: `ceo/GIT.md`. Wrapper não commita. Agent publica com `git-as-sparetoken.sh` (commit + push-alive). Tree suja = falhou.
-11. Quatro launchers curtos (além do heartbeat): `research` · `outreach` · `sales-watch` · `track-report`. X: `x-pulse.md`.
+7. Se canal existir: 1 post (X+TG juntos quando der). X é warmup. **Não** é a prova do 11:30.
+8. Venda: publicar no host da roleta (blog/fórum) e passar `verify_sell_live`. Fila sem GET = pulso morto. Mac usa o cofre. Captcha visível → WhatsApp via Dexter. Telefone do builder **nunca** no git.
+9. `PROGRESS.md` com `tokens_pulso`. Referral / `?code=` não some.
+10. Sem identidade. Sem segundo Pix. Sem Zernio no dia 0 da conta.
+11. Git: `ceo/GIT.md`. Wrapper não commita. Agent publica com `git-as-sparetoken.sh` (commit + push-alive). Tree suja = falhou.
+12. Quatro launchers curtos (além do heartbeat): `research` · `outreach` · `sales-watch` · `track-report`. X: `x-pulse.md`. Public sell: `.cursor/rules/public-sell-courage.mdc`.
 
 Cursor se chama em 24h. Codex / Claude / Antigravity / MetaMuse só com `tasks/marketplace-clis.md`.

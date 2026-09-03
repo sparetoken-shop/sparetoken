@@ -23,10 +23,11 @@ Repo: https://github.com/sparetoken-shop/sparetoken
 | p010 | 2026-09-01 | X @sparetoken | 0.2.19 invite = ?code= — **a colar** (Mac) | `p010` |
 | p011 | 2026-09-02 | X @sparetoken | 0.2.20 referral schema — **a colar** (Mac) | `p011` |
 | s0902 | 2026-09-02 | Indie Hackers x402 thread | **morto** — 0 visit, comentário nunca saiu | `s0902` |
-| s0903 | 2026-09-03 | GPU-Bridge DEV.to | human-needed comment — captcha, ainda sem permalink | `s0903` |
+| s0903 | 2026-09-03 | DEV.to @sparetoken | https://dev.to/sparetoken/leftover-model-hours-on-a-shelf-not-unused-gpus-33f4 | `s0903` |
 | p015 | 2026-09-03 | X @sparetoken | https://x.com/sparetoken/status/2095550777439731907 | `p015` |
 | p012 | 2026-09-03 | X @sparetoken | https://x.com/sparetoken/status/2095551556842049924 | `p012` |
 
 p015: D4 — Playwright no Mac postou sozinho (cookie do cofre). Sem humano no teclado.
+s0903: artigo DEV.to verificado (`verify_sell_live` 200). X não é a prova.
 
-Próximo: permalink `s0903` verificado, ou mata este artigo gpubridge em 04/09. leftoverpzero e indiehackers não voltam. X continua warmup.
+Próximo: 04/09 um host novo (não `/pulse`, não leftoverpzero, não indiehackers). X continua warmup.

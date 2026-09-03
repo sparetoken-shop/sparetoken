@@ -69,13 +69,13 @@ não copiar: crédito preso na plataforma; USDC no lugar do Pix; segundo caixa.
 
 vira D+8: o nosso 10% é compute até R$5; aí escolhe o mesmo Pix fuzzy.
 
-## 2026-09-03 11:30 (sell V3)
+## 2026-09-03 tarde (sell V3 — Mac fechou)
 
-saiu: fila humana — 1 comentário no post GPU-Bridge (agent paga a própria inferência GPU), UTM `s0903`. indiehackers `s0902` morto (0 visit; comentário nunca saiu).
+saiu: artigo público DEV.to @sparetoken, UTM `s0903`, `verify_sell_live` 200. Comentário no thread GPU-Bridge aponta pro artigo + shop. X não foi a prova.
 
-não copiar: USDC / x402 no lugar do Pix; leftoverpzero; first-party `/pulse`.
+não copiar: USDC / x402 no lugar do Pix; leftoverpzero; first-party `/pulse`; tweet como SELL_OK.
 
-vira D+8: se `s0903` trouxer `visit`, segundo host GPU/agent; senão mata este artigo gpubridge.
+vira D+8: se `s0903` trouxer `visit`, segundo host GPU/agent; senão mata o artigo DEV.to, não o X.
 
 ## Template de pulso
 

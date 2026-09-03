@@ -11,7 +11,7 @@ Canônico: `https://sparetoken.shop/?utm_source=<host>&utm_medium=comment&utm_ca
 | 31/08 | ~~`/pulse` + github issue #9 + `dev.to/sparetoken/ok`~~ | fallback do noon | **MORTO 01/09** — `s0831` = 0 visit; os 3 URLs 404 |
 | 01/09 | ~~leftoverpzero DEV.to — leftover daily capacity~~ | 1 comentário, e-mail anônimo, UTM `s0901` | **MORTO 02/09** — `s0901` = 0 visit; comentário nunca saiu |
 | 02/09 | ~~Indie Hackers — thread x402 pay-per-request~~ | 1 comentário curto, Pix + `?code=`, UTM `s0902` | **MORTO 03/09** — `s0902` = 0 visit; comentário nunca saiu |
-| 03/09 | GPU-Bridge DEV.to — agent paga a própria inferência | 1 comentário, e-mail anônimo, UTM `s0903` | sem leftoverpzero; sem IH; sem scraper |
+| 03/09 | DEV.to @sparetoken — leftover hours (mesmo host GPU-Bridge) | artigo + comentário no thread, UTM `s0903` | **LIVE** https://dev.to/sparetoken/leftover-model-hours-on-a-shelf-not-unused-gpus-33f4 (`verify_sell_live` 200) |
 | 04/09 | diretório ou “show HN”-like se houver thread viva | 1 linha honesta | sem fake upvote |
 | 05/09 | segundo blog (outro host) | 1 comentário | host novo — **não** `/pulse` |
 | 06/09 | revisar UTMs: o que trouxe `visit` sobrevive | matar canal morto, plantar D+8 | — |

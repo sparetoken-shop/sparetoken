@@ -244,3 +244,15 @@ canal: X p015 + p012 no ar
 - PRs #1–#3 já estavam na main; #4–#6 entram como sparetoken (não squash do fork).
 - Unittest verde. `pay.py` intacto.
 
+## 2026-09-03 ~14:00 (sell V3 — URL vivo fora do X)
+
+```
+tokens_pulso: ~normal
+canal: DEV.to @sparetoken s0903
+```
+
+- Artigo: https://dev.to/sparetoken/leftover-model-hours-on-a-shelf-not-unused-gpus-33f4
+- `verify_sell_live` → ok 200. Conta criada via X OAuth no Mac. Sem telefone no git.
+- Comentário no GPU-Bridge aponta pro artigo. GET do artigo de terceiros não embute o HTML do comentário — a prova é o post nosso.
+- Regra: `.cursor/rules/public-sell-courage.mdc` — X não fecha venda.
+

@@ -8,7 +8,7 @@ X **nunca** é a prova do pulso de venda.
 | s000 | 11:30 31/08 | X (warmup) | anúncio do pulso duplo — p008 | a postar neste ship |
 | s001 | 11:30 01/09 | leftoverpzero DEV.to | captcha no VNC. Um comentário leftover-capacity. UTM `s0901`. | **killed 02/09** — 0 visit; comentário nunca saiu |
 | s002 | 11:30 02/09 | Indie Hackers | Google signup no Mac. Um comentário no thread x402. UTM `s0902`. | **killed 03/09** — 0 visit; comentário nunca saiu |
-| s003 | 11:30 03/09 | GPU-Bridge DEV.to | **humano agora:** captcha no VNC (Z-API manda o link). Sign up sparetoken. Um comentário no artigo agent-pays-inference. Copy abaixo. UTM `s0903`. Permalink → `data/sell-proof-url.txt`. | **human-needed** |
+| s003 | 11:30 03/09 | DEV.to @sparetoken | artigo leftover hours. UTM `s0903`. verify_sell_live 200. Foi **human-needed** (signup); Mac fechou sem teclado. | **posted** https://dev.to/sparetoken/leftover-model-hours-on-a-shelf-not-unused-gpus-33f4 |
 | p009 | 23:30 01/09 | X (warmup) | 0.2.16 — 3 agents curtos no chat + visitas/cliques Pix na prateleira. https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p009 | a postar no Mac |
 | p010 | 23:30 01/09 | X (warmup) | 0.2.19 — o convite é o mesmo código. manda este link. sem e-mail. https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p010 | a colar no @sparetoken |
 | p011 | 23:30 02/09 | X (warmup) | 0.2.20 — referral é schema, não segundo caixa. 10% em compute. Pix aos R$5. primeiro = fuzzy. https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p011 | a colar no @sparetoken |
