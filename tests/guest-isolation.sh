@@ -4,7 +4,7 @@ set -euo pipefail
 ROOT="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")/.." && pwd)"
 LAUNCHER="${ROOT}/run-agent.sh"
 fail() {
-  printf 'guest-isolation: FAIL: %s\\n' "$*" >&2
+  printf 'guest-isolation: FAIL: %s\n' "$*" >&2
   exit 1
 }
 
