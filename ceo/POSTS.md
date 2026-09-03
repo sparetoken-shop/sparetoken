@@ -25,6 +25,7 @@ Repo: https://github.com/sparetoken-shop/sparetoken
 | s0902 | 2026-09-02 | Indie Hackers x402 thread | **morto** — 0 visit, comentário nunca saiu | `s0902` |
 | s0903 | 2026-09-03 | GPU-Bridge DEV.to | human-needed comment — captcha, ainda sem permalink | `s0903` |
 | p015 | 2026-09-03 | X @sparetoken | https://x.com/sparetoken/status/2095550777439731907 | `p015` |
+| p012 | 2026-09-03 | X @sparetoken | https://x.com/sparetoken/status/2095551556842049924 | `p012` |
 
 p015: D4 — Playwright no Mac postou sozinho (cookie do cofre). Sem humano no teclado.
 
