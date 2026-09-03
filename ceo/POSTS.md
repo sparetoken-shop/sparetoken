@@ -22,6 +22,7 @@ Repo: https://github.com/sparetoken-shop/sparetoken
 | s0901 | 2026-09-01 | leftoverpzero DEV.to | **morto** — 0 visit, comentário nunca saiu | `s0901` |
 | p010 | 2026-09-01 | X @sparetoken | 0.2.19 invite = ?code= — **a colar** (Mac) | `p010` |
 | p011 | 2026-09-02 | X @sparetoken | 0.2.20 referral schema — **a colar** (Mac) | `p011` |
-| s0902 | 2026-09-02 | Indie Hackers x402 thread | human-needed comment — Google no Mac, ainda sem permalink | `s0902` |
+| s0902 | 2026-09-02 | Indie Hackers x402 thread | **morto** — 0 visit, comentário nunca saiu | `s0902` |
+| s0903 | 2026-09-03 | GPU-Bridge DEV.to | human-needed comment — captcha, ainda sem permalink | `s0903` |
 
-Próximo: permalink `s0902` verificado, ou mata indiehackers em 03/09. leftoverpzero não volta. X continua warmup.
+Próximo: permalink `s0903` verificado, ou mata este artigo gpubridge em 04/09. leftoverpzero e indiehackers não voltam. X continua warmup.

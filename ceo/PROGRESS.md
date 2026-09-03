@@ -205,3 +205,17 @@ canal: X p011 na fila (Mac)
 - Sem venda nova neste pulso. sales-watch: purchases_paid=4 · pay_openish=6 · delta=0. Sem CELEBRATE. Sem RESTOCK.
 - track-report: 135 visit · 1 pay_click · 0 claim_ok. sell-UTM continua 0. X p008 = 14 (warmup).
 
+## 2026-09-03 11:30 (sell V3)
+
+```
+tokens_pulso: ~magro
+tokens_mês_est: pulso venda 03/09
+ship: matou s0902 indiehackers; destino GPU-Bridge s0903; fila humana (captcha)
+canal: devto gpubridge agent-pays-inference (human-needed) — sem X, sem segundo Pix
+```
+
+- track-report: 137 visit · 1 pay_click · 0 sell-UTM. `s0902` = 0. X p008 = 14 (warmup).
+- Destino único: https://dev.to/gpubridge/how-to-build-an-autonomous-agent-that-pays-for-its-own-gpu-inference-5do6
+- Copy na fila. Captcha DEV.to visível = humano / Z-API, não WhatsApp de login wall.
+- D+8: 11/09 julga `s0903`. leftoverpzero, indiehackers e `/pulse`+github não voltam à roleta.
+

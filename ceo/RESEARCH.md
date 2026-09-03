@@ -69,6 +69,14 @@ não copiar: crédito preso na plataforma; USDC no lugar do Pix; segundo caixa.
 
 vira D+8: o nosso 10% é compute até R$5; aí escolhe o mesmo Pix fuzzy.
 
+## 2026-09-03 11:30 (sell V3)
+
+saiu: fila humana — 1 comentário no post GPU-Bridge (agent paga a própria inferência GPU), UTM `s0903`. indiehackers `s0902` morto (0 visit; comentário nunca saiu).
+
+não copiar: USDC / x402 no lugar do Pix; leftoverpzero; first-party `/pulse`.
+
+vira D+8: se `s0903` trouxer `visit`, segundo host GPU/agent; senão mata este artigo gpubridge.
+
 ## Template de pulso
 
 ```

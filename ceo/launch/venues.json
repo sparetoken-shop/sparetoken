@@ -1,10 +1,10 @@
 {
   "default": {
-    "host": "indiehackers",
-    "url": "https://www.indiehackers.com/post/two-weeks-live-building-an-api-where-ai-agents-pay-per-request-learnings-stats-ef570e3bb7",
+    "host": "devto",
+    "url": "https://dev.to/gpubridge/how-to-build-an-autonomous-agent-that-pays-for-its-own-gpu-inference-5do6",
     "kind": "comment",
     "fallback": false,
-    "note": "one short comment on the x402 payment-friction thread; Google signup = human, not WhatsApp"
+    "note": "one short comment on GPU-Bridge agent-pays-inference; leftoverpzero and indiehackers are dead; captcha = human, not WhatsApp login wall"
   },
   "2026-08-31": {
     "host": "pulse-github",
@@ -25,6 +25,13 @@
     "url": "https://www.indiehackers.com/post/two-weeks-live-building-an-api-where-ai-agents-pay-per-request-learnings-stats-ef570e3bb7",
     "kind": "comment",
     "fallback": false,
-    "note": "one comment on x402 pay-per-request thread; UTM s0902; Google wall = Mac, not Z-API"
+    "note": "DEAD 03/09: s0902 brought 0 visit; IH comment never posted (Google wall stale)"
+  },
+  "2026-09-03": {
+    "host": "devto",
+    "url": "https://dev.to/gpubridge/how-to-build-an-autonomous-agent-that-pays-for-its-own-gpu-inference-5do6",
+    "kind": "comment",
+    "fallback": false,
+    "note": "one comment on GPU-Bridge agent-pays-own-inference; UTM s0903; leftoverpzero is a different article — do not reopen it; captcha = human"
   }
 }

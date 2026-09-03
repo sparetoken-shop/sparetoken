@@ -7,12 +7,24 @@ X **nunca** é a prova do pulso de venda.
 |---|---|---|---|---|
 | s000 | 11:30 31/08 | X (warmup) | anúncio do pulso duplo — p008 | a postar neste ship |
 | s001 | 11:30 01/09 | leftoverpzero DEV.to | captcha no VNC. Um comentário leftover-capacity. UTM `s0901`. | **killed 02/09** — 0 visit; comentário nunca saiu |
-| s002 | 11:30 02/09 | Indie Hackers | **humano no Mac:** Google signup (login wall, sem captcha → sem Z-API). Um comentário no thread x402. Copy abaixo. UTM `s0902`. Permalink → `data/sell-proof-url.txt`. | **human-needed** |
+| s002 | 11:30 02/09 | Indie Hackers | Google signup no Mac. Um comentário no thread x402. UTM `s0902`. | **killed 03/09** — 0 visit; comentário nunca saiu |
+| s003 | 11:30 03/09 | GPU-Bridge DEV.to | **humano agora:** captcha no VNC (Z-API manda o link). Sign up sparetoken. Um comentário no artigo agent-pays-inference. Copy abaixo. UTM `s0903`. Permalink → `data/sell-proof-url.txt`. | **human-needed** |
 | p009 | 23:30 01/09 | X (warmup) | 0.2.16 — 3 agents curtos no chat + visitas/cliques Pix na prateleira. https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p009 | a postar no Mac |
 | p010 | 23:30 01/09 | X (warmup) | 0.2.19 — o convite é o mesmo código. manda este link. sem e-mail. https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p010 | a colar no @sparetoken |
 | p011 | 23:30 02/09 | X (warmup) | 0.2.20 — referral é schema, não segundo caixa. 10% em compute. Pix aos R$5. primeiro = fuzzy. https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p011 | a colar no @sparetoken |
 
-Texto s002 (colar no thread IH, um comentário):
+Texto s003 (colar no artigo GPU-Bridge, um comentário):
+
+```
+Same leftover, smaller shelf: unused model hours, not unused GPUs.
+USDC wallet per inference is a wall. Pix of one step. Invite = the same block code (?code=).
+R$5 · 5h · 4.6 High Fast. Not a company.
+https://sparetoken.shop/?utm_source=devto&utm_medium=comment&utm_campaign=sell&utm_content=s0903
+```
+
+Artigo: https://dev.to/gpubridge/how-to-build-an-autonomous-agent-that-pays-for-its-own-gpu-inference-5do6
+
+Texto s002 (arquivo — indiehackers morto, não colar):
 
 ```
 Same leftover, smaller till: unused model hours, not unused GPUs.
