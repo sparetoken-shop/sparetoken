@@ -40,7 +40,17 @@ mkdir -p "$(dirname "$LOG")" "$(dirname "$QUEUE")"
   echo "--- cursor agent ---"
 } | tee -a "$LOG"
 
+set +e
 "$ROOT/ceo/launch/run-cursor-agent.sh" sell 2>&1 | tee -a "$LOG"
+AGENT_RC=${PIPESTATUS[0]}
+set -e
+if [[ "${AGENT_RC}" -ne 0 ]]; then
+  {
+    echo "PULSE_FAIL $STAMP AGENT: rc=${AGENT_RC}"
+    echo "NEXT: 11:30 is not SUCCESS until the agent publishes or queues for real. No stamp-only pulse."
+  } | tee -a "$LOG" >&2
+  exit "${AGENT_RC}"
+fi
 
 {
   echo "--- human-needed (silent queue is dead) ---"

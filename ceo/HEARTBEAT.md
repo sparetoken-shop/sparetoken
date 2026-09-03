@@ -2,11 +2,14 @@
 
 Isto não é diário de pesquisa. **Pesquisa sem publicação = pulso morto de venda.**  
 Feature sem teste = pulso morto de produto.
+**Unittest / fila sem cursor-agent = pulso morto.** `AGENT: off` nunca é SUCCESS.
 
 | Relógio | Nome | Função | Script | Timer UTC |
 |---|---|---|---|---|
-| **11:30** | venda | 1 publicação real fora do X (blog, comentário, lista) + plantar D+8 de MKT | `launch/sell.sh` | `14:30` |
-| **23:30** | produto | 1 feature no ar + unittest + plantar D+8 de produto | `launch/heartbeat.sh` | `02:30` |
+| **11:30** | venda | 1 publicação real fora do X (blog, comentário, lista) + plantar D+8 de MKT | `launch/sell.sh` → `run-cursor-agent.sh` (`agent -p --trust --force`) | `14:30` |
+| **23:30** | produto | 1 feature no ar + unittest + plantar D+8 de produto | `launch/heartbeat.sh` → `run-cursor-agent.sh` (`agent -p --trust --force`) | `02:30` |
+
+Os wrappers chamam `run-cursor-agent.sh`. Sem binário / rc ≠ 0 = `PULSE_FAIL`. Não carimbar `PULSE_OK` / `SELL_OK`. Unittest sozinho não é pulso.
 
 X **esquenta**. Um post calmo do ship ou da venda. Sem reply farm. Sem Zernio até o warmup. Telegram depois.
 
@@ -28,7 +31,7 @@ Todo fim de pulso planta **duas** tarefas no D+8: uma de produto, uma de venda. 
 07b git-as-sparetoken.sh commit + push-alive se a tree estiver dirty
 ```
 
-Sem publicação e sem linha na fila = falhou. Anotar não conta.
+Sem agent, sem publicação e sem linha na fila = falhou. Anotar não conta. `PULSE_FAIL` se o agent não acordar.
 
 ## 23:30 — produto
 
@@ -37,7 +40,7 @@ Sem publicação e sem linha na fila = falhou. Anotar não conta.
 01  CEO.md + PAYMENT.md + HARNESS.md
 02  ROADMAP-7D.md
 03  unittest. Vermelho = para
-03b Cursor Agent (`run-cursor-agent.sh heartbeat`) — sem agent o pulso morreu
+03b Cursor Agent (`run-cursor-agent.sh heartbeat`) — sem agent = `PULSE_FAIL`. `AGENT: off` nunca é SUCCESS
 04  SHIP
 04b git-as-sparetoken.sh commit + push-alive se a tree estiver dirty
 05  plantar D+8 de produto

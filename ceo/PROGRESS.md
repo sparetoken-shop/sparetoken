@@ -256,3 +256,7 @@ canal: DEV.to @sparetoken s0903
 - Comentário no GPU-Bridge aponta pro artigo. GET do artigo de terceiros não embute o HTML do comentário — a prova é o post nosso.
 - Regra: `.cursor/rules/public-sell-courage.mdc` — X não fecha venda.
 
+## 2026-09-03 ~22:30 (PR hygiene)
+
+PR #4/#5/#6 superseded (payload already on main; #6 would regress 13d88a9). Groko closes. PR #1 unique delta landed: wrappers keep `run-cursor-agent.sh` and now stamp `PULSE_FAIL` if the agent dies — no stamp-only pulse. Diverged tip a5cd2d4 not merged.
+

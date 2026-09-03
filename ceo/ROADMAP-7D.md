@@ -24,6 +24,7 @@ Prioridade desta janela (leap of faith + pesquisa 30/08):
 | D9 | 09/09 | **plantado 01/09 23:30:** visit com `?code=` de carteira paga vira atribuição no sqlite (ainda sem comissão). Popup só se `claim_ok` > 0 | o convite visível gerou visit? | Pix de comissão continua D3 |
 | D10 | 10/09 | **plantado 02/09 23:30:** se D3 ainda não gravou charge fechado atribuído, o teto dos 10 amigos fica só no rail — sem tela de pessoas. Se ≥1 paid, o card mostra quantos faltam pro Pix (contador, sem nome) | o schema de 10%/Pix-aos-5 moveu clique ou só texto? | D18: centavos de compute no relógio (não Pix) quando accrued > 0 e < 5 |
 | D11 | 11/09 | **plantado 03/09:** se `s0903` = 0 visit, mata GPU-Bridge; próximo sell sem captcha-first | o ledger de atribuição moveu claim_ok? | D19: `?ref=` na landing ao lado do `?code=` login |
+| D12 | 11/09 | **plantado 03/09 pulso produto:** `PULSE_FAIL` ainda trava stamp-only; PRs #1/#4/#5/#6 continuam fechados, sem re-merge do tip divergente | o wrapper ainda chama `run-cursor-agent.sh` e morre sem agent? | D20: se o cron 90s ainda matar o agent, o unit já tem 7200s — só conferir o timer vivo |
 
 ## Fora do dia (não some da mesa)
 

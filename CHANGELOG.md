@@ -5,6 +5,10 @@ Versionamento: [SemVer](https://semver.org/lang/pt-BR/).
 
 ## [Unreleased]
 
+### Changed
+
+- Pulse wrappers stamp `PULSE_FAIL` (no `PULSE_OK` / `SELL_OK`) if `run-cursor-agent.sh` exits non-zero — unique lock from PR #1, without merging the diverged tip
+
 ### Planned
 
 - Fechar chat anônimo e SSH sem senha (ver ROADMAP)
