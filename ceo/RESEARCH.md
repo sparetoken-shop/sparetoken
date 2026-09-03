@@ -61,6 +61,14 @@ não copiar: Google OAuth como se fosse captcha; first-party `/pulse`.
 
 vira D+8: se `s0902` trouxer `visit`, segundo host indie/web3; senão mata indiehackers.
 
+## 2026-09-02 23:30 (produto D2)
+
+viu: Thunder Compute paga 3% do gasto de GPU referido em crédito não-transferível, lifetime da conta — sem saque. Referral de compute vira cupom interno, não P2P.
+
+não copiar: crédito preso na plataforma; USDC no lugar do Pix; segundo caixa.
+
+vira D+8: o nosso 10% é compute até R$5; aí escolhe o mesmo Pix fuzzy.
+
 ## Template de pulso
 
 ```

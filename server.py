@@ -20,6 +20,7 @@ import clock
 import credits
 import invite
 import pay
+import referral
 import track
 from db import (
     append_chat_turn,
@@ -226,6 +227,7 @@ class Handler(BaseHTTPRequestHandler):
             "processing": snap["processing"],
             "block_code": code,
             "invite_url": invite.invite_url(code),
+            "referral": referral.public_schema(),
             "return_url": snap["return_url"],
             "resume_url": resume_url,
             "chats": snap["chats"],
@@ -563,6 +565,7 @@ class Handler(BaseHTTPRequestHandler):
                 "paid": snap["paid"],
                 "block_code": snap["block_code"] or result["block_code"],
                 "invite_url": invite.invite_url(snap["block_code"] or result["block_code"]),
+                "referral": referral.public_schema(),
                 "remaining_seconds": snap["remaining_seconds"],
                 "remaining_clock": snap["remaining_clock"],
                 "used_clock": snap["used_clock"],
@@ -641,6 +644,7 @@ class Handler(BaseHTTPRequestHandler):
                 "used_clock": snap["used_clock"],
                 "block_code": snap["block_code"],
                 "invite_url": invite.invite_url(snap.get("block_code")),
+                "referral": referral.public_schema(),
                 "return_url": snap["return_url"],
                 "resume_url": resume_url,
                 "chats": snap["chats"],

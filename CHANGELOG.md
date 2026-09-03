@@ -9,6 +9,19 @@ Versionamento: [SemVer](https://semver.org/lang/pt-BR/).
 
 - Fechar chat anônimo e SSH sem senha (ver ROADMAP)
 
+## [0.2.20] — 2026-09-02
+
+Referral is a schema, not a second till. Fuzzy first. 10%. Pix at R$5.
+
+### Added
+
+- `referral.py`: fuzzy é o 1º indicador; 10% = R$0,50 em compute; Pix quando juntar R$5 (dez amigos)
+- Sessão/claim/relógio devolvem o schema. Código eterno só depois da 1ª indicação fechada
+
+### Changed
+
+- Trilho e FAQ: 10% em compute, Pix aos R$5, primeiro indicador fuzzy
+
 ## [0.2.19] — 2026-09-01
 
 O convite é o mesmo código da carteira. Sem popup. Sem segundo caixa.

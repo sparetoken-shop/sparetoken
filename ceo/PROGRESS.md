@@ -190,3 +190,18 @@ canal: indiehackers x402 thread (human-needed) — sem X, sem segundo Pix, sem Z
 - Copy na fila. Google signup = login wall, não captcha — sem WhatsApp.
 - D+8: 10/09 julga `s0902`. leftoverpzero e `/pulse`+github não voltam à roleta.
 
+## 2026-09-02 23:30 (produto D2 — 0.2.20)
+
+```
+tokens_pulso: ~normal
+tokens_mês_est: pulso produto 02/09
+ship: 0.2.20 — schema de referral: fuzzy 1º, 10% = R$0,50 compute, Pix aos R$5 (10 amigos)
+canal: X p011 na fila (Mac)
+```
+
+- D2 fecha o contrato em código (`referral.py`) e no rail/FAQ. Sem pay.py. Sem segundo Pix. Sem atribuição ainda (isso é D3).
+- Código eterno só depois da 1ª indicação fechada. Clique / charge Open não cria indicador.
+- D+8 (10/09): sem charge atribuído, não abrir tela de amigos — só o rail. Se D3 gravou ≥1, mostrar quantos faltam pro Pix (sem nome).
+- Sem venda nova neste pulso. sales-watch: purchases_paid=4 · pay_openish=6 · delta=0. Sem CELEBRATE. Sem RESTOCK.
+- track-report: 135 visit · 1 pay_click · 0 claim_ok. sell-UTM continua 0. X p008 = 14 (warmup).
+
