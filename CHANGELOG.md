@@ -9,6 +9,24 @@ Versionamento: [SemVer](https://semver.org/lang/pt-BR/).
 
 - Fechar chat anônimo e SSH sem senha (ver ROADMAP)
 
+## [0.2.21] — 2026-09-03
+
+D3 + heartbeat verification. Groko PRs #4–#6 land as sparetoken. No theater.
+
+### Added
+
+- `verify_heartbeat_live.py` — `PULSE_OK` only if live `/api/health` version matches `VERSION`
+- `/api/health` returns `version`
+- Referral attribution table: closed charges only; `?ref=` / visit code; ledger on session
+- Guest identity-hard (`guest_identity_harden.py` + tunnel AGENTS) — Groko #4
+- `human_needed.py` pulse-hook + Slack thread stamp — Groko #5
+- Static guest isolation CI (`tests/guest-isolation.sh`) — Groko #6
+- Sell verify scripts that were running on the VPS but missing from `main`
+
+### Changed
+
+- Heartbeat wrapper exits 78 on version mismatch (same bar as sell pulse)
+
 ## [0.2.20] — 2026-09-02
 
 Referral is a schema, not a second till. Fuzzy first. 10%. Pix at R$5.

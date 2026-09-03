@@ -12,6 +12,7 @@ X **nunca** é a prova do pulso de venda.
 | p009 | 23:30 01/09 | X (warmup) | 0.2.16 — 3 agents curtos no chat + visitas/cliques Pix na prateleira. https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p009 | a postar no Mac |
 | p010 | 23:30 01/09 | X (warmup) | 0.2.19 — o convite é o mesmo código. manda este link. sem e-mail. https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p010 | a colar no @sparetoken |
 | p011 | 23:30 02/09 | X (warmup) | 0.2.20 — referral é schema, não segundo caixa. 10% em compute. Pix aos R$5. primeiro = fuzzy. https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p011 | a colar no @sparetoken |
+| p012 | 03/09 tarde | X (warmup) | 0.2.21 — day 4: attribution in sqlite + heartbeat dies unless live version matches. no courage theater. https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p012 | a colar no @sparetoken agora |
 
 Texto s003 (colar no artigo GPU-Bridge, um comentário):
 
@@ -44,6 +45,15 @@ https://sparetoken.shop/?utm_source=devto&utm_medium=comment&utm_campaign=sell&u
 ```
 
 Artigo: https://dev.to/leftoverpzero/i-pointed-my-openai-client-at-leftover-capacity-56cl
+
+Texto p012 (colar no X agora, cookie no Mac):
+
+```
+day 4. we shipped.
+referral counts closed Pix only. heartbeat dies unless /api/health version matches.
+same bar as sell. no theater.
+https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p012
+```
 
 Texto p011 (colar no X, cookie no Mac):
 

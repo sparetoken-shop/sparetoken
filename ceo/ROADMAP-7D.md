@@ -1,6 +1,6 @@
 # Próximos 7 dias (rolante)
 
-Produto no ar: **0.2.20**. Pulsos **11:30 venda** e **23:30 produto**. Login = código do bloco. Cada pulso planta D+8. Sem publicação de manhã, a venda falhou — **não** some o D+8.
+Produto no ar: **0.2.21**. Pulsos **11:30 venda** e **23:30 produto**. Login = código do bloco. Cada pulso planta D+8. Sem publicação de manhã, a venda falhou — **não** some o D+8.
 
 Prioridade desta janela (leap of faith + pesquisa 30/08):
 
@@ -15,7 +15,7 @@ Prioridade desta janela (leap of faith + pesquisa 30/08):
 | D0 | 31/08 | Site + **canal público além do GitHub**. X+TG se SMS fechar; senão Bluesky hoje. Playwright local, anônimo. | Onde a galera sem token / com token sobrando se junta | 1º post do heartbeat + Zernio **depois** do warmup |
 | D1 | 01/09 | Agents curtos de marketing/conteúdo/viral + métrica de clique (`track-report`). Landing já tem `?code=` | Onde o p004–p007 trouxe visita | Popup pós-Pix: “manda este link” |
 | D2 | 02/09 | Schema mínimo de referral: fuzzy é o 1º indicador; 10%; teto de payout = Pix aos R$5 | Indicação em marketplaces P2P (não cupom SaaS) | Tela “seus 10 amigos” sem PII pública |
-| D3 | 03/09 | Contar indicação no sqlite (sem pagar ainda) — só atribuição a charge **fechado** | Pay-per-call vs bloco de 5h: o que não copiar | Pix de comissão quando saldo ≥ 5 |
+| D3 | 03/09 | Contar indicação no sqlite (sem pagar ainda) — só atribuição a charge **fechado** — **SHIP 0.2.21** | Pay-per-call vs bloco de 5h: o que não copiar | Pix de comissão quando saldo ≥ 5 |
 | D4 | 04/09 | Contrato do marketplace (skill = manifesto curto + CLI allowlist) | Agents + token incluso | Primeiro CLI extra no launch/ (Codex ou Claude), **pay.py intacto** |
 | D5 | 05/09 | `/api/heartbeat` stub: last ship, 7-day, last research line | HTTP 402 / x402 — só nota, sem implementar | Heartbeat na landing |
 | D6 | 06/09 | Regressão do pagar + **restock pela skill** (mint local, ingest, 10 Open) | Idle GPU markets — por que a gente vende *hora de modelo*, não H100 | Sweep automático do pool |
@@ -23,6 +23,7 @@ Prioridade desta janela (leap of faith + pesquisa 30/08):
 | D8 | 09/09 | se `pay_click` ainda for 1, os 3 briefs saem da primeira dobra e o ship é copy do rail — `track-report` manda, não o heading | o tally público moveu clique ou só visita? | D16: os briefs que ficaram carimbam `utm_content=mkt\|copy\|viral` no link |
 | D9 | 09/09 | **plantado 01/09 23:30:** visit com `?code=` de carteira paga vira atribuição no sqlite (ainda sem comissão). Popup só se `claim_ok` > 0 | o convite visível gerou visit? | Pix de comissão continua D3 |
 | D10 | 10/09 | **plantado 02/09 23:30:** se D3 ainda não gravou charge fechado atribuído, o teto dos 10 amigos fica só no rail — sem tela de pessoas. Se ≥1 paid, o card mostra quantos faltam pro Pix (contador, sem nome) | o schema de 10%/Pix-aos-5 moveu clique ou só texto? | D18: centavos de compute no relógio (não Pix) quando accrued > 0 e < 5 |
+| D11 | 11/09 | **plantado 03/09:** se `s0903` = 0 visit, mata GPU-Bridge; próximo sell sem captcha-first | o ledger de atribuição moveu claim_ok? | D19: `?ref=` na landing ao lado do `?code=` login |
 
 ## Fora do dia (não some da mesa)
 

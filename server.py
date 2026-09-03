@@ -37,6 +37,10 @@ from db import (
 ROOT = Path(__file__).resolve().parent
 STATIC = ROOT / "static"
 DATA = Path(os.environ.get("WDTSOT_DATA", str(ROOT / "data")))
+
+
+def app_version() -> str:
+    return (ROOT / "VERSION").read_text(encoding="utf-8").strip()
 HOST = os.environ.get("WDTSOT_HOST", "0.0.0.0")
 PORT = int(os.environ.get("WDTSOT_PORT", "8787"))
 COOKIE = "wdtsot_sid"
@@ -227,7 +231,7 @@ class Handler(BaseHTTPRequestHandler):
             "processing": snap["processing"],
             "block_code": code,
             "invite_url": invite.invite_url(code),
-            "referral": referral.public_schema(),
+            "referral": referral.public_ledger(referral.count_closed(DB, code) if code else 0),
             "return_url": snap["return_url"],
             "resume_url": resume_url,
             "chats": snap["chats"],
@@ -249,6 +253,7 @@ class Handler(BaseHTTPRequestHandler):
                 {
                     "ok": True,
                     "service": "sparetoken",
+                    "version": app_version(),
                     "model": chat.MODEL,
                     "ssh": "ssh agent-guest@wdtsot.shop",
                 },
@@ -263,22 +268,28 @@ class Handler(BaseHTTPRequestHandler):
             row, token, created, remaining_msgs, remaining_s, block = self._session()
             q = parse_qs(urlparse(self.path).query)
             code = (q.get("code") or [""])[0]
+            ref = (q.get("ref") or [""])[0]
             resume = (q.get("resume") or [""])[0].strip()
             fresh = (q.get("fresh") or [""])[0] in {"1", "true", "yes"}
             cookies: list[str] = []
             if created:
                 cookies.append(self._cookie_header(token))
             with DB_LOCK:
+                referral.remember_referrer(DB, row["id"], ref)
                 if code:
                     try:
                         result = pay.claim(DB, row["id"], contact="", code=code, pay_url="")
                     except pay.PayError:
                         result = None
+                        referral.remember_referrer(DB, row["id"], code)
                     if result and result.get("paid"):
+                        referral.sync_paid(DB, result["session_id"])
                         row = get_or_create_session(DB, result["public_token"], result["session_id"])
                         token = result["public_token"]
                         created = True
                         cookies = [self._cookie_header(token)]
+                    elif not result:
+                        referral.remember_referrer(DB, row["id"], code)
                 snap, chat_id = self._bind_chat(row["id"], fresh=fresh and not resume, resume_id=resume)
             if chat_id:
                 cookies.append(self._chat_cookie_header(chat_id))
@@ -495,8 +506,11 @@ class Handler(BaseHTTPRequestHandler):
             self._json(429, {"ok": False, "error": "calma."})
             return
         payload = self._read_json(2048) or {}
+        row, _token, _created, _msgs, _secs, _block = self._session()
         with DB_LOCK:
             ok = track.record_event(DB, payload)
+            if ok and payload.get("event") == "visit":
+                referral.remember_referrer(DB, row["id"], str(payload.get("code") or ""))
         self._json(200 if ok else 400, {"ok": ok})
 
     def _pay(self) -> None:
@@ -548,6 +562,8 @@ class Handler(BaseHTTPRequestHandler):
         except pay.PayError as exc:
             self._json(400, {"ok": False, "error": str(exc)})
             return
+        with DB_LOCK:
+            referral.sync_paid(DB, result["session_id"])
         switch = result["public_token"] != token
         cookies: list[str] = []
         if created or switch:
@@ -565,7 +581,9 @@ class Handler(BaseHTTPRequestHandler):
                 "paid": snap["paid"],
                 "block_code": snap["block_code"] or result["block_code"],
                 "invite_url": invite.invite_url(snap["block_code"] or result["block_code"]),
-                "referral": referral.public_schema(),
+                "referral": referral.public_ledger(
+                    referral.count_closed(DB, snap["block_code"] or result["block_code"])
+                ),
                 "remaining_seconds": snap["remaining_seconds"],
                 "remaining_clock": snap["remaining_clock"],
                 "used_clock": snap["used_clock"],
@@ -644,7 +662,9 @@ class Handler(BaseHTTPRequestHandler):
                 "used_clock": snap["used_clock"],
                 "block_code": snap["block_code"],
                 "invite_url": invite.invite_url(snap.get("block_code")),
-                "referral": referral.public_schema(),
+                "referral": referral.public_ledger(
+                    referral.count_closed(DB, snap.get("block_code"))
+                ),
                 "return_url": snap["return_url"],
                 "resume_url": resume_url,
                 "chats": snap["chats"],

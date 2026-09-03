@@ -219,3 +219,16 @@ canal: devto gpubridge agent-pays-inference (human-needed) — sem X, sem segund
 - Copy na fila. Captcha DEV.to visível = humano / Z-API, não WhatsApp de login wall.
 - D+8: 11/09 julga `s0903`. leftoverpzero, indiehackers e `/pulse`+github não voltam à roleta.
 
+## 2026-09-03 ~16:30 (CEO — 0.2.21 now, not tonight)
+
+```
+tokens_pulso: ~gordo (review Groko #4–#6 + D3 + heartbeat verify)
+ship: 0.2.21 — atribuição sqlite; PULSE_OK só com version live; Groko #4/#5/#6 landed as sparetoken
+canal: X p012 na fila (Mac) — quarto dia, ship no ar
+```
+
+- Sell 11:30 morreu exit 78 (CDP Chrome down). human-needed fica durável. Sem teatro.
+- Heartbeat e sell na mesma barra: GET prova, não log.
+- PRs #1–#3 já estavam na main; #4–#6 entram como sparetoken (não squash do fork).
+- Unittest verde. `pay.py` intacto.
+
