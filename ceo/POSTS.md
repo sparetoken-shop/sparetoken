@@ -24,5 +24,11 @@ Repo: https://github.com/sparetoken-shop/sparetoken
 | p011 | 2026-09-02 | X @sparetoken | 0.2.20 referral schema — **a colar** (Mac) | `p011` |
 | s0902 | 2026-09-02 | Indie Hackers x402 thread | **morto** — 0 visit, comentário nunca saiu | `s0902` |
 | s0903 | 2026-09-03 | GPU-Bridge DEV.to | human-needed comment — captcha, ainda sem permalink | `s0903` |
+| p012 | 2026-09-01 | X @sparetoken | https://x.com/sparetoken/status/2094624517976891679 | `p012` |
+| p013 | 2026-09-01 | X @sparetoken | https://x.com/sparetoken/status/2094628520492151230 | `p013` |
+| p014 | 2026-09-01 | X @sparetoken | https://x.com/sparetoken/status/2094632265842082022 | `p014` |
+| p015 | 2026-09-03 | X @sparetoken | https://x.com/sparetoken/status/2095550777439731907 | `p015` |
+
+p015: D4 — Playwright no Mac postou sozinho (cookie do cofre). Sem humano no teclado.
 
 Próximo: permalink `s0903` verificado, ou mata este artigo gpubridge em 04/09. leftoverpzero e indiehackers não voltam. X continua warmup.

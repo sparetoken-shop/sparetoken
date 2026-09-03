@@ -219,3 +219,14 @@ canal: devto gpubridge agent-pays-inference (human-needed) — sem X, sem segund
 - Copy na fila. Captcha DEV.to visível = humano / Z-API, não WhatsApp de login wall.
 - D+8: 11/09 julga `s0903`. leftoverpzero, indiehackers e `/pulse`+github não voltam à roleta.
 
+## 2026-09-03 ~13:30 (X p015 — Mac sozinho)
+
+```
+tokens_pulso: ~magro
+canal: X @sparetoken p015
+```
+
+- Cookie do cofre (`x-storage.json`) ainda logado. Persistent `.anon-chrome-social` estava deslogado — não usar esse perfil até regravar sessão.
+- Playwright headed postou sem teclado humano. Permalink: https://x.com/sparetoken/status/2095550777439731907
+- Se X pedir SMS/captcha de verdade: ping no WhatsApp via Dexter e o Chrome fica aberto. Não parar o pulso.
+
