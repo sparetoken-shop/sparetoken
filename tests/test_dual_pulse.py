@@ -31,6 +31,7 @@ class DualPulseTest(unittest.TestCase):
         self.assertIn("-p", RUNNER)
         self.assertIn("--trust", RUNNER)
         self.assertIn("--force", RUNNER)
+        self.assertIn("--workspace", RUNNER)
         self.assertNotIn("AGENT: off", HB_SH)
         self.assertNotIn("AGENT: off", SELL)
         self.assertTrue((ROOT / "ceo" / "launch" / "prompts" / "heartbeat.txt").is_file())
@@ -50,6 +51,8 @@ class DualPulseTest(unittest.TestCase):
                 ok_token = "PULSE_OK" if name.startswith("heartbeat") else "SELL_OK"
                 ok_i = next(i for i, ln in enumerate(lines) if f'echo "{ok_token}' in ln)
                 self.assertLess(fail_i, ok_i)
+        self.assertIn("PULSE_FAIL", RUNNER)
+        self.assertIn("resolve_agent", RUNNER)
 
     def test_docs_forbid_agent_off_success(self):
         self.assertIn("cursor-agent", HB.lower())

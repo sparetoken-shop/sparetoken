@@ -21,7 +21,7 @@ ceo/launch/git-as-sparetoken.sh push-alive
 
 ## VPS / heartbeat
 
-O wrapper (`heartbeat.sh` / `sell.sh`) **não** chama `git`. Depois do unittest (noite) ele **acorda o Cursor Agent**. O agent (processo filho) publica com o helper, só como sparetoken-shop.
+O wrapper (`heartbeat.sh` / `sell.sh`) **não** chama `git`. Depois do unittest (noite) ele **acorda o Cursor Agent** (`run-cursor-agent.sh` → `agent -p --trust --force`). Unittest ou fila **sem** agent = `PULSE_FAIL`, nunca `PULSE_OK` / `SELL_OK`. O agent (processo filho) publica com o helper, só como sparetoken-shop.
 
 Se o pulso precisar de código no GitHub: deploy key `sparetoken-shop`. Nunca remote pessoal.
 

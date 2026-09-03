@@ -11,6 +11,8 @@ Feature sem teste = pulso morto de produto.
 
 Os wrappers chamam `run-cursor-agent.sh`. Sem binário / rc ≠ 0 = `PULSE_FAIL`. Não carimbar `PULSE_OK` / `SELL_OK`. Unittest sozinho não é pulso.
 
+O unit systemd do pulso precisa de `TimeoutStartSec` longo (1–2h). Default 90s mata o agent.
+
 X **esquenta**. Um post calmo do ship ou da venda. Sem reply farm. Sem Zernio até o warmup. Telegram depois.
 
 Todo fim de pulso planta **duas** tarefas no D+8: uma de produto, uma de venda. A janela nunca acaba num recado.
@@ -71,4 +73,3 @@ Assist OSS: Tesseract e/ou Buster (`BUSTER_EXTENSION_DIR`). Ollama vision **some
 ## Verificação do heartbeat (mesma barra da venda)
 
 `PULSE_OK` só depois de `scripts/verify_heartbeat_live.py`: HTTP 200 em `/api/health`, `ok`, `service=sparetoken`, `version` **igual** ao `VERSION` local. Log do agent **não** substitui o GET. Exit 78 se divergir.
-
