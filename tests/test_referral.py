@@ -78,6 +78,56 @@ class ReferralSurfaceTest(unittest.TestCase):
     def test_session_exposes_the_schema_not_a_second_checkout(self):
         src = (ROOT / "referral.py").read_text(encoding="utf-8")
         self.assertIn("import referral", SERVER)
-        self.assertIn("referral.public_schema()", SERVER)
+        self.assertIn("referral.public_ledger(", SERVER)
         self.assertNotIn("import pay", src)
         self.assertNotIn("conta.vc", src)
+
+
+class ReferralAttributionTest(unittest.TestCase):
+    def setUp(self):
+        import tempfile
+        from db import connect, get_or_create_session
+
+        self.tmp = tempfile.TemporaryDirectory()
+        self.conn = connect(Path(self.tmp.name) / "t.sqlite")
+        self.get_or_create_session = get_or_create_session
+
+    def tearDown(self):
+        self.conn.close()
+        self.tmp.cleanup()
+
+    def test_closed_charge_counts_once_for_referrer(self):
+        from db import insert_pending_purchase, mark_purchase_paid, credit_wallet
+
+        buyer = self.get_or_create_session(self.conn, "tok-buyer-abcdefghijk", "sid-buyer")
+        referral.remember_referrer(self.conn, buyer["id"], "wdtsot-AAAA")
+        purchase = insert_pending_purchase(
+            self.conn, "p1", buyer["id"], 5.0, 18000, "wdtsot-BBBB", pay_url="https://example.test/a"
+        )
+        mark_purchase_paid(self.conn, purchase["id"])
+        credit_wallet(self.conn, buyer["id"], 18000)
+        added = referral.sync_paid(self.conn, buyer["id"])
+        self.assertEqual(added, 1)
+        self.assertEqual(referral.count_closed(self.conn, "wdtsot-AAAA"), 1)
+        self.assertEqual(referral.sync_paid(self.conn, buyer["id"]), 0)
+        ledger = referral.public_ledger(1)
+        self.assertEqual(ledger["paid_closed_friends"], 1)
+        self.assertEqual(ledger["accrued_cents"], 50)
+        self.assertEqual(ledger["friends_until_pix"], 9)
+
+    def test_self_referral_does_not_count(self):
+        from db import insert_pending_purchase, mark_purchase_paid, credit_wallet
+
+        row = self.get_or_create_session(self.conn, "tok-self-abcdefghijk", "sid-self")
+        referral.remember_referrer(self.conn, row["id"], "wdtsot-SAME")
+        purchase = insert_pending_purchase(
+            self.conn, "p2", row["id"], 5.0, 18000, "wdtsot-SAME", pay_url="https://example.test/b"
+        )
+        mark_purchase_paid(self.conn, purchase["id"])
+        credit_wallet(self.conn, row["id"], 18000)
+        self.assertEqual(referral.sync_paid(self.conn, row["id"]), 0)
+        self.assertEqual(referral.count_closed(self.conn, "wdtsot-SAME"), 0)
+
+
+if __name__ == "__main__":
+    unittest.main()

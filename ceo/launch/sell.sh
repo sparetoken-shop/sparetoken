@@ -43,11 +43,17 @@ mkdir -p "$(dirname "$LOG")" "$(dirname "$QUEUE")"
 "$ROOT/ceo/launch/run-cursor-agent.sh" sell 2>&1 | tee -a "$LOG"
 
 {
+  echo "--- human-needed (silent queue is dead) ---"
+} | tee -a "$LOG"
+python3 "$ROOT/scripts/human_needed.py" pulse-hook --pulse sell --root "$ROOT" 2>&1 | tee -a "$LOG" || true
+
+{
   echo "--- publish (verify or die) ---"
 } | tee -a "$LOG"
 
 if ! python3 "$ROOT/scripts/sell_publish.py" 2>&1 | tee -a "$LOG"; then
   echo "SELL_DEAD $STAMP — no live URL outside Twitter" | tee -a "$LOG"
+  python3 "$ROOT/scripts/human_needed.py" pulse-hook --pulse sell --root "$ROOT" 2>&1 | tee -a "$LOG" || true
   exit 78
 fi
 

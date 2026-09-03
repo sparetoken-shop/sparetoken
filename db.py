@@ -15,7 +15,8 @@ CREATE TABLE IF NOT EXISTS user_sessions (
     last_seen_at REAL NOT NULL,
     free_messages_used INTEGER NOT NULL DEFAULT 0,
     free_messages_limit INTEGER NOT NULL DEFAULT 50,
-    display_name TEXT
+    display_name TEXT,
+    referred_by TEXT
 );
 
 CREATE TABLE IF NOT EXISTS credit_wallets (
@@ -113,7 +114,16 @@ CREATE TABLE IF NOT EXISTS track_events (
     created_at REAL NOT NULL
 );
 
+CREATE TABLE IF NOT EXISTS referral_attributions (
+    purchase_id TEXT PRIMARY KEY,
+    source_code TEXT NOT NULL,
+    indicator TEXT NOT NULL,
+    buyer_code TEXT NOT NULL,
+    created_at REAL NOT NULL
+);
+
 CREATE INDEX IF NOT EXISTS idx_purchases_ref ON purchases(payment_reference);
+CREATE INDEX IF NOT EXISTS idx_referral_source ON referral_attributions(source_code);
 CREATE INDEX IF NOT EXISTS idx_purchases_session ON purchases(session_id, status);
 CREATE INDEX IF NOT EXISTS idx_identities_session ON identities(session_id);
 CREATE INDEX IF NOT EXISTS idx_chat_turns_chat ON chat_turns(chat_id, id);
@@ -134,6 +144,20 @@ def connect(path: Path) -> sqlite3.Connection:
     session_cols = {row[1] for row in conn.execute("PRAGMA table_info(user_sessions)")}
     if "display_name" not in session_cols:
         conn.execute("ALTER TABLE user_sessions ADD COLUMN display_name TEXT")
+    if "referred_by" not in session_cols:
+        conn.execute("ALTER TABLE user_sessions ADD COLUMN referred_by TEXT")
+    conn.execute(
+        """CREATE TABLE IF NOT EXISTS referral_attributions (
+            purchase_id TEXT PRIMARY KEY,
+            source_code TEXT NOT NULL,
+            indicator TEXT NOT NULL,
+            buyer_code TEXT NOT NULL,
+            created_at REAL NOT NULL
+        )"""
+    )
+    conn.execute(
+        "CREATE INDEX IF NOT EXISTS idx_referral_source ON referral_attributions(source_code)"
+    )
     ai_cols = {row[1] for row in conn.execute("PRAGMA table_info(ai_sessions)")}
     if "channel" not in ai_cols:
         conn.execute("ALTER TABLE ai_sessions ADD COLUMN channel TEXT NOT NULL DEFAULT 'web'")

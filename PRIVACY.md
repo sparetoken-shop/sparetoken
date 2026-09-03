@@ -49,6 +49,8 @@ internet
        AGENTS.md in the workspace forbids reading host config or saving third-party secrets
 ```
 
+Guest SSH sessions get an **IDENTITY-HARD** `AGENTS.md` (and a matching Cursor rule) that forbids revealing the host operator’s name, email, or account. Jailbreak = dry refusal.
+
 There is **no** second, hidden prompt that copies your messages to the founder. Session metadata (duration, model, block code) is logged so we can credit the 5 hours. Prompt text from SSH stays in that session folder.
 
 If you find a path where a guest can read `gws`, Wrangler, or another user’s workspace, that is a vulnerability — see [SECURITY.md](SECURITY.md).

@@ -1,0 +1,24 @@
+---
+description: Pulso de venda sem URL público verificado fora do Twitter é pulso morto
+alwaysApply: true
+---
+
+# Sell pulse — never fake OK
+
+`SELL_OK` só existe se `scripts/verify_sell_live.py` passar.
+
+- URL HTTP 2xx, **não** Twitter/X/`t.co`/nitter (nem no redirect).
+- Corpo com `sparetoken.shop` + `utm_campaign=sell` + `utm_content=sNNN`.
+- Fila, log, `queued-or-published` e “anotei” **não** substituem o GET.
+- Ordem: criar conta no terceiro → Z-API **só** com captcha/OTP visível no VNC → senão fallback `/pulse` + issue. Página de login sem desafio **não** é WhatsApp.
+- Exit 78 se faltar URL. Sem carimbo verde mentiroso.
+- Segredo Z-API / telefones / `GITHUB_TOKEN` só em `~/.anon-secrets/sell.env`. Nunca no git.
+
+```bash
+# ❌ BAD
+echo SELL_OK   # depois de só cat markdown
+
+# ✅ GOOD
+python3 scripts/sell_publish.py || exit 78
+echo SELL_OK
+```

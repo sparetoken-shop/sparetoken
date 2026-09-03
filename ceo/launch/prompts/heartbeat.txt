@@ -17,3 +17,6 @@ Git: if the tree is dirty after the ship, you MUST publish with `ceo/launch/git-
 Privacy: visitor prompts are not product. Do not collect keys, cookies, or .env.
 
 If you cannot ship, say why in PROGRESS.md and exit non-zero.
+
+If the pulse needs a human (captcha / VNC / Google wall), run `python3 scripts/human_needed.py pulse-hook --pulse heartbeat`. Slack thread C0BSDQDMZ71 / 1788232177.124409. Silent queue is dead.
+Before claiming PULSE_OK the wrapper runs verify_heartbeat_live.py — live /api/health version must match VERSION.

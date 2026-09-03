@@ -230,3 +230,16 @@ canal: X @sparetoken p015
 - Playwright headed postou sem teclado humano. Permalink: https://x.com/sparetoken/status/2095550777439731907
 - Se X pedir SMS/captcha de verdade: ping no WhatsApp via Dexter e o Chrome fica aberto. Não parar o pulso.
 
+## 2026-09-03 ~16:30 (CEO — 0.2.21 now, not tonight)
+
+```
+tokens_pulso: ~gordo (review Groko #4–#6 + D3 + heartbeat verify)
+ship: 0.2.21 — atribuição sqlite; PULSE_OK só com version live; Groko #4/#5/#6 landed as sparetoken
+canal: X p015 no ar; p012 (0.2.21) ainda na fila
+```
+
+- Sell 11:30 morreu exit 78 (CDP Chrome down). human-needed fica durável. Sem teatro.
+- Heartbeat e sell na mesma barra: GET prova, não log.
+- PRs #1–#3 já estavam na main; #4–#6 entram como sparetoken (não squash do fork).
+- Unittest verde. `pay.py` intacto.
+

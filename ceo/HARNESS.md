@@ -26,6 +26,22 @@ Playwright **não** autentica conta.vc. **Não** cria charge. Compra na CI = HTM
 
 SSH na CI: smoke do comando e da statusline se houver fixture. Login real de visitante **não** entra no log.
 
+## Pulso (nunca teatro)
+
+`SELL_OK` só depois de `scripts/verify_sell_live.py`: HTTP 2xx, host **fora do Twitter**, corpo com `sparetoken.shop` + `utm_campaign=sell` + `utm_content=sNNN`.
+
+`PULSE_OK` só depois de `scripts/verify_heartbeat_live.py`: HTTP 200 em `/api/health`, `version` = `VERSION` local. Log do agent **não** substitui o GET.
+
+Ordem de venda: criar conta no terceiro → Z-API **somente** com captcha/OTP visível no VNC → fallback `/pulse` + issue. Login wall sem desafio **não** notifica. Fila sem URL = morto. Exit 78. Segredo só em `~/.anon-secrets/sell.env`.
+
+| Superfície | Testes |
+|---|---|
+| URL de venda ao vivo | `test_sell_live.py` `test_sell_publish.py` |
+| Heartbeat ao vivo | `test_heartbeat_live.py` |
+| Fallback loja + GitHub | `test_pulse_fallback.py` |
+| Notify (mock) | `test_zapi_notify.py` `test_human_needed.py` |
+| Guest isolation / identity | `tests/guest-isolation.sh` `test_guest_identity_hard.py` |
+
 ## Controles que o CEO favorece (todo pulso)
 
 1. Teste **antes** de feature nova (TDD). Vermelho primeiro no essencial, depois o incremento.

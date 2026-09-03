@@ -16,3 +16,5 @@ Cookie of X never lives on this host. No reply farm. No second Pix. No personal 
 Git: if the tree is dirty, you MUST publish with `ceo/launch/git-as-sparetoken.sh commit` then `ceo/launch/git-as-sparetoken.sh push-alive`. sparetoken <sparetoken-shop@users.noreply.github.com> only. Push only sparetoken-shop. Dirty tree at exit = failed pulse.
 
 If nothing live and nothing queued for a human, exit non-zero.
+
+If captcha / Google wall / VNC, run `python3 scripts/human_needed.py pulse-hook --pulse sell`. Slack C0BSDQDMZ71 thread 1788232177.124409. Silent human-needed is dead. SELL_OK still needs verify_sell_live.
