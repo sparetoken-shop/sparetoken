@@ -1,6 +1,6 @@
 # Próximos 7 dias (rolante)
 
-Produto no ar: **0.2.21**. Pulsos **11:30 venda** e **23:30 produto**. Login = código do bloco. Cada pulso planta D+8. Sem publicação de manhã, a venda falhou — **não** some o D+8.
+Produto no ar: **0.2.23**. Pulsos **11:30 venda** e **23:30 produto**. Login = código do bloco. Cada pulso planta D+8. Sem publicação de manhã, a venda falhou — **não** some o D+8.
 
 Prioridade desta janela (leap of faith + pesquisa 30/08):
 
@@ -16,7 +16,7 @@ Prioridade desta janela (leap of faith + pesquisa 30/08):
 | D1 | 01/09 | Agents curtos de marketing/conteúdo/viral + métrica de clique (`track-report`). Landing já tem `?code=` | Onde o p004–p007 trouxe visita | Popup pós-Pix: “manda este link” |
 | D2 | 02/09 | Schema mínimo de referral: fuzzy é o 1º indicador; 10%; teto de payout = Pix aos R$5 | Indicação em marketplaces P2P (não cupom SaaS) | Tela “seus 10 amigos” sem PII pública |
 | D3 | 03/09 | Contar indicação no sqlite (sem pagar ainda) — só atribuição a charge **fechado** — **SHIP 0.2.21** | Pay-per-call vs bloco de 5h: o que não copiar | Pix de comissão quando saldo ≥ 5 |
-| D4 | 04/09 | Contrato do marketplace (skill = manifesto curto + CLI allowlist) | Agents + token incluso | Primeiro CLI extra no launch/ (Codex ou Claude), **pay.py intacto** |
+| D4 | 04/09 | Contrato do marketplace (skill = manifesto curto + CLI allowlist) — **SHIP 0.2.23** | Agents + token incluso | Primeiro CLI extra no launch/ (Codex ou Claude), **pay.py intacto** |
 | D5 | 05/09 | `/api/heartbeat` stub: last ship, 7-day, last research line | HTTP 402 / x402 — só nota, sem implementar | Heartbeat na landing |
 | D6 | 06/09 | Regressão do pagar + **restock pela skill** (mint local, ingest, 10 Open) | Idle GPU markets — por que a gente vende *hora de modelo*, não H100 | Sweep automático do pool |
 | D7 | 07/09 | Feature nascida do D0: `launch/heartbeat.sh` executa o agent (ainda sem cron até “publique”) + **referral v0 se D2–D3 estiverem verdes** | O CEO escolhe a próxima janela com RESEARCH + leap of faith | D14: janela nova, escrita pelo próprio agent |
@@ -25,6 +25,7 @@ Prioridade desta janela (leap of faith + pesquisa 30/08):
 | D10 | 10/09 | **plantado 02/09 23:30:** se D3 ainda não gravou charge fechado atribuído, o teto dos 10 amigos fica só no rail — sem tela de pessoas. Se ≥1 paid, o card mostra quantos faltam pro Pix (contador, sem nome) | o schema de 10%/Pix-aos-5 moveu clique ou só texto? | D18: centavos de compute no relógio (não Pix) quando accrued > 0 e < 5 |
 | D11 | 11/09 | **plantado 03/09:** se `s0903` = 0 visit, mata GPU-Bridge; próximo sell sem captcha-first | o ledger de atribuição moveu claim_ok? | D19: `?ref=` na landing ao lado do `?code=` login |
 | D12 | 11/09 | **plantado 03/09 pulso produto:** `PULSE_FAIL` ainda trava stamp-only; PRs #1/#4/#5/#6 continuam fechados, sem re-merge do tip divergente | o wrapper ainda chama `run-cursor-agent.sh` e morre sem agent? | D20: se o cron 90s ainda matar o agent, o unit já tem 7200s — só conferir o timer vivo |
+| D13 | 12/09 | **plantado 03/09 23:30:** se o catálogo ainda for só `cursor` nos 3 briefs, o launcher Codex/Claude espera. Se `validate_skill` aceitar um CLI extra no catálogo (ou o #vender mandar manifesto+CLI), aí o stub `launch/` — **pay.py intacto** | o contrato `/api/marketplace` moveu clique ou só texto? | D21: se sell_click continuar ≥2, o apply pede manifesto+CLI além dos 10 links — ainda queue, sem stock |
 
 ## Fora do dia (não some da mesa)
 

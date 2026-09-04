@@ -66,7 +66,7 @@ python3 -m unittest discover -s tests -v
 | Path | What |
 |---|---|
 | `static/` | landing + chat + design tokens |
-| `server.py` `chat.py` `pay.py` `clock.py` `db.py` `credits.py` `track.py` | web MVP |
+| `server.py` `chat.py` `pay.py` `clock.py` `db.py` `credits.py` `track.py` `marketplace.py` `seller.py` | web MVP |
 | `ceo/` | the agent brain — heartbeat, 7-day, launchers |
 | `run-agent.sh` `tunnel-gate.py` | how a guest SSH session starts |
 | `tests/` | what we actually check |

@@ -19,6 +19,7 @@ import chat
 import clock
 import credits
 import invite
+import marketplace
 import pay
 import referral
 import seller
@@ -259,6 +260,9 @@ class Handler(BaseHTTPRequestHandler):
                     "ssh": "ssh agent-guest@wdtsot.shop",
                 },
             )
+            return
+        if path == "/api/marketplace":
+            self._json(200, {"ok": True, **marketplace.public_contract()})
             return
         if path == "/api/track/summary":
             with DB_LOCK:

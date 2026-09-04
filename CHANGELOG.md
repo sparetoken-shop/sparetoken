@@ -13,6 +13,20 @@ Versionamento: [SemVer](https://semver.org/lang/pt-BR/).
 
 - Fechar chat anônimo e SSH sem senha (ver ROADMAP)
 
+## [0.2.23] — 2026-09-03
+
+D4 marketplace contract. Skill = short manifesto + CLI allowlist.
+
+### Added
+
+- `marketplace.py`: validate a skill listing (slug, manifesto ≤280, CLI allowlist); same R$5 / 5h Pix
+- `GET /api/marketplace` returns the public contract (cursor / codex / claude / antigravity / metamuse)
+- Landing + FAQ + JSON-LD state the contract. Live briefs stay on cursor
+
+### Changed
+
+- Skills shelf copy names the allowlist — not a second price
+
 ## [0.2.22] — 2026-09-04
 
 Seller CTA on the shelf. Queue, not live stock.

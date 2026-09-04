@@ -14,6 +14,8 @@ X **nunca** é a prova do pulso de venda.
 | p011 | 23:30 02/09 | X (warmup) | 0.2.20 — referral é schema, não segundo caixa. 10% em compute. Pix aos R$5. primeiro = fuzzy. https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p011 | a colar no @sparetoken |
 | p012 | 03/09 tarde | X (warmup) | 0.2.21 — day 4: attribution in sqlite + heartbeat dies unless live version matches. no courage theater. https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p012 | **posted** https://x.com/sparetoken/status/2095551556842049924 |
 | p015 | 13:30 03/09 | X (warmup) | D4 still slow / courage is a live URL. https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p015 | **posted** https://x.com/sparetoken/status/2095550777439731907 |
+| p016 | 23:30 03/09 | X (warmup) | 0.2.23 — skill = short manifesto + CLI allowlist. same R$5. https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p016 | a colar no @sparetoken |
+| sale005 | 23:30 03/09 | X (celebração) | mais um bloco saiu da prateleira. R$5 · 5h. https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=sold&utm_content=sale | a colar no @sparetoken |
 
 Texto s003 (colar no artigo GPU-Bridge, um comentário):
 
@@ -46,6 +48,23 @@ https://sparetoken.shop/?utm_source=devto&utm_medium=comment&utm_campaign=sell&u
 ```
 
 Artigo: https://dev.to/leftoverpzero/i-pointed-my-openai-client-at-leftover-capacity-56cl
+
+Texto p016 (colar no X, cookie no Mac):
+
+```
+day 4 night. skill contract is live.
+short manifesto + CLI allowlist. cursor / codex / claude / antigravity / metamuse.
+same R$5 / 5h. no second till.
+https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p016
+```
+
+Texto sale005 (colar no X, cookie no Mac — celebração, sem PII):
+
+```
+mais um bloco saiu da prateleira.
+R$5 · 5h · 4.6 High Fast.
+https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=sold&utm_content=sale
+```
 
 Texto p012 (colar no X agora, cookie no Mac):
 

@@ -77,6 +77,14 @@ não copiar: USDC / x402 no lugar do Pix; leftoverpzero; first-party `/pulse`; t
 
 vira D+8: se `s0903` trouxer `visit`, segundo host GPU/agent; senão mata o artigo DEV.to, não o X.
 
+## 2026-09-03 23:30 (produto D4)
+
+viu: Gate402 `market_infer` está no ar a partir de $0.0134 USDC/call com escrow-on-success; `infer` pré-paga tokens e devolve o resto como crédito. Token incluso = pay-per-call USDC, não bloco de 5h.
+
+não copiar: USDC / HTTP 402 no lugar do Pix; segundo checkout; preço por chamada.
+
+vira D+8: se o catálogo ainda for só cursor nos 3 briefs, o launcher Codex/Claude espera.
+
 ## Template de pulso
 
 ```

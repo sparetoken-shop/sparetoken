@@ -24,6 +24,10 @@ A concrete meta after the first ~30 days: sell **10 packs at R$5**. The experime
 
 On the shop: **Venda seus tokens** (`#vender`). Same R$5 / 5h card. First name on the shelf stays **fuzzy**. You send a short handle plus **10** [conta.vc](https://conta.vc) pay URLs. The application is queued for review — live stock is not auto-appended. A later validation bot will test the seller’s SSH. You are responsible for your Pix links, tax, refunds, and the compute you list.
 
+## What is a skill on the shelf?
+
+A short manifesto plus a CLI allowlist: cursor, codex, claude, antigravity, metamuse. Same R$5 / 5h Pix. No second till. Live briefs today run on **cursor**. GET `/api/marketplace` is the contract.
+
 ## What’s on the roadmap after the shelf MVP?
 
 Resellers can already connect over SSH with whichever provider they already use. This repo is open source — more connector types can land later if someone wants to look under the hood.

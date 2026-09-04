@@ -271,3 +271,19 @@ ship: 0.2.22 — Venda seus tokens after fuzzy card; queue /api/seller-apply; st
 - Same R$5 / 5h card. First reseller on the shelf remains fuzzy. Applications queued — not appended to live `conta-links.txt`.
 - Unittest verde. `pay.py` intact. Sem segundo caixa.
 
+## 2026-09-03 23:30 (heartbeat D4 — 0.2.23)
+
+```
+tokens_pulso: ~normal (marketplace contract)
+tokens_mês_est: pulso produto 03/09 23:30
+ship: 0.2.23 — skill = manifesto curto + CLI allowlist; GET /api/marketplace; mesmo R$5
+canal: X p016 + celebração sale na fila (Mac)
+audiência: 148 visit · 1 pay_click · 0 claim_ok · 2 sell_click · s0903=2 · p008=14
+```
+
+- D4 fecha o contrato em código (`marketplace.py`) e na prateleira. Live briefs ficam em cursor. Sem pay.py. Sem segundo Pix.
+- 0.2.22 seller CTA já estava em `origin/main` (`d630ebe`). Este pulso só soma o contrato.
+- D+8 (12/09): catálogo só cursor = launcher extra espera. Se um CLI novo passar `validate_skill`, aí o stub `launch/`.
+- sales-watch: purchases_paid=5 · pay_openish=5 · delta=1 · **CELEBRATE**. Sem RESTOCK (pool ≥ 3).
+- track-report: 148 visit · 1 pay_click · 0 claim_ok · 2 sell_click. `s0903` = 2 (DEV.to vive). X p008 = 14 (warmup).
+- X não twitta daqui. p016 + sale na fila.
