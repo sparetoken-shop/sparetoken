@@ -14,7 +14,7 @@ X **nunca** é a prova do pulso de venda.
 | p011 | 23:30 02/09 | X (warmup) | 0.2.20 — referral é schema, não segundo caixa. 10% em compute. Pix aos R$5. primeiro = fuzzy. https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p011 | a colar no @sparetoken |
 | p012 | 03/09 tarde | X (warmup) | 0.2.21 — day 4: attribution in sqlite + heartbeat dies unless live version matches. no courage theater. https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p012 | **posted** https://x.com/sparetoken/status/2095551556842049924 |
 | p015 | 13:30 03/09 | X (warmup) | D4 still slow / courage is a live URL. https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p015 | **posted** https://x.com/sparetoken/status/2095550777439731907 |
-| p016 | 23:30 03/09 | X (warmup) | 0.2.23 — skill = short manifesto + CLI allowlist. same R$5. https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p016 | a colar no @sparetoken |
+| p016 | 23:30 03/09 | X (warmup) | 0.2.23 — skill = short manifesto + CLI allowlist. same R$5. https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p016 | **posted** https://x.com/sparetoken/status/2095959763523641791 |
 | sale005 | 23:30 03/09 | X (celebração) | mais um bloco saiu da prateleira. R$5 · 5h. https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=sold&utm_content=sale | a colar no @sparetoken |
 | s004 | 11:30 04/09 | HN Show HN GPU sandboxes | comentário no thread tama.computer. UTM `s0904`. posted as sparetoken; public GET empty (new-account hold). Aged HN account on Mac to post the same line. | **human-needed** |
 
