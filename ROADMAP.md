@@ -1,6 +1,28 @@
 # Roadmap — fechar o MVP
 
-Versão atual: **0.2.8** (relógio: mesma carteira, sem herdar texto).
+Versão atual: **0.2.24** (loja internacional: BR / US).
+
+---
+
+## 0.2.24 — Loja em dois idiomas (feito)
+
+Bandeiras **Brasil** e **Estados Unidos**. Padrão ouro: `hreflang`, `lang`, cookie, `?lang=`, IP do dispositivo (tabela BR v4/v6). Brasil → português. Resto do mundo → inglês. Sem terceiro locale. Sem segundo caixa.
+
+---
+
+## Curto prazo — charge cripto (USDT / OSDT) na mesma conta.vc
+
+A conta fuzzy **já tem** rail cripto. Não abrir gateway novo. Não segundo botão até existir URL `/pay/fuzzy/c/…` de um charge cripto fechável.
+
+Ordem quando for a hora (não agora):
+
+1. Mint no Chrome local, mesma skill, **mesmo** handle `@fuzzy`, descrição `wdtsot · 5h · 4.6 High Fast`.
+2. Valor em USDT/OSDT equivalente ao SKU de R$5 — sem segundo preço.
+3. VPS só inspect. `paid` só com charge ≠ Open. Mesmo `wdtsot-XXXX`.
+4. Visitante em `en-US` pode ver o link cripto **no mesmo** card. BR continua Pix.
+5. `pay.py` só cresce o inspect. Sem processador novo. Sem custódia.
+
+Até o primeiro charge cripto fechar de verdade, a loja fala Pix.
 
 Ordem fixa. Não pular para skills store, dashboard ou app nativo.
 

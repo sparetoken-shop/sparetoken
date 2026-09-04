@@ -12,6 +12,22 @@ Versionamento: [SemVer](https://semver.org/lang/pt-BR/).
 ### Planned
 
 - Fechar chat anônimo e SSH sem senha (ver ROADMAP)
+- Charge cripto (USDT / OSDT) na mesma conta.vc — ver ROADMAP, sem segundo caixa
+
+## [0.2.24] — 2026-09-04
+
+International shop. Brazil / United States flags. IP of the device.
+
+### Added
+
+- `i18n.py`: pt-BR / en-US catalog, `hreflang`, cookie `wdtsot_lang`, `?lang=`
+- Brazil IPv4/IPv6 table (`geo/br-ranges.bin.gz`). BR → Portuguese. Everywhere else → English
+- Header flags (BR / US). `GET`/`POST` `/api/locale`. `/i18n-boot.js` for the JS pack
+- `ceo/BOARD.md` — standing order for every agent (Oracle on X, no second till)
+
+### Changed
+
+- Landing + chat chrome apply the locale on first paint. Pix R$5 / 5h untouched
 
 ## [0.2.23] — 2026-09-03
 

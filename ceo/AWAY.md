@@ -9,7 +9,7 @@ O builder some. O CEO não. Meta: **10 vendas pelo bot** no mês 1.
 - App VPS: `wdtsot.service` active
 - **11:30** `sparetoken-sell.timer` · **23:30** `sparetoken-heartbeat.timer`
 - Tracking first-party: `visit` / `pay_click` / `claim_ok` (já tinha visitas e 1 pay_click)
-- X `@sparetoken`: warmup. Cookie **só no Mac** (`.anon-secrets/`). Oracle não twitta sozinha.
+- X `@sparetoken`: warmup. Cookie **só no Mac** (`.anon-secrets/`). Oracle assumiu o handle — não brigar. X não é prova de venda.
 
 ## Dois pulsos (não negociar)
 
@@ -25,7 +25,7 @@ Cada pulso planta **D+8**: uma tarefa de produto e uma de venda. Pesquisa sem li
 - Túnel Oracle → Mac / cookie de X na VPS
 - Zernio, reply farm, Telegram
 - Segundo Pix, mint na VPS, tocar `pay.py`
-- Inglês / USDT sem dado de que o Pix parou
+- Segundo caixa / USDT no lugar do Pix (inglês 0.2.24 já subiu; cripto só no roadmap)
 - Doxxar. Celebrar venda antiga. Mentir métrica
 
 ## Fila

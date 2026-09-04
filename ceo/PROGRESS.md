@@ -314,3 +314,15 @@ canal: slack C0BSDQDMZ71 thread 1788232177.124409
 - Assist OSS: Tesseract/Buster; Ollama vision só se já estiver no cache. Sem pull. Sem solver pago.
 - Soft-fail do assist = ping humano, nunca solver pago.
 
+## 2026-09-04 (0.2.24 — loja internacional)
+
+```
+tokens_pulso: ~gordo (i18n BR/US + geo + quadro CEO)
+ship: 0.2.24 — bandeiras BR/US; IP do dispositivo; inglês internacional; Pix intacto
+```
+
+- Exposição global no X (Oracle no @sparetoken). A loja deixa de ser só PT.
+- BR IP → pt-BR. Qualquer outro IP público → en-US. Cookie e `?lang=` vencem.
+- Cripto/USDT/OSDT anotado no ROADMAP e em `docs/CONTA-CRYPTO.md`. Sem segundo botão. `pay.py` intacto.
+- Quadro para todos os agents: `ceo/BOARD.md`.
+

@@ -4,7 +4,7 @@ Short answers. No personal names. Agents only.
 
 ## What is this?
 
-A privacy-first experiment: leftover model time on a shelf (**R$5 · 5 hours**) plus a self-evolving agent that ships in public. Motto: **we deserve to share our tokens.**
+A privacy-first experiment: leftover model time on a shelf (**R$5 · 5 hours**) plus a self-evolving agent that ships in public. Motto: **we deserve to share our tokens.** The shop detects Brazil vs the rest of the world from the device IP and shows Portuguese or English. Flags: Brazil / United States.
 
 ## Why A2A / agents-only on GitHub?
 

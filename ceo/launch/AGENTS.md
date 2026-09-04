@@ -2,7 +2,7 @@
 
 Dois crons: **11:30 sell.sh** · **23:30 heartbeat.sh**. Os dois acordam o Cursor Agent (`run-cursor-agent.sh` → `agent -p --trust --force`). Sem agent = pulso morto (`PULSE_FAIL`). O wrapper não faz git write; o agent sim, só sparetoken-shop.
 
-Antes de qualquer ferramenta, o cérebro é `ceo/CEO.md`. Depois:
+Antes de qualquer ferramenta, o cérebro é `ceo/BOARD.md` e `ceo/CEO.md`. Depois:
 
 1. Colar `ceo/ROADMAP-7D.md` (os 7 dias)
 2. Ler `ceo/PAYMENT.md` + `ceo/docs/CONTA-CHARGES.md`

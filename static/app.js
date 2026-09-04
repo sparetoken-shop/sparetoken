@@ -41,6 +41,10 @@ let lastSession = null;
 let menuOpen = false;
 let resumeView = null;
 
+function t(key, vars) {
+  return window.ST && typeof window.ST.t === "function" ? window.ST.t(key, vars) : key;
+}
+
 function addBubble(role, text) {
   const el = document.createElement("div");
   el.className = `bubble ${role}`;
@@ -52,13 +56,13 @@ function addBubble(role, text) {
 
 function resetLog() {
   log.innerHTML = "";
-  addBubble("sys", "Comece por qualquer coisa. Uma ideia, um texto, um problema.");
+  addBubble("sys", t("chat.sys"));
 }
 
 function renderMessages(messages) {
   log.innerHTML = "";
   if (!messages || !messages.length) {
-    addBubble("sys", "Comece por qualquer coisa. Uma ideia, um texto, um problema.");
+    addBubble("sys", t("chat.sys"));
     return;
   }
   messages.forEach((item) => {
@@ -93,12 +97,12 @@ async function copyLabel(btn, text, label) {
   if (!btn || !text) return;
   try {
     await navigator.clipboard.writeText(text);
-    btn.textContent = "copiado";
+    btn.textContent = t("js.copied");
     setTimeout(() => {
       btn.textContent = label;
     }, 1400);
   } catch (_) {
-    btn.textContent = "selecione e copie";
+    btn.textContent = t("js.copy_fail");
   }
 }
 
@@ -112,7 +116,10 @@ function openResume(chat, title, code) {
   resumeView = { id: chat.id, title, code, used: chat.used_seconds };
   if (resumeName) resumeName.textContent = title;
   if (resumeMeta) {
-    resumeMeta.textContent = `${minutesLabel(chat.used_seconds)} nesta linha · ${code}`;
+    resumeMeta.textContent = t("js.line_mins", {
+      mins: minutesLabel(chat.used_seconds),
+      code,
+    });
   }
   if (resumeWebCmd) resumeWebCmd.textContent = webResumeUrl(code, chat.id);
   if (resumeSshCmd) resumeSshCmd.textContent = sshResumeCmd(chat.id);
@@ -124,11 +131,7 @@ function setRemaining(n) {
   if (typeof n !== "number") return;
   if (hint.dataset.paid === "1") return;
   hint.textContent =
-    n <= 0
-      ? "você usou as 50 mensagens desta experiência. pague R$5 para 5h."
-      : n === 1
-        ? "1 mensagem para experimentar"
-        : `${n} mensagens para experimentar`;
+    n <= 0 ? t("js.hint0") : n === 1 ? t("js.hint1") : t("js.hintn", { n });
 }
 
 function showInvite(code, urlFromApi) {
@@ -180,7 +183,7 @@ function titlesFor(chats) {
 
 function minutesLabel(seconds) {
   const n = Math.max(0, Math.floor((seconds || 0) / 60));
-  return n === 1 ? "1 min" : `${n} min`;
+  return n === 1 ? t("js.min_one") : t("js.min_many", { n });
 }
 
 function setMenu(open) {
@@ -201,7 +204,7 @@ function renderClock(data) {
   const names = titlesFor(chats);
   const activeId = data.active_chat_id;
   const active = chats.find((c) => c.id === activeId) || chats[0];
-  if (clockBtnTitle) clockBtnTitle.textContent = active ? names[active.id] : "Chat 1";
+  if (clockBtnTitle) clockBtnTitle.textContent = active ? names[active.id] : t("clock.chat1");
   if (clockRows) {
     clockRows.innerHTML = "";
     chats.forEach((chat) => {
@@ -212,7 +215,7 @@ function renderClock(data) {
         field.className = "rename";
         field.value = names[chat.id];
         field.maxLength = 80;
-        field.setAttribute("aria-label", "Nome deste chat");
+        field.setAttribute("aria-label", t("js.rename"));
         field.addEventListener("click", (event) => event.stopPropagation());
         field.addEventListener("keydown", (event) => {
           if (event.key === "Enter") {
@@ -246,8 +249,8 @@ function renderClock(data) {
       go.type = "button";
       go.className = "go";
       go.textContent = "↗";
-      go.setAttribute("aria-label", `Resume de ${names[chat.id]}`);
-      go.title = "web e ssh";
+      go.setAttribute("aria-label", t("js.resume_of", { name: names[chat.id] }));
+      go.title = t("js.resume_title");
       go.addEventListener("click", (event) => {
         event.stopPropagation();
         openResume(chat, names[chat.id], data.block_code);
@@ -258,8 +261,12 @@ function renderClock(data) {
   }
   if (clockFoot) {
     const n = chats.length;
-    const noun = n === 1 ? "chat" : "chats";
-    clockFoot.textContent = `${n} ${noun} neste código · ${minutesLabel(data.used_seconds)} / 5h`;
+    const noun = n === 1 ? t("js.chat_one") : t("js.chat_many");
+    clockFoot.textContent = t("js.clock_foot", {
+      n,
+      noun,
+      mins: minutesLabel(data.used_seconds),
+    });
   }
 }
 
@@ -269,16 +276,16 @@ function applySession(data) {
   if (data.exhausted) {
     hint.dataset.paid = "1";
     hint.className = "hint exhausted";
-    hint.textContent = "as 5h deste bloco acabaram. pague R$5 para outro.";
+    hint.textContent = t("js.exhausted");
     if (clock) clock.textContent = "00:00:00";
     if (send) send.disabled = true;
     if (input) {
       input.disabled = true;
-      input.placeholder = "bloco esgotado — pague R$5 para continuar";
+      input.placeholder = t("js.exhausted.ph");
     }
     renderClock(data);
     stopPaidLoop();
-    if (payNote) payNote.textContent = "saldo zero. o mesmo Pix de R$5 abre outro bloco de 5h.";
+    if (payNote) payNote.textContent = t("js.exhausted.note");
     if (data.block_code) showBlock(data.block_code, data.invite_url);
     return;
   }
@@ -286,10 +293,10 @@ function applySession(data) {
   if (data.paid) {
     hint.dataset.paid = "1";
     hint.className = data.warn ? "hint warn" : "hint";
-    const busy = data.processing ? " · GROK processando" : "";
+    const busy = data.processing ? t("js.busy") : "";
     hint.textContent = data.warn
-      ? `faltam ${data.remaining_clock} de processamento. o bloco vai encerrar.`
-      : `GROK 4.6 High Fast · ${data.remaining_clock} restantes${busy}`;
+      ? t("js.paid.warn", { clock: data.remaining_clock })
+      : t("js.paid", { clock: data.remaining_clock, busy });
     if (clock && data.remaining_clock) clock.textContent = data.remaining_clock;
     if (heroUsed && data.used_clock) heroUsed.textContent = data.used_clock;
     if (usedRow) usedRow.hidden = false;
@@ -297,10 +304,10 @@ function applySession(data) {
     if (send) send.disabled = false;
     if (input) {
       input.disabled = false;
-      input.placeholder = "Pergunte ou peça o que quiser...";
+      input.placeholder = t("chat.placeholder");
     }
     if (payNote) {
-      payNote.textContent = "bloco liberado. só desconta enquanto o GROK responde. o código retoma web e SSH.";
+      payNote.textContent = t("js.paid.note");
     }
     startPaidLoop();
   } else if (data.remaining_messages != null) {
@@ -389,7 +396,7 @@ form.addEventListener("submit", async (event) => {
       body: JSON.stringify({ message: text }),
     });
     if (!res.ok || !res.body) {
-      let err = "não foi agora.";
+      let err = t("js.chat_fail");
       try {
         const data = await res.json();
         err = data.error || err;
@@ -424,9 +431,9 @@ form.addEventListener("submit", async (event) => {
         log.scrollTop = log.scrollHeight;
       }
     }
-    if (!ai.textContent) ai.textContent = "silêncio do outro lado. tente de novo.";
+    if (!ai.textContent) ai.textContent = t("js.chat_silent");
   } catch (_) {
-    ai.textContent = "a rede falhou no meio do caminho.";
+    ai.textContent = t("js.chat_net");
   } finally {
     send.disabled = false;
     input.focus();
@@ -498,14 +505,14 @@ async function openCheckout() {
     });
     const data = await res.json();
     if (!res.ok || !data.ok) {
-      setClaimStatus(data.error || "não abri o pagamento agora.", "err");
+      setClaimStatus(data.error || t("js.pay_fail"), "err");
       return;
     }
     showBlock(data.block_code);
-    setClaimStatus("pague o Pix, espere confirmar, volte e clique em Já paguei.", "");
+    setClaimStatus(t("js.pay_wait"), "");
     if (data.pay_url) window.open(data.pay_url, "_blank", "noopener");
   } catch (_) {
-    setClaimStatus("a rede falhou. tente de novo.", "err");
+    setClaimStatus(t("js.net"), "err");
   } finally {
     payBtn.disabled = false;
   }
@@ -561,7 +568,7 @@ if (sellerForm) {
     const note = (document.getElementById("seller-note") || {}).value || "";
     const ack = !!(document.getElementById("seller-ack") || {}).checked;
     if (sellerSubmit) sellerSubmit.disabled = true;
-    setSellerStatus("anotando…", "");
+    setSellerStatus(t("js.sell_wait"), "");
     try {
       const res = await fetch("/api/seller-apply", {
         method: "POST",
@@ -576,13 +583,13 @@ if (sellerForm) {
       });
       const data = await res.json();
       if (!res.ok || !data.ok) {
-        setSellerStatus(data.error || "não entrou na fila.", "err");
+        setSellerStatus(data.error || t("js.sell_fail"), "err");
         return;
       }
-      setSellerStatus("entrou na fila. o estoque da prateleira continua sagrado — revisão antes de ir ao ar.", "ok");
+      setSellerStatus(t("js.sell_ok"), "ok");
       sellerForm.reset();
     } catch (_) {
-      setSellerStatus("a rede falhou. tente de novo.", "err");
+      setSellerStatus(t("js.net"), "err");
     } finally {
       if (sellerSubmit) sellerSubmit.disabled = false;
     }
@@ -592,7 +599,7 @@ if (sellerForm) {
 if (claimForm) {
   claimForm.addEventListener("submit", async (event) => {
     event.preventDefault();
-    setClaimStatus("conferindo…", "");
+    setClaimStatus(t("js.claim_wait"), "");
     try {
       const res = await fetch("/api/claim", {
         method: "POST",
@@ -604,7 +611,7 @@ if (claimForm) {
       });
       const data = await res.json();
       if (!res.ok || !data.ok) {
-        setClaimStatus(data.error || "não liberou.", "err");
+        setClaimStatus(data.error || t("js.claim_fail"), "err");
         return;
       }
       applySession(data);
@@ -614,12 +621,12 @@ if (claimForm) {
       }
       setClaimStatus(
         data.paid
-          ? `sessão liberada. ${data.remaining_clock} neste bloco.`
-          : "ainda sem saldo neste bloco.",
+          ? t("js.claim_ok", { clock: data.remaining_clock })
+          : t("js.claim_empty"),
         data.paid ? "ok" : "err",
       );
     } catch (_) {
-      setClaimStatus("a rede falhou. tente de novo.", "err");
+      setClaimStatus(t("js.net"), "err");
     }
   });
 }
@@ -628,12 +635,12 @@ document.querySelectorAll("[data-copy]").forEach((btn) => {
   btn.addEventListener("click", async () => {
     try {
       await navigator.clipboard.writeText(btn.dataset.copy);
-      btn.textContent = "copiado";
+      btn.textContent = t("js.copied");
       setTimeout(() => {
-        btn.textContent = "copiar";
+        btn.textContent = t("js.copy");
       }, 1400);
     } catch (_) {
-      btn.textContent = "selecione e copie";
+      btn.textContent = t("js.copy_fail");
     }
   });
 });
@@ -652,19 +659,19 @@ if (btnNew) {
   });
 }
 if (btnCopy) {
-  btnCopy.addEventListener("click", () => copyLabel(btnCopy, resumeHref(lastSession), "Copiar link"));
+  btnCopy.addEventListener("click", () => copyLabel(btnCopy, resumeHref(lastSession), t("js.copy_link")));
 }
 if (resumeBack) {
   resumeBack.addEventListener("click", closeResume);
 }
 if (resumeCopyWeb) {
   resumeCopyWeb.addEventListener("click", () => {
-    copyLabel(resumeCopyWeb, resumeWebCmd ? resumeWebCmd.textContent : "", "copiar");
+    copyLabel(resumeCopyWeb, resumeWebCmd ? resumeWebCmd.textContent : "", t("js.copy"));
   });
 }
 if (resumeCopySsh) {
   resumeCopySsh.addEventListener("click", () => {
-    copyLabel(resumeCopySsh, resumeSshCmd ? resumeSshCmd.textContent : "", "copiar");
+    copyLabel(resumeCopySsh, resumeSshCmd ? resumeSshCmd.textContent : "", t("js.copy"));
   });
 }
 if (resumeOpenWeb) {
@@ -717,21 +724,33 @@ document.addEventListener("visibilitychange", () => {
       el.classList.remove("is-out");
     }, 1100);
   }, 9000);
+  document.addEventListener("st-locale", () => {
+    try {
+      lines = JSON.parse(el.getAttribute("data-lines") || "[]");
+    } catch (_) {
+      lines = [];
+    }
+    if (lines[0]) el.textContent = lines[0];
+    i = 0;
+  });
 })();
+
+document.addEventListener("st-locale", () => {
+  if (lastSession) applySession(lastSession);
+});
 
 const params = new URLSearchParams(location.search);
 
-const BRIEFS = {
-  mkt: "Escreve um post curto (máx 280) para spare tokens: R$5 / 5h / GROK 4.6 High Fast, Pix de um passo, login = código do bloco. Sem nome de pessoa. Sem segundo preço. Sem pedir chave, cookie, .env ou e-mail. Link: https://sparetoken.shop/?utm_source=shop&utm_medium=web&utm_campaign=agent&utm_content=mkt",
-  copy: "Escreve um parágrafo de prateleira para quem tem token de IA sobrando e quem precisa de uma hora de modelo. Tom de caderno, não pitch. Sem assinatura. Sem a palavra owner. Sem pedir e-mail ou WhatsApp. O caixa continua R$5 / 5h.",
-  viral: "Dá 3 ganchos de uma linha para indicar um amigo com o mesmo ?code= do bloco. Sem WhatsApp. Sem e-mail. Sem pedir chave. O convite é o código, não um cadastro.",
-};
+const BRIEFS = { mkt: "brief.mkt", copy: "brief.copy", viral: "brief.viral" };
 
 function briefText(key) {
-  let text = BRIEFS[key] || "";
+  let text = t(`brief.${key}`);
+  if (text === `brief.${key}`) text = "";
   const code = ((claimCode && claimCode.value) || params.get("code") || "").trim();
   if (text && /^wdtsot-[A-Za-z0-9]{3,16}$/.test(code)) {
-    text += ` Convite: https://sparetoken.shop/?code=${encodeURIComponent(code)}`;
+    text += t("brief.invite", {
+      url: `https://sparetoken.shop/?code=${encodeURIComponent(code)}`,
+    });
   }
   return text;
 }

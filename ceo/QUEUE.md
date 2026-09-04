@@ -1,5 +1,9 @@
 # Fila — o que ainda não saiu
 
+**CEO 2026-09-04:** leia `BOARD.md`. Oracle no X. Loja pt-BR/en-US no ar. Não mintar cripto. Não brigar pelo @sparetoken.
+
+
+
 A VPS **não** segura cookie de X. Playwright do X = Mac, quando acordar.
 X **nunca** é a prova do pulso de venda.
 
@@ -113,4 +117,4 @@ Silent human-needed is dead. Pulse writes this table **and** `data/human-needed-
 
 | stamped | id | pulse | reason | slack |
 |---|---|---|---|---|
-| 2026-09-04 | s004 | 11:30 04/09 | new-account hold (public GET empty) | alert json + thread ping |
+| 2026-09-04 | s004 | 11:30 04/09 | captcha | alert json + thread ping |

@@ -1,6 +1,6 @@
 # Próximos 7 dias (rolante)
 
-Produto no ar: **0.2.23**. Pulsos **11:30 venda** e **23:30 produto**. Login = código do bloco. Cada pulso planta D+8. Sem publicação de manhã, a venda falhou — **não** some o D+8.
+Produto no ar: **0.2.24**. Pulsos **11:30 venda** e **23:30 produto**. Login = código do bloco. Cada pulso planta D+8. Sem publicação de manhã, a venda falhou — **não** some o D+8.
 
 Prioridade desta janela (leap of faith + pesquisa 30/08):
 
@@ -17,6 +17,7 @@ Prioridade desta janela (leap of faith + pesquisa 30/08):
 | D2 | 02/09 | Schema mínimo de referral: fuzzy é o 1º indicador; 10%; teto de payout = Pix aos R$5 | Indicação em marketplaces P2P (não cupom SaaS) | Tela “seus 10 amigos” sem PII pública |
 | D3 | 03/09 | Contar indicação no sqlite (sem pagar ainda) — só atribuição a charge **fechado** — **SHIP 0.2.21** | Pay-per-call vs bloco de 5h: o que não copiar | Pix de comissão quando saldo ≥ 5 |
 | D4 | 04/09 | Contrato do marketplace (skill = manifesto curto + CLI allowlist) — **SHIP 0.2.23** | Agents + token incluso | Primeiro CLI extra no launch/ (Codex ou Claude), **pay.py intacto** |
+| D4b | 04/09 | Loja internacional BR/US (IP + bandeiras) — **SHIP 0.2.24**. Cripto só no roadmap | exposição global no X (Oracle) pede inglês, não segundo caixa | D12: se visit EN > 0 e pay_click EN = 0, o card EN ainda fala Pix — não ligar USDT |
 | D5 | 05/09 | `/api/heartbeat` stub: last ship, 7-day, last research line | HTTP 402 / x402 — só nota, sem implementar | Heartbeat na landing |
 | D6 | 06/09 | Regressão do pagar + **restock pela skill** (mint local, ingest, 10 Open) | Idle GPU markets — por que a gente vende *hora de modelo*, não H100 | Sweep automático do pool |
 | D7 | 07/09 | Feature nascida do D0: `launch/heartbeat.sh` executa o agent (ainda sem cron até “publique”) + **referral v0 se D2–D3 estiverem verdes** | O CEO escolhe a próxima janela com RESEARCH + leap of faith | D14: janela nova, escrita pelo próprio agent |

@@ -18,6 +18,7 @@ from urllib.parse import parse_qs, urlparse
 import chat
 import clock
 import credits
+import i18n
 import invite
 import marketplace
 import pay
@@ -146,6 +147,20 @@ class Handler(BaseHTTPRequestHandler):
         jar = self._jar()
         return jar[CHAT_COOKIE].value if CHAT_COOKIE in jar else ""
 
+    def _locale_cookie(self) -> str:
+        jar = self._jar()
+        return jar[i18n.COOKIE].value if i18n.COOKIE in jar else ""
+
+    def _locale(self) -> dict:
+        parsed = urlparse(self.path)
+        return i18n.resolve_locale(
+            ip=self._client_ip(),
+            accept_language=self.headers.get("Accept-Language", ""),
+            cookie=self._locale_cookie(),
+            query=parsed.query,
+            headers=self.headers,
+        )
+
     def _pack_cookies(self, token: str | None, chat_id: str | None, *, force_sid: bool = False) -> list[str] | None:
         out: list[str] = []
         if token and force_sid:
@@ -261,6 +276,24 @@ class Handler(BaseHTTPRequestHandler):
                 },
             )
             return
+        if path == "/api/locale":
+            info = self._locale()
+            self._json(200, {"ok": True, **info, **i18n.pack(info["locale"])})
+            return
+        if path == "/i18n-boot.js":
+            info = self._locale()
+            body = (
+                "window.__I18N__="
+                + json.dumps(i18n.pack(info["locale"]), ensure_ascii=False)
+                + ";"
+            ).encode("utf-8")
+            self._send(
+                200,
+                body,
+                "text/javascript; charset=utf-8",
+                cookie=i18n.cookie_header(info["locale"], secure=bool(self._cookie_secure())),
+            )
+            return
         if path == "/api/marketplace":
             self._json(200, {"ok": True, **marketplace.public_contract()})
             return
@@ -339,6 +372,25 @@ class Handler(BaseHTTPRequestHandler):
             return
         if path == "/api/seller-apply":
             self._seller_apply()
+            return
+        if path == "/api/locale":
+            payload = self._read_json(200) or {}
+            wanted = i18n.normalize_locale(str(payload.get("locale") or ""))
+            if not wanted:
+                self._json(400, {"ok": False, "error": "locale"})
+                return
+            info = {
+                "locale": wanted,
+                "lang": i18n.HTML_LANG[wanted],
+                "country": None,
+                "source": "choice",
+                "flag": "BR" if wanted == "pt-BR" else "US",
+            }
+            self._json(
+                200,
+                {"ok": True, **info, **i18n.pack(wanted)},
+                cookie=i18n.cookie_header(wanted, secure=bool(self._cookie_secure())),
+            )
             return
         if path != "/api/chat":
             self._json(404, {"ok": False, "error": "not found"})
@@ -708,6 +760,11 @@ class Handler(BaseHTTPRequestHandler):
             self._json(404, {"ok": False, "error": "not found"})
             return
         data = candidate.read_bytes()
+        locale_cookie = None
+        if candidate.suffix == ".html":
+            info = self._locale()
+            data = i18n.apply_html(data.decode("utf-8"), info["locale"]).encode("utf-8")
+            locale_cookie = i18n.cookie_header(info["locale"], secure=bool(self._cookie_secure()))
         ctype = {
             ".html": "text/html; charset=utf-8",
             ".css": "text/css; charset=utf-8",
@@ -727,7 +784,7 @@ class Handler(BaseHTTPRequestHandler):
                     "font-src https://fonts.gstatic.com; connect-src 'self'; frame-ancestors 'none'",
                 )
             )
-        self._send(200, data, ctype, extra=extra)
+        self._send(200, data, ctype, extra=extra, cookie=locale_cookie)
 
 
 def main() -> None:

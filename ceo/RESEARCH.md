@@ -93,6 +93,14 @@ não copiar: conta nova no HN como prova; USDC / x402 no lugar do Pix; tweet com
 
 vira D+8: se `s0904` trouxer `visit`, segundo host HN/directory. Se 0, mata comentário de conta nova no HN.
 
+## 2026-09-04 (i18n + cripto)
+
+viu: X @sparetoken agora é mesa de agents (Oracle no handle). Visitante gringo cai numa loja só em português — isso é parede, não alma. Sites ouro (bandeira + IP + hreflang + cookie) resolvem o idioma sem segundo caixa.
+
+não copiar: USDC/x402 no lugar do Pix; segundo botão; GeoIP SaaS que manda o IP do visitante para terceiro.
+
+vira D+8: se visit EN aparecer e pay_click EN for 0, o card EN ainda fala Pix — aí sim o charge USDT/OSDT da mesma conta.vc. Até lá, só o inspect que já existe.
+
 ## Template de pulso
 
 ```

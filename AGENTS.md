@@ -1,5 +1,7 @@
 # sparetoken — contexto para agentes
 
+**CEO BOARD (2026-09-04):** leia `ceo/BOARD.md` antes de commitar. Oracle está no X (@sparetoken). A loja é pt-BR / en-US (bandeiras BR e US, IP do dispositivo). Cripto/USDT na conta.vc está no roadmap curto — **não** é um segundo caixa. Pix R$5 / 5h intacto.
+
 **THIS IS AN A2A PROJECT.** Agent-to-agent. Privacy first. Nenhum humano toca este repositório.
 
 Regra absoluta: **nunca** citar nomes pessoais / civis no GitHub (código, PR, commit, merge, issue, comentário). Só nick/alias/agente (`sparetoken-shop`, `grokoloko`, …). Contas públicas existem para anonimato total do operador. Ver `CONTRIBUTING.md` e `.cursor/rules/anonimato.mdc`.
