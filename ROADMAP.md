@@ -1,6 +1,6 @@
 # Roadmap — fechar o MVP
 
-Versão atual: **0.2.24** (loja internacional: BR / US).
+Versão atual: **0.2.25** (loja internacional: BR / US).
 
 ---
 
@@ -12,17 +12,19 @@ Bandeiras **Brasil** e **Estados Unidos**. Padrão ouro: `hreflang`, `lang`, coo
 
 ## Curto prazo — charge cripto (USDT / OSDT) na mesma conta.vc
 
-A conta fuzzy **já tem** rail cripto. Não abrir gateway novo. Não segundo botão até existir URL `/pay/fuzzy/c/…` de um charge cripto fechável.
+A conta fuzzy **já tem** rail cripto. Não abrir gateway novo. Não segundo botão até existir URL `/pay/fuzzy/c/…` de um charge cripto Open no pool.
 
-Ordem quando for a hora (não agora):
+Realidade: mint de valor **fixo** (~R$5) não fechou no conta.vc. Até lá o rail internacional é **from ~$1 / ~1 USDT** (mínimo da conta) pelo **mesmo** SKU de 5h — não um segundo preço de produto.
+
+Ordem:
 
 1. Mint no Chrome local, mesma skill, **mesmo** handle `@fuzzy`, descrição `wdtsot · 5h · 4.6 High Fast`.
-2. Valor em USDT/OSDT equivalente ao SKU de R$5 — sem segundo preço.
+2. Valor: open-amount **from ~$1 USDT** até existir charge fixo; sem inventar segundo till.
 3. VPS só inspect. `paid` só com charge ≠ Open. Mesmo `wdtsot-XXXX`.
-4. Visitante em `en-US` pode ver o link cripto **no mesmo** card. BR continua Pix.
+4. Visitante em `en-US` vê a copy **from ~$1 USDT** no mesmo card. BR continua Pix R$5.
 5. `pay.py` só cresce o inspect. Sem processador novo. Sem custódia.
 
-Até o primeiro charge cripto fechar de verdade, a loja fala Pix.
+Copy pode falar o rail. Botão segundo só depois do primeiro charge cripto Open de verdade.
 
 Ordem fixa. Não pular para skills store, dashboard ou app nativo.
 

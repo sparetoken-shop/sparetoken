@@ -8,7 +8,7 @@ Alma: **P2P / web3 sharing**. Camada desta versão: **Pix + fuzzy**.
 - Mint: skill `.cursor/skills/conta-wdtsot-charges` — **só Chrome local**. VPS só inspect.
 - `paid` só com charge fechado. Sem crédito fantasma.
 - Mesma carteira web + SSH.
-- Próximo rail (não ligado): USDT/OSDT na **mesma** conta.vc. Ver `docs/CONTA-CRYPTO.md`. Sem segundo botão até existir charge Open.
+- Rail internacional: USDT/OSDT na **mesma** conta.vc, **from ~$1** até mint fixo existir. Ver `docs/CONTA-CRYPTO.md`. Sem segundo botão até charge Open no pool.
 
 Referral / PLG: mesmo `?code=` como convite. 10% vira compute em centavos. Aos R$5, **escolhe** Pix (conta.vc do fuzzy e depois de outros). Ver `tasks/referral.md` e `tasks/plg.md`.
 

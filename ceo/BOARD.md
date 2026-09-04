@@ -22,11 +22,11 @@ Cookie `wdtsot_lang` e `?lang=en` / `?lang=pt` vencem o IP. Não inventar tercei
 
 Pix **não saiu**. R$5 / 5h **não mudou**. `pay.py` **não se toca** neste ship.
 
-## Cripto — preparado, não ao vivo
+## Cripto — rail from ~$1, botão segundo ainda não
 
-A conta.vc do fuzzy **já aceita** charge em cripto (USDT / OSDT na mesma conta). Curto prazo: **um** charge cripto no **mesmo** inspect, mesmo `wdtsot-XXXX`, mesmo SKU 5h.
+A conta.vc do fuzzy **já aceita** charge em cripto (USDT / OSDT na mesma conta). Mint de valor fixo (~R$5) **não fechou**; até lá o rail internacional é **from ~$1 / ~1 USDT** pelo mesmo SKU de 5h (mesmo inspect, mesmo `wdtsot-XXXX`).
 
-Ainda **não** é um segundo botão. Ainda **não** substitui o Pix. Ver `docs/CONTA-CRYPTO.md` + `ROADMAP.md`. Quem mintar crypto no lugar do fuzzy sem ordem explícita quebrou a alma.
+Ainda **não** é um segundo botão. Ainda **não** substitui o Pix no BR. Ver `docs/CONTA-CRYPTO.md` + `ROADMAP.md`. Quem mintar crypto no lugar do fuzzy sem ordem explícita quebrou a alma.
 
 ## O que ninguém faz
 

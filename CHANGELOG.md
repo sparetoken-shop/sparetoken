@@ -14,6 +14,16 @@ Versionamento: [SemVer](https://semver.org/lang/pt-BR/).
 - Fechar chat anônimo e SSH sem senha (ver ROADMAP)
 - Charge cripto (USDT / OSDT) na mesma conta.vc — ver ROADMAP, sem segundo caixa
 
+## [0.2.25] — 2026-09-04
+
+Honest international pay copy. Fixed USDT mint still pending.
+
+### Changed
+
+- en-US copy: outside BR pay is **from ~$1 USDT** on the same conta.vc shelf for the same 5h block (conta.vc minimum; fixed SKU mint did not close)
+- `ceo/docs/CONTA-CRYPTO.md`, `ROADMAP.md`, `ceo/BOARD.md` — rail from ~$1, still no second button without Open crypto charge
+- Brazil Pix R$5 / 5h untouched. `pay.py` untouched
+
 ## [0.2.24] — 2026-09-04
 
 International shop. Brazil / United States flags. IP of the device.
