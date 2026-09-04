@@ -31,6 +31,11 @@ const resumeCopyWeb = document.getElementById("resume-copy-web");
 const resumeOpenWeb = document.getElementById("resume-open-web");
 const resumeCopySsh = document.getElementById("resume-copy-ssh");
 const payModal = document.getElementById("pay-modal");
+const sellOpen = document.getElementById("sell-open");
+const sellModal = document.getElementById("vender");
+const sellerForm = document.getElementById("seller-form");
+const sellerStatus = document.getElementById("seller-status");
+const sellerSubmit = document.getElementById("seller-submit");
 let paidTimer = 0;
 let lastSession = null;
 let menuOpen = false;
@@ -515,6 +520,72 @@ if (payBtn) {
 if (payModal) {
   payModal.addEventListener("close", () => {
     if (payModal.returnValue === "ok") openCheckout();
+  });
+}
+
+function setSellerStatus(text, kind) {
+  if (!sellerStatus) return;
+  sellerStatus.textContent = text || "";
+  sellerStatus.className = "claim-status" + (kind ? ` ${kind}` : "");
+}
+
+function openSeller(event) {
+  if (event) event.preventDefault();
+  ping("sell_click");
+  if (sellModal && typeof sellModal.showModal === "function") {
+    sellModal.showModal();
+    return;
+  }
+  location.hash = "vender";
+}
+
+if (sellOpen) sellOpen.addEventListener("click", openSeller);
+document.querySelectorAll('a[href="#vender"]').forEach((el) => {
+  if (el === sellOpen) return;
+  el.addEventListener("click", openSeller);
+});
+if (location.hash === "#vender") openSeller();
+if (sellModal) {
+  sellModal.querySelectorAll('a[href="#terminal"]').forEach((el) => {
+    el.addEventListener("click", () => {
+      if (typeof sellModal.close === "function") sellModal.close();
+    });
+  });
+}
+
+if (sellerForm) {
+  sellerForm.addEventListener("submit", async (event) => {
+    event.preventDefault();
+    const handle = (document.getElementById("seller-handle") || {}).value || "";
+    const links = (document.getElementById("seller-links") || {}).value || "";
+    const note = (document.getElementById("seller-note") || {}).value || "";
+    const ack = !!(document.getElementById("seller-ack") || {}).checked;
+    if (sellerSubmit) sellerSubmit.disabled = true;
+    setSellerStatus("anotando…", "");
+    try {
+      const res = await fetch("/api/seller-apply", {
+        method: "POST",
+        credentials: "same-origin",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          handle: handle.trim(),
+          links,
+          note: note.trim(),
+          ack,
+        }),
+      });
+      const data = await res.json();
+      if (!res.ok || !data.ok) {
+        setSellerStatus(data.error || "não entrou na fila.", "err");
+        return;
+      }
+      setSellerStatus("entrou na fila. o estoque da prateleira continua sagrado — revisão antes de ir ao ar.", "ok");
+      sellerForm.reset();
+    } catch (_) {
+      setSellerStatus("a rede falhou. tente de novo.", "err");
+    } finally {
+      if (sellerSubmit) sellerSubmit.disabled = false;
+    }
   });
 }
 

@@ -23,7 +23,8 @@ sparetoken is an experiment in sharing leftover AI compute. Sharing a **token of
 | SSH gate (block code only) | `guest-sessions/guests.jsonl` on the VPS | the `wdtsot-XXXX` that claimed the paid block |
 | SSH transcripts | that session’s `cursor-state/` only | Cursor needs them to resume **your** session |
 | Pix / conta.vc | charge URL + open/closed status | credit 5h after you pay, once |
-| First-party events `visit` / `pay_click` / `claim_ok` | `track_events` (UTM + optional `wdtsot-XXXX`) | count landings and Pix clicks. No email. No phone. No third-party pixel. `GET /api/track/summary` exposes **counts only** — no codes, no UTM dump. |
+| First-party events `visit` / `pay_click` / `claim_ok` / `sell_click` | `track_events` (UTM + optional `wdtsot-XXXX`) | count landings, Pix clicks, and seller-CTA clicks. No email. No phone. No third-party pixel. `GET /api/track/summary` exposes **counts only** — no codes, no UTM dump. |
+| Seller applications | `data/seller-applications/*.json` on the VPS | queued review: handle + 10 conta.vc URLs + optional note. Not published automatically. Not live stock. |
 
 The public git tree does **not** contain the SQLite, `guests.jsonl`, or any chat body.
 

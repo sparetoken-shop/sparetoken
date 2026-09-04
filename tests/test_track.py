@@ -1,4 +1,4 @@
-"""First-party visit / pay_click / claim_ok — no PII, no third-party pixel."""
+"""First-party visit / pay_click / claim_ok / sell_click — no PII, no pixel."""
 
 from __future__ import annotations
 
@@ -38,8 +38,8 @@ class TrackSanitizeTest(unittest.TestCase):
         clean = sanitize_payload({"event": "hack", "code": "DROP TABLE", "utm_source": "x" * 200})
         self.assertIsNone(clean)
 
-    def test_allowed_events_are_the_three_we_need(self):
-        self.assertEqual(ALLOWED_EVENTS, frozenset({"visit", "pay_click", "claim_ok"}))
+    def test_allowed_events_are_the_four_we_need(self):
+        self.assertEqual(ALLOWED_EVENTS, frozenset({"visit", "pay_click", "claim_ok", "sell_click"}))
 
 
 class TrackDbTest(unittest.TestCase):
@@ -75,8 +75,8 @@ class TrackDbTest(unittest.TestCase):
         record_event(self.conn, {"event": "visit", "utm_source": "x", "utm_content": "p006"})
         record_event(self.conn, {"event": "pay_click"})
         tallies = summarize(self.conn)
-        self.assertEqual(tallies, {"visit": 2, "pay_click": 1, "claim_ok": 0})
-        self.assertEqual(set(tallies), {"visit", "pay_click", "claim_ok"})
+        self.assertEqual(tallies, {"visit": 2, "pay_click": 1, "claim_ok": 0, "sell_click": 0})
+        self.assertEqual(set(tallies), {"visit", "pay_click", "claim_ok", "sell_click"})
         blob = str(tallies)
         self.assertNotIn("wdtsot-", blob)
         self.assertNotIn("p004", blob)

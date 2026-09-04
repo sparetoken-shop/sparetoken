@@ -13,6 +13,21 @@ Versionamento: [SemVer](https://semver.org/lang/pt-BR/).
 
 - Fechar chat anônimo e SSH sem senha (ver ROADMAP)
 
+## [0.2.22] — 2026-09-04
+
+Seller CTA on the shelf. Queue, not live stock.
+
+### Added
+
+- Homepage `#mercado`: orange **Venda seus tokens** after the fuzzy card; panel `#vender` (terms, 10 conta.vc links, SSH how-to)
+- `POST /api/seller-apply` queues JSON under `data/seller-applications/` — never appends `conta-links.txt`
+- First-party `sell_click` (same track as `pay_click`)
+- FAQ for sellers
+
+### Changed
+
+- Shelf-open line points at `#vender` — next card is no longer vapor
+
 ## [0.2.21] — 2026-09-03
 
 D3 + heartbeat verification. Groko PRs #4–#6 land as sparetoken. No theater.

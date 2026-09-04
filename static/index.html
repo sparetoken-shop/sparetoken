@@ -42,6 +42,14 @@
           "@type": "Answer",
           "text": "O mesmo código do bloco. O link é sparetoken.shop/?code=wdtsot-XXXX. 10% (R$0,50) em compute por amigo que fechou o Pix. Pix aos R$5. O primeiro indicador é fuzzy. Sem e-mail."
         }
+      },
+      {
+        "@type": "Question",
+        "name": "Como vendo meus tokens?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "O mesmo card R$5 / 5h. Dez links conta.vc. O primeiro nome na prateleira continua fuzzy. O pedido entra em revisão — o estoque da loja é sagrado. Sem segundo caixa."
+        }
       }
     ]
   }
@@ -182,6 +190,11 @@
             <p class="claim-status" id="claim-status" role="status"></p>
           </form>
         </article>
+        <aside class="shelf-sell">
+          <p class="shelf-sell-kicker">hora sobrando?</p>
+          <p class="shelf-sell-copy">O mesmo card R$5 / 5h. Primeiro na prateleira continua <strong>fuzzy</strong>.</p>
+          <a class="btn btn-sell" href="#vender" id="sell-open" data-track="sell_click">Venda seus tokens</a>
+        </aside>
       </div>
 
       <ol class="shelf-rail">
@@ -189,11 +202,12 @@
         <li><span>02 · guarda</span><strong>wdtsot-XXXX</strong><p>O código do bloco é o login das 5h.</p></li>
         <li><span>03 · indica</span><strong>o mesmo ?code=</strong><p>10% em compute. Pix aos R$5. Primeiro indicador: fuzzy.</p></li>
       </ol>
-      <p class="shelf-open">Próximo card na prateleira: SSH + <strong>10 links</strong> conta.vc. Heartbeat todo dia às <strong>23:30</strong> — <a href="https://x.com/sparetoken?utm_source=shop&amp;utm_medium=web&amp;utm_campaign=shelf" data-track="out-x">@sparetoken</a>.</p>
+      <p class="shelf-open">O próximo card não é vapor: <a href="#vender">venda seus tokens</a> — SSH + <strong>10 links</strong> conta.vc. Heartbeat todo dia às <strong>23:30</strong> — <a href="https://x.com/sparetoken?utm_source=shop&amp;utm_medium=web&amp;utm_campaign=shelf" data-track="out-x">@sparetoken</a>.</p>
       <p class="pulso-tally" id="pulso-tally" hidden>
         <span data-tally="visit">0</span> visitas
         · <span data-tally="pay_click">0</span> cliques Pix
         · <span data-tally="claim_ok">0</span> blocos liberados
+        · <span data-tally="sell_click">0</span> quero vender
       </p>
     </section>
 
@@ -261,6 +275,8 @@
         <dd>O mesmo código do bloco. O link é <code>sparetoken.shop/?code=wdtsot-XXXX</code>. 10% (R$0,50) em compute por amigo que fechou o Pix. Pix aos R$5. O primeiro indicador é fuzzy. Sem e-mail.</dd>
         <dt>O que os agents curtos fazem?</dt>
         <dd>Post, prateleira, convite. Abrem no chat de cima. Não abrem outro caixa.</dd>
+        <dt>Como vendo meus tokens?</dt>
+        <dd>O mesmo card R$5 / 5h. Dez links conta.vc no painel <a href="#vender">Venda seus tokens</a>. O primeiro nome na prateleira continua fuzzy. O pedido entra em revisão — o estoque é sagrado. Sem segundo caixa.</dd>
       </dl>
     </section>
 
@@ -313,6 +329,52 @@
         <button class="btn btn-primary" value="ok" id="pay-modal-ok">entendi, abrir o Pix</button>
       </div>
     </form>
+  </dialog>
+
+  <dialog class="pay-modal sell-modal" id="vender">
+    <div class="pay-modal-card sell-card">
+      <form method="dialog" class="sell-close-row">
+        <button class="copy" value="cancel" type="submit">fechar</button>
+      </form>
+      <p class="section-kicker">prateleira</p>
+      <h3>Venda seus tokens</h3>
+      <p>Tem hora GROK sobrando? Coloca na prateleira. O mesmo card: R$5 / 5h. O primeiro nome na mesa continua <strong>fuzzy</strong>.</p>
+
+      <div class="sell-terms">
+        <p>Isto é um mercado-experimento. Você lista compute pessoal que sobrou — acesso por código de carteira, web ou SSH. Não é um contrato de nuvem.</p>
+        <p>Os links Pix (conta.vc) são seus. Imposto, reembolso, chargeback e o que rodar na sua máquina também. A responsabilidade é sua.</p>
+        <p>A prateleira, o shop e os agents não guardam dinheiro, não prometem uptime, não mediamos briga entre quem compra e quem vende. Não respondemos por sessão SSH, perda de dado, ou por conta.vc / o modelo cair.</p>
+        <p>Quem compra paga Pix no seu link. Liberar o GROK segue o fluxo de sempre: charge fechado, código <code>wdtsot-XXXX</code>.</p>
+        <p>Você afirma que a capacidade é sua e que não vai vender o que não consegue cumprir.</p>
+      </div>
+
+      <form class="claim sell-form" id="seller-form">
+        <label for="seller-handle">apelido na prateleira (minúsculo, curto — sem @, sem telefone)</label>
+        <input id="seller-handle" name="handle" type="text" maxlength="24" required autocapitalize="off" spellcheck="false" autocomplete="off" placeholder="oraculus">
+        <label for="seller-links">10 links conta.vc (um por linha)</label>
+        <textarea id="seller-links" name="links" rows="8" required spellcheck="false" placeholder="https://app.conta.vc/pay/…&#10;https://app.conta.vc/pay/…"></textarea>
+        <label for="seller-note">nota (opcional)</label>
+        <input id="seller-note" name="note" type="text" maxlength="280" placeholder="fim de semana, fuso BRT…">
+        <label class="sell-ack">
+          <input id="seller-ack" name="ack" type="checkbox" required>
+          <span>Li e aceito os termos. A responsabilidade é minha.</span>
+        </label>
+        <button class="btn btn-sell" type="submit" id="seller-submit">Enviar para revisão</button>
+        <p class="claim-status" id="seller-status" role="status"></p>
+      </form>
+
+      <div class="sell-ssh">
+        <p class="shelf-sell-kicker">como entra no SSH</p>
+        <p>O produto é um comando. Sem app para baixar.</p>
+        <p class="ssh">
+          <code>ssh -t agent-guest@wdtsot.shop</code>
+          <button class="copy" type="button" data-copy="ssh -t agent-guest@wdtsot.shop">copiar</button>
+        </p>
+        <p>macOS e Linux: o comando acima. Windows: Windows Terminal ou OpenSSH — o mesmo comando.</p>
+        <p>Enter vazio no login = Pix ainda Open. Depois de pagar, o código <code>wdtsot-XXXX</code> é o login — web e SSH. Conta só o tempo que o modelo gera.</p>
+        <p><a href="#terminal">seção Terminal</a> — a mesma mesa, sem segundo caixa.</p>
+      </div>
+    </div>
   </dialog>
   <script src="/app.js" defer></script>
 </body>

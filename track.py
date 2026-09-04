@@ -6,7 +6,7 @@ import re
 import time
 from typing import Any
 
-ALLOWED_EVENTS = frozenset({"visit", "pay_click", "claim_ok"})
+ALLOWED_EVENTS = frozenset({"visit", "pay_click", "claim_ok", "sell_click"})
 _UTM = re.compile(r"^[A-Za-z0-9._-]{1,64}$")
 _CODE = re.compile(r"^wdtsot-[A-Za-z0-9]{3,16}$")
 _UTM_KEYS = ("utm_source", "utm_medium", "utm_campaign", "utm_content", "utm_term")
@@ -56,7 +56,7 @@ def record_event(conn, raw: dict[str, Any] | None) -> bool:
 
 def summarize(conn) -> dict[str, int]:
     """Public click tallies. Counts only — no codes, no UTM, no PII."""
-    out = {event: 0 for event in ("visit", "pay_click", "claim_ok")}
+    out = {event: 0 for event in ("visit", "pay_click", "claim_ok", "sell_click")}
     for event, n in conn.execute("SELECT event, COUNT(*) FROM track_events GROUP BY 1"):
         if event in out:
             out[event] = int(n)

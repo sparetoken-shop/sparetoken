@@ -49,6 +49,23 @@ class LandingMarketTest(unittest.TestCase):
     def test_market_section_invites(self):
         self.assertIn("10 links", HTML)
         self.assertIn("23:30", HTML)
+        self.assertIn("#vender", HTML)
+        self.assertIn("não é vapor", HTML.lower())
+
+    def test_seller_cta_after_fuzzy_card(self):
+        fuzzy = HTML.find('data-reseller="fuzzy"')
+        article_end = HTML.find("</article>", fuzzy)
+        cta = HTML.find("Venda seus tokens")
+        rail = HTML.find("shelf-rail")
+        self.assertGreater(fuzzy, 0)
+        self.assertLess(article_end, cta)
+        self.assertLess(cta, rail)
+        self.assertIn('class="btn btn-sell"', HTML)
+        self.assertIn('data-track="sell_click"', HTML)
+        self.assertIn('id="vender"', HTML)
+        self.assertIn(".btn-sell", CSS)
+        self.assertIn("/api/seller-apply", JS)
+        self.assertIn("/api/seller-apply", SERVER)
 
     def test_design_tokens_file_exists(self):
         tokens = Path(__file__).resolve().parents[1] / "static" / "tokens.css"
@@ -101,3 +118,4 @@ class LandingMarketTest(unittest.TestCase):
         self.assertIn("r$5", faq)
         self.assertNotIn("plano mensal", faq)
         self.assertNotIn("reseller alias", faq)
+        self.assertIn("como vendo meus tokens", faq)

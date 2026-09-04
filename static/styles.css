@@ -133,6 +133,14 @@ button, textarea, input { font: inherit; color: inherit; }
   color: var(--ink);
 }
 .btn-ghost:hover { background: var(--paper-2); }
+.btn-sell,
+.btn-orange {
+  background: var(--accent);
+  color: var(--cream);
+  border-color: var(--accent);
+}
+.btn-sell:hover,
+.btn-orange:hover { background: var(--accent-deep); border-color: var(--accent-deep); }
 
 .term {
   background: var(--paper-2);
@@ -545,6 +553,28 @@ h2 {
   color: var(--ink-soft);
   line-height: 1.4;
 }
+.shelf-sell {
+  margin-top: 16px;
+  padding: 18px 20px 16px;
+  background: var(--accent-wash);
+  border: 1px solid #e4c4b0;
+  border-radius: var(--radius-card);
+}
+.shelf-sell-kicker {
+  margin: 0 0 6px;
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent-deep);
+  font-weight: 600;
+}
+.shelf-sell-copy {
+  margin: 0 0 14px;
+  font-size: 15px;
+  color: var(--ink-soft);
+  line-height: 1.4;
+}
+.shelf-sell .btn-sell { width: 100%; }
 .shelf-open {
   margin: 18px 0 0;
   font-size: 14px;
@@ -694,6 +724,71 @@ h2 {
 }
 .pay-modal-card li { margin: 6px 0; }
 .pay-modal-card .actions { justify-content: flex-end; }
+.sell-modal { max-width: 560px; max-height: min(92vh, 900px); }
+.sell-modal .sell-card {
+  max-height: min(92vh, 900px);
+  overflow-y: auto;
+}
+.sell-card h3 {
+  font-family: var(--serif);
+  font-weight: 400;
+  font-style: italic;
+  font-size: clamp(26px, 4vw, 34px);
+  letter-spacing: -0.03em;
+  margin: 0 0 10px;
+}
+.sell-close-row {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0 0 4px;
+}
+.sell-terms {
+  background: var(--paper-2);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 14px 16px 6px;
+  margin: 0 0 16px;
+}
+.sell-terms p {
+  font-size: 14px;
+  line-height: 1.45;
+  margin: 0 0 10px;
+  color: var(--ink-soft);
+}
+.sell-form textarea {
+  width: 100%;
+  border: 1px solid var(--line);
+  background: var(--paper);
+  border-radius: 12px;
+  padding: 11px 12px;
+  outline: none;
+  resize: vertical;
+  min-height: 8.5em;
+  font-family: var(--mono);
+  font-size: 13px;
+  line-height: 1.45;
+}
+.sell-form textarea:focus { border-color: #c7b9a6; }
+.sell-ack {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-top: 6px;
+  font-size: 14px;
+  color: var(--ink);
+}
+.sell-ack input {
+  width: auto;
+  margin-top: 3px;
+  accent-color: var(--accent);
+}
+.sell-ssh {
+  margin-top: 22px;
+  padding-top: 16px;
+  border-top: 1px dashed var(--line);
+}
+.sell-ssh p { margin: 0 0 10px; font-size: 14px; }
+.sell-ssh .ssh { margin: 0 0 12px; }
 
 .term-panel {
   margin-top: 22px;

@@ -21,6 +21,7 @@ import credits
 import invite
 import pay
 import referral
+import seller
 import track
 from db import (
     append_chat_turn,
@@ -332,6 +333,9 @@ class Handler(BaseHTTPRequestHandler):
         if path == "/api/clock":
             self._clock()
             return
+        if path == "/api/seller-apply":
+            self._seller_apply()
+            return
         if path != "/api/chat":
             self._json(404, {"ok": False, "error": "not found"})
             return
@@ -601,6 +605,22 @@ class Handler(BaseHTTPRequestHandler):
             },
             cookie=cookies or None,
         )
+
+    def _seller_apply(self) -> None:
+        if not _allow(f"seller:{self._client_ip()}", (4, 600)):
+            self._json(429, {"ok": False, "error": "calma. tente de novo em instantes."})
+            return
+        payload = self._read_json(16384)
+        if payload is None:
+            self._json(400, {"ok": False, "error": "pedido inválido"})
+            return
+        dest = DATA / "seller-applications"
+        try:
+            result = seller.apply(dest, payload)
+        except seller.SellerError as exc:
+            self._json(400, {"ok": False, "error": str(exc)})
+            return
+        self._json(200, result)
 
     def _clock(self) -> None:
         if not _allow(f"clock:{self._client_ip()}", (30, 60)):

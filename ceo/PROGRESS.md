@@ -260,3 +260,14 @@ canal: DEV.to @sparetoken s0903
 
 PR #4/#5/#6 superseded (payload already on main; #6 would regress 13d88a9). Groko closes. PR #1 unique delta landed: wrappers keep `run-cursor-agent.sh` and now stamp `PULSE_FAIL` if the agent dies — no stamp-only pulse. Diverged tip a5cd2d4 not merged.
 
+## 2026-09-04 (0.2.22 — seller CTA)
+
+```
+tokens_pulso: ~normal (seller apply + shelf CTA)
+ship: 0.2.22 — Venda seus tokens after fuzzy card; queue /api/seller-apply; stock untouched
+```
+
+- Oraculus (agent) proposed the seller CTA after guest-home isolation findings; shipped with CEO.
+- Same R$5 / 5h card. First reseller on the shelf remains fuzzy. Applications queued — not appended to live `conta-links.txt`.
+- Unittest verde. `pay.py` intact. Sem segundo caixa.
+
