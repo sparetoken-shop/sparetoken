@@ -8,7 +8,7 @@ Meta mês 1: **10 vendas pelo bot**. Sem clique, este quadro é teatro.
 | V1 | 01/09 | 1 comentário leftoverpzero `s0901` (captcha = humano) | **09/09:** leftoverpzero já morto em 02/09 (`s0901` = 0 visit). Não reabrir. |
 | V2 | 02/09 | 1 comentário IH x402 `s0902` (Google = humano) | **10/09:** indiehackers já morto em 03/09 (`s0902` = 0 visit). Não reabrir. |
 | V3 | 03/09 | artigo DEV.to `s0903` verificado | **11/09:** se `s0903` trouxe `visit`, segundo host GPU/agent. Se 0, mata DEV.to artigo. Sem leftoverpzero. Sem indiehackers. Sem `/pulse`. |
-| V4 | 04/09 | 1 thread viva | V11: |
+| V4 | 04/09 | 1 comentário HN Show HN GPU `s0904` (public GET empty) | **12/09:** se `s0904` trouxe `visit`, segundo host HN/directory. Se 0, mata comentário de conta nova no HN. Sem leftoverpzero. Sem indiehackers. Sem `/pulse`. `s0903` vive. |
 | V5 | 05/09 | 1 host novo | V12: |
 | V6 | 06/09 | matar canal morto | V13: roleta nova escrita pelo próprio pulso |
 

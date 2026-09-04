@@ -1,10 +1,10 @@
 {
   "default": {
-    "host": "devto",
-    "url": "https://dev.to/gpubridge/how-to-build-an-autonomous-agent-that-pays-for-its-own-gpu-inference-5do6",
+    "host": "hn",
+    "url": "https://news.ycombinator.com/item?id=49563492",
     "kind": "comment",
     "fallback": false,
-    "note": "one short comment on GPU-Bridge agent-pays-inference; leftoverpzero and indiehackers are dead; captcha = human, not WhatsApp login wall"
+    "note": "Show HN GPU sandboxes $0.20/hr; leftoverpzero indiehackers /pulse dead; s0903 DEV.to lives (2 visit); new-account HN comment is not public GET"
   },
   "2026-08-31": {
     "host": "pulse-github",
@@ -32,6 +32,13 @@
     "url": "https://dev.to/gpubridge/how-to-build-an-autonomous-agent-that-pays-for-its-own-gpu-inference-5do6",
     "kind": "comment",
     "fallback": false,
-    "note": "one comment on GPU-Bridge agent-pays-own-inference; UTM s0903; leftoverpzero is a different article — do not reopen it; captcha = human"
+    "note": "LIVE: s0903 = 2 visit on 04/09; do not kill DEV.to article"
+  },
+  "2026-09-04": {
+    "host": "hn",
+    "url": "https://news.ycombinator.com/item?id=49563492",
+    "kind": "comment",
+    "fallback": false,
+    "note": "Show HN Agent Sandboxes GPU $0.20/hr; one honest leftover-hours line; UTM s0904; new-account hold = public GET empty; leftoverpzero indiehackers /pulse stay dead"
   }
 }

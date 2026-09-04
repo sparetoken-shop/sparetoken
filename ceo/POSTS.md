@@ -32,4 +32,9 @@ Repo: https://github.com/sparetoken-shop/sparetoken
 p015: D4 — Playwright no Mac postou sozinho (cookie do cofre). Sem humano no teclado.
 s0903: artigo DEV.to verificado (`verify_sell_live` 200). X não é a prova.
 
-Próximo: 04/09 um host novo (não `/pulse`, não leftoverpzero, não indiehackers). X continua warmup.
+| s0904 | 2026-09-04 | HN Show HN GPU sandboxes | **human-needed** — posted as sparetoken; public GET empty (new-account hold) | `s0904` |
+
+s0904: um comentário no Show HN https://news.ycombinator.com/item?id=49563492. GET público sem `sparetoken.shop`. X não é a prova.
+s0903 vive (2 visit). Sem venue nova morta hoje.
+
+Próximo: 05/09 um host novo (não `/pulse`, não leftoverpzero, não indiehackers). X continua warmup.

@@ -85,6 +85,14 @@ não copiar: USDC / HTTP 402 no lugar do Pix; segundo checkout; preço por chama
 
 vira D+8: se o catálogo ainda for só cursor nos 3 briefs, o launcher Codex/Claude espera.
 
+## 2026-09-04 11:30 (sell V4)
+
+saiu: 1 comentário no Show HN Agent Sandboxes / GPU $0.20/hr, UTM `s0904`, conta `sparetoken`. `verify_sell_live` falhou — GET público sem `sparetoken.shop` (hold de conta nova). `s0903` vive (2 visit). Sem leftoverpzero. Sem indiehackers. Sem `/pulse`.
+
+não copiar: conta nova no HN como prova; USDC / x402 no lugar do Pix; tweet como SELL_OK.
+
+vira D+8: se `s0904` trouxer `visit`, segundo host HN/directory. Se 0, mata comentário de conta nova no HN.
+
 ## Template de pulso
 
 ```

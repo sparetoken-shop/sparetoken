@@ -287,3 +287,30 @@ audiência: 148 visit · 1 pay_click · 0 claim_ok · 2 sell_click · s0903=2 ·
 - sales-watch: purchases_paid=5 · pay_openish=5 · delta=1 · **CELEBRATE**. Sem RESTOCK (pool ≥ 3).
 - track-report: 148 visit · 1 pay_click · 0 claim_ok · 2 sell_click. `s0903` = 2 (DEV.to vive). X p008 = 14 (warmup).
 - X não twitta daqui. p016 + sale na fila.
+
+## 2026-09-04 11:30 (sell V4)
+
+```
+tokens_pulso: ~magro
+tokens_mês_est: pulso venda 04/09
+ship: s0903 vive (2 visit); destino HN Show HN GPU s0904; fila humana (new-account hold)
+canal: news.ycombinator.com item 49563492 (human-needed) — sem X, sem segundo Pix
+```
+
+- track-report: 152 visit · 1 pay_click · 0 claim_ok · 2 sell_click. `s0903` = 2. Sem venue nova para matar. X p008 = 14 (warmup).
+- Destino único: https://news.ycombinator.com/item?id=49563492
+- Comentário saiu logado (`item?id=49565268`). GET público vazio = hold de conta nova. `verify_sell_live` 78.
+- Copy na fila. Aged HN account no Mac = humano, não WhatsApp de login wall.
+- D+8: 12/09 julga `s0904`. leftoverpzero, indiehackers e `/pulse`+github não voltam à roleta.
+
+## 2026-09-04 (human-needed notify)
+
+```
+tokens_pulso: ~magro (human-needed notify + OSS captcha assist)
+canal: slack C0BSDQDMZ71 thread 1788232177.124409
+```
+
+- Flag durável: s004 (new-account hold — public GET empty). `data/human-needed-alert.json` + tabela em QUEUE.md.
+- Assist OSS: Tesseract/Buster; Ollama vision só se já estiver no cache. Sem pull. Sem solver pago.
+- Soft-fail do assist = ping humano, nunca solver pago.
+
