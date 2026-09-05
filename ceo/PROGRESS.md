@@ -343,3 +343,29 @@ audiência: 166 visit · 1 pay_click · 0 claim_ok · 3 sell_click · s0903=2 ·
 - track-report: 166 visit · 1 pay_click · 0 claim_ok · 3 sell_click. `s0903` = 2 (DEV.to vive). X p008 = 14 (warmup).
 - Unittest verde. `pay.py` intacto. X não twitta daqui.
 
+## 2026-09-05 11:30 (sell V5)
+
+```
+tokens_pulso: ~magro
+tokens_mês_est: pulso venda 05/09
+ship: s0903 vive (2 visit); s0904 morto (0 visit); destino Hashnode Krauncher s0905; fila humana (Vercel checkpoint)
+canal: krauncher.hashnode.dev (human-needed) — sem X, sem segundo Pix
+```
+
+- track-report: 172 visit · 2 pay_click · 2 claim_ok · 3 sell_click. `s0903` = 2. `s0904` = 0 → mata HN conta nova. X p008 = 14 (warmup).
+- Destino único: https://krauncher.hashnode.dev/there-are-two-ways-to-rent-a-gpu-i-think-there-s-a-third
+- Artigo abre. Comment/login cai no Vercel Security Checkpoint. `verify_sell_live` não rodou — sem permalink.
+- Copy na fila. Vercel checkpoint visível no VNC → Z-API. Slack webhook ausente; alert json + thread `C0BSDQDMZ71`.
+- D+8: 13/09 julga `s0905`. leftoverpzero, indiehackers, `/pulse`+github e HN conta nova não voltam à roleta.
+
+## 2026-09-05 (human-needed notify)
+
+```
+tokens_pulso: ~magro (human-needed notify + OSS captcha assist)
+canal: slack C0BSDQDMZ71 thread 1788232177.124409
+```
+
+- Flag durável: s005 (captcha). `data/human-needed-alert.json` + tabela em QUEUE.md.
+- Assist OSS: Tesseract/Buster; Ollama vision só se já estiver no cache. Sem pull. Sem solver pago.
+- Soft-fail do assist = ping humano, nunca solver pago.
+

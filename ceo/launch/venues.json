@@ -1,10 +1,10 @@
 {
   "default": {
-    "host": "hn",
-    "url": "https://news.ycombinator.com/item?id=49563492",
+    "host": "hashnode",
+    "url": "https://krauncher.hashnode.dev/there-are-two-ways-to-rent-a-gpu-i-think-there-s-a-third",
     "kind": "comment",
     "fallback": false,
-    "note": "Show HN GPU sandboxes $0.20/hr; leftoverpzero indiehackers /pulse dead; s0903 DEV.to lives (2 visit); new-account HN comment is not public GET"
+    "note": "Krauncher GPU $/task; leftoverpzero indiehackers /pulse HN-new-account dead; s0903 DEV.to lives (2 visit); Hashnode login = Vercel checkpoint"
   },
   "2026-08-31": {
     "host": "pulse-github",
@@ -39,6 +39,13 @@
     "url": "https://news.ycombinator.com/item?id=49563492",
     "kind": "comment",
     "fallback": false,
-    "note": "Show HN Agent Sandboxes GPU $0.20/hr; one honest leftover-hours line; UTM s0904; new-account hold = public GET empty; leftoverpzero indiehackers /pulse stay dead"
+    "note": "DEAD 05/09: s0904 brought 0 visit; public GET empty (new-account hold). Do not repeat new-account HN comments"
+  },
+  "2026-09-05": {
+    "host": "hashnode",
+    "url": "https://krauncher.hashnode.dev/there-are-two-ways-to-rent-a-gpu-i-think-there-s-a-third",
+    "kind": "comment",
+    "fallback": false,
+    "note": "segundo blog GPU/agent; one leftover-hours comment; UTM s0905; Hashnode login = Vercel Security Checkpoint; leftoverpzero indiehackers /pulse HN-new-account stay dead; s0903 lives"
   }
 }

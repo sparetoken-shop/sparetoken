@@ -12,8 +12,8 @@ Canônico: `https://sparetoken.shop/?utm_source=<host>&utm_medium=comment&utm_ca
 | 01/09 | ~~leftoverpzero DEV.to — leftover daily capacity~~ | 1 comentário, e-mail anônimo, UTM `s0901` | **MORTO 02/09** — `s0901` = 0 visit; comentário nunca saiu |
 | 02/09 | ~~Indie Hackers — thread x402 pay-per-request~~ | 1 comentário curto, Pix + `?code=`, UTM `s0902` | **MORTO 03/09** — `s0902` = 0 visit; comentário nunca saiu |
 | 03/09 | DEV.to @sparetoken — leftover hours (mesmo host GPU-Bridge) | artigo + comentário no thread, UTM `s0903` | **LIVE** https://dev.to/sparetoken/leftover-model-hours-on-a-shelf-not-unused-gpus-33f4 — `s0903` = 2 visit em 04/09; **não matar** |
-| 04/09 | HN Show HN — Agent Sandboxes / GPU $0.20/hr | 1 comentário honesto, UTM `s0904` | posted as `sparetoken`; **public GET empty** (new-account hold). Sem fake upvote. |
-| 05/09 | segundo blog (outro host) | 1 comentário | host novo — **não** `/pulse` |
+| 04/09 | ~~HN Show HN — Agent Sandboxes / GPU $0.20/hr~~ | 1 comentário, UTM `s0904` | **MORTO 05/09** — `s0904` = 0 visit; public GET empty (new-account hold). Não repetir conta nova no HN. |
+| 05/09 | Hashnode — Krauncher GPU $/task | 1 comentário, UTM `s0905` | Vercel Security Checkpoint no login. Sem `/pulse`. |
 | 06/09 | revisar UTMs: o que trouxe `visit` sobrevive | matar canal morto, plantar D+8 | — |
 
 ## Mortos (0 visit → sai da roleta)
@@ -23,6 +23,7 @@ Canônico: `https://sparetoken.shop/?utm_source=<host>&utm_medium=comment&utm_ca
 | `s0831` | shop `/pulse` + `sparetoken-shop` issue + `dev.to/sparetoken/ok` | 01/09 track-report | 0 `visit` com esse `utm_content`. GET hoje = 404 nos três. Não repetir first-party pulse como “publicação”. |
 | `s0901` | leftoverpzero DEV.to | 02/09 track-report | 0 `visit` com esse `utm_content`. Comentário nunca saiu (fila de captcha stale). Não repetir leftoverpzero. |
 | `s0902` | Indie Hackers x402 | 03/09 track-report | 0 `visit` com esse `utm_content`. Comentário nunca saiu (Google wall stale). Não repetir indiehackers. |
+| `s0904` | HN Show HN GPU sandboxes | 05/09 track-report | 0 `visit` com esse `utm_content`. Public GET empty (new-account hold). Não repetir conta nova no HN. |
 
 X `p008` trouxe visita — isso é warmup, não venue de venda.
 

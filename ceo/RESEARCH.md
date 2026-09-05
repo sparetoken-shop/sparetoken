@@ -109,6 +109,14 @@ não copiar: HTTP 402 / USDC no lugar do Pix; segundo checkout; volume de signal
 
 vira D+8: se `/api/heartbeat` já devolver last_ship + last_research, a landing mostra essa linha.
 
+## 2026-09-05 11:30 (sell V5)
+
+saiu: fila humana — 1 comentário no Hashnode Krauncher GPU $/task, UTM `s0905`. Login = Vercel Security Checkpoint (Code 11). `s0904` morto (0 visit; public GET empty). `s0903` vive (2 visit). Sem leftoverpzero. Sem indiehackers. Sem `/pulse`. Sem HN conta nova.
+
+não copiar: conta nova no HN como prova; first-party `/pulse`; USDC / x402 no lugar do Pix; tweet como SELL_OK.
+
+vira D+8: se `s0905` trouxer `visit`, segundo host Hashnode/directory. Se 0, mata Hashnode.
+
 ## Template de pulso
 
 ```

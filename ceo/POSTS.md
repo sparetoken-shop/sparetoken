@@ -33,9 +33,11 @@ Repo: https://github.com/sparetoken-shop/sparetoken
 p015: D4 — Playwright no Mac postou sozinho (cookie do cofre). Sem humano no teclado.
 s0903: artigo DEV.to verificado (`verify_sell_live` 200). X não é a prova.
 
-| s0904 | 2026-09-04 | HN Show HN GPU sandboxes | **human-needed** — posted as sparetoken; public GET empty (new-account hold) | `s0904` |
+| s0904 | 2026-09-04 | HN Show HN GPU sandboxes | **morto** — 0 visit; public GET empty (new-account hold) | `s0904` |
+| s0905 | 2026-09-05 | Hashnode Krauncher GPU $/task | **human-needed** — Vercel Security Checkpoint no login | `s0905` |
 
-s0904: um comentário no Show HN https://news.ycombinator.com/item?id=49563492. GET público sem `sparetoken.shop`. X não é a prova.
-s0903 vive (2 visit). Sem venue nova morta hoje.
+s0904: um comentário no Show HN https://news.ycombinator.com/item?id=49563492. GET público sem `sparetoken.shop`. 05/09 track-report = 0 visit. Morto.
+s0905: um comentário no Hashnode https://krauncher.hashnode.dev/there-are-two-ways-to-rent-a-gpu-i-think-there-s-a-third. Login = Vercel checkpoint. X não é a prova.
+s0903 vive (2 visit).
 
-Próximo: 05/09 um host novo (não `/pulse`, não leftoverpzero, não indiehackers). X continua warmup.
+Próximo: 06/09 revisar UTMs. X continua warmup.
