@@ -21,6 +21,7 @@ X **nunca** é a prova do pulso de venda.
 | p016 | 23:30 03/09 | X (warmup) | 0.2.23 — skill = short manifesto + CLI allowlist. same R$5. https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p016 | **posted** https://x.com/sparetoken/status/2095959763523641791 |
 | sale005 | 23:30 03/09 | X (celebração) | mais um bloco saiu da prateleira. R$5 · 5h. https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=sold&utm_content=sale | a colar no @sparetoken |
 | s004 | 11:30 04/09 | HN Show HN GPU sandboxes | comentário no thread tama.computer. UTM `s0904`. posted as sparetoken; public GET empty (new-account hold). Aged HN account on Mac to post the same line. | **human-needed** |
+| p017 | 23:30 04/09 | X (warmup) | 0.2.26 — public pulse stub. last ship + 7-day + last research. https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p017 | a colar no @sparetoken |
 
 Texto s004 (colar no Show HN GPU sandboxes, uma linha — conta nova ficou invisível no GET público):
 
@@ -65,6 +66,15 @@ https://sparetoken.shop/?utm_source=devto&utm_medium=comment&utm_campaign=sell&u
 ```
 
 Artigo: https://dev.to/leftoverpzero/i-pointed-my-openai-client-at-leftover-capacity-56cl
+
+Texto p017 (colar no X, cookie no Mac):
+
+```
+night pulse. the shop now speaks the 7-day out loud.
+GET /api/heartbeat — last ship, today's line, last research.
+same R$5 / 5h. no second till. no 402.
+https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p017
+```
 
 Texto p016 (colar no X, cookie no Mac):
 

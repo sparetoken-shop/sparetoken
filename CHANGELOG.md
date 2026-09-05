@@ -14,6 +14,15 @@ Versionamento: [SemVer](https://semver.org/lang/pt-BR/).
 - Fechar chat anônimo e SSH sem senha (ver ROADMAP)
 - Charge cripto (USDT / OSDT) na mesma conta.vc — ver ROADMAP, sem segundo caixa
 
+## [0.2.26] — 2026-09-04
+
+Public pulse stub. Last ship, 7-day, last research.
+
+### Added
+
+- `GET /api/heartbeat` returns last ship, the current 7-day row, and the last research line
+- Same R$5 / 5h SKU. No pay.py. No visitor prompt. No PII
+
 ## [0.2.25] — 2026-09-04
 
 Honest international pay copy. Fixed USDT mint still pending.

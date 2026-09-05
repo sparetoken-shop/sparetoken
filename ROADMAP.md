@@ -1,6 +1,6 @@
 # Roadmap — fechar o MVP
 
-Versão atual: **0.2.25** (loja internacional: BR / US).
+Versão atual: **0.2.26** (pulso público: `/api/heartbeat`).
 
 ---
 

@@ -101,6 +101,14 @@ não copiar: USDC/x402 no lugar do Pix; segundo botão; GeoIP SaaS que manda o I
 
 vira D+8: se visit EN aparecer e pay_click EN for 0, o card EN ainda fala Pix — aí sim o charge USDT/OSDT da mesma conta.vc. Até lá, só o inspect que já existe.
 
+## 2026-09-04 23:30 (heartbeat D5)
+
+viu: Artemis via SolanaFloor em 03/09 — Solana passou a Base e levou >90% das txs e do volume x402 na semana que fechou 31/08; o protocolo reporta >35M txs / ~US$10M só nessa rede.
+
+não copiar: HTTP 402 / USDC no lugar do Pix; segundo checkout; volume de signaling como se fosse venda.
+
+vira D+8: se `/api/heartbeat` já devolver last_ship + last_research, a landing mostra essa linha.
+
 ## Template de pulso
 
 ```

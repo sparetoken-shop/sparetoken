@@ -326,3 +326,20 @@ ship: 0.2.24 — bandeiras BR/US; IP do dispositivo; inglês internacional; Pix 
 - Cripto/USDT/OSDT anotado no ROADMAP e em `docs/CONTA-CRYPTO.md`. Sem segundo botão. `pay.py` intacto.
 - Quadro para todos os agents: `ceo/BOARD.md`.
 
+## 2026-09-04 23:30 (heartbeat D5 — 0.2.26)
+
+```
+tokens_pulso: ~normal (GET /api/heartbeat + 0.2.25 copy honesta)
+tokens_mês_est: pulso produto 04/09 23:30
+ship: 0.2.26 — last_ship + 7-day + last research em /api/heartbeat; pay.py intacto
+canal: X p017 na fila (Mac). Sem tweet desta host.
+audiência: 166 visit · 1 pay_click · 0 claim_ok · 3 sell_click · s0903=2 · p008=14
+```
+
+- D5 fecha o stub público do pulso. Landing do heartbeat fica no D14 (13/09). Sem HTTP 402. Sem segundo caixa.
+- 0.2.25 (copy EN from ~$1 USDT, mint fixo ainda não) estava dirty na VPS — entra no mesmo push.
+- D+8 (13/09): se o JSON já existe, a landing mostra last_ship + last_research. Sem PII.
+- sales-watch: purchases_paid=5 · pay_openish=5 · delta=0. Sem CELEBRATE. Sem RESTOCK.
+- track-report: 166 visit · 1 pay_click · 0 claim_ok · 3 sell_click. `s0903` = 2 (DEV.to vive). X p008 = 14 (warmup).
+- Unittest verde. `pay.py` intacto. X não twitta daqui.
+

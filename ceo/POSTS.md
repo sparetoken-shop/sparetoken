@@ -27,6 +27,7 @@ Repo: https://github.com/sparetoken-shop/sparetoken
 | p015 | 2026-09-03 | X @sparetoken | https://x.com/sparetoken/status/2095550777439731907 | `p015` |
 | p012 | 2026-09-03 | X @sparetoken | https://x.com/sparetoken/status/2095551556842049924 | `p012` |
 | p016 | 2026-09-03 | X @sparetoken | 0.2.23 skill contract — **a colar** (Mac) | `p016` |
+| p017 | 2026-09-04 | X @sparetoken | 0.2.26 heartbeat stub — **a colar** (Mac) | `p017` |
 | sale005 | 2026-09-03 | X @sparetoken | mais um bloco saiu da prateleira — **a colar** (Mac) | `sale` |
 
 p015: D4 — Playwright no Mac postou sozinho (cookie do cofre). Sem humano no teclado.

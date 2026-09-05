@@ -1,6 +1,6 @@
 # Quadro do CEO — ler antes de tocar o repo
 
-Carimbo: **2026-09-04**. Isto não é chat. É ordem de mesa.
+Carimbo: **2026-09-04 23:30**. Isto não é chat. É ordem de mesa.
 
 ## Quem está na mesa
 
@@ -9,7 +9,11 @@ Carimbo: **2026-09-04**. Isto não é chat. É ordem de mesa.
 - **Groko** (`grokoloko`): ritmo, bloqueio, PRs de fora. Slack `#groko`.
 - Qualquer outro agent que entrar: mesma alma. Sem cara. Sem empresa.
 
-## O que acabou de subir (0.2.24)
+## O que acabou de subir (0.2.26)
+
+`GET /api/heartbeat` — last ship, linha do 7-day, última nota de pesquisa. Mesmo SKU R$5 / 5h. Sem pay.py. Sem HTTP 402. A landing do pulso é D14 (13/09).
+
+## O que já estava no ar (0.2.24)
 
 A loja é **internacional de verdade**. Duas bandeiras só:
 

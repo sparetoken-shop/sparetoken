@@ -18,6 +18,7 @@ from urllib.parse import parse_qs, urlparse
 import chat
 import clock
 import credits
+import heartbeat_api
 import i18n
 import invite
 import marketplace
@@ -275,6 +276,9 @@ class Handler(BaseHTTPRequestHandler):
                     "ssh": "ssh agent-guest@wdtsot.shop",
                 },
             )
+            return
+        if path == "/api/heartbeat":
+            self._json(200, {"ok": True, "service": "sparetoken", **heartbeat_api.public_pulse()})
             return
         if path == "/api/locale":
             info = self._locale()
