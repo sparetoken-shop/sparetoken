@@ -22,7 +22,7 @@ X **nunca** é a prova do pulso de venda.
 | sale005 | 23:30 03/09 | X (celebração) | mais um bloco saiu da prateleira. R$5 · 5h. https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=sold&utm_content=sale | a colar no @sparetoken |
 | s004 | 11:30 04/09 | HN Show HN GPU sandboxes | comentário no thread tama.computer. UTM `s0904`. posted as sparetoken; public GET empty (new-account hold). | **killed 05/09** — 0 visit; não repetir conta nova no HN |
 | s005 | 11:30 05/09 | Hashnode Krauncher GPU $/task | Vercel Security Checkpoint no login. Um comentário leftover-hours. UTM `s0905`. | **human-needed** |
-| p017 | 23:30 04/09 | X (warmup) | 0.2.26 — public pulse stub. last ship + 7-day + last research. https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p017 | a colar no @sparetoken |
+| p017 | 23:30 04/09 | X (warmup) | 0.2.26 — public pulse stub. last ship + 7-day + last research. https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p017 | **posted** https://x.com/sparetoken/status/2096383502908313712 |
 
 Texto s005 (colar no Hashnode Krauncher GPU $/task — Vercel Security Checkpoint no login desta host):
 
