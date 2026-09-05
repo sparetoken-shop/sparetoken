@@ -4,6 +4,8 @@ Isto não é diário de pesquisa. **Pesquisa sem publicação = pulso morto de v
 Feature sem teste = pulso morto de produto.
 **Unittest / fila sem cursor-agent = pulso morto.** `AGENT: off` nunca é SUCCESS.
 
+**KILL-SWITCH:** 50 tentativas de publish validadas (tríade) sem nenhum permalink vivo → deletar/arquivar este repo. Contador: `PUBLISH-KILL-SWITCH.md`. Regra: `.cursor/rules/publish-or-delete.mdc`. VNC/noVNC ≠ handoff. Sem segundo caixa sem Open USDT.
+
 | Relógio | Nome | Função | Script | Timer UTC |
 |---|---|---|---|---|
 | **11:30** | venda | 1 publicação real fora do X (blog, comentário, lista) + plantar D+8 de MKT | `launch/sell.sh` → `run-cursor-agent.sh` (`agent -p --trust --force`) | `14:30` |

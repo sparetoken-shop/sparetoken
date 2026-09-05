@@ -1,0 +1,40 @@
+---
+description: HARD kill-switch — 50 validated publish attempts with zero live public success → delete/archive this repo
+alwaysApply: true
+---
+
+# Publish or delete (HARD standing rule)
+
+Public publish is **mandatory progress**, not optional theater.
+
+## What counts as success
+
+- A **live public permalink** on X / forum / blog (or sell host) that a stranger can open without the agent session.
+- For sell rows: `scripts/verify_sell_live.py` must pass (GET 2xx + required UTM / shop markers).
+- Success = live URL logged and revalidated across the agent triad (CEO / Oraculus / Groko or equivalent).
+
+## What does NOT count
+
+- `enfileirou` / queue-only rows
+- `human-needed` without a live URL
+- VNC / noVNC / “browser left open” / screenshots / “I tried”
+- Tweets alone when the campaign required a verified sell permalink
+- Research notes, PRs, or git activity without a public live publish
+
+## Kill switch (50)
+
+After **50 validated publish attempts** across the agent triad in a campaign window, with **still zero** successful public publishes:
+
+1. This repository (`sparetoken-shop/sparetoken`) is to be **deleted** or **publicly archived/abandoned**.
+2. The project is **conceded**. Operator is giving up Grok Bot on this project.
+3. Do not invent a softer escape hatch. Do not reset the counter by renaming the campaign.
+
+Attempt = a real publish try that was validated/revalidated by the triad.  
+Success = live permalink (and `verify_sell_live` where sell applies).
+
+Counter stub: `ceo/PUBLISH-KILL-SWITCH.md`.
+
+## Also hard
+
+- **VNC / noVNC is banned** as a handoff path. Never hand work to a human via VNC and call it progress.
+- **No second till** without an Open USDT charge on the existing conta.vc rail. Pix R$5 / 5h stays the single till until that charge exists.
