@@ -89,6 +89,58 @@ class HeartbeatParseTest(unittest.TestCase):
             self.assertNotIn("template", note["when"].lower())
 
 
+class HeartbeatPublicLineTest(unittest.TestCase):
+    def test_public_line_strips_email_and_wallet(self):
+        raw = "viu: hello test@example.com paid wdtsot-7K2M on the shelf"
+        out = heartbeat_api.public_line(raw)
+        self.assertNotIn("@", out)
+        self.assertNotIn("7K2M", out)
+        self.assertIn("wdtsot-XXXX", out)
+        self.assertFalse(out.lower().startswith("viu:"))
+        self.assertIn("hello", out)
+
+    def test_apply_html_fills_ship_and_research(self):
+        with tempfile.TemporaryDirectory() as raw:
+            root = _fixture(Path(raw))
+            html = (
+                '<p class="pulso-heartbeat" id="pulso-heartbeat" hidden>'
+                '<strong data-pulse="ship"></strong>'
+                '<span data-pulse="research"></span>'
+                "</p>"
+            )
+            out = heartbeat_api.apply_html(html, root)
+            self.assertIn("0.2.26", out)
+            self.assertIn("pulse stub", out.lower())
+            self.assertIn("Solana", out)
+            self.assertIn("</strong>", out)
+            self.assertIn("</span>", out)
+            self.assertRegex(
+                out,
+                r'<strong data-pulse="ship">[^<]+</strong>',
+            )
+            self.assertRegex(
+                out,
+                r'<span data-pulse="research">[^<]+</span>',
+            )
+            self.assertNotRegex(out, r'id="pulso-heartbeat"[^>]*\bhidden\b')
+            self.assertNotIn("@", out)
+
+    def test_apply_html_drops_email_from_research(self):
+        with tempfile.TemporaryDirectory() as raw:
+            root = _fixture(Path(raw))
+            (root / "ceo" / "RESEARCH.md").write_text(
+                "# Inteligência\n\n"
+                "## 2026-09-05 23:30 (heartbeat)\n\n"
+                "viu: Gate402 mailed ops@example.com about USDC.\n",
+                encoding="utf-8",
+            )
+            html = '<span data-pulse="research">x</span>'
+            out = heartbeat_api.apply_html(html, root)
+            self.assertNotIn("example.com", out)
+            self.assertNotIn("ops@", out)
+            self.assertIn("Gate402", out)
+
+
 class HeartbeatContractTest(unittest.TestCase):
     def test_sku_stays_five_reais_five_hours(self):
         self.assertEqual(heartbeat_api.SKU_BRL, 5)
@@ -122,6 +174,9 @@ class HeartbeatSurfaceTest(unittest.TestCase):
         health = SERVER.index('path in {"/api/health", "/health"}')
         pulse = SERVER.index('path == "/api/heartbeat"')
         self.assertLess(health, pulse)
+
+    def test_landing_html_is_painted_from_the_pulse(self):
+        self.assertIn("heartbeat_api.apply_html", SERVER)
 
 
 if __name__ == "__main__":

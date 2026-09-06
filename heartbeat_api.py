@@ -1,6 +1,7 @@
-"""Public pulse stub: last ship, current 7-day line, last research.
+"""Public pulse: last ship, current 7-day line, last research.
 
 Same R$5 / 5h SKU. No pay rail. No visitor prompt. No PII.
+Landing paints last_ship + last_research under the tally.
 """
 
 from __future__ import annotations
@@ -17,6 +18,16 @@ SKU_HOURS = 5
 _SHIP_HEAD = re.compile(r"^## \[(\d+\.\d+\.\d+)\] — (\d{4}-\d{2}-\d{2})\s*$", re.M)
 _MD_HEAD = re.compile(r"^## (.+?)\s*$", re.M)
 _DAY_ROW = re.compile(r"^\| (D\d+[a-z]?) \|")
+_EMAIL = re.compile(r"\b\S+@\S+\.\S+\b")
+_WALLET = re.compile(r"\bwdtsot-[A-Za-z0-9]{3,16}\b", re.I)
+_LEAD = re.compile(r"^(viu|saiu|data):\s*", re.I)
+_PULSE_SLOT = re.compile(
+    r'(?P<open><(?:span|strong)[^>]*\bdata-pulse="(?P<key>ship|research)"[^>]*>)'
+    r'(?P<inner>.*?)'
+    r'(?P<close></(?:span|strong)>)',
+    re.S,
+)
+_LINE_MAX = 180
 
 
 def _read(root: Path, rel: str) -> str:
@@ -128,13 +139,78 @@ def last_research(root: Path | None = None) -> dict[str, str]:
     return {"when": "", "line": ""}
 
 
+def public_line(raw: str) -> str:
+    text = (raw or "").strip()
+    text = _LEAD.sub("", text)
+    text = _EMAIL.sub("", text)
+    text = _WALLET.sub("wdtsot-XXXX", text)
+    text = re.sub(r"\s+", " ", text).strip(" ·—-")
+    if len(text) > _LINE_MAX:
+        cut = text[: _LINE_MAX - 1]
+        if " " in cut:
+            cut = cut.rsplit(" ", 1)[0]
+        text = cut + "…"
+    return text
+
+
+def ship_display(ship: dict[str, str]) -> str:
+    version = (ship.get("version") or "").strip()
+    title = (ship.get("title") or "").strip()
+    if version and title:
+        return f"{version} — {title}"
+    return version or title
+
+
 def public_pulse(root: Path | None = None) -> dict[str, Any]:
     root = root or ROOT
+    ship = last_ship(root)
+    research = last_research(root)
     return {
         "version": _version(root),
         "sku_brl": SKU_BRL,
         "sku_hours": SKU_HOURS,
-        "last_ship": last_ship(root),
+        "last_ship": {
+            "version": ship["version"],
+            "date": ship["date"],
+            "title": public_line(ship["title"]),
+        },
         "seven_day": seven_day(root),
-        "last_research": last_research(root),
+        "last_research": {
+            "when": public_line(research["when"]),
+            "line": public_line(research["line"]),
+        },
     }
+
+
+def _escape(text: str) -> str:
+    return (
+        text.replace("&", "&amp;")
+        .replace("<", "&lt;")
+        .replace(">", "&gt;")
+        .replace('"', "&quot;")
+    )
+
+
+def apply_html(html: str, root: Path | None = None) -> str:
+    pulse = public_pulse(root)
+    filled = {
+        "ship": ship_display(pulse["last_ship"]),
+        "research": pulse["last_research"].get("line") or "",
+    }
+
+    def _slot(match: re.Match[str]) -> str:
+        key = match.group("key")
+        text = filled.get(key) or ""
+        if not text:
+            return match.group(0)
+        return f"{match.group('open')}{_escape(text)}{match.group('close')}"
+
+    out = _PULSE_SLOT.sub(_slot, html)
+    if filled["ship"] or filled["research"]:
+        out = re.sub(
+            r'(<p\b[^>]*\bid="pulso-heartbeat"[^>]*)\s+hidden\b',
+            r"\1",
+            out,
+            count=1,
+        )
+    return out

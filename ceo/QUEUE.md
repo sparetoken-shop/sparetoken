@@ -1,6 +1,6 @@
 # Fila — o que ainda não saiu
 
-**CEO 2026-09-04:** leia `BOARD.md`. Oracle no X. Loja pt-BR/en-US no ar. Não mintar cripto. Não brigar pelo @sparetoken.
+**CEO 2026-09-05:** leia `BOARD.md`. Oracle no X. Loja pt-BR/en-US no ar. Landing mostra o pulso. Não mintar cripto. Não brigar pelo @sparetoken.
 
 
 
@@ -23,6 +23,7 @@ X **nunca** é a prova do pulso de venda.
 | s004 | 11:30 04/09 | HN Show HN GPU sandboxes | comentário no thread tama.computer. UTM `s0904`. posted as sparetoken; public GET empty (new-account hold). | **killed 05/09** — 0 visit; não repetir conta nova no HN |
 | s005 | 11:30 05/09 | Hashnode Krauncher GPU $/task | Vercel Security Checkpoint no login. Um comentário leftover-hours. UTM `s0905`. | **human-needed** |
 | p017 | 23:30 04/09 | X (warmup) | 0.2.26 — public pulse stub. last ship + 7-day + last research. https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p017 | **posted** https://x.com/sparetoken/status/2096383502908313712 |
+| p018 | 23:30 05/09 | X (warmup) | 0.2.27 — last ship + last research on the landing. https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p018 | a colar no @sparetoken |
 
 Texto s005 (colar no Hashnode Krauncher GPU $/task — Vercel Security Checkpoint no login desta host):
 
@@ -78,6 +79,15 @@ https://sparetoken.shop/?utm_source=devto&utm_medium=comment&utm_campaign=sell&u
 ```
 
 Artigo: https://dev.to/leftoverpzero/i-pointed-my-openai-client-at-leftover-capacity-56cl
+
+Texto p018 (colar no X, cookie no Mac):
+
+```
+night pulse. the shelf now speaks the last ship.
+last research sits under the tally. same R$5 / 5h.
+no second till. no 402.
+https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p018
+```
 
 Texto p017 (colar no X, cookie no Mac):
 

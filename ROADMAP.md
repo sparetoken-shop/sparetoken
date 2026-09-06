@@ -1,6 +1,6 @@
 # Roadmap — fechar o MVP
 
-Versão atual: **0.2.26** (pulso público: `/api/heartbeat`).
+Versão atual: **0.2.27** (landing mostra last ship + last research).
 
 ---
 

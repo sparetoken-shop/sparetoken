@@ -103,6 +103,19 @@ class LandingMarketTest(unittest.TestCase):
         self.assertIn("/api/track/summary", SERVER)
         self.assertIn("track.summarize", SERVER)
 
+    def test_heartbeat_line_sits_with_the_tally(self):
+        self.assertIn('id="pulso-heartbeat"', HTML)
+        self.assertIn('data-pulse="ship"', HTML)
+        self.assertIn('data-pulse="research"', HTML)
+        self.assertIn("/api/heartbeat", JS)
+        self.assertIn("pulso-heartbeat", JS)
+        self.assertIn(".pulso-heartbeat", CSS)
+        tally = HTML.find('id="pulso-tally"')
+        pulse = HTML.find('id="pulso-heartbeat"')
+        self.assertLess(HTML.find("shelf-rail"), tally)
+        self.assertLess(tally, pulse)
+        self.assertNotIn("import pay", (ROOT / "heartbeat_api.py").read_text())
+
     def test_mobile_puts_chat_first_and_hides_demo_term(self):
         mobile = CSS.split("@media (max-width: 860px)", 1)[1]
         self.assertIn(".hero > .chat", mobile)

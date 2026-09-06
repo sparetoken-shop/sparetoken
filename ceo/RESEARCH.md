@@ -117,6 +117,14 @@ não copiar: conta nova no HN como prova; first-party `/pulse`; USDC / x402 no l
 
 vira D+8: se `s0905` trouxer `visit`, segundo host Hashnode/directory. Se 0, mata Hashnode.
 
+## 2026-09-05 23:30 (heartbeat D5)
+
+viu: getdeploying recotou em 06/09 UTC (05/09 BRT) Thunder Compute H100 a $3.20/hr (preço fixo) e Vast.ai H100 a $1.73/hr (host P2P). Os dois cobram hora de placa, não hora de modelo.
+
+não copiar: hora de H100 no lugar do bloco R$5/5h; USDC / HTTP 402 no lugar do Pix; segundo checkout.
+
+vira D+8: se a linha do pulso na landing não moveu visit, ela fica sob o tally. Sem hero. Sem segundo caixa.
+
 ## Template de pulso
 
 ```

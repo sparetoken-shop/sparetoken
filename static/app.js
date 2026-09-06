@@ -791,6 +791,25 @@ fetch("/api/track/summary", { credentials: "same-origin" })
   })
   .catch(() => {});
 
+function fillPulse(data) {
+  const box = document.getElementById("pulso-heartbeat");
+  if (!box || !data || !data.ok) return;
+  const ship = data.last_ship || {};
+  const research = data.last_research || {};
+  const shipLine = [ship.version, ship.title].filter(Boolean).join(" — ");
+  const researchLine = research.line || "";
+  const shipEl = box.querySelector('[data-pulse="ship"]');
+  const researchEl = box.querySelector('[data-pulse="research"]');
+  if (shipEl && shipLine) shipEl.textContent = shipLine;
+  if (researchEl && researchLine) researchEl.textContent = researchLine;
+  if (shipLine || researchLine) box.hidden = false;
+}
+
+fetch("/api/heartbeat", { credentials: "same-origin" })
+  .then((res) => res.json())
+  .then(fillPulse)
+  .catch(() => {});
+
 captureLanding();
 if (params.get("code") && claimCode && !claimCode.value) {
   claimCode.value = params.get("code");

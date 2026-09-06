@@ -14,6 +14,16 @@ Versionamento: [SemVer](https://semver.org/lang/pt-BR/).
 - Fechar chat anônimo e SSH sem senha (ver ROADMAP)
 - Charge cripto (USDT / OSDT) na mesma conta.vc — ver ROADMAP, sem segundo caixa
 
+## [0.2.27] — 2026-09-05
+
+Landing pulse. Last ship and last research on the shelf.
+
+### Added
+
+- Landing `#pulso-heartbeat` shows last ship + last research under the tally
+- First paint comes from `heartbeat_api.apply_html`; JS refreshes `/api/heartbeat`
+- Public line strips e-mail and wallet codes. Same R$5 / 5h. No pay.py. No HTTP 402
+
 ## [0.2.26] — 2026-09-04
 
 Public pulse stub. Last ship, 7-day, last research.

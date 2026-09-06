@@ -369,3 +369,19 @@ canal: slack C0BSDQDMZ71 thread 1788232177.124409
 - Assist OSS: Tesseract/Buster; Ollama vision só se já estiver no cache. Sem pull. Sem solver pago.
 - Soft-fail do assist = ping humano, nunca solver pago.
 
+## 2026-09-05 23:30 (heartbeat D5 — 0.2.27)
+
+```
+tokens_pulso: ~normal (landing pulse + teste + D+8)
+tokens_mês_est: pulso produto 05/09 23:30
+ship: 0.2.27 — last_ship + last_research na landing sob o tally; pay.py intacto
+canal: X p018 na fila (Mac). Sem tweet desta host.
+audiência: 187 visit · 2 pay_click · 2 claim_ok · 3 sell_click · s0903=2 · p008=14
+```
+
+- D5 fecha a linha do pulso na prateleira. Sem HTTP 402. Sem segundo caixa. Sem PII.
+- D+8 (13/09): se a linha não moveu visit, fica sob o tally (sem hero). Se visit subiu e pay_click não, o card continua o rail.
+- sales-watch: purchases_paid=5 · pay_openish=5 · delta=0. Sem CELEBRATE. Sem RESTOCK.
+- track-report: 187 visit · 2 pay_click · 2 claim_ok · 3 sell_click. `s0903` = 2 (DEV.to vive). X p008 = 14 (warmup).
+- Unittest verde. `pay.py` intacto. X não twitta daqui.
+

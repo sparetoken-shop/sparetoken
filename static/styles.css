@@ -634,6 +634,22 @@ h2 {
   color: var(--ink-soft);
   font-variant-numeric: tabular-nums;
 }
+.pulso-heartbeat {
+  margin: 8px 0 0;
+  font-size: 13px;
+  letter-spacing: 0.02em;
+  color: var(--ink-faint);
+  max-width: 46em;
+}
+.pulso-heartbeat [data-pulse] {
+  color: var(--ink-soft);
+}
+.pulso-heartbeat strong[data-pulse] {
+  font-weight: 600;
+}
+.pulso-heartbeat .pulse-dot {
+  margin: 0 0.35em;
+}
 .price-top {
   display: flex;
   justify-content: space-between;

@@ -767,7 +767,8 @@ class Handler(BaseHTTPRequestHandler):
         locale_cookie = None
         if candidate.suffix == ".html":
             info = self._locale()
-            data = i18n.apply_html(data.decode("utf-8"), info["locale"]).encode("utf-8")
+            painted = i18n.apply_html(data.decode("utf-8"), info["locale"])
+            data = heartbeat_api.apply_html(painted).encode("utf-8")
             locale_cookie = i18n.cookie_header(info["locale"], secure=bool(self._cookie_secure()))
         ctype = {
             ".html": "text/html; charset=utf-8",
