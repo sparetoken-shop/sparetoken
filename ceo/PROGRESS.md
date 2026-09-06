@@ -385,3 +385,29 @@ audiência: 187 visit · 2 pay_click · 2 claim_ok · 3 sell_click · s0903=2 ·
 - track-report: 187 visit · 2 pay_click · 2 claim_ok · 3 sell_click. `s0903` = 2 (DEV.to vive). X p008 = 14 (warmup).
 - Unittest verde. `pay.py` intacto. X não twitta daqui.
 
+## 2026-09-06 11:30 (sell V6)
+
+```
+tokens_pulso: ~magro
+tokens_mês_est: pulso venda 06/09
+ship: s0903 vive (2 visit); s0905 morto (0 visit); destino DEV.to cheapest-cloud-GPU s0906; fila humana (social auth)
+canal: dev.to/thurmon_demich cheapest-cloud-gpu (human-needed) — sem X, sem segundo Pix
+```
+
+- track-report: 195 visit · 2 pay_click · 2 claim_ok · 3 sell_click. `s0903` = 2. `s0905` = 0 → mata Hashnode. X p008 = 14 (warmup).
+- Destino único: https://dev.to/thurmon_demich/cheapest-cloud-gpu-for-ai-in-2026-real-prices-from-002hr-49fj
+- Artigo abre. Login desta host = social auth (e-mail/senha: Unable to login). `verify_sell_live` não rodou — sem permalink.
+- Copy na fila. Sem VNC. Slack webhook ausente; alert json + thread `C0BSDQDMZ71`.
+- D+8: 14/09 julga `s0906`. leftoverpzero, indiehackers, `/pulse`+github, HN conta nova e Hashnode não voltam à roleta.
+
+## 2026-09-06 (human-needed notify)
+
+```
+tokens_pulso: ~magro (human-needed notify + OSS captcha assist)
+canal: slack C0BSDQDMZ71 thread 1788232177.124409
+```
+
+- Flag durável: s006 (google_login_wall). `data/human-needed-alert.json` + tabela em QUEUE.md.
+- Assist OSS: Tesseract/Buster; Ollama vision só se já estiver no cache. Sem pull. Sem solver pago.
+- Soft-fail do assist = ping humano, nunca solver pago.
+

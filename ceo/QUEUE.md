@@ -21,11 +21,23 @@ X **nunca** é a prova do pulso de venda.
 | p016 | 23:30 03/09 | X (warmup) | 0.2.23 — skill = short manifesto + CLI allowlist. same R$5. https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p016 | **posted** https://x.com/sparetoken/status/2095959763523641791 |
 | sale005 | 23:30 03/09 | X (celebração) | mais um bloco saiu da prateleira. R$5 · 5h. https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=sold&utm_content=sale | a colar no @sparetoken |
 | s004 | 11:30 04/09 | HN Show HN GPU sandboxes | comentário no thread tama.computer. UTM `s0904`. posted as sparetoken; public GET empty (new-account hold). | **killed 05/09** — 0 visit; não repetir conta nova no HN |
-| s005 | 11:30 05/09 | Hashnode Krauncher GPU $/task | Vercel Security Checkpoint no login. Um comentário leftover-hours. UTM `s0905`. | **human-needed** |
+| s005 | 11:30 05/09 | Hashnode Krauncher GPU $/task | Vercel Security Checkpoint no login. Um comentário leftover-hours. UTM `s0905`. | **killed 06/09** — 0 visit; comentário nunca saiu |
+| s006 | 11:30 06/09 | DEV.to cheapest-cloud-GPU | Social auth login wall nesta host. Um comentário leftover-hours. UTM `s0906`. | **human-needed** |
 | p017 | 23:30 04/09 | X (warmup) | 0.2.26 — public pulse stub. last ship + 7-day + last research. https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p017 | **posted** https://x.com/sparetoken/status/2096383502908313712 |
 | p018 | 23:30 05/09 | X (warmup) | 0.2.27 — last ship + last research on the landing. https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p018 | a colar no @sparetoken |
 
-Texto s005 (colar no Hashnode Krauncher GPU $/task — Vercel Security Checkpoint no login desta host):
+Texto s006 (colar no DEV.to cheapest-cloud-GPU — social auth login wall nesta host):
+
+```
+Same leftover, smaller shelf: unused model hours, not unused GPUs.
+Hourly GPU rent is a wall. Pix of one step. Invite = the same block code (?code=).
+R$5 · 5h · 4.6 High Fast. Not a company.
+https://sparetoken.shop/?utm_source=devto&utm_medium=comment&utm_campaign=sell&utm_content=s0906
+```
+
+Artigo: https://dev.to/thurmon_demich/cheapest-cloud-gpu-for-ai-in-2026-real-prices-from-002hr-49fj
+
+Texto s005 (arquivo — Hashnode morto, não colar):
 
 ```
 Same leftover, smaller shelf: unused model hours, not unused GPUs.
@@ -149,4 +161,4 @@ Silent human-needed is dead. Pulse writes this table **and** `data/human-needed-
 
 | stamped | id | pulse | reason | slack |
 |---|---|---|---|---|
-| 2026-09-05 | s005 | 11:30 05/09 | captcha | alert json + thread ping |
+| 2026-09-06 | s006 | 11:30 06/09 | google_login_wall | alert json + thread ping |

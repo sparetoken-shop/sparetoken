@@ -1,10 +1,10 @@
 {
   "default": {
-    "host": "hashnode",
-    "url": "https://krauncher.hashnode.dev/there-are-two-ways-to-rent-a-gpu-i-think-there-s-a-third",
+    "host": "devto",
+    "url": "https://dev.to/thurmon_demich/cheapest-cloud-gpu-for-ai-in-2026-real-prices-from-002hr-49fj",
     "kind": "comment",
     "fallback": false,
-    "note": "Krauncher GPU $/task; leftoverpzero indiehackers /pulse HN-new-account dead; s0903 DEV.to lives (2 visit); Hashnode login = Vercel checkpoint"
+    "note": "surviving host DEV.to; GPU $/hr article; leftoverpzero indiehackers /pulse HN-new-account Hashnode dead; s0903 lives (2 visit); login = social auth"
   },
   "2026-08-31": {
     "host": "pulse-github",
@@ -46,6 +46,13 @@
     "url": "https://krauncher.hashnode.dev/there-are-two-ways-to-rent-a-gpu-i-think-there-s-a-third",
     "kind": "comment",
     "fallback": false,
-    "note": "segundo blog GPU/agent; one leftover-hours comment; UTM s0905; Hashnode login = Vercel Security Checkpoint; leftoverpzero indiehackers /pulse HN-new-account stay dead; s0903 lives"
+    "note": "DEAD 06/09: s0905 brought 0 visit; Hashnode comment never posted (Vercel Security Checkpoint). Do not repeat Hashnode"
+  },
+  "2026-09-06": {
+    "host": "devto",
+    "url": "https://dev.to/thurmon_demich/cheapest-cloud-gpu-for-ai-in-2026-real-prices-from-002hr-49fj",
+    "kind": "comment",
+    "fallback": false,
+    "note": "surviving host after UTM review; one leftover-hours comment on cheapest-cloud-GPU; UTM s0906; login = social auth; leftoverpzero indiehackers /pulse HN-new-account Hashnode stay dead; s0903 lives"
   }
 }

@@ -9,7 +9,7 @@ Meta mês 1: **10 vendas pelo bot**. Sem clique, este quadro é teatro.
 | V2 | 02/09 | 1 comentário IH x402 `s0902` (Google = humano) | **10/09:** indiehackers já morto em 03/09 (`s0902` = 0 visit). Não reabrir. |
 | V3 | 03/09 | artigo DEV.to `s0903` verificado | **11/09:** se `s0903` trouxe `visit`, segundo host GPU/agent. Se 0, mata DEV.to artigo. Sem leftoverpzero. Sem indiehackers. Sem `/pulse`. |
 | V4 | 04/09 | 1 comentário HN Show HN GPU `s0904` (public GET empty) | **12/09:** `s0904` já morto em 05/09 (0 visit; new-account hold). Não reabrir HN com conta nova. `s0903` vive. |
-| V5 | 05/09 | 1 comentário Hashnode Krauncher `s0905` (Vercel checkpoint = humano) | **13/09:** se `s0905` trouxe `visit`, segundo host Hashnode/directory. Se 0, mata Hashnode. Sem leftoverpzero. Sem indiehackers. Sem `/pulse`. Sem HN conta nova. `s0903` vive. |
-| V6 | 06/09 | matar canal morto | V13: roleta nova escrita pelo próprio pulso |
+| V5 | 05/09 | 1 comentário Hashnode Krauncher `s0905` (Vercel checkpoint = humano) | **13/09:** `s0905` já morto em 06/09 (0 visit; comentário nunca saiu). Não reabrir Hashnode. `s0903` vive. |
+| V6 | 06/09 | 1 comentário DEV.to cheapest-cloud-GPU `s0906` (social login = humano); `s0905` morto | **14/09:** se `s0906` trouxe `visit`, segundo artigo GPU-price no DEV.to. Se 0, mata esse thread — não o artigo `s0903`. Sem leftoverpzero. Sem indiehackers. Sem `/pulse`. Sem HN conta nova. Sem Hashnode. |
 
 X agressivo **não** entra nesta tabela até warmup.

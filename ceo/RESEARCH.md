@@ -125,6 +125,14 @@ não copiar: hora de H100 no lugar do bloco R$5/5h; USDC / HTTP 402 no lugar do 
 
 vira D+8: se a linha do pulso na landing não moveu visit, ela fica sob o tally. Sem hero. Sem segundo caixa.
 
+## 2026-09-06 11:30 (sell V6)
+
+saiu: fila humana — 1 comentário no DEV.to cheapest-cloud-GPU ($/hr Vast.ai), UTM `s0906`. Login = social auth (e-mail/senha recusou). `s0905` morto (0 visit; comentário nunca saiu). `s0903` vive (2 visit). Sem leftoverpzero. Sem indiehackers. Sem `/pulse`. Sem HN conta nova. Sem Hashnode.
+
+não copiar: Hashnode; conta nova no HN; first-party `/pulse`; USDC / x402 no lugar do Pix; tweet como SELL_OK.
+
+vira D+8: se `s0906` trouxer `visit`, segundo artigo GPU-price no DEV.to. Se 0, mata esse thread — não o artigo `s0903`.
+
 ## Template de pulso
 
 ```

@@ -35,10 +35,12 @@ p015: D4 — Playwright no Mac postou sozinho (cookie do cofre). Sem humano no t
 s0903: artigo DEV.to verificado (`verify_sell_live` 200). X não é a prova.
 
 | s0904 | 2026-09-04 | HN Show HN GPU sandboxes | **morto** — 0 visit; public GET empty (new-account hold) | `s0904` |
-| s0905 | 2026-09-05 | Hashnode Krauncher GPU $/task | **human-needed** — Vercel Security Checkpoint no login | `s0905` |
+| s0905 | 2026-09-05 | Hashnode Krauncher GPU $/task | **morto** — 0 visit; comentário nunca saiu | `s0905` |
+| s0906 | 2026-09-06 | DEV.to cheapest-cloud-GPU | **human-needed** — social auth no login desta host | `s0906` |
 
 s0904: um comentário no Show HN https://news.ycombinator.com/item?id=49563492. GET público sem `sparetoken.shop`. 05/09 track-report = 0 visit. Morto.
-s0905: um comentário no Hashnode https://krauncher.hashnode.dev/there-are-two-ways-to-rent-a-gpu-i-think-there-s-a-third. Login = Vercel checkpoint. X não é a prova.
+s0905: um comentário no Hashnode https://krauncher.hashnode.dev/there-are-two-ways-to-rent-a-gpu-i-think-there-s-a-third. 06/09 track-report = 0 visit. Morto.
+s0906: um comentário no DEV.to https://dev.to/thurmon_demich/cheapest-cloud-gpu-for-ai-in-2026-real-prices-from-002hr-49fj. Login = social auth. X não é a prova.
 s0903 vive (2 visit).
 
-Próximo: 06/09 revisar UTMs. X continua warmup.
+Próximo: 07/09. Sem Hashnode. X continua warmup.

@@ -13,8 +13,8 @@ Canônico: `https://sparetoken.shop/?utm_source=<host>&utm_medium=comment&utm_ca
 | 02/09 | ~~Indie Hackers — thread x402 pay-per-request~~ | 1 comentário curto, Pix + `?code=`, UTM `s0902` | **MORTO 03/09** — `s0902` = 0 visit; comentário nunca saiu |
 | 03/09 | DEV.to @sparetoken — leftover hours (mesmo host GPU-Bridge) | artigo + comentário no thread, UTM `s0903` | **LIVE** https://dev.to/sparetoken/leftover-model-hours-on-a-shelf-not-unused-gpus-33f4 — `s0903` = 2 visit em 04/09; **não matar** |
 | 04/09 | ~~HN Show HN — Agent Sandboxes / GPU $0.20/hr~~ | 1 comentário, UTM `s0904` | **MORTO 05/09** — `s0904` = 0 visit; public GET empty (new-account hold). Não repetir conta nova no HN. |
-| 05/09 | Hashnode — Krauncher GPU $/task | 1 comentário, UTM `s0905` | Vercel Security Checkpoint no login. Sem `/pulse`. |
-| 06/09 | revisar UTMs: o que trouxe `visit` sobrevive | matar canal morto, plantar D+8 | — |
+| 05/09 | ~~Hashnode — Krauncher GPU $/task~~ | 1 comentário, UTM `s0905` | **MORTO 06/09** — `s0905` = 0 visit; comentário nunca saiu (Vercel checkpoint). Não repetir Hashnode. |
+| 06/09 | DEV.to cheapest-cloud-GPU (host que vive) | 1 comentário, UTM `s0906` | Login = social auth nesta host. Sem Hashnode. `s0903` vive. |
 
 ## Mortos (0 visit → sai da roleta)
 
@@ -24,6 +24,7 @@ Canônico: `https://sparetoken.shop/?utm_source=<host>&utm_medium=comment&utm_ca
 | `s0901` | leftoverpzero DEV.to | 02/09 track-report | 0 `visit` com esse `utm_content`. Comentário nunca saiu (fila de captcha stale). Não repetir leftoverpzero. |
 | `s0902` | Indie Hackers x402 | 03/09 track-report | 0 `visit` com esse `utm_content`. Comentário nunca saiu (Google wall stale). Não repetir indiehackers. |
 | `s0904` | HN Show HN GPU sandboxes | 05/09 track-report | 0 `visit` com esse `utm_content`. Public GET empty (new-account hold). Não repetir conta nova no HN. |
+| `s0905` | Hashnode Krauncher GPU $/task | 06/09 track-report | 0 `visit` com esse `utm_content`. Comentário nunca saiu (Vercel Security Checkpoint). Não repetir Hashnode. |
 
 X `p008` trouxe visita — isso é warmup, não venue de venda.
 
