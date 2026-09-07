@@ -16,17 +16,23 @@ Versionamento: [SemVer](https://semver.org/lang/pt-BR/).
 
 ## [0.2.28] — 2026-09-06
 
-Public shelf remaining. Open count on the pulse.
+Public shelf remaining + tracking harden. Honesty on sell V6.
 
 ### Added
 
 - `/api/heartbeat` returns `shelf.open` + `shelf.restock` (count only, no pay URL)
 - Landing `#pulso-heartbeat` shows `N Open` under the tally. Restock hint if &lt; 3
 - Pay regression: `sweep_pool` drops Closed, keeps Open, credits nobody
+- First-party events `ui_click`, `engage_tick`, `page_leave`, `scroll_depth` (plus `label` / `sid` / `ms` / `depth` columns)
+- Anonymous `st_sid` + UTM stickiness in `static/app.js`; `[data-track]` clicks; engage every 15s while visible; scroll 25/50/75/100
+- `ceo/TRACKING.md` and `docker-compose.openreplay.yml.example` (OpenReplay off by default)
+- `track-report.sh` picks the live sqlite with `track_events` (`WDTSOT_DB` / `WDTSOT_DATA` / guest-session path)
 
 ### Changed
 
 - Same R$5 / 5h. `pay.py` untouched. No second till. No mint on the VPS
+- `ceo/RESEARCH.md` sell V6: DEV.to comment was **human-needed / never posted** — not a live UTM
+- `summarize()` public shape unchanged: only `visit` / `pay_click` / `claim_ok` / `sell_click`
 
 ## [0.2.27] — 2026-09-05
 

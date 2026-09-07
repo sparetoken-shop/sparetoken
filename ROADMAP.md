@@ -1,6 +1,6 @@
 # Roadmap — fechar o MVP
 
-Versão atual: **0.2.28** (landing mostra last ship + last research + Open na prateleira).
+Versão atual: **0.2.28** (Open no pulso + tracking harden; tally público intacto).
 
 ---
 

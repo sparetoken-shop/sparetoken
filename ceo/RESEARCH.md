@@ -127,11 +127,19 @@ vira D+8: se a linha do pulso na landing não moveu visit, ela fica sob o tally.
 
 ## 2026-09-06 11:30 (sell V6)
 
-saiu: fila humana — 1 comentário no DEV.to cheapest-cloud-GPU ($/hr Vast.ai), UTM `s0906`. Login = social auth (e-mail/senha recusou). `s0905` morto (0 visit; comentário nunca saiu). `s0903` vive (2 visit). Sem leftoverpzero. Sem indiehackers. Sem `/pulse`. Sem HN conta nova. Sem Hashnode.
+saiu: **nada postado.** Tentativa de 1 comentário no DEV.to cheapest-cloud-GPU ($/hr Vast.ai), UTM `s0906` — **human-needed** (social auth login wall nesta host; e-mail/senha recusou). O texto ficou na fila em `QUEUE.md`. Comentário **nunca saiu**. `s0905` morto (0 visit; comentário nunca saiu). `s0903` vive (2 visit). Sem leftoverpzero. Sem indiehackers. Sem `/pulse`. Sem HN conta nova. Sem Hashnode.
 
-não copiar: Hashnode; conta nova no HN; first-party `/pulse`; USDC / x402 no lugar do Pix; tweet como SELL_OK.
+não copiar: contar fila humana como post; Hashnode; conta nova no HN; first-party `/pulse`; USDC / x402 no lugar do Pix; tweet como SELL_OK.
 
-vira D+8: se `s0906` trouxer `visit`, segundo artigo GPU-price no DEV.to. Se 0, mata esse thread — não o artigo `s0903`.
+vira D+8: sem `s0906` no ar, não há UTM pra medir. Humano cola o texto da fila ou o thread morre — não o artigo `s0903`.
+
+## 2026-09-06 23:20 (honesty — tracking harden)
+
+viu: sell V6 estava escrito como se o comentário DEV.to tivesse saído. QUEUE dizia **human-needed**. Mentir pulso quebra a prateleira. Corrigido acima: **nunca postado**.
+
+não copiar: stamp SELL_OK / “saiu” sem URL pública; inventar visit de UTM que não foi ao ar; pixel de terceiro; mudar o shape público de `/api/track/summary` (continua só visit / pay_click / claim_ok / sell_click).
+
+vira D+7: ship `0.2.28` first-party engage (sid, ui_click, engage_tick, page_leave, scroll_depth) sem mudar o tally da landing. Unificar `WDTSOT_DATA` 8787/8799 depois do merge.
 
 ## 2026-09-06 23:30 (heartbeat D6)
 

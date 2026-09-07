@@ -1,4 +1,4 @@
-"""First-party visit / pay_click / claim_ok / sell_click — no PII, no pixel."""
+"""First-party visit / pay / claim / sell + engage — no PII, no pixel."""
 
 from __future__ import annotations
 
@@ -10,7 +10,7 @@ import sys
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
 from db import connect
-from track import ALLOWED_EVENTS, record_event, sanitize_payload, summarize
+from track import ALLOWED_EVENTS, FUNNEL_EVENTS, record_event, sanitize_payload, summarize
 
 
 class TrackSanitizeTest(unittest.TestCase):
@@ -38,8 +38,48 @@ class TrackSanitizeTest(unittest.TestCase):
         clean = sanitize_payload({"event": "hack", "code": "DROP TABLE", "utm_source": "x" * 200})
         self.assertIsNone(clean)
 
-    def test_allowed_events_are_the_four_we_need(self):
-        self.assertEqual(ALLOWED_EVENTS, frozenset({"visit", "pay_click", "claim_ok", "sell_click"}))
+    def test_allowed_events_include_engage_family(self):
+        self.assertEqual(
+            ALLOWED_EVENTS,
+            frozenset(
+                {
+                    "visit",
+                    "pay_click",
+                    "claim_ok",
+                    "sell_click",
+                    "ui_click",
+                    "engage_tick",
+                    "page_leave",
+                    "scroll_depth",
+                }
+            ),
+        )
+        self.assertEqual(FUNNEL_EVENTS, ("visit", "pay_click", "claim_ok", "sell_click"))
+
+    def test_sanitizes_label_sid_ms_depth(self):
+        clean = sanitize_payload(
+            {
+                "event": "ui_click",
+                "label": "hero-try",
+                "sid": "sabcdef12xyz99",
+                "ms": 15000,
+                "depth": 50,
+                "email": "x@y.z",
+            }
+        )
+        self.assertEqual(clean["label"], "hero-try")
+        self.assertEqual(clean["sid"], "sabcdef12xyz99")
+        self.assertEqual(clean["ms"], 15000)
+        self.assertEqual(clean["depth"], 50)
+        self.assertNotIn("email", clean)
+
+    def test_rejects_bad_sid_label_and_scroll_depth(self):
+        self.assertNotIn("sid", sanitize_payload({"event": "visit", "sid": "short"}))
+        self.assertNotIn("label", sanitize_payload({"event": "ui_click", "label": "bad label!"}))
+        bad_depth = sanitize_payload({"event": "scroll_depth", "depth": 33})
+        self.assertNotIn("depth", bad_depth)
+        ok = sanitize_payload({"event": "scroll_depth", "depth": 75})
+        self.assertEqual(ok["depth"], 75)
 
 
 class TrackDbTest(unittest.TestCase):
@@ -74,6 +114,9 @@ class TrackDbTest(unittest.TestCase):
         record_event(self.conn, {"event": "visit", "utm_source": "x", "utm_content": "p004", "code": "wdtsot-7K2M"})
         record_event(self.conn, {"event": "visit", "utm_source": "x", "utm_content": "p006"})
         record_event(self.conn, {"event": "pay_click"})
+        record_event(self.conn, {"event": "ui_click", "label": "hero-try", "sid": "sabcdef12xyz99"})
+        record_event(self.conn, {"event": "engage_tick", "ms": 15000, "sid": "sabcdef12xyz99"})
+        record_event(self.conn, {"event": "scroll_depth", "depth": 50, "sid": "sabcdef12xyz99"})
         tallies = summarize(self.conn)
         self.assertEqual(tallies, {"visit": 2, "pay_click": 1, "claim_ok": 0, "sell_click": 0})
         self.assertEqual(set(tallies), {"visit", "pay_click", "claim_ok", "sell_click"})
@@ -81,3 +124,28 @@ class TrackDbTest(unittest.TestCase):
         self.assertNotIn("wdtsot-", blob)
         self.assertNotIn("p004", blob)
         self.assertNotIn("@", blob)
+        self.assertNotIn("hero-try", blob)
+
+    def test_migrate_adds_engage_columns(self):
+        cols = {row[1] for row in self.conn.execute("PRAGMA table_info(track_events)")}
+        for col in ("label", "sid", "ms", "depth"):
+            self.assertIn(col, cols)
+        ok = record_event(
+            self.conn,
+            {
+                "event": "page_leave",
+                "sid": "sabcdef12xyz99",
+                "ms": 42000,
+                "label": "n/a-skip",  # label with slash rejected
+            },
+        )
+        self.assertTrue(ok)
+        row = dict(self.conn.execute("SELECT event, sid, ms, label FROM track_events").fetchone())
+        self.assertEqual(row["event"], "page_leave")
+        self.assertEqual(row["sid"], "sabcdef12xyz99")
+        self.assertEqual(row["ms"], 42000)
+        self.assertIsNone(row["label"])
+
+
+if __name__ == "__main__":
+    unittest.main()

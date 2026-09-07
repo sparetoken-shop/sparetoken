@@ -453,38 +453,62 @@ input.addEventListener("keydown", (event) => {
 });
 
 const TRACK_KEYS = ["utm_source", "utm_medium", "utm_campaign", "utm_content", "utm_term", "code"];
+const FUNNEL_TRACK = new Set(["pay_click", "sell_click"]);
+
+function trackSid() {
+  let sid = "";
+  try {
+    sid = String(localStorage.getItem("st_sid") || "");
+  } catch (_) {
+    sid = "";
+  }
+  if (!/^[A-Za-z0-9._-]{8,64}$/.test(sid)) {
+    sid = `s${Date.now().toString(36)}${Math.random().toString(36).slice(2, 10)}`;
+    try {
+      localStorage.setItem("st_sid", sid);
+    } catch (_) {}
+  }
+  return sid;
+}
+
+function readUtmBag() {
+  try {
+    return JSON.parse(localStorage.getItem("st_utm") || "{}") || {};
+  } catch (_) {
+    return {};
+  }
+}
+
+function writeUtmBag(bag) {
+  try {
+    localStorage.setItem("st_utm", JSON.stringify(bag));
+  } catch (_) {}
+}
 
 function captureLanding() {
   const params = new URLSearchParams(location.search);
-  let bag = {};
-  try {
-    bag = JSON.parse(localStorage.getItem("st_utm") || "{}") || {};
-  } catch (_) {
-    bag = {};
-  }
+  const bag = readUtmBag();
   TRACK_KEYS.forEach((key) => {
     const val = params.get(key);
     if (val) bag[key] = String(val).slice(0, 64);
   });
-  bag.landed_at = Date.now();
-  try {
-    localStorage.setItem("st_utm", JSON.stringify(bag));
-  } catch (_) {}
+  if (!bag.landed_at) bag.landed_at = Date.now();
+  writeUtmBag(bag);
+  trackSid();
   return bag;
 }
 
-function ping(event) {
-  const bag = (() => {
-    try {
-      return JSON.parse(localStorage.getItem("st_utm") || "{}") || {};
-    } catch (_) {
-      return {};
-    }
-  })();
-  const body = { event };
+function ping(event, extra) {
+  const bag = readUtmBag();
+  const body = { event, sid: trackSid() };
   TRACK_KEYS.forEach((key) => {
     if (bag[key]) body[key] = bag[key];
   });
+  if (extra && typeof extra === "object") {
+    ["label", "ms", "depth"].forEach((key) => {
+      if (extra[key] != null && extra[key] !== "") body[key] = extra[key];
+    });
+  }
   fetch("/api/track", {
     method: "POST",
     credentials: "same-origin",
@@ -492,6 +516,69 @@ function ping(event) {
     body: JSON.stringify(body),
     keepalive: true,
   }).catch(() => {});
+}
+
+function wireUiClicks() {
+  document.addEventListener(
+    "click",
+    (event) => {
+      const el = event.target && event.target.closest ? event.target.closest("[data-track]") : null;
+      if (!el) return;
+      const label = String(el.getAttribute("data-track") || "").trim().slice(0, 64);
+      if (!label) return;
+      if (FUNNEL_TRACK.has(label)) return; // pay/sell keep their own semantics
+      ping("ui_click", { label });
+    },
+    true
+  );
+}
+
+function wireEngageAndLeave() {
+  const started = Date.now();
+  let lastTick = 0;
+  const tick = () => {
+    if (document.visibilityState !== "visible") return;
+    const now = Date.now();
+    if (now - lastTick < 14000) return;
+    lastTick = now;
+    ping("engage_tick", { ms: Math.max(0, now - started) });
+  };
+  setInterval(tick, 15000);
+  document.addEventListener("visibilitychange", () => {
+    if (document.visibilityState === "hidden") {
+      ping("page_leave", { ms: Math.max(0, Date.now() - started) });
+    }
+  });
+  window.addEventListener("pagehide", () => {
+    ping("page_leave", { ms: Math.max(0, Date.now() - started) });
+  });
+}
+
+function wireScrollDepth() {
+  const seen = new Set();
+  const marks = [25, 50, 75, 100];
+  const onScroll = () => {
+    const doc = document.documentElement;
+    const body = document.body;
+    const scrollTop = window.scrollY || doc.scrollTop || body.scrollTop || 0;
+    const height = Math.max(doc.scrollHeight, body.scrollHeight) - window.innerHeight;
+    if (height <= 0) {
+      if (!seen.has(100)) {
+        seen.add(100);
+        ping("scroll_depth", { depth: 100 });
+      }
+      return;
+    }
+    const pct = Math.min(100, Math.round((scrollTop / height) * 100));
+    marks.forEach((mark) => {
+      if (pct >= mark && !seen.has(mark)) {
+        seen.add(mark);
+        ping("scroll_depth", { depth: mark });
+      }
+    });
+  };
+  window.addEventListener("scroll", onScroll, { passive: true });
+  onScroll();
 }
 
 async function openCheckout() {
@@ -823,6 +910,9 @@ if (params.get("code") && claimCode && !claimCode.value) {
   claimCode.value = params.get("code");
 }
 ping("visit");
+wireUiClicks();
+wireEngageAndLeave();
+wireScrollDepth();
 
 loadSession().then(() => {
   if (hint.dataset.paid === "1") startPaidLoop();
