@@ -37,11 +37,13 @@ s0903: artigo DEV.to verificado (`verify_sell_live` 200). X não é a prova.
 
 | s0904 | 2026-09-04 | HN Show HN GPU sandboxes | **morto** — 0 visit; public GET empty (new-account hold) | `s0904` |
 | s0905 | 2026-09-05 | Hashnode Krauncher GPU $/task | **morto** — 0 visit; comentário nunca saiu | `s0905` |
-| s0906 | 2026-09-06 | DEV.to cheapest-cloud-GPU | **human-needed** — social auth no login desta host | `s0906` |
+| s0906 | 2026-09-06 | DEV.to cheapest-cloud-GPU | **morto** — 0 visit, comentário nunca saiu | `s0906` |
+| s0907 | 2026-09-07 | TabNews OpenLLM / VRAM que sobra | **human-needed** — Cloudflare 403 no write desta host | `s0907` |
 
 s0904: um comentário no Show HN https://news.ycombinator.com/item?id=49563492. GET público sem `sparetoken.shop`. 05/09 track-report = 0 visit. Morto.
 s0905: um comentário no Hashnode https://krauncher.hashnode.dev/there-are-two-ways-to-rent-a-gpu-i-think-there-s-a-third. 06/09 track-report = 0 visit. Morto.
-s0906: um comentário no DEV.to https://dev.to/thurmon_demich/cheapest-cloud-gpu-for-ai-in-2026-real-prices-from-002hr-49fj. Login = social auth. X não é a prova.
+s0906: um comentário no DEV.to https://dev.to/thurmon_demich/cheapest-cloud-gpu-for-ai-in-2026-real-prices-from-002hr-49fj. 07/09 track-report = 0 visit. Morto.
+s0907: um comentário no TabNews https://www.tabnews.com.br/MrJ/openllm-de-roteador-de-llms-a-plataforma-multimodal-texto-imagem-audio-musica-e-video-por-centavos-e-como-aproveitar-a-vram-que-sobra-vastai. Write = Cloudflare 403. X não é a prova.
 s0903 vive (2 visit).
 
-Próximo: 07/09. Sem Hashnode. X continua warmup.
+Próximo: 08/09. Sem Hashnode. Sem cheapest-cloud-GPU. X continua warmup.

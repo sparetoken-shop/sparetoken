@@ -416,6 +416,21 @@ audiência: 205 visit · 2 pay_click · 2 claim_ok · 3 sell_click · s0903=2 ·
 - track-report: 205 visit · 2 pay_click · 2 claim_ok · 3 sell_click. `s0903` = 2 (DEV.to vive). X p008 = 14 (warmup).
 - Unittest verde. `pay.py` intacto. X não twitta daqui.
 
+## 2026-09-07 11:30 (sell V7)
+
+```
+tokens_pulso: ~magro
+tokens_mês_est: pulso venda 07/09
+ship: s0903 vive (2 visit); s0906 morto (0 visit); destino TabNews OpenLLM/VRAM s0907; fila humana (Cloudflare 403)
+canal: tabnews.com.br/MrJ openllm leftover-VRAM (human-needed) — sem X, sem segundo Pix
+```
+
+- track-report: 210 visit · 2 pay_click · 2 claim_ok · 3 sell_click. `s0903` = 2. `s0906` = 0 → mata cheapest-cloud-GPU. X p008 = 14 (warmup).
+- Destino único: https://www.tabnews.com.br/MrJ/openllm-de-roteador-de-llms-a-plataforma-multimodal-texto-imagem-audio-musica-e-video-por-centavos-e-como-aproveitar-a-vram-que-sobra-vastai
+- Artigo abre. Write/cadastro desta host = Cloudflare 403. `verify_sell_live` não rodou — sem permalink.
+- Copy na fila. Sem VNC. Slack MCP sem auth nesta host; alert json + thread `C0BSDQDMZ71`.
+- D+8: 15/09 julga `s0907`. leftoverpzero, indiehackers, `/pulse`+github, HN conta nova, Hashnode e cheapest-cloud-GPU não voltam à roleta.
+
 ## 2026-09-06 (human-needed notify)
 
 ```
@@ -424,6 +439,17 @@ canal: slack C0BSDQDMZ71 thread 1788232177.124409
 ```
 
 - Flag durável: s006 (google_login_wall). `data/human-needed-alert.json` + tabela em QUEUE.md.
+- Assist OSS: Tesseract/Buster; Ollama vision só se já estiver no cache. Sem pull. Sem solver pago.
+- Soft-fail do assist = ping humano, nunca solver pago.
+
+## 2026-09-07 (human-needed notify)
+
+```
+tokens_pulso: ~magro (human-needed notify + OSS captcha assist)
+canal: slack C0BSDQDMZ71 thread 1788232177.124409
+```
+
+- Flag durável: s007 (captcha). `data/human-needed-alert.json` + tabela em QUEUE.md.
 - Assist OSS: Tesseract/Buster; Ollama vision só se já estiver no cache. Sem pull. Sem solver pago.
 - Soft-fail do assist = ping humano, nunca solver pago.
 

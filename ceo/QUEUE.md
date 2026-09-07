@@ -22,12 +22,24 @@ X **nunca** é a prova do pulso de venda.
 | sale005 | 23:30 03/09 | X (celebração) | mais um bloco saiu da prateleira. R$5 · 5h. https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=sold&utm_content=sale | a colar no @sparetoken |
 | s004 | 11:30 04/09 | HN Show HN GPU sandboxes | comentário no thread tama.computer. UTM `s0904`. posted as sparetoken; public GET empty (new-account hold). | **killed 05/09** — 0 visit; não repetir conta nova no HN |
 | s005 | 11:30 05/09 | Hashnode Krauncher GPU $/task | Vercel Security Checkpoint no login. Um comentário leftover-hours. UTM `s0905`. | **killed 06/09** — 0 visit; comentário nunca saiu |
-| s006 | 11:30 06/09 | DEV.to cheapest-cloud-GPU | Social auth login wall nesta host. Um comentário leftover-hours. UTM `s0906`. | **human-needed** |
+| s006 | 11:30 06/09 | DEV.to cheapest-cloud-GPU | Social auth login wall nesta host. Um comentário leftover-hours. UTM `s0906`. | **killed 07/09** — 0 visit; comentário nunca saiu |
+| s007 | 11:30 07/09 | TabNews OpenLLM / VRAM que sobra | Cloudflare 403 no write/cadastro. Um comentário leftover-hours. UTM `s0907`. | **human-needed** |
 | p017 | 23:30 04/09 | X (warmup) | 0.2.26 — public pulse stub. last ship + 7-day + last research. https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p017 | **posted** https://x.com/sparetoken/status/2096383502908313712 |
 | p018 | 23:30 05/09 | X (warmup) | 0.2.27 — last ship + last research on the landing. https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p018 | a colar no @sparetoken |
 | p019 | 23:30 06/09 | X (warmup) | 0.2.28 — Open count on the shelf pulse. same R$5 / 5h. https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p019 | a colar no @sparetoken |
 
-Texto s006 (colar no DEV.to cheapest-cloud-GPU — social auth login wall nesta host):
+Texto s007 (colar no TabNews OpenLLM / VRAM que sobra — Cloudflare 403 no write nesta host):
+
+```
+Mesma sobra, prateleira menor: hora de modelo ociosa, não GPU ociosa.
+Aluguel por hora de placa é parede. Pix de um passo. Convite = o mesmo código do bloco (?code=).
+R$5 · 5h · 4.6 High Fast. Não é empresa.
+https://sparetoken.shop/?utm_source=tabnews&utm_medium=comment&utm_campaign=sell&utm_content=s0907
+```
+
+Artigo: https://www.tabnews.com.br/MrJ/openllm-de-roteador-de-llms-a-plataforma-multimodal-texto-imagem-audio-musica-e-video-por-centavos-e-como-aproveitar-a-vram-que-sobra-vastai
+
+Texto s006 (arquivo — cheapest-cloud-GPU morto, não colar):
 
 ```
 Same leftover, smaller shelf: unused model hours, not unused GPUs.
@@ -171,4 +183,4 @@ Silent human-needed is dead. Pulse writes this table **and** `data/human-needed-
 
 | stamped | id | pulse | reason | slack |
 |---|---|---|---|---|
-| 2026-09-06 | s006 | 11:30 06/09 | google_login_wall | alert json + thread ping |
+| 2026-09-07 | s007 | 11:30 07/09 | captcha | alert json + thread ping |

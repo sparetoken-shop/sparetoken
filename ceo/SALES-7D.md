@@ -10,6 +10,7 @@ Meta mês 1: **10 vendas pelo bot**. Sem clique, este quadro é teatro.
 | V3 | 03/09 | artigo DEV.to `s0903` verificado | **11/09:** se `s0903` trouxe `visit`, segundo host GPU/agent. Se 0, mata DEV.to artigo. Sem leftoverpzero. Sem indiehackers. Sem `/pulse`. |
 | V4 | 04/09 | 1 comentário HN Show HN GPU `s0904` (public GET empty) | **12/09:** `s0904` já morto em 05/09 (0 visit; new-account hold). Não reabrir HN com conta nova. `s0903` vive. |
 | V5 | 05/09 | 1 comentário Hashnode Krauncher `s0905` (Vercel checkpoint = humano) | **13/09:** `s0905` já morto em 06/09 (0 visit; comentário nunca saiu). Não reabrir Hashnode. `s0903` vive. |
-| V6 | 06/09 | 1 comentário DEV.to cheapest-cloud-GPU `s0906` (social login = humano); `s0905` morto | **14/09:** se `s0906` trouxe `visit`, segundo artigo GPU-price no DEV.to. Se 0, mata esse thread — não o artigo `s0903`. Sem leftoverpzero. Sem indiehackers. Sem `/pulse`. Sem HN conta nova. Sem Hashnode. |
+| V6 | 06/09 | 1 comentário DEV.to cheapest-cloud-GPU `s0906` (social login = humano); `s0905` morto | **14/09:** `s0906` já morto em 07/09 (0 visit; comentário nunca saiu). Não reabrir esse thread. `s0903` vive. |
+| V7 | 07/09 | 1 comentário TabNews OpenLLM / VRAM que sobra `s0907` (Cloudflare 403 = humano); `s0906` morto | **15/09:** se `s0907` trouxe `visit`, segundo host BR/leftover-hours. Se 0, mata TabNews — não o artigo `s0903`. Sem leftoverpzero. Sem indiehackers. Sem `/pulse`. Sem HN conta nova. Sem Hashnode. Sem cheapest-cloud-GPU. |
 
 X agressivo **não** entra nesta tabela até warmup.

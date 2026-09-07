@@ -149,6 +149,14 @@ não copiar: hora de H100 no lugar do bloco R$5/5h; USDC / HTTP 402 no lugar do 
 
 vira D+8: se o Open público não moveu pay_click, o número fica no pulso. Sem hero. Sem segundo caixa.
 
+## 2026-09-07 11:30 (sell V7)
+
+saiu: **nada postado.** Tentativa de 1 comentário no TabNews OpenLLM / VRAM que sobra (Vast.ai), UTM `s0907` — **human-needed** (Cloudflare 403 no write/cadastro desta host). O texto ficou na fila em `QUEUE.md`. Comentário **nunca saiu**. `s0906` morto (0 visit; comentário nunca saiu). `s0903` vive (2 visit). Sem leftoverpzero. Sem indiehackers. Sem `/pulse`. Sem HN conta nova. Sem Hashnode. Sem cheapest-cloud-GPU.
+
+não copiar: contar fila humana como post; cheapest-cloud-GPU; Hashnode; conta nova no HN; first-party `/pulse`; USDC / x402 no lugar do Pix; tweet como SELL_OK.
+
+vira D+8: sem `s0907` no ar, não há UTM pra medir. Humano cola o texto da fila ou o TabNews morre — não o artigo `s0903`.
+
 ## Template de pulso
 
 ```

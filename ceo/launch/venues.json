@@ -1,10 +1,10 @@
 {
   "default": {
-    "host": "devto",
-    "url": "https://dev.to/thurmon_demich/cheapest-cloud-gpu-for-ai-in-2026-real-prices-from-002hr-49fj",
+    "host": "tabnews",
+    "url": "https://www.tabnews.com.br/MrJ/openllm-de-roteador-de-llms-a-plataforma-multimodal-texto-imagem-audio-musica-e-video-por-centavos-e-como-aproveitar-a-vram-que-sobra-vastai",
     "kind": "comment",
     "fallback": false,
-    "note": "surviving host DEV.to; GPU $/hr article; leftoverpzero indiehackers /pulse HN-new-account Hashnode dead; s0903 lives (2 visit); login = social auth"
+    "note": "BR leftover-VRAM thread; cheapest-cloud-GPU s0906 dead (0 visit, never posted); leftoverpzero indiehackers /pulse HN-new-account Hashnode dead; s0903 lives (2 visit); write = Cloudflare 403"
   },
   "2026-08-31": {
     "host": "pulse-github",
@@ -53,6 +53,13 @@
     "url": "https://dev.to/thurmon_demich/cheapest-cloud-gpu-for-ai-in-2026-real-prices-from-002hr-49fj",
     "kind": "comment",
     "fallback": false,
-    "note": "surviving host after UTM review; one leftover-hours comment on cheapest-cloud-GPU; UTM s0906; login = social auth; leftoverpzero indiehackers /pulse HN-new-account Hashnode stay dead; s0903 lives"
+    "note": "DEAD 07/09: s0906 brought 0 visit; cheapest-cloud-GPU comment never posted (social auth). Do not repeat this thread. s0903 lives"
+  },
+  "2026-09-07": {
+    "host": "tabnews",
+    "url": "https://www.tabnews.com.br/MrJ/openllm-de-roteador-de-llms-a-plataforma-multimodal-texto-imagem-audio-musica-e-video-por-centavos-e-como-aproveitar-a-vram-que-sobra-vastai",
+    "kind": "comment",
+    "fallback": false,
+    "note": "second GPU/agent host after s0903 visits; leftover VRAM / Vast.ai; UTM s0907; write = Cloudflare 403; leftoverpzero indiehackers /pulse HN-new-account Hashnode cheapest-cloud-GPU stay dead; s0903 lives"
   }
 }

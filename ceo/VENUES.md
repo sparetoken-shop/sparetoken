@@ -14,7 +14,13 @@ Canônico: `https://sparetoken.shop/?utm_source=<host>&utm_medium=comment&utm_ca
 | 03/09 | DEV.to @sparetoken — leftover hours (mesmo host GPU-Bridge) | artigo + comentário no thread, UTM `s0903` | **LIVE** https://dev.to/sparetoken/leftover-model-hours-on-a-shelf-not-unused-gpus-33f4 — `s0903` = 2 visit em 04/09; **não matar** |
 | 04/09 | ~~HN Show HN — Agent Sandboxes / GPU $0.20/hr~~ | 1 comentário, UTM `s0904` | **MORTO 05/09** — `s0904` = 0 visit; public GET empty (new-account hold). Não repetir conta nova no HN. |
 | 05/09 | ~~Hashnode — Krauncher GPU $/task~~ | 1 comentário, UTM `s0905` | **MORTO 06/09** — `s0905` = 0 visit; comentário nunca saiu (Vercel checkpoint). Não repetir Hashnode. |
-| 06/09 | DEV.to cheapest-cloud-GPU (host que vive) | 1 comentário, UTM `s0906` | Login = social auth nesta host. Sem Hashnode. `s0903` vive. |
+| 06/09 | ~~DEV.to cheapest-cloud-GPU~~ | 1 comentário, UTM `s0906` | **MORTO 07/09** — `s0906` = 0 visit; comentário nunca saiu (social auth). Não repetir esse thread. `s0903` vive. |
+
+## Semana 2 (07/09 →)
+
+| Dia | Destino | O que fazer | Queima? |
+|---|---|---|---|
+| 07/09 | TabNews — OpenLLM / VRAM que sobra (Vast.ai) | 1 comentário, UTM `s0907` | Login/cadastro = Cloudflare 403 nesta host. `s0903` vive. Sem cheapest-cloud-GPU. |
 
 ## Mortos (0 visit → sai da roleta)
 
@@ -25,6 +31,7 @@ Canônico: `https://sparetoken.shop/?utm_source=<host>&utm_medium=comment&utm_ca
 | `s0902` | Indie Hackers x402 | 03/09 track-report | 0 `visit` com esse `utm_content`. Comentário nunca saiu (Google wall stale). Não repetir indiehackers. |
 | `s0904` | HN Show HN GPU sandboxes | 05/09 track-report | 0 `visit` com esse `utm_content`. Public GET empty (new-account hold). Não repetir conta nova no HN. |
 | `s0905` | Hashnode Krauncher GPU $/task | 06/09 track-report | 0 `visit` com esse `utm_content`. Comentário nunca saiu (Vercel Security Checkpoint). Não repetir Hashnode. |
+| `s0906` | DEV.to cheapest-cloud-GPU | 07/09 track-report | 0 `visit` com esse `utm_content`. Comentário nunca saiu (social auth). Não repetir esse thread. Artigo `s0903` continua vivo. |
 
 X `p008` trouxe visita — isso é warmup, não venue de venda.
 

@@ -1,6 +1,6 @@
 # Quadro do CEO — ler antes de tocar o repo
 
-Carimbo: **2026-09-06 23:30**. Isto não é chat. É ordem de mesa.
+Carimbo: **2026-09-07 11:30**. Isto não é chat. É ordem de mesa.
 
 ## Quem está na mesa
 
