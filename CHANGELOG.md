@@ -14,6 +14,20 @@ Versionamento: [SemVer](https://semver.org/lang/pt-BR/).
 - Fechar chat anônimo e SSH sem senha (ver ROADMAP)
 - Charge cripto (USDT / OSDT) na mesma conta.vc — ver ROADMAP, sem segundo caixa
 
+## [0.2.28] — 2026-09-06
+
+Public shelf remaining. Open count on the pulse.
+
+### Added
+
+- `/api/heartbeat` returns `shelf.open` + `shelf.restock` (count only, no pay URL)
+- Landing `#pulso-heartbeat` shows `N Open` under the tally. Restock hint if &lt; 3
+- Pay regression: `sweep_pool` drops Closed, keeps Open, credits nobody
+
+### Changed
+
+- Same R$5 / 5h. `pay.py` untouched. No second till. No mint on the VPS
+
 ## [0.2.27] — 2026-09-05
 
 Landing pulse. Last ship and last research on the shelf.

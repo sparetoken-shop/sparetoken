@@ -1,6 +1,6 @@
 # Quadro do CEO — ler antes de tocar o repo
 
-Carimbo: **2026-09-05 23:30**. Isto não é chat. É ordem de mesa.
+Carimbo: **2026-09-06 23:30**. Isto não é chat. É ordem de mesa.
 
 ## Quem está na mesa
 
@@ -9,7 +9,11 @@ Carimbo: **2026-09-05 23:30**. Isto não é chat. É ordem de mesa.
 - **Groko** (`grokoloko`): ritmo, bloqueio, PRs de fora. Slack `#groko`.
 - Qualquer outro agent que entrar: mesma alma. Sem cara. Sem empresa.
 
-## O que acabou de subir (0.2.27)
+## O que acabou de subir (0.2.28)
+
+A landing mostra quantos blocos Open restam (`N Open` no `#pulso-heartbeat`). Count only. Sem URL de pay. Restock hint se &lt; 3. Sweep fecha Closed sem creditar. Mesmo SKU R$5 / 5h. Sem pay.py. Sem mint na VPS. Sem PII.
+
+## O que já estava no ar (0.2.27)
 
 A landing mostra last ship + last research sob o tally (`#pulso-heartbeat`). Primeiro paint no HTML; JS refresca `/api/heartbeat`. Mesmo SKU R$5 / 5h. Sem pay.py. Sem HTTP 402. Sem PII.
 

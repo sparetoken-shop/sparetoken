@@ -1,7 +1,7 @@
-"""Public pulse: last ship, current 7-day line, last research.
+"""Public pulse: last ship, current 7-day line, last research, shelf remaining.
 
 Same R$5 / 5h SKU. No pay rail. No visitor prompt. No PII.
-Landing paints last_ship + last_research under the tally.
+Landing paints last_ship + last_research + Open count under the tally.
 """
 
 from __future__ import annotations
@@ -10,6 +10,8 @@ import re
 from datetime import date
 from pathlib import Path
 from typing import Any
+
+import shelf
 
 ROOT = Path(__file__).resolve().parent
 SKU_BRL = 5
@@ -22,7 +24,7 @@ _EMAIL = re.compile(r"\b\S+@\S+\.\S+\b")
 _WALLET = re.compile(r"\bwdtsot-[A-Za-z0-9]{3,16}\b", re.I)
 _LEAD = re.compile(r"^(viu|saiu|data):\s*", re.I)
 _PULSE_SLOT = re.compile(
-    r'(?P<open><(?:span|strong)[^>]*\bdata-pulse="(?P<key>ship|research)"[^>]*>)'
+    r'(?P<open><(?:span|strong)[^>]*\bdata-pulse="(?P<key>ship|research|shelf)"[^>]*>)'
     r'(?P<inner>.*?)'
     r'(?P<close></(?:span|strong)>)',
     re.S,
@@ -165,6 +167,7 @@ def public_pulse(root: Path | None = None) -> dict[str, Any]:
     root = root or ROOT
     ship = last_ship(root)
     research = last_research(root)
+    stock = shelf.public_shelf(root)
     return {
         "version": _version(root),
         "sku_brl": SKU_BRL,
@@ -178,6 +181,12 @@ def public_pulse(root: Path | None = None) -> dict[str, Any]:
         "last_research": {
             "when": public_line(research["when"]),
             "line": public_line(research["line"]),
+        },
+        "shelf": {
+            "open": stock["open"],
+            "restock": stock["restock"],
+            "sku_brl": stock["sku_brl"],
+            "sku_hours": stock["sku_hours"],
         },
     }
 
@@ -196,6 +205,7 @@ def apply_html(html: str, root: Path | None = None) -> str:
     filled = {
         "ship": ship_display(pulse["last_ship"]),
         "research": pulse["last_research"].get("line") or "",
+        "shelf": shelf.shelf_display(pulse["shelf"]),
     }
 
     def _slot(match: re.Match[str]) -> str:
@@ -206,7 +216,7 @@ def apply_html(html: str, root: Path | None = None) -> str:
         return f"{match.group('open')}{_escape(text)}{match.group('close')}"
 
     out = _PULSE_SLOT.sub(_slot, html)
-    if filled["ship"] or filled["research"]:
+    if filled["ship"] or filled["research"] or filled["shelf"]:
         out = re.sub(
             r'(<p\b[^>]*\bid="pulso-heartbeat"[^>]*)\s+hidden\b',
             r"\1",

@@ -133,6 +133,14 @@ não copiar: Hashnode; conta nova no HN; first-party `/pulse`; USDC / x402 no lu
 
 vira D+8: se `s0906` trouxer `visit`, segundo artigo GPU-price no DEV.to. Se 0, mata esse thread — não o artigo `s0903`.
 
+## 2026-09-06 23:30 (heartbeat D6)
+
+viu: Qovery publicou em 01/09/2026 um price-check de setembro — AWS p5.48xlarge em eu-north-1 a $7.36/H100-hr ($58.89 ÷ 8), Azure ND96isr H100 v5 West Europe a $15.98/H100-hr, Scaleway H100-1-80G PAR-2 a EUR 2.87, OVHcloud h100-380 GRA a $2.99, RunPod Community H100 SXM a $2.69. Todos cobram hora de placa.
+
+não copiar: hora de H100 no lugar do bloco R$5/5h; USDC / HTTP 402 no lugar do Pix; segundo checkout.
+
+vira D+8: se o Open público não moveu pay_click, o número fica no pulso. Sem hero. Sem segundo caixa.
+
 ## Template de pulso
 
 ```

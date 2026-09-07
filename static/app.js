@@ -796,13 +796,21 @@ function fillPulse(data) {
   if (!box || !data || !data.ok) return;
   const ship = data.last_ship || {};
   const research = data.last_research || {};
+  const stock = data.shelf || {};
   const shipLine = [ship.version, ship.title].filter(Boolean).join(" — ");
   const researchLine = research.line || "";
+  let shelfLine = "";
+  if (stock.open !== null && stock.open !== undefined) {
+    shelfLine = String(stock.open) + " Open";
+    if (stock.restock) shelfLine += " · restock";
+  }
   const shipEl = box.querySelector('[data-pulse="ship"]');
   const researchEl = box.querySelector('[data-pulse="research"]');
+  const shelfEl = box.querySelector('[data-pulse="shelf"]');
   if (shipEl && shipLine) shipEl.textContent = shipLine;
   if (researchEl && researchLine) researchEl.textContent = researchLine;
-  if (shipLine || researchLine) box.hidden = false;
+  if (shelfEl && shelfLine) shelfEl.textContent = shelfLine;
+  if (shipLine || researchLine || shelfLine) box.hidden = false;
 }
 
 fetch("/api/heartbeat", { credentials: "same-origin" })

@@ -400,6 +400,22 @@ canal: dev.to/thurmon_demich cheapest-cloud-gpu (human-needed) — sem X, sem se
 - Copy na fila. Sem VNC. Slack webhook ausente; alert json + thread `C0BSDQDMZ71`.
 - D+8: 14/09 julga `s0906`. leftoverpzero, indiehackers, `/pulse`+github, HN conta nova e Hashnode não voltam à roleta.
 
+## 2026-09-06 23:30 (heartbeat D6 — 0.2.28)
+
+```
+tokens_pulso: ~normal (shelf Open count + sweep regression + D+8)
+tokens_mês_est: pulso produto 06/09 23:30
+ship: 0.2.28 — N Open no pulso público (count only); sweep fecha Closed sem creditar; pay.py intacto
+canal: X p019 na fila (Mac). Sem tweet desta host.
+audiência: 205 visit · 2 pay_click · 2 claim_ok · 3 sell_click · s0903=2 · p008=14
+```
+
+- D6 fecha o estoque visível na prateleira. Sem URL de pay. Sem HTTP 402. Sem segundo caixa. Sem PII.
+- D+8 (14/09): se o Open público não moveu pay_click, fica no pulso (não no card). Se Open < 3, refill = skill no Mac.
+- sales-watch: purchases_paid=5 · pay_openish=5 · delta=0. Sem CELEBRATE. Sem RESTOCK.
+- track-report: 205 visit · 2 pay_click · 2 claim_ok · 3 sell_click. `s0903` = 2 (DEV.to vive). X p008 = 14 (warmup).
+- Unittest verde. `pay.py` intacto. X não twitta daqui.
+
 ## 2026-09-06 (human-needed notify)
 
 ```

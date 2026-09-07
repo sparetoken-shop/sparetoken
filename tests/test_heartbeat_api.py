@@ -106,6 +106,7 @@ class HeartbeatPublicLineTest(unittest.TestCase):
                 '<p class="pulso-heartbeat" id="pulso-heartbeat" hidden>'
                 '<strong data-pulse="ship"></strong>'
                 '<span data-pulse="research"></span>'
+                '<span data-pulse="shelf"></span>'
                 "</p>"
             )
             out = heartbeat_api.apply_html(html, root)
@@ -124,6 +125,22 @@ class HeartbeatPublicLineTest(unittest.TestCase):
             )
             self.assertNotRegex(out, r'id="pulso-heartbeat"[^>]*\bhidden\b')
             self.assertNotIn("@", out)
+            self.assertNotIn("conta.vc", out)
+
+    def test_apply_html_fills_open_count_from_stock_file(self):
+        with tempfile.TemporaryDirectory() as raw:
+            root = _fixture(Path(raw))
+            data = root / "data"
+            data.mkdir()
+            (data / "conta-links.txt").write_text(
+                "https://app.conta.vc/pay/fuzzy/c/PULSEAAA111open\n",
+                encoding="utf-8",
+            )
+            html = '<span data-pulse="shelf"></span>'
+            out = heartbeat_api.apply_html(html, root)
+            self.assertIn("1 Open · restock", out)
+            self.assertNotIn("conta.vc", out)
+            self.assertNotIn("PULSEAAA", out)
 
     def test_apply_html_drops_email_from_research(self):
         with tempfile.TemporaryDirectory() as raw:
@@ -157,13 +174,19 @@ class HeartbeatContractTest(unittest.TestCase):
         self.assertTrue(pulse["last_research"]["line"])
         self.assertNotIn("pay_url", pulse)
         self.assertNotIn("email", pulse)
+        self.assertIn("shelf", pulse)
+        self.assertIn("open", pulse["shelf"])
+        self.assertNotIn("url", pulse["shelf"])
         blob = str(pulse).lower()
         self.assertNotIn("r$10", blob)
         self.assertNotIn("second till", blob)
+        self.assertNotIn("conta.vc", blob)
+        self.assertNotIn("/pay/fuzzy", blob)
 
     def test_module_does_not_import_pay(self):
         self.assertNotIn("import pay", SRC)
         self.assertNotIn("from pay", SRC)
+        self.assertIn("import shelf", SRC)
 
 
 class HeartbeatSurfaceTest(unittest.TestCase):

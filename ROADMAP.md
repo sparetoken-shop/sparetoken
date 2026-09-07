@@ -1,6 +1,6 @@
 # Roadmap — fechar o MVP
 
-Versão atual: **0.2.27** (landing mostra last ship + last research).
+Versão atual: **0.2.28** (landing mostra last ship + last research + Open na prateleira).
 
 ---
 

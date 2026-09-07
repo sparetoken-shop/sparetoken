@@ -14,6 +14,7 @@ from pay import (
     parse_charge_html,
     parse_contact,
     start_checkout,
+    sweep_pool,
 )
 
 URL_A = "https://app.conta.vc/pay/fuzzy/c/AAA111open"
@@ -260,6 +261,24 @@ class PayFlowTest(unittest.TestCase):
         )
         self.assertEqual(resumed["session_id"], owner["id"])
         self.assertEqual(resumed["remaining_seconds"], HOURS_5)
+
+    def test_sweep_pool_drops_closed_and_keeps_open(self):
+        counts = sweep_pool(
+            self.conn,
+            inspect=lambda url: {"status": "closed" if url == URL_A else "open"},
+            path=self.links,
+        )
+        self.assertEqual(counts["closed"], 1)
+        self.assertEqual(counts["open"], 1)
+        self.assertEqual(counts["dead"], 0)
+        row = self._session()
+        checkout = start_checkout(
+            self.conn, row["id"], inspect=always_open, links_file=self.links
+        )
+        self.assertEqual(checkout["pay_url"], URL_B)
+        self.assertEqual(checkout["status"], "pending")
+        w = wallet(self.conn, row["id"])
+        self.assertEqual(w["purchased_seconds"], 0)
 
     def test_paid_url_cannot_be_claimed_twice_by_strangers(self):
         owner = self._session("token-a-abcdefghijklmn", "sid-a")
