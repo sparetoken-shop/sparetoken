@@ -14,6 +14,22 @@ Versionamento: [SemVer](https://semver.org/lang/pt-BR/).
 - Fechar chat anônimo e SSH sem senha (ver ROADMAP)
 - Charge cripto (USDT / OSDT) na mesma conta.vc — ver ROADMAP, sem segundo caixa
 
+## [0.2.28] — 2026-09-06
+
+Tracking harden. Honesty on sell V6. Engage without changing the public tally.
+
+### Added
+
+- First-party events `ui_click`, `engage_tick`, `page_leave`, `scroll_depth` (plus `label` / `sid` / `ms` / `depth` columns)
+- Anonymous `st_sid` + UTM stickiness in `static/app.js`; `[data-track]` clicks; engage every 15s while visible; scroll 25/50/75/100
+- `ceo/TRACKING.md` and `docker-compose.openreplay.yml.example` (OpenReplay off by default)
+- `track-report.sh` picks the live sqlite with `track_events` (`WDTSOT_DB` / `WDTSOT_DATA` / guest-session path)
+
+### Changed
+
+- `ceo/RESEARCH.md` sell V6: DEV.to comment was **human-needed / never posted** — not a live UTM
+- `summarize()` public shape unchanged: only `visit` / `pay_click` / `claim_ok` / `sell_click`
+
 ## [0.2.27] — 2026-09-05
 
 Landing pulse. Last ship and last research on the shelf.

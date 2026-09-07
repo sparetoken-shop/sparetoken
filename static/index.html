@@ -103,7 +103,7 @@
         <p class="lede" data-i18n="hero.lede">Five hours. Five reais.</p>
         <p class="sub" data-i18n="hero.sub">As 5h são o tempo que o GROK ficou pensando — não o tempo da aba aberta, nem o que você leva digitando.</p>
         <div class="actions">
-          <a class="btn btn-primary" href="#chat" data-i18n="hero.try">Experimentar agora</a>
+          <a class="btn btn-primary" href="#chat" data-track="hero-try" data-i18n="hero.try">Experimentar agora</a>
           <a class="btn btn-ghost" href="#terminal" data-i18n="hero.terminal">>_ Terminal</a>
         </div>
         <aside class="term" aria-hidden="true">
@@ -134,7 +134,7 @@
             <ul class="clock-rows" id="clock-rows"></ul>
             <p class="clock-foot" id="clock-foot"></p>
             <div class="clock-acts">
-              <button type="button" id="btn-new" data-i18n="clock.new">Novo chat</button>
+              <button type="button" id="btn-new" data-track="new-chat" data-i18n="clock.new">Novo chat</button>
               <button type="button" id="btn-copy" data-i18n="clock.copy">Copiar link</button>
             </div>
           </div>
@@ -209,7 +209,7 @@
           <form class="claim" id="claim" autocomplete="on">
             <label for="claim-code" data-i18n="claim.label">código do bloco ou link do Pix</label>
             <input id="claim-code" name="code" type="text" maxlength="160" placeholder="wdtsot-7K2M ou o link que você pagou" data-i18n-placeholder="claim.placeholder" autocapitalize="off" spellcheck="false">
-            <button class="btn btn-primary" type="submit" data-i18n="claim.submit">Liberar sessão</button>
+            <button class="btn btn-primary" type="submit" data-track="claim-submit" data-i18n="claim.submit">Liberar sessão</button>
             <p class="claim-status" id="claim-status" role="status"></p>
           </form>
         </article>
@@ -327,7 +327,7 @@
       <h2 data-i18n="final.h2">Useful intelligence should be easier to access.</h2>
       <p data-i18n="final.p">Fifty prompts in the browser. Or one SSH command, when you want the long table.</p>
       <div class="actions" style="justify-content:center">
-        <a class="btn btn-primary" href="#chat" data-i18n="hero.try">Experimentar agora</a>
+        <a class="btn btn-primary" href="#chat" data-track="hero-try" data-i18n="hero.try">Experimentar agora</a>
         <a class="btn btn-ghost" href="#terminal" data-i18n="hero.terminal">>_ Terminal</a>
       </div>
     </section>
@@ -358,7 +358,7 @@
       <p class="muted" data-i18n="modal.pay.note">Conta só o tempo que o GROK 4.6 High Fast fica gerando a resposta.</p>
       <div class="actions">
         <button class="btn btn-ghost" value="cancel" data-i18n="modal.pay.later">agora não</button>
-        <button class="btn btn-primary" value="ok" id="pay-modal-ok" data-i18n="modal.pay.ok">entendi, abrir o Pix</button>
+        <button class="btn btn-primary" value="ok" id="pay-modal-ok" data-track="pay-modal-ok" data-i18n="modal.pay.ok">entendi, abrir o Pix</button>
       </div>
     </form>
   </dialog>
@@ -391,7 +391,7 @@
           <input id="seller-ack" name="ack" type="checkbox" required>
           <span data-i18n="sell.ack">Li e aceito os termos. A responsabilidade é minha.</span>
         </label>
-        <button class="btn btn-sell" type="submit" id="seller-submit" data-i18n="sell.submit">Enviar para revisão</button>
+        <button class="btn btn-sell" type="submit" id="seller-submit" data-track="seller-submit" data-i18n="sell.submit">Enviar para revisão</button>
         <p class="claim-status" id="seller-status" role="status"></p>
       </form>
 

@@ -1,0 +1,19 @@
+# OPTIONAL — off by default. Do NOT enable in production without updating PRIVACY.md.
+# First-party track_events already cover visit / pay / claim / sell + engage.
+# OpenReplay stores session replays (DOM). That is a different privacy bargain.
+#
+# Usage (local lab only):
+#   cp docker-compose.openreplay.yml.example docker-compose.openreplay.yml
+#   # edit secrets, then: docker compose -f docker-compose.openreplay.yml up -d
+#
+# Keep the shop CSP / no third-party pixel policy unless the board says otherwise.
+
+services:
+  openreplay:
+    image: public.ecr.aws/openreplay/front:latest
+    profiles: ["openreplay-off"]
+    ports:
+      - "127.0.0.1:8088:8080"
+    environment:
+      OPENREPLAY_ENABLED: "false"
+    restart: "no"

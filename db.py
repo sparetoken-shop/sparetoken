@@ -111,6 +111,10 @@ CREATE TABLE IF NOT EXISTS track_events (
     utm_content TEXT,
     utm_term TEXT,
     code TEXT,
+    label TEXT,
+    sid TEXT,
+    ms INTEGER,
+    depth INTEGER,
     created_at REAL NOT NULL
 );
 
@@ -185,9 +189,22 @@ def connect(path: Path) -> sqlite3.Connection:
             utm_content TEXT,
             utm_term TEXT,
             code TEXT,
+            label TEXT,
+            sid TEXT,
+            ms INTEGER,
+            depth INTEGER,
             created_at REAL NOT NULL
         )"""
     )
+    track_cols = {row[1] for row in conn.execute("PRAGMA table_info(track_events)")}
+    for col, decl in (
+        ("label", "TEXT"),
+        ("sid", "TEXT"),
+        ("ms", "INTEGER"),
+        ("depth", "INTEGER"),
+    ):
+        if col not in track_cols:
+            conn.execute(f"ALTER TABLE track_events ADD COLUMN {col} {decl}")
     conn.commit()
     return conn
 
