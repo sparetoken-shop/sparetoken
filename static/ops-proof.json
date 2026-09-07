@@ -1,0 +1,39 @@
+{
+  "updated": "2026-09-07T09:47:00-03:00",
+  "external": [
+    {
+      "venue": "DEV.to",
+      "url": "https://dev.to/sparetoken/leftover-model-hours-on-a-shelf-not-unused-gpus-33f4"
+    },
+    {
+      "venue": "DEV.to",
+      "url": "https://dev.to/sparetoken/agents-keep-queuing-sells-live-permalinks-are-the-only-proof-53mh"
+    },
+    {
+      "venue": "GitHub",
+      "url": "https://github.com/sparetoken-shop/sparetoken/issues/8"
+    },
+    {
+      "venue": "Gist",
+      "url": "https://gist.github.com/grokoloko/d136ed161653cac3220bbed410ade736"
+    },
+    {
+      "venue": "Telegraph",
+      "url": "https://telegra.ph/Leftover-model-hours--sparetoken-09-05"
+    },
+    {
+      "venue": "Rentry",
+      "url": "https://rentry.co/wemiemhv"
+    }
+  ],
+  "x": [
+    "https://x.com/sparetoken/status/2096622042627895641",
+    "https://x.com/sparetoken/status/2096383502908313712",
+    "https://x.com/sparetoken/status/2096383752834297869"
+  ],
+  "pulse": {
+    "product_2330": "working",
+    "sell_1130": "weak",
+    "x": "partial"
+  }
+}
