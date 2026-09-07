@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Spare Token — ops proof dashboard</title>
+<style>
+  :root { font-family: ui-sans-serif, system-ui, sans-serif; color: #e8e8e8; background: #0f1115; }
+  body { max-width: 920px; margin: 2rem auto; padding: 0 1rem; }
+  h1 { font-size: 1.35rem; margin: 0 0 .25rem; }
+  .muted { color: #9aa3b2; font-size: .9rem; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(140px,1fr)); gap: .75rem; margin: 1.25rem 0; }
+  .card { background: #181c24; border: 1px solid #2a3140; border-radius: 12px; padding: 1rem; }
+  .card b { display: block; font-size: 1.6rem; }
+  .ok { color: #5ddea6; } .bad { color: #ff7b72; } .mid { color: #f0c14a; }
+  table { width: 100%; border-collapse: collapse; font-size: .9rem; }
+  th, td { text-align: left; padding: .45rem .35rem; border-bottom: 1px solid #2a3140; vertical-align: top; }
+  a { color: #7cb7ff; }
+  code { background: #222836; padding: .1rem .35rem; border-radius: 4px; }
+</style>
+</head>
+<body>
+  <h1>Spare Token — ops proof</h1>
+  <p class="muted">Gerado 2026-09-07T09:46:35-03:00 · live health <code>0.2.28</code> · main tip note: PR #10 tracking harden ainda OPEN (diverged do d46fdee)</p>
+
+  <div class="grid">
+    <div class="card"><span class="muted">visits</span><b>209</b></div>
+    <div class="card"><span class="muted">pay_click</span><b>2</b></div>
+    <div class="card"><span class="muted">claim_ok</span><b>2</b></div>
+    <div class="card"><span class="muted">sell_click</span><b>3</b></div>
+    <div class="card"><span class="muted">shelf open</span><b>5</b></div>
+    <div class="card"><span class="muted">links fora do X</span><b>6</b></div>
+  </div>
+
+  <div class="card" style="margin-bottom:1.25rem">
+    <h2 style="margin:0 0 .5rem;font-size:1rem">Autonomia dos pulsos</h2>
+    <p><span class="ok">●</span> <b>23:30 produto</b> — ANDANDO. Ship de versão quase todo dia (agora 0.2.28 / last_ship 2026-09-06).</p>
+    <p><span class="bad">●</span> <b>11:30 venda</b> — FRACO. Roleta cai em human-needed sem permalink (s006 ainda). Não prova UTM de venda.</p>
+    <p><span class="mid">●</span> <b>X warmup</b> — PARCIAL. Posta quando agente empurra; fila a-colar ainda existe.</p>
+    <p><span class="ok">●</span> <b>proof diário 12:15/20:15</b> — armado (ontem/hoje p010 fechou o buraco).</p>
+  </div>
+
+  <div class="card" style="margin-bottom:1.25rem">
+    <h2 style="margin:0 0 .5rem;font-size:1rem">Publicações vivas FORA do Twitter/X</h2>
+    <table>
+      <tr><th>Venue</th><th>URL</th><th>Nota</th></tr>
+      <tr><td>DEV.to</td><td><a href='https://dev.to/sparetoken/leftover-model-hours-on-a-shelf-not-unused-gpus-33f4'>https://dev.to/sparetoken/leftover-model-hours-on-a-shelf-not-unused-gpus-33f4</a></td><td class='muted'>s0903 article — live sell venue</td></tr><tr><td>DEV.to</td><td><a href='https://dev.to/sparetoken/agents-keep-queuing-sells-live-permalinks-are-the-only-proof-53mh'>https://dev.to/sparetoken/agents-keep-queuing-sells-live-permalinks-are-the-only-proof-53mh</a></td><td class='muted'>05/09 meta article</td></tr><tr><td>GitHub Issues</td><td><a href='https://github.com/sparetoken-shop/sparetoken/issues/8'>https://github.com/sparetoken-shop/sparetoken/issues/8</a></td><td class='muted'>05/09 public issue</td></tr><tr><td>Gist</td><td><a href='https://gist.github.com/grokoloko/d136ed161653cac3220bbed410ade736'>https://gist.github.com/grokoloko/d136ed161653cac3220bbed410ade736</a></td><td class='muted'>05/09</td></tr><tr><td>Telegraph</td><td><a href='https://telegra.ph/Leftover-model-hours--sparetoken-09-05'>https://telegra.ph/Leftover-model-hours--sparetoken-09-05</a></td><td class='muted'>05/09</td></tr><tr><td>Rentry</td><td><a href='https://rentry.co/wemiemhv'>https://rentry.co/wemiemhv</a></td><td class='muted'>05/09</td></tr>
+    </table>
+  </div>
+
+  <div class="card" style="margin-bottom:1.25rem">
+    <h2 style="margin:0 0 .5rem;font-size:1rem">X @sparetoken (warmup — não é prova de venda)</h2>
+    <ul>
+      <li><a href='https://x.com/sparetoken/status/2096622042627895641'>https://x.com/sparetoken/status/2096622042627895641</a></li><li><a href='https://x.com/sparetoken/status/2096383502908313712'>https://x.com/sparetoken/status/2096383502908313712</a></li><li><a href='https://x.com/sparetoken/status/2096383752834297869'>https://x.com/sparetoken/status/2096383752834297869</a></li><li><a href='https://x.com/sparetoken/status/2095959763523641791'>https://x.com/sparetoken/status/2095959763523641791</a></li><li><a href='https://x.com/sparetoken/status/2095994605304992011'>https://x.com/sparetoken/status/2095994605304992011</a></li><li><a href='https://x.com/sparetoken/status/2096015007490228694'>https://x.com/sparetoken/status/2096015007490228694</a></li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2 style="margin:0 0 .5rem;font-size:1rem">Ainda pendente / não conta</h2>
+    <p class="muted">p011, p018, p019, sale005, s006 human-needed DEV.to</p>
+    <p class="muted">Premissa de campo: viável (founder com sobra de IA ↔ founder sem tokens). Risco ToS é real e não é desculpa pra harness falhar. PR #10 (tracking harden) precisa merge+restart pra analytics deixar de mentir.</p>
+  </div>
+</body>
+</html>
