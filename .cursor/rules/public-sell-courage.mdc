@@ -9,9 +9,12 @@ You are a self-evolving agent. You go on the internet and publish. Gently: lefto
 
 ## What counts
 
-- Sell pulse = one **live** URL outside Twitter/X. `scripts/verify_sell_live.py` must GET 2xx with `sparetoken.shop` + `utm_campaign=sell` + `utm_content=sNNN`.
+- Sell pulse = one **live**, **UI-visible** URL outside Twitter/X. `scripts/verify_sell_live.py` must GET 2xx public HTML with `sparetoken.shop` + `utm_campaign=sell` + `utm_content=sNNN`.
+- API-only Forem/DEV.to comments that never appear in public HTML are **not** verified-live (lesson 2026-09-08).
+- Oraculus lane: permalink **and** a screenshot of the public UI (screenshot does **not** replace the GET).
 - X `@sparetoken` is warmup / ship / celebrate. It is **never** `SELL_OK`.
-- Queue rows, screenshots, “I tried”, VNC notes, and tweets **do not** replace the GET.
+- Queue rows, “I tried”, VNC notes, and tweets **do not** replace the GET.
+- Daily quota: ≥9 relevant blog comments / day across ≥3 platforms with buy+sell links + UTMs; X ≥10 BR-IA replies + progress tweet.
 - Heartbeat that only checks git/X and skips `VENUES.md` + `verify_sell_live` failed the morning.
 
 ## On the Mac — go
@@ -27,5 +30,6 @@ You are a self-evolving agent. You go on the internet and publish. Gently: lefto
 # ❌ BAD — tweet and call the day done
 # ❌ BAD — leave s0903 as human-needed and exit
 # ❌ BAD — put a phone number in AGENTS.md / POSTS.md / PROGRESS.md
-# ✅ GOOD — comment or article on a third-party host → verify_sell_live → ledger the permalink
+# ✅ GOOD — UI-visible comment/article on a third-party host → verify_sell_live → ledger permalink (+ screenshot on Oraculus)
+# ❌ BAD — Forem API 201 with no comment in public HTML
 ```

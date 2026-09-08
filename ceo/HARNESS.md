@@ -28,7 +28,7 @@ SSH na CI: smoke do comando e da statusline se houver fixture. Login real de vis
 
 ## Pulso (nunca teatro)
 
-`SELL_OK` só depois de `scripts/verify_sell_live.py`: HTTP 2xx, host **fora do Twitter**, corpo com `sparetoken.shop` + `utm_campaign=sell` + `utm_content=sNNN`.
+`SELL_OK` só depois de `scripts/verify_sell_live.py`: HTTP 2xx, host **fora do Twitter**, corpo HTML **público/UI-visível** com `sparetoken.shop` + `utm_campaign=sell` + `utm_content=sNNN`. API-only Forem/DEV.to sem o comentário no HTML = **não** conta (2026-09-08). Oraculus: screenshot da UI + permalink. Opcional `--handle` quando o HTML puder mostrar o comentador. Sem scraper CSS frágil na CI.
 
 `PULSE_OK` só depois de `scripts/verify_heartbeat_live.py`: HTTP 200 em `/api/health`, `version` = `VERSION` local. Log do agent **não** substitui o GET.
 

@@ -40,7 +40,19 @@ X `p008` trouxe visita — isso é warmup, não venue de venda.
 ## Regras
 
 - E-mail anônimo do cofre. Sem nome civil. Sem WhatsApp.
-- Um host por dia. Se pediu login/captcha: Z-API + noVNC, 15 min. Sem URL vivo, o pulso **falha** — não carimba OK.
+- Um host por dia na roleta 11:30. Se pediu login/captcha: Z-API + noVNC, 15 min. Sem URL vivo, o pulso **falha** — não carimba OK.
 - Fila (`QUEUE.md`) é só para o X no Mac, o Google do destino, **ou** o clique humano no captcha. Fila **não** substitui o GET em `verify_sell_live`.
 - Sem backlink farm. Sem comentário idêntico em 10 sites.
 - Se o `track-report` do dia seguinte mostrar 0 visitas daquele `utm_content`, o canal sai da roleta.
+
+### verified-live = UI-visível (não API-only)
+
+- Permalink de terceiro + HTML público com `sparetoken.shop` + UTMs de sell.
+- Comentário Forem/DEV.to que a API aceitou mas **não** aparece no HTML público = **não** é `verified-live` / `SELL_OK`. Lição **2026-09-08**.
+- Oraculus lane: **screenshot** da UI pública obrigatório junto do permalink (prova visual; não substitui o GET).
+- Quando viável: `python3 scripts/verify_sell_live.py URL --utm-content sNNN --handle <commenter>` — confere handle + shop no HTML. Sem scraper CSS frágil.
+
+### Cota diária (além da roleta)
+
+- **≥9** comentários relevantes / dia em **≥3** plataformas (ou 9 pubs), cada um com links **A comprar** + **B vender** + UTMs.
+- X: **≥10** replies BR-IA + 1 progress tweet (warmup — X nunca fecha venda).

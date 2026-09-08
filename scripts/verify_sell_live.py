@@ -1,7 +1,13 @@
 #!/usr/bin/env python3
-"""Prove a sell URL is live, public, and not Twitter.
+"""Prove a sell URL is live, public, UI-visible, and not Twitter.
 
-SELL_OK is illegal without this returning 0.
+SELL_OK / verified-live is illegal without this returning 0.
+
+Gate (2026-09-08 lesson): third-party proof must be **UI-visible**.
+A Forem/DEV.to API 2xx that never renders the comment in public HTML is
+NOT verified-live. Oraculus lane also requires a screenshot of the public
+UI alongside the permalink. Do not invent fragile CSS/DOM scrapers that
+break CI — prefer this GET of public HTML + optional handle/shop markers.
 """
 from __future__ import annotations
 
@@ -26,7 +32,7 @@ BLOCKED_HOSTS = (
 UTM_CONTENT_RE = re.compile(r"utm_content=s[0-9A-Za-z]{3,}", re.I)
 SHOP_MARK = "sparetoken.shop"
 CAMPAIGN_MARK = "utm_campaign=sell"
-UA = "sparetoken-sell-verify/0.2.14"
+UA = "sparetoken-sell-verify/0.2.30"
 
 
 def _host(url: str) -> str:
@@ -58,11 +64,33 @@ def default_fetch(url: str) -> tuple[int, str, str]:
         raise RuntimeError(f"fetch failed: {exc}") from exc
 
 
+def ui_visible_markers(body: str, *, handle: str | None = None) -> tuple[bool, str]:
+    """Cheap UI-visibility helper: public HTML must show shop (+ optional handle).
+
+    Not a CSS scraper. When feasible, Oraculus/CEO pass --handle so the
+    commenter identity appears in the same public HTML as the shop link.
+    API-only hits without these markers fail the gate.
+    """
+    if not body:
+        return False, "empty body (not UI-visible)"
+    low = body.lower()
+    if SHOP_MARK not in low:
+        return False, "public HTML missing sparetoken.shop (API-only / not UI-visible)"
+    if handle:
+        needle = handle.strip().lstrip("@").lower()
+        if not needle:
+            return False, "empty handle"
+        if needle not in low:
+            return False, f"public HTML missing handle {needle} (not UI-visible)"
+    return True, "ui-visible markers ok"
+
+
 def verify_url(
     url: str,
     utm_content: str,
     *,
     fetch=None,
+    handle: str | None = None,
 ) -> tuple[bool, str]:
     if not url or not url.startswith(("http://", "https://")):
         return False, "url must be http(s)"
@@ -92,15 +120,30 @@ def verify_url(
         return False, f"body missing {wanted}"
     if wanted not in low:
         return False, f"body missing exact {wanted}"
-    return True, f"ok {status} {_host(final)}"
+
+    ok_ui, ui_reason = ui_visible_markers(body, handle=handle)
+    if not ok_ui:
+        return False, ui_reason
+    return True, f"ok {status} {_host(final)} ({ui_reason})"
 
 
 def main(argv: list[str] | None = None) -> int:
-    parser = argparse.ArgumentParser(description="Verify a live sell URL")
+    parser = argparse.ArgumentParser(
+        description=(
+            "Verify a live sell URL is UI-visible in public HTML. "
+            "API-only Forem comments that never render are NOT verified-live."
+        )
+    )
     parser.add_argument("url")
     parser.add_argument("--utm-content", required=True)
+    parser.add_argument(
+        "--handle",
+        default="",
+        help="optional commenter handle that must appear in public HTML (Oraculus lane)",
+    )
     args = parser.parse_args(argv)
-    ok, reason = verify_url(args.url, args.utm_content)
+    handle = (args.handle or "").strip() or None
+    ok, reason = verify_url(args.url, args.utm_content, handle=handle)
     print(reason)
     return 0 if ok else 78
 

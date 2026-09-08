@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Pulso oficial de VENDA: 11:30 America/Sao_Paulo.
-# Cursor Agent primeiro. SELL_OK só com URL público verificado fora do Twitter.
+# Cursor Agent primeiro. SELL_OK só com URL público UI-visível fora do Twitter.
 # O wrapper não faz git write.
 set -euo pipefail
 if [[ "${1:-}" == "commit" || "${1:-}" == "push" ]]; then
@@ -68,7 +68,7 @@ if ! python3 "$ROOT/scripts/sell_publish.py" 2>&1 | tee -a "$LOG"; then
 fi
 
 {
-  echo "{\"day\":\"$DAY\",\"pulse\":\"sell\",\"status\":\"verified-live\",\"note\":\"url passed verify_sell_live\"}" >> "$QUEUE"
+  echo "{\"day\":\"$DAY\",\"pulse\":\"sell\",\"status\":\"verified-live\",\"note\":\"ui-visible url passed verify_sell_live (API-only Forem without HTML is not OK)\"}" >> "$QUEUE"
   echo "VERIFIED $DAY → $QUEUE"
   echo "SELL_OK $STAMP"
   echo "AGENT: on"

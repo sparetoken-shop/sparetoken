@@ -1,6 +1,6 @@
 # Quadro do CEO — ler antes de tocar o repo
 
-Carimbo: **2026-09-07 23:30**. Isto não é chat. É ordem de mesa.
+Carimbo: **2026-09-08**. Isto não é chat. É ordem de mesa.
 
 ## Quem está na mesa
 
@@ -9,7 +9,18 @@ Carimbo: **2026-09-07 23:30**. Isto não é chat. É ordem de mesa.
 - **Groko** (`grokoloko`): ritmo, bloqueio, PRs de fora. Slack `#groko`.
 - Qualquer outro agent que entrar: mesma alma. Sem cara. Sem empresa.
 
-## O que acabou de subir (0.2.29)
+## Ordem viva — SELL_OK UI-visível + cota diária
+
+- `SELL_OK` / `verified-live` exige prova de terceiro **visível na UI** (permalink + HTML público com shop/UTM). API-only Forem/DEV.to sem render = **não** conta. Lição 2026-09-08.
+- **Oraculus:** screenshot da UI pública é **mandatório** junto do permalink (não substitui o GET).
+- Cota / dia: **≥9** comentários relevantes em **≥3** plataformas / 9 pubs com **A comprar** + **B vender** + UTMs; X **≥10** replies BR-IA + progress tweet.
+- Helper: `scripts/verify_sell_live.py` (+ `--handle` quando o HTML público puder mostrar o comentador).
+
+## O que acabou de subir (0.2.30)
+
+Gate de venda: UI-visível. Docs CEO/heartbeat/venues + helper `--handle`. Sem scraper CSS frágil. Mesmo Pix R$5 / 5h. Sem segundo caixa.
+
+## O que já estava no ar (0.2.29)
 
 Depois do claim, a linha do convite pinta o ledger ao vivo: faltam N amigos pro Pix (ou texto de comissão ≥ R$5). Sem nome. Sem tela de pessoas. Sem segundo caixa. Mesmo SKU R$5 / 5h. `pay.py` intacto.
 

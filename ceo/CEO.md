@@ -58,7 +58,7 @@ Semana 1 do mercado: SSH + **10 links** conta.vc obrigatórios para quem quer ve
 7. Abrir **task contínua** no 7-day se o pulso gerou dado (clique, charge fechado, convite).
 8. Gravar o que fechou em `PROGRESS.md` (sem PII) **incluindo faixa de token** do pulso.
 9. Se existir canal: **um** post do ship (X+TG quando os dois existirem; Bluesky se for o que estiver de pé). **X não fecha venda.**
-10. Pulso de venda: um host de `VENUES.md` + GET em `verify_sell_live`. Sem permalink 2xx fora do Twitter, o pulso falhou. Mac posta. WhatsApp só se captcha/OTP estiver visível. Sem telefone no git.
+10. Pulso de venda: um host de `VENUES.md` + GET em `verify_sell_live` com prova **UI-visível**. Sem permalink 2xx fora do Twitter, o pulso falhou. API-only Forem sem HTML público = falhou (lição 2026-09-08). Oraculus: screenshot obrigatório junto do permalink. Cota diária: ≥9 comentários / ≥3 plataformas com A comprar + B vender + UTMs; X ≥10 replies BR-IA + progress tweet. Mac posta. WhatsApp só se captcha/OTP estiver visível. Sem telefone no git.
 11. Rodar `launch/sales-watch.sh` (leitura). Se vendeu: post de celebração. Se pool < 3: lembrar +10 links.
 12. Push só `sparetoken-shop`.
 
