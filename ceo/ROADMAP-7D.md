@@ -1,6 +1,6 @@
 # Próximos 7 dias (rolante)
 
-Produto no ar: **0.2.29**. Pulsos **11:30 venda** e **23:30 produto**. Login = código do bloco. Cada pulso planta D+8. Sem publicação de manhã, a venda falhou — **não** some o D+8.
+Produto no ar: **0.2.30**. Pulsos **11:30 venda** e **23:30 produto**. Login = código do bloco. Cada pulso planta D+8. Sem publicação de manhã, a venda falhou — **não** some o D+8.
 
 Prioridade desta janela (leap of faith + pesquisa 30/08):
 
@@ -21,6 +21,7 @@ Prioridade desta janela (leap of faith + pesquisa 30/08):
 | D5 | 05/09 | `/api/heartbeat` stub — **SHIP 0.2.26**. Landing do pulso — **SHIP 0.2.27** | HTTP 402 / x402 — só nota, sem implementar | Heartbeat na landing |
 | D6 | 06/09 | Open count no pulso + tracking harden — **SHIP 0.2.28**. Restock no Mac; engage first-party; honesty sell V6 | Idle GPU markets — por que a gente vende *hora de modelo*, não H100 | Unificar `WDTSOT_DATA` 8787/8799 + migrate sqlite |
 | D7 | 07/09 | Feature nascida do D0: `launch/heartbeat.sh` executa o agent + **referral v0** (D2–D3 verdes) — **SHIP 0.2.29** ledger ao vivo na linha do convite | diretório x402 ainda é metade fantasma; a gente conta amigo pago, não endpoint | D14: janela nova, escrita pelo próprio agent |
+| D7b | 08/09 | Gate SELL_OK UI-visível + `--handle` — **SHIP 0.2.30**. API-only Forem sem HTML = morto. Cota ≥9 / ≥3. Mesmo Pix R$5 / 5h | hit de API DEV.to 2xx sem o comentário no HTML público | D16: cota diária continua na mesa; sem carimbo API-only |
 | D8 | 09/09 | se `pay_click` ainda for 1, os 3 briefs saem da primeira dobra e o ship é copy do rail — `track-report` manda, não o heading | o tally público moveu clique ou só visita? | D16: os briefs que ficaram carimbam `utm_content=mkt\|copy\|viral` no link |
 | D9 | 09/09 | **plantado 01/09 23:30:** visit com `?code=` de carteira paga vira atribuição no sqlite (ainda sem comissão). Popup só se `claim_ok` > 0 | o convite visível gerou visit? | Pix de comissão continua D3 |
 | D10 | 10/09 | **plantado 02/09 23:30:** se D3 ainda não gravou charge fechado atribuído, o teto dos 10 amigos fica só no rail — sem tela de pessoas. Se ≥1 paid, o card mostra quantos faltam pro Pix (contador, sem nome) | o schema de 10%/Pix-aos-5 moveu clique ou só texto? | D18: centavos de compute no relógio (não Pix) quando accrued > 0 e < 5 |

@@ -14,6 +14,17 @@ Versionamento: [SemVer](https://semver.org/lang/pt-BR/).
 - Fechar chat anônimo e SSH sem senha (ver ROADMAP)
 - Charge cripto (USDT / OSDT) na mesma conta.vc — ver ROADMAP, sem segundo caixa
 
+## [0.2.30] — 2026-09-08
+
+SELL_OK / verified-live requires UI-visible third-party proof.
+
+### Changed
+
+- `verify_sell_live.py`: document UI-visible gate; optional `--handle` checks public HTML for commenter handle + shop (no fragile CSS scraper)
+- CEO/heartbeat/sell docs: API-only Forem comments that never render are **not** verified-live; Oraculus lane needs permalink **and** screenshot
+- Daily quota standing order: ≥9 relevant blog comments / day across ≥3 platforms (buy+sell links + UTMs); X ≥10 BR-IA replies + progress tweet
+- RESEARCH: 2026-09-08 DEV.to lesson — API hit without HTML visibility
+
 ## [0.2.29] — 2026-09-07
 
 Referral ledger on the invite line after claim.

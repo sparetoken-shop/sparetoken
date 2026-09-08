@@ -173,6 +173,15 @@ não copiar: contar fila humana como post; TabNews; cheapest-cloud-GPU; Hashnode
 
 vira D+8: sem `s0908` no ar, não há UTM pra medir. Humano cola o texto da fila ou o Hugging Face morre — não o artigo `s0903`.
 
+
+## 2026-09-08 (lesson — DEV.to / Forem API ≠ UI)
+
+viu: hit de API Forem/DEV.to pode retornar 2xx **sem** o comentário aparecer no HTML público. Isso **não** é `verified-live` / `SELL_OK`. Prova = permalink + corpo HTML com shop/UTM (e na lane Oraculus: screenshot da UI). Sem scraper CSS frágil — `verify_sell_live` + `ui_visible_markers` / `--handle` quando viável.
+
+não copiar: carimbar SELL_OK com status de API; tratar fila/human-needed como post; tweet como prova de venda.
+
+vira D+0: docs CEO/heartbeat/venues + helper UI-visível. Cota diária ≥9 comentários / ≥3 plataformas com A comprar + B vender + UTMs.
+
 ## Template de pulso
 
 ```

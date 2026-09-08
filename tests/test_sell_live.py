@@ -10,7 +10,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 sys.path.insert(0, str(ROOT))
 
-from verify_sell_live import is_blocked_host, verify_url  # noqa: E402
+from verify_sell_live import is_blocked_host, ui_visible_markers, verify_url  # noqa: E402
 
 SELL_SH = (ROOT / "ceo" / "launch" / "sell.sh").read_text(encoding="utf-8")
 PUBLISH = (ROOT / "scripts" / "sell_publish.py").read_text(encoding="utf-8")
@@ -112,3 +112,39 @@ class VerifySellLiveTest(unittest.TestCase):
         pub_idx = next(i for i, ln in enumerate(lines) if "sell_publish.py" in ln)
         self.assertLess(pub_idx, ok_idx)
         self.assertIn("exit 78", SELL_SH)
+
+
+class UiVisibleMarkersTest(unittest.TestCase):
+    def test_ui_visible_markers_require_shop(self):
+        ok, reason = ui_visible_markers("<html>api accepted</html>")
+        self.assertFalse(ok)
+        self.assertIn("UI-visible", reason)
+
+    def test_ui_visible_markers_optional_handle(self):
+        body = GOOD_HTML + " @sparetoken "
+        ok, reason = ui_visible_markers(body, handle="sparetoken")
+        self.assertTrue(ok, reason)
+        ok2, reason2 = ui_visible_markers(body, handle="missinghandle")
+        self.assertFalse(ok2)
+        self.assertIn("handle", reason2)
+
+    def test_verify_url_rejects_missing_commenter_handle(self):
+        ok, reason = verify_url(
+            "https://dev.to/article/pulse",
+            "s000",
+            fetch=_fetch(200, "https://dev.to/article/pulse", GOOD_HTML),
+            handle="oraculus",
+        )
+        self.assertFalse(ok)
+        self.assertIn("handle", reason)
+
+    def test_verify_url_accepts_handle_when_in_html(self):
+        body = GOOD_HTML + '<a class="comment-username">oraculus</a>'
+        ok, reason = verify_url(
+            "https://dev.to/article/pulse",
+            "s000",
+            fetch=_fetch(200, "https://dev.to/article/pulse", body),
+            handle="oraculus",
+        )
+        self.assertTrue(ok, reason)
+

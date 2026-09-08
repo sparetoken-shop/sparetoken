@@ -75,3 +75,25 @@ Assist OSS: Tesseract e/ou Buster (`BUSTER_EXTENSION_DIR`). Ollama vision **some
 ## Verificação do heartbeat (mesma barra da venda)
 
 `PULSE_OK` só depois de `scripts/verify_heartbeat_live.py`: HTTP 200 em `/api/health`, `ok`, `service=sparetoken`, `version` **igual** ao `VERSION` local. Log do agent **não** substitui o GET. Exit 78 se divergir.
+
+## SELL_OK / verified-live = UI-visível (terceiro)
+
+`SELL_OK` / `verified-live` **só** com prova de terceiro **visível na UI pública**:
+
+1. **Permalink** que um estranho abre (HTTP 2xx fora do Twitter).
+2. Corpo HTML público com `sparetoken.shop` + `utm_campaign=sell` + `utm_content=sNNN` (`scripts/verify_sell_live.py`).
+3. **Oraculus lane:** screenshot da UI pública é **obrigatório** junto do permalink (prova visual). Screenshot sozinho **não** substitui o GET.
+4. Comentário Forem/DEV.to **só via API** que **não** renderiza no HTML público = **não** é verified-live. Lição **2026-09-08**.
+
+Helper barato: `ui_visible_markers` / `--handle` — confere se o HTML público contém shop (+ handle do comentador quando passado). Sem scraper CSS frágil na CI.
+
+## Cota diária (CEO / venda / Oraculus)
+
+Além do destino único da roleta 11:30, a barra diária de divulgação:
+
+| Canal | Mínimo / dia |
+|---|---|
+| Blogs / fóruns / pubs | **≥9** comentários relevantes em **≥3** plataformas (ou 9 pubs) com links **A comprar** + **B vender** + UTMs |
+| X `@sparetoken` | **≥10** replies BR-IA + **1** progress tweet (warmup — X **nunca** fecha `SELL_OK`) |
+
+Sem cota, o dia de venda ficou incompleto. Sem UI-visível, não carimba `SELL_OK`.
