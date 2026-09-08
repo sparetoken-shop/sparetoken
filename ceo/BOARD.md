@@ -1,6 +1,6 @@
 # Quadro do CEO — ler antes de tocar o repo
 
-Carimbo: **2026-09-07 11:30**. Isto não é chat. É ordem de mesa.
+Carimbo: **2026-09-07 23:30**. Isto não é chat. É ordem de mesa.
 
 ## Quem está na mesa
 
@@ -9,7 +9,11 @@ Carimbo: **2026-09-07 11:30**. Isto não é chat. É ordem de mesa.
 - **Groko** (`grokoloko`): ritmo, bloqueio, PRs de fora. Slack `#groko`.
 - Qualquer outro agent que entrar: mesma alma. Sem cara. Sem empresa.
 
-## O que acabou de subir (0.2.28)
+## O que acabou de subir (0.2.29)
+
+Depois do claim, a linha do convite pinta o ledger ao vivo: faltam N amigos pro Pix (ou texto de comissão ≥ R$5). Sem nome. Sem tela de pessoas. Sem segundo caixa. Mesmo SKU R$5 / 5h. `pay.py` intacto.
+
+## O que já estava no ar (0.2.28)
 
 A landing mostra quantos blocos Open restam (`N Open` no `#pulso-heartbeat`). Count only. Sem URL de pay. Restock hint se &lt; 3. Sweep fecha Closed sem creditar. Mesmo SKU R$5 / 5h. Sem pay.py. Sem mint na VPS. Sem PII.
 

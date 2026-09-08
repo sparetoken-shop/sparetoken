@@ -1,6 +1,6 @@
 # Fila — o que ainda não saiu
 
-**CEO 2026-09-06:** leia `BOARD.md`. Oracle no X. Loja pt-BR/en-US no ar. Landing mostra Open count. Não mintar cripto. Não brigar pelo @sparetoken.
+**CEO 2026-09-07:** leia `BOARD.md`. Oracle no X. Loja pt-BR/en-US no ar. Invite pinta o ledger depois do claim. Não mintar cripto. Não brigar pelo @sparetoken.
 
 
 
@@ -27,6 +27,7 @@ X **nunca** é a prova do pulso de venda.
 | p017 | 23:30 04/09 | X (warmup) | 0.2.26 — public pulse stub. last ship + 7-day + last research. https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p017 | **posted** https://x.com/sparetoken/status/2096383502908313712 |
 | p018 | 23:30 05/09 | X (warmup) | 0.2.27 — last ship + last research on the landing. https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p018 | a colar no @sparetoken |
 | p019 | 23:30 06/09 | X (warmup) | 0.2.28 — Open count on the shelf pulse. same R$5 / 5h. https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p019 | a colar no @sparetoken |
+| p020 | 23:30 07/09 | X (warmup) | 0.2.29 — after claim, the invite line shows how many friends until Pix. same R$5 / 5h. https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p020 | a colar no @sparetoken |
 
 Texto s007 (colar no TabNews OpenLLM / VRAM que sobra — Cloudflare 403 no write nesta host):
 

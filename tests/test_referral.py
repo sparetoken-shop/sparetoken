@@ -8,10 +8,12 @@ import sys
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
+import i18n
 import referral
 
 ROOT = Path(__file__).resolve().parents[1]
 HTML = (ROOT / "static" / "index.html").read_text(encoding="utf-8")
+JS = (ROOT / "static" / "app.js").read_text(encoding="utf-8")
 SERVER = (ROOT / "server.py").read_text(encoding="utf-8")
 
 
@@ -81,6 +83,43 @@ class ReferralSurfaceTest(unittest.TestCase):
         self.assertIn("referral.public_ledger(", SERVER)
         self.assertNotIn("import pay", src)
         self.assertNotIn("conta.vc", src)
+
+    def test_invite_line_has_a_live_ledger_slot(self):
+        self.assertIn('id="referral-ledger"', HTML)
+        self.assertIn('id="referral-note"', HTML)
+        self.assertIn("function showReferral", JS)
+        self.assertIn("friends_until_pix", JS)
+        self.assertIn("can_choose_pix", JS)
+        self.assertIn("showReferral(", JS)
+        self.assertIn("referral.left", JS)
+        self.assertIn("referral.ready", JS)
+        self.assertNotIn("referral.pay", JS)
+
+    def test_public_ledger_has_no_names_or_second_till(self):
+        ledger = referral.public_ledger(0)
+        self.assertEqual(ledger["friends_until_pix"], 10)
+        self.assertFalse(ledger["can_choose_pix"])
+        self.assertNotIn("email", ledger)
+        self.assertNotIn("name", ledger)
+        self.assertNotIn("buyer_code", ledger)
+        self.assertNotIn("pay_url", ledger)
+        ready = referral.public_ledger(10)
+        self.assertTrue(ready["can_choose_pix"])
+        self.assertEqual(ready["friends_until_pix"], 0)
+
+    def test_ledger_copy_is_a_counter_not_a_checkout(self):
+        pt = i18n.STRINGS["pt-BR"]
+        en = i18n.STRINGS["en-US"]
+        self.assertIn("{n}", pt["referral.left"])
+        self.assertIn("pix", pt["referral.left"].lower())
+        self.assertIn("pix", pt["referral.ready"].lower())
+        self.assertIn("{n}", en["referral.left"])
+        self.assertIn("pix", en["referral.left"].lower())
+        blob = (pt["referral.left"] + pt["referral.ready"] + en["referral.left"] + en["referral.ready"]).lower()
+        self.assertNotIn("pague r$", blob)
+        self.assertNotIn("pay r$", blob)
+        self.assertNotIn("checkout", blob)
+        self.assertNotIn("whatsapp", blob)
 
 
 class ReferralAttributionTest(unittest.TestCase):

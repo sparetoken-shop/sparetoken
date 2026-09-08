@@ -14,6 +14,19 @@ Versionamento: [SemVer](https://semver.org/lang/pt-BR/).
 - Fechar chat anônimo e SSH sem senha (ver ROADMAP)
 - Charge cripto (USDT / OSDT) na mesma conta.vc — ver ROADMAP, sem segundo caixa
 
+## [0.2.29] — 2026-09-07
+
+Referral ledger on the invite line after claim.
+
+### Added
+
+- After claim, `#referral-ledger` paints `friends_until_pix` (or Pix-ready text) from the session ledger
+- Counter only. No names. No people screen. Same R$5 / 5h
+
+### Changed
+
+- Same Pix rail. `pay.py` untouched. No second till. No mint on the VPS
+
 ## [0.2.28] — 2026-09-06
 
 Public shelf remaining + tracking harden. Honesty on sell V6.

@@ -155,12 +155,32 @@ function showInvite(code, urlFromApi) {
   if (copyBtn) copyBtn.dataset.copy = url;
 }
 
-function showBlock(code, inviteFromApi) {
+function showReferral(ledger) {
+  const el = document.getElementById("referral-ledger");
+  const wrap = document.getElementById("invite-wrap");
+  if (!el) return;
+  if (!ledger || (wrap && wrap.hidden)) {
+    el.hidden = true;
+    return;
+  }
+  if (ledger.can_choose_pix) {
+    el.textContent = t("referral.ready");
+  } else if (typeof ledger.friends_until_pix === "number") {
+    el.textContent = t("referral.left", { n: ledger.friends_until_pix });
+  } else {
+    el.hidden = true;
+    return;
+  }
+  el.hidden = false;
+}
+
+function showBlock(code, inviteFromApi, ledger) {
   if (!code || !blockWrap || !blockCode) return;
   blockCode.textContent = code;
   blockWrap.hidden = false;
   if (claimCode && !claimCode.value) claimCode.value = code;
   showInvite(code, inviteFromApi);
+  showReferral(ledger);
 }
 
 function isGenericLabel(label) {
@@ -286,7 +306,7 @@ function applySession(data) {
     renderClock(data);
     stopPaidLoop();
     if (payNote) payNote.textContent = t("js.exhausted.note");
-    if (data.block_code) showBlock(data.block_code, data.invite_url);
+    if (data.block_code) showBlock(data.block_code, data.invite_url, data.referral);
     return;
   }
   if (data.ok === false) return;
@@ -316,7 +336,7 @@ function applySession(data) {
     renderClock(data);
     setRemaining(data.remaining_messages);
   }
-  if (data.block_code) showBlock(data.block_code, data.invite_url);
+  if (data.block_code) showBlock(data.block_code, data.invite_url, data.referral);
 }
 
 async function clockAction(action, extra) {

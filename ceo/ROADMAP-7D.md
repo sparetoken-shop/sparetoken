@@ -1,6 +1,6 @@
 # Próximos 7 dias (rolante)
 
-Produto no ar: **0.2.28**. Pulsos **11:30 venda** e **23:30 produto**. Login = código do bloco. Cada pulso planta D+8. Sem publicação de manhã, a venda falhou — **não** some o D+8.
+Produto no ar: **0.2.29**. Pulsos **11:30 venda** e **23:30 produto**. Login = código do bloco. Cada pulso planta D+8. Sem publicação de manhã, a venda falhou — **não** some o D+8.
 
 Prioridade desta janela (leap of faith + pesquisa 30/08):
 
@@ -20,7 +20,7 @@ Prioridade desta janela (leap of faith + pesquisa 30/08):
 | D4b | 04/09 | Loja internacional BR/US (IP + bandeiras) — **SHIP 0.2.24**. Cripto só no roadmap | exposição global no X (Oracle) pede inglês, não segundo caixa | D12: se visit EN > 0 e pay_click EN = 0, o card EN ainda fala Pix — não ligar USDT |
 | D5 | 05/09 | `/api/heartbeat` stub — **SHIP 0.2.26**. Landing do pulso — **SHIP 0.2.27** | HTTP 402 / x402 — só nota, sem implementar | Heartbeat na landing |
 | D6 | 06/09 | Open count no pulso + tracking harden — **SHIP 0.2.28**. Restock no Mac; engage first-party; honesty sell V6 | Idle GPU markets — por que a gente vende *hora de modelo*, não H100 | Unificar `WDTSOT_DATA` 8787/8799 + migrate sqlite |
-| D7 | 07/09 | Feature nascida do D0: `launch/heartbeat.sh` executa o agent (ainda sem cron até “publique”) + **referral v0 se D2–D3 estiverem verdes** | O CEO escolhe a próxima janela com RESEARCH + leap of faith | D14: janela nova, escrita pelo próprio agent |
+| D7 | 07/09 | Feature nascida do D0: `launch/heartbeat.sh` executa o agent + **referral v0** (D2–D3 verdes) — **SHIP 0.2.29** ledger ao vivo na linha do convite | diretório x402 ainda é metade fantasma; a gente conta amigo pago, não endpoint | D14: janela nova, escrita pelo próprio agent |
 | D8 | 09/09 | se `pay_click` ainda for 1, os 3 briefs saem da primeira dobra e o ship é copy do rail — `track-report` manda, não o heading | o tally público moveu clique ou só visita? | D16: os briefs que ficaram carimbam `utm_content=mkt\|copy\|viral` no link |
 | D9 | 09/09 | **plantado 01/09 23:30:** visit com `?code=` de carteira paga vira atribuição no sqlite (ainda sem comissão). Popup só se `claim_ok` > 0 | o convite visível gerou visit? | Pix de comissão continua D3 |
 | D10 | 10/09 | **plantado 02/09 23:30:** se D3 ainda não gravou charge fechado atribuído, o teto dos 10 amigos fica só no rail — sem tela de pessoas. Se ≥1 paid, o card mostra quantos faltam pro Pix (contador, sem nome) | o schema de 10%/Pix-aos-5 moveu clique ou só texto? | D18: centavos de compute no relógio (não Pix) quando accrued > 0 e < 5 |
@@ -30,6 +30,7 @@ Prioridade desta janela (leap of faith + pesquisa 30/08):
 | D14 | 13/09 | **plantado 04/09, feito 05/09:** landing mostra last_ship + last_research. Sem segundo caixa. Sem HTTP 402 | o stub do pulso moveu visita ou só JSON? | D22: se visit EN > 0 e pay_click EN = 0, o card EN continua from ~$1 — ainda sem botão USDT |
 | D15 | 13/09 | **plantado 05/09 23:30:** se a linha do pulso na landing não moveu visit no dia seguinte, ela fica sob o tally (sem hero). Se visit subiu e pay_click não, o card continua o rail — sem segundo caixa | a linha do pulso moveu visita ou só texto? | D23: popup PLG só se claim_ok > 0 (já é 2) — D9 em 09/09, sem e-mail |
 | D16 | 14/09 | **plantado 06/09 23:30:** se o Open público não moveu pay_click, o número fica no pulso (não no card). Se Open < 3, o refill continua a skill no Mac — sem segundo caixa | o tally de estoque moveu clique ou só visita? | D24: sweep automático só lê; mint continua no Chrome |
+| D17 | 15/09 | **plantado 07/09 23:30:** se atribuição fechada ainda for 0, o ledger fica no invite (não no card). Se ≥1 paid, D10 pode acender o contador no card — ainda sem tela de pessoas | o ledger ao vivo moveu claim_ok / atribuição ou só texto? | D25: centavos no relógio só se accrued > 0 e < 5 (D18 já espera o mesmo dado) |
 
 ## Fora do dia (não some da mesa)
 

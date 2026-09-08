@@ -453,3 +453,19 @@ canal: slack C0BSDQDMZ71 thread 1788232177.124409
 - Assist OSS: Tesseract/Buster; Ollama vision só se já estiver no cache. Sem pull. Sem solver pago.
 - Soft-fail do assist = ping humano, nunca solver pago.
 
+## 2026-09-07 23:30 (heartbeat D7 — 0.2.29)
+
+```
+tokens_pulso: ~normal (ledger no invite + teste + D+8)
+tokens_mês_est: pulso produto 07/09 23:30
+ship: 0.2.29 — ledger ao vivo na linha do convite (faltam N / Pix no mesmo trilho); pay.py intacto
+canal: X p020 na fila (Mac). Sem tweet desta host.
+audiência: 214 visit · 2 pay_click · 2 claim_ok · 3 sell_click · s0903=2 · p008=14
+```
+
+- D7 fecha referral v0 na prateleira: D2–D3 verdes, atribuições fechadas = 0, contador só depois do claim. Sem tela de pessoas. Sem HTTP 402. Sem segundo caixa. Sem PII.
+- D+8 (15/09): se atribuição fechada ainda for 0, o número fica no invite (não no card).
+- sales-watch: purchases_paid=5 · pay_openish=5 · delta=0. Sem CELEBRATE. Sem RESTOCK.
+- track-report: 214 visit · 2 pay_click · 2 claim_ok · 3 sell_click. `s0903` = 2 (DEV.to vive). X p008 = 14 (warmup).
+- Unittest verde. `pay.py` intacto. X não twitta daqui.
+

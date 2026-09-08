@@ -1,6 +1,6 @@
 # Roadmap — fechar o MVP
 
-Versão atual: **0.2.28** (Open no pulso + tracking harden; tally público intacto).
+Versão atual: **0.2.29** (ledger de indicação na linha do convite; tally público intacto).
 
 ---
 
