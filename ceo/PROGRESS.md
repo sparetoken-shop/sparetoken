@@ -469,3 +469,29 @@ audiência: 214 visit · 2 pay_click · 2 claim_ok · 3 sell_click · s0903=2 ·
 - track-report: 214 visit · 2 pay_click · 2 claim_ok · 3 sell_click. `s0903` = 2 (DEV.to vive). X p008 = 14 (warmup).
 - Unittest verde. `pay.py` intacto. X não twitta daqui.
 
+## 2026-09-08 11:30 (sell V8)
+
+```
+tokens_pulso: ~magro
+tokens_mês_est: pulso venda 08/09
+ship: s0903 vive (2 visit); s0907 morto (0 visit); destino HF Forums H100 idle s0908; fila humana (login wall)
+canal: discuss.huggingface.co H100 idle on-prem (human-needed) — sem X, sem segundo Pix
+```
+
+- track-report: 214 visit · 2 pay_click · 2 claim_ok · 3 sell_click. `s0903` = 2. `s0907` = 0 → mata TabNews. X p008 = 14 (warmup).
+- Destino único: https://discuss.huggingface.co/t/h100-on-premise-for-occasional-llm-usage-how-do-you-handle-gpu-idle-time-when-deploying-at-a-client-site/174410
+- Thread abre. Write desta host = Discourse 403 (need login). huggingface.co login POST 400. `verify_sell_live` não rodou — sem permalink.
+- Copy na fila. Sem VNC. Slack MCP sem auth nesta host; alert json + thread `C0BSDQDMZ71`.
+- D+8: 16/09 julga `s0908`. leftoverpzero, indiehackers, `/pulse`+github, HN conta nova, Hashnode, cheapest-cloud-GPU e TabNews não voltam à roleta.
+
+## 2026-09-08 (human-needed notify)
+
+```
+tokens_pulso: ~magro (human-needed notify + OSS captcha assist)
+canal: slack C0BSDQDMZ71 thread 1788232177.124409
+```
+
+- Flag durável: s008 (google_login_wall). `data/human-needed-alert.json` + tabela em QUEUE.md.
+- Assist OSS: Tesseract/Buster; Ollama vision só se já estiver no cache. Sem pull. Sem solver pago.
+- Soft-fail do assist = ping humano, nunca solver pago.
+

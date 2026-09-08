@@ -1,10 +1,10 @@
 {
   "default": {
-    "host": "tabnews",
-    "url": "https://www.tabnews.com.br/MrJ/openllm-de-roteador-de-llms-a-plataforma-multimodal-texto-imagem-audio-musica-e-video-por-centavos-e-como-aproveitar-a-vram-que-sobra-vastai",
+    "host": "huggingface",
+    "url": "https://discuss.huggingface.co/t/h100-on-premise-for-occasional-llm-usage-how-do-you-handle-gpu-idle-time-when-deploying-at-a-client-site/174410",
     "kind": "comment",
     "fallback": false,
-    "note": "BR leftover-VRAM thread; cheapest-cloud-GPU s0906 dead (0 visit, never posted); leftoverpzero indiehackers /pulse HN-new-account Hashnode dead; s0903 lives (2 visit); write = Cloudflare 403"
+    "note": "H100 idle leftover-hours thread; TabNews s0907 dead (0 visit, never posted); leftoverpzero indiehackers /pulse HN-new-account Hashnode cheapest-cloud-GPU dead; s0903 lives (2 visit); write = huggingface.co login wall"
   },
   "2026-08-31": {
     "host": "pulse-github",
@@ -60,6 +60,13 @@
     "url": "https://www.tabnews.com.br/MrJ/openllm-de-roteador-de-llms-a-plataforma-multimodal-texto-imagem-audio-musica-e-video-por-centavos-e-como-aproveitar-a-vram-que-sobra-vastai",
     "kind": "comment",
     "fallback": false,
-    "note": "second GPU/agent host after s0903 visits; leftover VRAM / Vast.ai; UTM s0907; write = Cloudflare 403; leftoverpzero indiehackers /pulse HN-new-account Hashnode cheapest-cloud-GPU stay dead; s0903 lives"
+    "note": "DEAD 08/09: s0907 brought 0 visit; TabNews comment never posted (Cloudflare 403). Do not repeat TabNews. s0903 lives"
+  },
+  "2026-09-08": {
+    "host": "huggingface",
+    "url": "https://discuss.huggingface.co/t/h100-on-premise-for-occasional-llm-usage-how-do-you-handle-gpu-idle-time-when-deploying-at-a-client-site/174410",
+    "kind": "comment",
+    "fallback": false,
+    "note": "second leftover-hours host after TabNews died; H100 idle on-prem; UTM s0908; write = huggingface.co login wall / Discourse 403; leftoverpzero indiehackers /pulse HN-new-account Hashnode cheapest-cloud-GPU TabNews stay dead; s0903 lives"
   }
 }

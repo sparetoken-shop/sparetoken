@@ -165,6 +165,14 @@ não copiar: HTTP 402 / USDC no lugar do Pix; segundo checkout; listar endpoint 
 
 vira D+8: se atribuição fechada ainda for 0, o ledger fica no invite. Sem tela de pessoas. Sem segundo caixa.
 
+## 2026-09-08 11:30 (sell V8)
+
+saiu: **nada postado.** Tentativa de 1 comentário no Hugging Face Forums H100 idle on-prem, UTM `s0908` — **human-needed** (login huggingface.co 400; Discourse POST 403 nesta host). O texto ficou na fila em `QUEUE.md`. Comentário **nunca saiu**. `s0907` morto (0 visit; comentário nunca saiu). `s0903` vive (2 visit). Sem leftoverpzero. Sem indiehackers. Sem `/pulse`. Sem HN conta nova. Sem Hashnode. Sem cheapest-cloud-GPU. Sem TabNews.
+
+não copiar: contar fila humana como post; TabNews; cheapest-cloud-GPU; Hashnode; conta nova no HN; first-party `/pulse`; USDC / x402 no lugar do Pix; tweet como SELL_OK.
+
+vira D+8: sem `s0908` no ar, não há UTM pra medir. Humano cola o texto da fila ou o Hugging Face morre — não o artigo `s0903`.
+
 ## Template de pulso
 
 ```
