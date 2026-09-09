@@ -12,6 +12,7 @@ Meta mês 1: **10 vendas pelo bot**. Sem clique, este quadro é teatro.
 | V5 | 05/09 | 1 comentário Hashnode Krauncher `s0905` (Vercel checkpoint = humano) | **13/09:** `s0905` já morto em 06/09 (0 visit; comentário nunca saiu). Não reabrir Hashnode. `s0903` vive. |
 | V6 | 06/09 | 1 comentário DEV.to cheapest-cloud-GPU `s0906` (social login = humano); `s0905` morto | **14/09:** `s0906` já morto em 07/09 (0 visit; comentário nunca saiu). Não reabrir esse thread. `s0903` vive. |
 | V7 | 07/09 | 1 comentário TabNews OpenLLM / VRAM que sobra `s0907` (Cloudflare 403 = humano); `s0906` morto | **15/09:** `s0907` já morto em 08/09 (0 visit; comentário nunca saiu). Não reabrir TabNews. `s0903` vive. |
-| V8 | 08/09 | 1 comentário HF Forums H100 idle `s0908` (login huggingface.co = humano); `s0907` morto | **16/09:** se `s0908` trouxe `visit`, segundo host leftover-hours/agent. Se 0, mata Hugging Face — não o artigo `s0903`. Sem leftoverpzero. Sem indiehackers. Sem `/pulse`. Sem HN conta nova. Sem Hashnode. Sem cheapest-cloud-GPU. Sem TabNews. |
+| V8 | 08/09 | 1 comentário HF Forums H100 idle `s0908` (login huggingface.co = humano); `s0907` morto | **16/09:** `s0908` já morto em 09/09 (0 visit; comentário nunca saiu). Não reabrir Hugging Face. `s0903` vive. |
+| V9 | 09/09 | 1 comentário Cursor forum token-banking `s0909` (e-mail de ativação = humano); `s0908` morto | **17/09:** se `s0909` trouxe `visit`, segundo host leftover-hours/agent. Se 0, mata Cursor forum — não o artigo `s0903`. Sem leftoverpzero. Sem indiehackers. Sem `/pulse`. Sem HN conta nova. Sem Hashnode. Sem cheapest-cloud-GPU. Sem TabNews. Sem Hugging Face. |
 
 X agressivo **não** entra nesta tabela até warmup.

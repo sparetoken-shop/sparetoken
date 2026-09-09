@@ -1,10 +1,10 @@
 {
   "default": {
-    "host": "huggingface",
-    "url": "https://discuss.huggingface.co/t/h100-on-premise-for-occasional-llm-usage-how-do-you-handle-gpu-idle-time-when-deploying-at-a-client-site/174410",
+    "host": "cursorforum",
+    "url": "https://forum.cursor.com/t/feature-suggestion-token-banking-rollover-for-pro-subscriptions/147854",
     "kind": "comment",
     "fallback": false,
-    "note": "H100 idle leftover-hours thread; TabNews s0907 dead (0 visit, never posted); leftoverpzero indiehackers /pulse HN-new-account Hashnode cheapest-cloud-GPU dead; s0903 lives (2 visit); write = huggingface.co login wall"
+    "note": "unused Cursor quota / token-banking thread; Hugging Face s0908 dead (0 visit, never posted); leftoverpzero indiehackers /pulse HN-new-account Hashnode cheapest-cloud-GPU TabNews dead; s0903 lives (2 visit); write = Discourse login / email activation"
   },
   "2026-08-31": {
     "host": "pulse-github",
@@ -67,6 +67,13 @@
     "url": "https://discuss.huggingface.co/t/h100-on-premise-for-occasional-llm-usage-how-do-you-handle-gpu-idle-time-when-deploying-at-a-client-site/174410",
     "kind": "comment",
     "fallback": false,
-    "note": "second leftover-hours host after TabNews died; H100 idle on-prem; UTM s0908; write = huggingface.co login wall / Discourse 403; leftoverpzero indiehackers /pulse HN-new-account Hashnode cheapest-cloud-GPU TabNews stay dead; s0903 lives"
+    "note": "DEAD 09/09: s0908 brought 0 visit; comment never posted (huggingface.co login / Discourse 403). Do not repeat Hugging Face. s0903 lives"
+  },
+  "2026-09-09": {
+    "host": "cursorforum",
+    "url": "https://forum.cursor.com/t/feature-suggestion-token-banking-rollover-for-pro-subscriptions/147854",
+    "kind": "comment",
+    "fallback": false,
+    "note": "unused Cursor quota / token-banking after Hugging Face died; UTM s0909; write = Discourse login / email activation; leftoverpzero indiehackers /pulse HN-new-account Hashnode cheapest-cloud-GPU TabNews Hugging Face stay dead; s0903 lives"
   }
 }

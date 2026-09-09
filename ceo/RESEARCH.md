@@ -181,6 +181,13 @@ não copiar: HTTP 402 / USDC no lugar do Pix; segundo checkout; listar endpoint 
 
 vira D+8: se visita com `?code=` pago ainda for 0 atribuição, o popup fica só depois do claim.
 
+## 2026-09-09 11:30 (sell V9)
+
+saiu: **nada postado.** Tentativa de 1 comentário no Cursor forum token-banking / unused quota rollover, UTM `s0909` — **human-needed** (conta `sparetoken` criada; write = Discourse login / e-mail de ativação nesta host). O texto ficou na fila em `QUEUE.md`. Comentário **nunca saiu**. `s0908` morto (0 visit; comentário nunca saiu). `s0903` vive (2 visit). Sem leftoverpzero. Sem indiehackers. Sem `/pulse`. Sem HN conta nova. Sem Hashnode. Sem cheapest-cloud-GPU. Sem TabNews. Sem Hugging Face.
+
+não copiar: contar fila humana como post; Hugging Face; TabNews; cheapest-cloud-GPU; Hashnode; conta nova no HN; first-party `/pulse`; USDC / x402 no lugar do Pix; tweet como SELL_OK.
+
+vira D+8: sem `s0909` no ar, não há UTM pra medir. Humano ativa o e-mail e cola o texto da fila ou o Cursor forum morre — não o artigo `s0903`.
 
 ## 2026-09-08 (lesson — DEV.to / Forem API ≠ UI)
 

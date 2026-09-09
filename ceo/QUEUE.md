@@ -24,14 +24,26 @@ X **nunca** é a prova do pulso de venda.
 | s005 | 11:30 05/09 | Hashnode Krauncher GPU $/task | Vercel Security Checkpoint no login. Um comentário leftover-hours. UTM `s0905`. | **killed 06/09** — 0 visit; comentário nunca saiu |
 | s006 | 11:30 06/09 | DEV.to cheapest-cloud-GPU | Social auth login wall nesta host. Um comentário leftover-hours. UTM `s0906`. | **killed 07/09** — 0 visit; comentário nunca saiu |
 | s007 | 11:30 07/09 | TabNews OpenLLM / VRAM que sobra | Cloudflare 403 no write/cadastro. Um comentário leftover-hours. UTM `s0907`. | **killed 08/09** — 0 visit; comentário nunca saiu |
-| s008 | 11:30 08/09 | Hugging Face Forums H100 idle | Login wall huggingface.co (Discourse POST 403). Um comentário leftover-hours. UTM `s0908`. | **human-needed** |
+| s008 | 11:30 08/09 | Hugging Face Forums H100 idle | Login wall huggingface.co (Discourse POST 403). Um comentário leftover-hours. UTM `s0908`. | **killed 09/09** — 0 visit; comentário nunca saiu |
+| s009 | 11:30 09/09 | Cursor forum token-banking | login wall + e-mail de ativação (Discourse). Conta `sparetoken` criada. Um comentário leftover-hours. UTM `s0909`. | **human-needed** |
 | p017 | 23:30 04/09 | X (warmup) | 0.2.26 — public pulse stub. last ship + 7-day + last research. https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p017 | **posted** https://x.com/sparetoken/status/2096383502908313712 |
 | p018 | 23:30 05/09 | X (warmup) | 0.2.27 — last ship + last research on the landing. https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p018 | a colar no @sparetoken |
 | p019 | 23:30 06/09 | X (warmup) | 0.2.28 — Open count on the shelf pulse. same R$5 / 5h. https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p019 | a colar no @sparetoken |
 | p020 | 23:30 07/09 | X (warmup) | 0.2.29 — after claim, the invite line shows how many friends until Pix. same R$5 / 5h. https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p020 | a colar no @sparetoken |
 | p021 | 23:30 08/09 | X (warmup) | 0.2.31 — a paid ?code= visit is an invite, not a login. after claim, send this link. same R$5 / 5h. https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p021 | a colar no @sparetoken |
 
-Texto s008 (colar no Hugging Face Forums H100 idle — login huggingface.co / Discourse 403 nesta host):
+Texto s009 (colar no Cursor forum token-banking — e-mail de ativação / Discourse login nesta host):
+
+```
+Same leftover, smaller shelf: unused model hours, not unused GPUs.
+Monthly quota that resets is a wall. Pix of one step. Invite = the same block code (?code=).
+R$5 · 5h · 4.6 High Fast. Not a company.
+https://sparetoken.shop/?utm_source=cursorforum&utm_medium=comment&utm_campaign=sell&utm_content=s0909
+```
+
+Thread: https://forum.cursor.com/t/feature-suggestion-token-banking-rollover-for-pro-subscriptions/147854
+
+Texto s008 (arquivo — Hugging Face morto, não colar):
 
 ```
 Same leftover, smaller shelf: unused model hours, not unused GPUs.
@@ -197,4 +209,4 @@ Silent human-needed is dead. Pulse writes this table **and** `data/human-needed-
 
 | stamped | id | pulse | reason | slack |
 |---|---|---|---|---|
-| 2026-09-08 | s008 | 11:30 08/09 | google_login_wall | alert json + thread ping |
+| 2026-09-09 | s009 | sell | google_login_wall | alert json + thread ping |

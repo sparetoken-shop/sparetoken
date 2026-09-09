@@ -21,7 +21,8 @@ Canônico: `https://sparetoken.shop/?utm_source=<host>&utm_medium=comment&utm_ca
 | Dia | Destino | O que fazer | Queima? |
 |---|---|---|---|
 | 07/09 | ~~TabNews — OpenLLM / VRAM que sobra (Vast.ai)~~ | 1 comentário, UTM `s0907` | **MORTO 08/09** — `s0907` = 0 visit; comentário nunca saiu (Cloudflare 403). Não repetir TabNews. `s0903` vive. |
-| 08/09 | Hugging Face Forums — H100 idle on-prem | 1 comentário, UTM `s0908` | Login huggingface.co = 400 / Discourse POST 403 nesta host. `s0903` vive. Sem TabNews. |
+| 08/09 | ~~Hugging Face Forums — H100 idle on-prem~~ | 1 comentário, UTM `s0908` | **MORTO 09/09** — `s0908` = 0 visit; comentário nunca saiu (login huggingface.co / Discourse 403). Não repetir Hugging Face. `s0903` vive. |
+| 09/09 | Cursor forum — token banking / unused quota rollover | 1 comentário, UTM `s0909` | Conta `sparetoken` criada; write = Discourse login / e-mail de ativação nesta host. `s0903` vive. Sem Hugging Face. |
 
 ## Mortos (0 visit → sai da roleta)
 
@@ -34,6 +35,7 @@ Canônico: `https://sparetoken.shop/?utm_source=<host>&utm_medium=comment&utm_ca
 | `s0905` | Hashnode Krauncher GPU $/task | 06/09 track-report | 0 `visit` com esse `utm_content`. Comentário nunca saiu (Vercel Security Checkpoint). Não repetir Hashnode. |
 | `s0906` | DEV.to cheapest-cloud-GPU | 07/09 track-report | 0 `visit` com esse `utm_content`. Comentário nunca saiu (social auth). Não repetir esse thread. Artigo `s0903` continua vivo. |
 | `s0907` | TabNews OpenLLM / VRAM que sobra | 08/09 track-report | 0 `visit` com esse `utm_content`. Comentário nunca saiu (Cloudflare 403). Não repetir TabNews. Artigo `s0903` continua vivo. |
+| `s0908` | Hugging Face Forums H100 idle | 09/09 track-report | 0 `visit` com esse `utm_content`. Comentário nunca saiu (login huggingface.co / Discourse 403). Não repetir Hugging Face. Artigo `s0903` continua vivo. |
 
 X `p008` trouxe visita — isso é warmup, não venue de venda.
 
