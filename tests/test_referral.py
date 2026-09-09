@@ -81,6 +81,7 @@ class ReferralSurfaceTest(unittest.TestCase):
         src = (ROOT / "referral.py").read_text(encoding="utf-8")
         self.assertIn("import referral", SERVER)
         self.assertIn("referral.public_ledger(", SERVER)
+        self.assertIn("referral.should_auto_claim", SERVER)
         self.assertNotIn("import pay", src)
         self.assertNotIn("conta.vc", src)
 
@@ -94,6 +95,16 @@ class ReferralSurfaceTest(unittest.TestCase):
         self.assertIn("referral.left", JS)
         self.assertIn("referral.ready", JS)
         self.assertNotIn("referral.pay", JS)
+
+    def test_claim_opens_invite_popup_not_a_second_till(self):
+        self.assertIn('id="invite-modal"', HTML)
+        self.assertIn("function showInviteModal", JS)
+        self.assertIn("showInviteModal(", JS)
+        self.assertIn("invite-modal", JS)
+        modal = HTML.split('id="invite-modal"', 1)[1].lower()
+        self.assertIn("manda este link", modal)
+        self.assertNotIn("whatsapp", modal)
+        self.assertNotIn("checkout", modal)
 
     def test_public_ledger_has_no_names_or_second_till(self):
         ledger = referral.public_ledger(0)
@@ -135,9 +146,50 @@ class ReferralAttributionTest(unittest.TestCase):
         self.conn.close()
         self.tmp.cleanup()
 
+    def _seed_paid_wallet(self, code: str, token: str, sid: str) -> None:
+        from db import insert_pending_purchase, mark_purchase_paid, credit_wallet
+
+        owner = self.get_or_create_session(self.conn, token, sid)
+        purchase = insert_pending_purchase(
+            self.conn, f"src-{code}", owner["id"], 5.0, 18000, code, pay_url=f"https://example.test/{code}"
+        )
+        mark_purchase_paid(self.conn, purchase["id"])
+        credit_wallet(self.conn, owner["id"], 18000)
+
+    def test_unpaid_code_is_not_an_invite(self):
+        visitor = self.get_or_create_session(self.conn, "tok-visit-abcdefghijk", "sid-visit")
+        self.assertFalse(referral.is_paid_wallet(self.conn, "wdtsot-OPEN"))
+        self.assertIsNone(referral.remember_referrer(self.conn, visitor["id"], "wdtsot-OPEN"))
+        row = self.conn.execute(
+            "SELECT referred_by FROM user_sessions WHERE id = ?", (visitor["id"],)
+        ).fetchone()
+        self.assertFalse(row["referred_by"])
+
+    def test_paid_wallet_visit_stamps_without_claiming(self):
+        self._seed_paid_wallet("wdtsot-AAAA", "tok-owner-abcdefghijk", "sid-owner")
+        visitor = self.get_or_create_session(self.conn, "tok-friend-abcdefghij", "sid-friend")
+        self.assertTrue(referral.is_paid_wallet(self.conn, "wdtsot-AAAA"))
+        self.assertFalse(referral.should_auto_claim(self.conn, visitor["id"], "wdtsot-AAAA"))
+        self.assertTrue(referral.should_auto_claim(self.conn, visitor["id"], "wdtsot-NONE"))
+        self.assertEqual(referral.remember_referrer(self.conn, visitor["id"], "wdtsot-AAAA"), "wdtsot-AAAA")
+        row = self.conn.execute(
+            "SELECT referred_by FROM user_sessions WHERE id = ?", (visitor["id"],)
+        ).fetchone()
+        self.assertEqual(row["referred_by"], "wdtsot-AAAA")
+
+    def test_owner_session_still_auto_claims(self):
+        self._seed_paid_wallet("wdtsot-OWN1", "tok-own1-abcdefghijk", "sid-own1")
+        owner = self.conn.execute(
+            "SELECT id FROM user_sessions WHERE public_token = ?",
+            ("tok-own1-abcdefghijk",),
+        ).fetchone()
+        self.assertTrue(referral.session_owns_code(self.conn, owner["id"], "wdtsot-OWN1"))
+        self.assertTrue(referral.should_auto_claim(self.conn, owner["id"], "wdtsot-OWN1"))
+
     def test_closed_charge_counts_once_for_referrer(self):
         from db import insert_pending_purchase, mark_purchase_paid, credit_wallet
 
+        self._seed_paid_wallet("wdtsot-AAAA", "tok-owner-abcdefghijk", "sid-owner")
         buyer = self.get_or_create_session(self.conn, "tok-buyer-abcdefghijk", "sid-buyer")
         referral.remember_referrer(self.conn, buyer["id"], "wdtsot-AAAA")
         purchase = insert_pending_purchase(
@@ -158,12 +210,12 @@ class ReferralAttributionTest(unittest.TestCase):
         from db import insert_pending_purchase, mark_purchase_paid, credit_wallet
 
         row = self.get_or_create_session(self.conn, "tok-self-abcdefghijk", "sid-self")
-        referral.remember_referrer(self.conn, row["id"], "wdtsot-SAME")
-        purchase = insert_pending_purchase(
-            self.conn, "p2", row["id"], 5.0, 18000, "wdtsot-SAME", pay_url="https://example.test/b"
+        own = insert_pending_purchase(
+            self.conn, "p-self-src", row["id"], 5.0, 18000, "wdtsot-SAME", pay_url="https://example.test/self-src"
         )
-        mark_purchase_paid(self.conn, purchase["id"])
+        mark_purchase_paid(self.conn, own["id"])
         credit_wallet(self.conn, row["id"], 18000)
+        self.assertIsNone(referral.remember_referrer(self.conn, row["id"], "wdtsot-SAME"))
         self.assertEqual(referral.sync_paid(self.conn, row["id"]), 0)
         self.assertEqual(referral.count_closed(self.conn, "wdtsot-SAME"), 0)
 

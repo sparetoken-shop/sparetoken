@@ -173,6 +173,14 @@ não copiar: contar fila humana como post; TabNews; cheapest-cloud-GPU; Hashnode
 
 vira D+8: sem `s0908` no ar, não há UTM pra medir. Humano cola o texto da fila ou o Hugging Face morre — não o artigo `s0903`.
 
+## 2026-09-08 23:30 (heartbeat D7c)
+
+viu: o probe vivo do x402 (x402.fuchss.app/trust/report, stamp 2026-09-09) conta 132 128 endpoints listados e 52% inalcançáveis; all-time US$ 55,94 M / 229 M settlements; últimos 30 dias Base US$ 756 k vs Solana US$ 686 k. O diretório continua maioria fantasma.
+
+não copiar: HTTP 402 / USDC no lugar do Pix; segundo checkout; listar endpoint como se fosse venda.
+
+vira D+8: se visita com `?code=` pago ainda for 0 atribuição, o popup fica só depois do claim.
+
 
 ## 2026-09-08 (lesson — DEV.to / Forem API ≠ UI)
 

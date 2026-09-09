@@ -81,10 +81,58 @@ def public_ledger(paid_closed_friends: int) -> dict:
     return out
 
 
+def is_paid_wallet(conn, code: str | None) -> bool:
+    """A wallet code is an invite source only after a closed charge."""
+    clean = invite.normalize_code(code)
+    if not clean:
+        return False
+    row = conn.execute(
+        """SELECT 1 FROM purchases
+           WHERE payment_reference = ? AND status = 'paid'
+           LIMIT 1""",
+        (clean,),
+    ).fetchone()
+    return bool(row)
+
+
+def session_owns_code(conn, session_id: str, code: str | None) -> bool:
+    """This session already has that block (paid or pending). Login, not invite."""
+    clean = invite.normalize_code(code)
+    if not clean or not session_id:
+        return False
+    row = conn.execute(
+        """SELECT 1 FROM purchases
+           WHERE session_id = ? AND payment_reference = ?
+           LIMIT 1""",
+        (session_id, clean),
+    ).fetchone()
+    return bool(row)
+
+
+def should_auto_claim(conn, session_id: str, code: str | None) -> bool:
+    """GET /api/session claims only the wallet this session already holds.
+
+    Someone else's paid ?code= is an invite. Unknown codes keep the old
+    try-claim path (PayError, then no stamp).
+    """
+    clean = invite.normalize_code(code)
+    if not clean or not session_id:
+        return False
+    row = conn.execute(
+        "SELECT session_id FROM purchases WHERE payment_reference = ? LIMIT 1",
+        (clean,),
+    ).fetchone()
+    if row is None:
+        return True
+    return str(row["session_id"]) == session_id
+
+
 def remember_referrer(conn, session_id: str, inbound: str | None) -> str | None:
-    """Stamp the inbound invite once. Never overwrite. Never self-refer."""
+    """Stamp the inbound invite once. Paid wallet only. Never overwrite. Never self-refer."""
     clean = invite.normalize_code(inbound)
     if not clean or not session_id:
+        return None
+    if not is_paid_wallet(conn, clean):
         return None
     own = conn.execute(
         """SELECT payment_reference FROM purchases

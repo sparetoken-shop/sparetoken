@@ -11,7 +11,7 @@
 - Quando a comissão somada ≥ **R$5**: a pessoa **escolhe** receber Pix (o que estiver no conta.vc do fuzzy e, depois, de outros).
 - Independente de quem publicou o skill. Mesmo SKU. Sem cupom SaaS. Sem recorrência.
 
-Schema no ar (0.2.20 / 02/09): `referral.py` + rail/FAQ. Contar atribuição = D3 (0.2.21). Ledger ao vivo na linha do convite = D7 (0.2.29). Sem pay.py. Sem tela de pessoas enquanto atribuição fechada = 0.
+Schema no ar (0.2.20 / 02/09): `referral.py` + rail/FAQ. Contar atribuição = D3 (0.2.21). Ledger ao vivo na linha do convite = D7 (0.2.29). Visita `?code=` de carteira paga = atribuição, não login = D7c (0.2.31). Sem pay.py. Sem tela de pessoas enquanto atribuição fechada = 0.
 
 ## Ship mínimo (quando for o dia do 7-day)
 

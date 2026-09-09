@@ -319,10 +319,14 @@ class Handler(BaseHTTPRequestHandler):
             with DB_LOCK:
                 referral.remember_referrer(DB, row["id"], ref)
                 if code:
-                    try:
-                        result = pay.claim(DB, row["id"], contact="", code=code, pay_url="")
-                    except pay.PayError:
-                        result = None
+                    result = None
+                    if referral.should_auto_claim(DB, row["id"], code):
+                        try:
+                            result = pay.claim(DB, row["id"], contact="", code=code, pay_url="")
+                        except pay.PayError:
+                            result = None
+                            referral.remember_referrer(DB, row["id"], code)
+                    else:
                         referral.remember_referrer(DB, row["id"], code)
                     if result and result.get("paid"):
                         referral.sync_paid(DB, result["session_id"])

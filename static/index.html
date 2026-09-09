@@ -367,6 +367,18 @@
     </form>
   </dialog>
 
+  <dialog class="pay-modal" id="invite-modal">
+    <form method="dialog" class="pay-modal-card">
+      <h3 data-i18n="modal.invite.h">Manda este link</h3>
+      <p data-i18n="modal.invite.p">O mesmo código do bloco. Sem e-mail. 10% em compute. Pix aos R$5.</p>
+      <p class="invite-line"><code id="invite-modal-url"></code></p>
+      <div class="actions">
+        <button class="btn btn-ghost" value="cancel" data-i18n="modal.invite.later">agora não</button>
+        <button class="btn btn-primary" value="ok" id="invite-modal-copy" data-i18n="modal.invite.ok">copiar e fechar</button>
+      </div>
+    </form>
+  </dialog>
+
   <dialog class="pay-modal sell-modal" id="vender">
     <div class="pay-modal-card sell-card">
       <form method="dialog" class="sell-close-row">

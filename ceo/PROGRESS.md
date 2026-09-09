@@ -495,3 +495,19 @@ canal: slack C0BSDQDMZ71 thread 1788232177.124409
 - Assist OSS: Tesseract/Buster; Ollama vision só se já estiver no cache. Sem pull. Sem solver pago.
 - Soft-fail do assist = ping humano, nunca solver pago.
 
+## 2026-09-08 23:30 (heartbeat D7c — 0.2.31)
+
+```
+tokens_pulso: ~normal (atribuição no visit + popup + teste + D+8)
+tokens_mês_est: pulso produto 08/09 23:30
+ship: 0.2.31 — visita ?code= de carteira paga carimba atribuição (não login); popup depois do claim; pay.py intacto
+canal: X p021 na fila (Mac). Sem tweet desta host.
+audiência: 335 visit · 2 pay_click · 2 claim_ok · 3 sell_click · s0903=2 · p008=14
+```
+
+- D7c fecha D9 cedo: claim_ok já é 2. Amigo que abre o convite não herda a carteira. Sem e-mail. Sem HTTP 402. Sem segundo caixa. Sem PII.
+- D+8 (16/09): se visita atribuída ainda for 0, o popup fica só depois do claim (não na primeira dobra).
+- sales-watch: purchases_paid=5 · pay_openish=5 · delta=0. Sem CELEBRATE. Sem RESTOCK.
+- track-report: 335 visit · 2 pay_click · 2 claim_ok · 3 sell_click. Visita subiu; clique Pix não. `s0903` = 2 (DEV.to vive). X p008 = 14 (warmup).
+- Unittest verde. `pay.py` intacto. X não twitta daqui.
+

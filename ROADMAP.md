@@ -1,6 +1,6 @@
 # Roadmap — fechar o MVP
 
-Versão atual: **0.2.29** (ledger de indicação na linha do convite; tally público intacto).
+Versão atual: **0.2.31** (visita `?code=` de carteira paga = atribuição, não login; popup depois do claim).
 
 ---
 

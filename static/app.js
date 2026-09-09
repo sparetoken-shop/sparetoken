@@ -31,6 +31,9 @@ const resumeCopyWeb = document.getElementById("resume-copy-web");
 const resumeOpenWeb = document.getElementById("resume-open-web");
 const resumeCopySsh = document.getElementById("resume-copy-ssh");
 const payModal = document.getElementById("pay-modal");
+const inviteModal = document.getElementById("invite-modal");
+const inviteModalUrl = document.getElementById("invite-modal-url");
+const inviteModalCopy = document.getElementById("invite-modal-copy");
 const sellOpen = document.getElementById("sell-open");
 const sellModal = document.getElementById("vender");
 const sellerForm = document.getElementById("seller-form");
@@ -172,6 +175,13 @@ function showReferral(ledger) {
     return;
   }
   el.hidden = false;
+}
+
+function showInviteModal(url) {
+  if (!inviteModal || !url) return;
+  if (inviteModalUrl) inviteModalUrl.textContent = url;
+  if (inviteModalCopy) inviteModalCopy.dataset.copy = url;
+  if (typeof inviteModal.showModal === "function") inviteModal.showModal();
 }
 
 function showBlock(code, inviteFromApi, ledger) {
@@ -636,6 +646,16 @@ if (payModal) {
     if (payModal.returnValue === "ok") openCheckout();
   });
 }
+if (inviteModal) {
+  inviteModal.addEventListener("close", async () => {
+    if (inviteModal.returnValue !== "ok") return;
+    const url = (inviteModalCopy && inviteModalCopy.dataset.copy) || "";
+    if (!url) return;
+    try {
+      await navigator.clipboard.writeText(url);
+    } catch (_) {}
+  });
+}
 
 function setSellerStatus(text, kind) {
   if (!sellerStatus) return;
@@ -725,6 +745,7 @@ if (claimForm) {
       if (data.paid) {
         ping("claim_ok");
         startPaidLoop();
+        showInviteModal(data.invite_url);
       }
       setClaimStatus(
         data.paid

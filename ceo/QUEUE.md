@@ -29,6 +29,7 @@ X **nunca** é a prova do pulso de venda.
 | p018 | 23:30 05/09 | X (warmup) | 0.2.27 — last ship + last research on the landing. https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p018 | a colar no @sparetoken |
 | p019 | 23:30 06/09 | X (warmup) | 0.2.28 — Open count on the shelf pulse. same R$5 / 5h. https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p019 | a colar no @sparetoken |
 | p020 | 23:30 07/09 | X (warmup) | 0.2.29 — after claim, the invite line shows how many friends until Pix. same R$5 / 5h. https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p020 | a colar no @sparetoken |
+| p021 | 23:30 08/09 | X (warmup) | 0.2.31 — a paid ?code= visit is an invite, not a login. after claim, send this link. same R$5 / 5h. https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p021 | a colar no @sparetoken |
 
 Texto s008 (colar no Hugging Face Forums H100 idle — login huggingface.co / Discourse 403 nesta host):
 

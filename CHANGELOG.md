@@ -14,6 +14,19 @@ Versionamento: [SemVer](https://semver.org/lang/pt-BR/).
 - Fechar chat anônimo e SSH sem senha (ver ROADMAP)
 - Charge cripto (USDT / OSDT) na mesma conta.vc — ver ROADMAP, sem segundo caixa
 
+## [0.2.31] — 2026-09-08
+
+Paid `?code=` visit is attribution, not login.
+
+### Added
+
+- Visit with a paid wallet `?code=` stamps `referred_by` (closed charge only). Someone else's paid code no longer auto-claims that wallet
+- After claim, `#invite-modal` says “manda este link”. No email. Same R$5 / 5h
+
+### Changed
+
+- Same Pix rail. `pay.py` untouched. No second till. No mint on the VPS
+
 ## [0.2.30] — 2026-09-08
 
 SELL_OK / verified-live requires UI-visible third-party proof.
