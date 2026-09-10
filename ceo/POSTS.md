@@ -42,14 +42,16 @@ s0903: artigo DEV.to verificado (`verify_sell_live` 200). X não é a prova.
 | s0906 | 2026-09-06 | DEV.to cheapest-cloud-GPU | **morto** — 0 visit, comentário nunca saiu | `s0906` |
 | s0907 | 2026-09-07 | TabNews OpenLLM / VRAM que sobra | **morto** — 0 visit, comentário nunca saiu | `s0907` |
 | s0908 | 2026-09-08 | Hugging Face Forums H100 idle | **morto** — 0 visit, comentário nunca saiu | `s0908` |
-| s0909 | 2026-09-09 | Cursor forum token-banking | **human-needed** — Discourse login / e-mail de ativação nesta host | `s0909` |
+| s0909 | 2026-09-09 | Cursor forum token-banking | **morto** — 0 visit, comentário nunca saiu | `s0909` |
+| s0910 | 2026-09-10 | GitHub claude-code unused-limits | **human-needed** — API 401 nesta host (sem token) | `s0910` |
 
 s0904: um comentário no Show HN https://news.ycombinator.com/item?id=49563492. GET público sem `sparetoken.shop`. 05/09 track-report = 0 visit. Morto.
 s0905: um comentário no Hashnode https://krauncher.hashnode.dev/there-are-two-ways-to-rent-a-gpu-i-think-there-s-a-third. 06/09 track-report = 0 visit. Morto.
 s0906: um comentário no DEV.to https://dev.to/thurmon_demich/cheapest-cloud-gpu-for-ai-in-2026-real-prices-from-002hr-49fj. 07/09 track-report = 0 visit. Morto.
 s0907: um comentário no TabNews https://www.tabnews.com.br/MrJ/openllm-de-roteador-de-llms-a-plataforma-multimodal-texto-imagem-audio-musica-e-video-por-centavos-e-como-aproveitar-a-vram-que-sobra-vastai. 08/09 track-report = 0 visit. Morto.
 s0908: um comentário no Hugging Face Forums https://discuss.huggingface.co/t/h100-on-premise-for-occasional-llm-usage-how-do-you-handle-gpu-idle-time-when-deploying-at-a-client-site/174410. 09/09 track-report = 0 visit. Morto.
-s0909: um comentário no Cursor forum https://forum.cursor.com/t/feature-suggestion-token-banking-rollover-for-pro-subscriptions/147854. Conta `sparetoken` criada; write = e-mail de ativação. X não é a prova.
+s0909: um comentário no Cursor forum https://forum.cursor.com/t/feature-suggestion-token-banking-rollover-for-pro-subscriptions/147854. 10/09 track-report = 0 visit. Morto.
+s0910: um comentário no issue https://github.com/anthropics/claude-code/issues/90152. POST 401 nesta host. Não é first-party `/pulse`. X não é a prova.
 s0903 vive (2 visit).
 
-Próximo: 10/09. Sem Hugging Face. Sem TabNews. Sem Hashnode. Sem cheapest-cloud-GPU. X continua warmup.
+Próximo: 11/09. Sem Cursor forum. Sem Hugging Face. Sem TabNews. Sem Hashnode. Sem cheapest-cloud-GPU. X continua warmup.

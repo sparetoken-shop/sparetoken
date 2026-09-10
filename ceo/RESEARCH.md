@@ -205,6 +205,14 @@ não copiar: HTTP 402 / USDC no lugar do Pix; segundo checkout; listar endpoint 
 
 vira D+8: se o rail “um clique” não moveu pay_click, os briefs saem da primeira dobra.
 
+## 2026-09-10 11:30 (sell V10)
+
+saiu: **nada postado.** Tentativa de 1 comentário no GitHub `anthropics/claude-code#90152` (gift/pool unused usage limits), UTM `s0910` — **human-needed** (POST `/comments` = 401; sem `GITHUB_TOKEN` nesta host). O texto ficou na fila em `QUEUE.md`. Comentário **nunca saiu**. `s0909` morto (0 visit; comentário nunca saiu). `s0903` vive (2 visit). Sem leftoverpzero. Sem indiehackers. Sem `/pulse`. Sem HN conta nova. Sem Hashnode. Sem cheapest-cloud-GPU. Sem TabNews. Sem Hugging Face. Sem Cursor forum.
+
+não copiar: contar fila humana como post; Cursor forum; first-party `/pulse`+issue própria; USDC / x402 no lugar do Pix; tweet como SELL_OK.
+
+vira D+8: sem `s0910` no ar, não há UTM pra medir. Humano cola o texto da fila neste issue ou o thread morre — não o GitHub inteiro, não o artigo `s0903`.
+
 ## Template de pulso
 
 ```

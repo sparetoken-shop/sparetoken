@@ -1,10 +1,10 @@
 {
   "default": {
-    "host": "cursorforum",
-    "url": "https://forum.cursor.com/t/feature-suggestion-token-banking-rollover-for-pro-subscriptions/147854",
+    "host": "claudecode",
+    "url": "https://github.com/anthropics/claude-code/issues/90152",
     "kind": "comment",
     "fallback": false,
-    "note": "unused Cursor quota / token-banking thread; Hugging Face s0908 dead (0 visit, never posted); leftoverpzero indiehackers /pulse HN-new-account Hashnode cheapest-cloud-GPU TabNews dead; s0903 lives (2 visit); write = Discourse login / email activation"
+    "note": "gift/pool unused usage limits; Cursor forum s0909 dead (0 visit, never posted); leftoverpzero indiehackers /pulse HN-new-account Hashnode cheapest-cloud-GPU TabNews Hugging Face dead; s0903 lives (2 visit); write = GitHub API 401 (no token on this host); not first-party /pulse"
   },
   "2026-08-31": {
     "host": "pulse-github",
@@ -74,6 +74,13 @@
     "url": "https://forum.cursor.com/t/feature-suggestion-token-banking-rollover-for-pro-subscriptions/147854",
     "kind": "comment",
     "fallback": false,
-    "note": "unused Cursor quota / token-banking after Hugging Face died; UTM s0909; write = Discourse login / email activation; leftoverpzero indiehackers /pulse HN-new-account Hashnode cheapest-cloud-GPU TabNews Hugging Face stay dead; s0903 lives"
+    "note": "DEAD 10/09: s0909 brought 0 visit; comment never posted (Discourse login / email activation). Do not repeat Cursor forum. s0903 lives"
+  },
+  "2026-09-10": {
+    "host": "claudecode",
+    "url": "https://github.com/anthropics/claude-code/issues/90152",
+    "kind": "comment",
+    "fallback": false,
+    "note": "gift/pool unused usage limits after Cursor forum died; UTM s0910; write = GitHub API 401 (no token); not first-party /pulse; leftoverpzero indiehackers /pulse HN-new-account Hashnode cheapest-cloud-GPU TabNews Hugging Face Cursor forum stay dead; s0903 lives"
   }
 }
