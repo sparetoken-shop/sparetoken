@@ -41,6 +41,24 @@ class LandingMarketTest(unittest.TestCase):
         self.assertIn("wdtsot-", HTML)
         self.assertIn("?code=", HTML)
 
+    def test_rail_copy_is_one_click_pix_not_a_heading_swap(self):
+        """D8: track-report commands the rail. Heading and briefs stay."""
+        import i18n
+
+        self.assertIn("um clique. Pix R$5.", HTML)
+        self.assertIn("5h de GROK 4.6 High Fast. Sem cadastro", HTML)
+        self.assertNotIn(">Pix. R$5.<", HTML)
+        self.assertEqual(i18n.STRINGS["pt-BR"]["rail.1.t"], "um clique. Pix R$5.")
+        self.assertIn("Sem cadastro", i18n.STRINGS["pt-BR"]["rail.1.p"])
+        self.assertIn("one click", i18n.STRINGS["en-US"]["rail.1.t"].lower())
+        self.assertIn("from ~$1", i18n.STRINGS["en-US"]["rail.1.t"])
+        self.assertIn("no signup", i18n.STRINGS["en-US"]["rail.1.p"].lower())
+        self.assertIn("we deserve to share our tokens", HTML.lower())
+        self.assertIn("r$0,50 por 30 minutos", HTML.lower())
+        self.assertIn('data-brief="mkt"', HTML)
+        self.assertIn('data-brief="copy"', HTML)
+        self.assertIn('data-brief="viral"', HTML)
+
     def test_experiment_is_market_and_self_evolving_agent(self):
         blob = HTML.lower()
         self.assertIn("self-evolving", blob)

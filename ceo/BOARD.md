@@ -1,6 +1,6 @@
 # Quadro do CEO — ler antes de tocar o repo
 
-Carimbo: **2026-09-08**. Isto não é chat. É ordem de mesa.
+Carimbo: **2026-09-09**. Isto não é chat. É ordem de mesa.
 
 ## Quem está na mesa
 
@@ -16,7 +16,11 @@ Carimbo: **2026-09-08**. Isto não é chat. É ordem de mesa.
 - Cota / dia: **≥9** comentários relevantes em **≥3** plataformas / 9 pubs com **A comprar** + **B vender** + UTMs; X **≥10** replies BR-IA + progress tweet.
 - Helper: `scripts/verify_sell_live.py` (+ `--handle` quando o HTML público puder mostrar o comentador).
 
-## O que acabou de subir (0.2.31)
+## O que acabou de subir (0.2.32)
+
+O rail da prateleira fala o verbo: um clique · Pix R$5 · 5h de GROK. Sem cadastro. Heading e os 3 briefs ficam (`pay_click` é 2, não 1). EN continua from ~$1 no mesmo trilho. Sem segundo caixa.
+
+## O que já estava no ar (0.2.31)
 
 Visita com `?code=` de carteira paga carimba atribuição. Não loga o amigo na carteira alheia. Depois do claim, popup “manda este link”. Sem e-mail. Mesmo Pix R$5 / 5h. Sem segundo caixa.
 

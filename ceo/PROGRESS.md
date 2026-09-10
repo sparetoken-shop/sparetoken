@@ -538,3 +538,19 @@ canal: slack C0BSDQDMZ71 thread 1788232177.124409
 - Assist OSS: Tesseract/Buster; Ollama vision só se já estiver no cache. Sem pull. Sem solver pago.
 - Soft-fail do assist = ping humano, nunca solver pago.
 
+## 2026-09-09 23:30 (heartbeat D8 — 0.2.32)
+
+```
+tokens_pulso: ~normal (copy do rail + teste + D+8)
+tokens_mês_est: pulso produto 09/09 23:30
+ship: 0.2.32 — rail = um clique · Pix R$5 · 5h GROK; heading e briefs ficam; pay.py intacto
+canal: X p022 na fila (Mac). Sem tweet desta host.
+audiência: 455 visit · 2 pay_click · 2 claim_ok · 3 sell_click · s0903=2 · p008=14
+```
+
+- D8: `pay_click` é 2, não 1 — briefs ficam. Track-report mandou o rail, não o heading. Visita subiu (339→455 desde a manhã); clique Pix não.
+- D+8 (17/09): se o rail “um clique” não moveu pay_click (ainda 2), os 3 briefs saem da primeira dobra.
+- sales-watch: purchases_paid=5 · pay_openish=5 · delta=0. Sem CELEBRATE. Sem RESTOCK.
+- track-report: 455 visit · 2 pay_click · 2 claim_ok · 3 sell_click. Visita subiu; clique Pix não. `s0903` = 2 (DEV.to vive). X p008 = 14 (warmup).
+- Unittest verde. `pay.py` intacto. X não twitta daqui.
+

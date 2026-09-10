@@ -14,6 +14,16 @@ Versionamento: [SemVer](https://semver.org/lang/pt-BR/).
 - Fechar chat anônimo e SSH sem senha (ver ROADMAP)
 - Charge cripto (USDT / OSDT) na mesma conta.vc — ver ROADMAP, sem segundo caixa
 
+## [0.2.32] — 2026-09-09
+
+Rail copy is one click · Pix R$5. Heading stays.
+
+### Changed
+
+- Shelf rail step 1 says the verb: one click, Pix R$5, 5h of GROK. No signup. EN keeps from ~$1 USDT on the same shelf
+- Heading rotation and the three live briefs stay — `pay_click` is 2, not 1. Track-report commanded the rail
+- Same Pix rail. `pay.py` untouched. No second till. No mint on the VPS
+
 ## [0.2.31] — 2026-09-08
 
 Paid `?code=` visit is attribution, not login.

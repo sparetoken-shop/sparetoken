@@ -197,6 +197,14 @@ não copiar: carimbar SELL_OK com status de API; tratar fila/human-needed como p
 
 vira D+0: docs CEO/heartbeat/venues + helper UI-visível. Cota diária ≥9 comentários / ≥3 plataformas com A comprar + B vender + UTMs.
 
+## 2026-09-09 23:30 (heartbeat D8)
+
+viu: o probe vivo do x402 (x402.fuchss.app/trust/report, stamp 2026-09-10) conta 132 752 endpoints listados e 52% inalcançáveis; all-time US$ 55,97 M / 229 M settlements; últimos 30 dias Base US$ 743 k vs Solana US$ 701 k. Só 59% das wallets pay-to já receberam um pagamento. O diretório continua maioria fantasma.
+
+não copiar: HTTP 402 / USDC no lugar do Pix; segundo checkout; listar endpoint como se fosse venda.
+
+vira D+8: se o rail “um clique” não moveu pay_click, os briefs saem da primeira dobra.
+
 ## Template de pulso
 
 ```

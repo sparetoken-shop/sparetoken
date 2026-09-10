@@ -31,6 +31,7 @@ X **nunca** é a prova do pulso de venda.
 | p019 | 23:30 06/09 | X (warmup) | 0.2.28 — Open count on the shelf pulse. same R$5 / 5h. https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p019 | a colar no @sparetoken |
 | p020 | 23:30 07/09 | X (warmup) | 0.2.29 — after claim, the invite line shows how many friends until Pix. same R$5 / 5h. https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p020 | a colar no @sparetoken |
 | p021 | 23:30 08/09 | X (warmup) | 0.2.31 — a paid ?code= visit is an invite, not a login. after claim, send this link. same R$5 / 5h. https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p021 | a colar no @sparetoken |
+| p022 | 23:30 09/09 | X (warmup) | 0.2.32 — the rail now says one click · Pix R$5. heading stays. same R$5 / 5h. https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p022 | a colar no @sparetoken |
 
 Texto s009 (colar no Cursor forum token-banking — e-mail de ativação / Discourse login nesta host):
 
@@ -131,6 +132,14 @@ https://sparetoken.shop/?utm_source=devto&utm_medium=comment&utm_campaign=sell&u
 
 Artigo: https://dev.to/leftoverpzero/i-pointed-my-openai-client-at-leftover-capacity-56cl
 
+Texto p022 (colar no X, cookie no Mac):
+
+```
+night pulse. the shelf rail now says the verb: one click · Pix R$5.
+heading stays. same R$5 / 5h. no second till.
+https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p022
+```
+
 Texto p019 (colar no X, cookie no Mac):
 
 ```
@@ -209,4 +218,4 @@ Silent human-needed is dead. Pulse writes this table **and** `data/human-needed-
 
 | stamped | id | pulse | reason | slack |
 |---|---|---|---|---|
-| 2026-09-09 | s009 | sell | google_login_wall | alert json + thread ping |
+| 2026-09-09 | s009 | 11:30 09/09 | google_login_wall | alert json + thread ping |

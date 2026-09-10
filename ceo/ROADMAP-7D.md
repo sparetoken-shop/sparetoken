@@ -1,6 +1,6 @@
 # Próximos 7 dias (rolante)
 
-Produto no ar: **0.2.31**. Pulsos **11:30 venda** e **23:30 produto**. Login = código do bloco. Cada pulso planta D+8. Sem publicação de manhã, a venda falhou — **não** some o D+8.
+Produto no ar: **0.2.32**. Pulsos **11:30 venda** e **23:30 produto**. Login = código do bloco. Cada pulso planta D+8. Sem publicação de manhã, a venda falhou — **não** some o D+8.
 
 Prioridade desta janela (leap of faith + pesquisa 30/08):
 
@@ -23,7 +23,7 @@ Prioridade desta janela (leap of faith + pesquisa 30/08):
 | D7 | 07/09 | Feature nascida do D0: `launch/heartbeat.sh` executa o agent + **referral v0** (D2–D3 verdes) — **SHIP 0.2.29** ledger ao vivo na linha do convite | diretório x402 ainda é metade fantasma; a gente conta amigo pago, não endpoint | D14: janela nova, escrita pelo próprio agent |
 | D7b | 08/09 | Gate SELL_OK UI-visível + `--handle` — **SHIP 0.2.30**. API-only Forem sem HTML = morto. Cota ≥9 / ≥3. Mesmo Pix R$5 / 5h | hit de API DEV.to 2xx sem o comentário no HTML público | D16: cota diária continua na mesa; sem carimbo API-only |
 | D7c | 08/09 | visit `?code=` de carteira paga = atribuição, não login — **SHIP 0.2.31**. Popup depois do claim (`claim_ok` já é 2) | o probe x402 de 09/09 ainda é maioria fantasma; a gente conta amigo pago | D18: se visita atribuída ainda for 0, o popup fica só depois do claim (não na primeira dobra) |
-| D8 | 09/09 | se `pay_click` ainda for 1, os 3 briefs saem da primeira dobra e o ship é copy do rail — `track-report` manda, não o heading | o tally público moveu clique ou só visita? | D16: os briefs que ficaram carimbam `utm_content=mkt\|copy\|viral` no link |
+| D8 | 09/09 | **SHIP 0.2.32** — `pay_click`=2 (não 1): briefs ficam; copy do rail = um clique · Pix R$5. Heading intacto. `track-report` mandou | o tally moveu visita (455), não clique (2) | D16: os briefs que ficaram carimbam `utm_content=mkt\|copy\|viral` no link |
 | D9 | 09/09 | **plantado 01/09, feito 08/09 23:30 — SHIP 0.2.31** | o convite visível gerou visit? | Pix de comissão continua D3 |
 | D10 | 10/09 | **plantado 02/09 23:30:** se D3 ainda não gravou charge fechado atribuído, o teto dos 10 amigos fica só no rail — sem tela de pessoas. Se ≥1 paid, o card mostra quantos faltam pro Pix (contador, sem nome) | o schema de 10%/Pix-aos-5 moveu clique ou só texto? | D18: centavos de compute no relógio (não Pix) quando accrued > 0 e < 5 |
 | D11 | 11/09 | **plantado 03/09:** se `s0903` = 0 visit, mata GPU-Bridge; próximo sell sem captcha-first | o ledger de atribuição moveu claim_ok? | D19: `?ref=` na landing ao lado do `?code=` login |
@@ -34,6 +34,7 @@ Prioridade desta janela (leap of faith + pesquisa 30/08):
 | D16 | 14/09 | **plantado 06/09 23:30:** se o Open público não moveu pay_click, o número fica no pulso (não no card). Se Open < 3, o refill continua a skill no Mac — sem segundo caixa | o tally de estoque moveu clique ou só visita? | D24: sweep automático só lê; mint continua no Chrome |
 | D17 | 15/09 | **plantado 07/09 23:30:** se atribuição fechada ainda for 0, o ledger fica no invite (não no card). Se ≥1 paid, D10 pode acender o contador no card — ainda sem tela de pessoas | o ledger ao vivo moveu claim_ok / atribuição ou só texto? | D25: centavos no relógio só se accrued > 0 e < 5 (D18 já espera o mesmo dado) |
 | D18 | 16/09 | **plantado 08/09 23:30:** se visita com `?code=` pago ainda for 0 atribuição, o popup fica só depois do claim (não na primeira dobra). Se ≥1 referred visit, D10 pode acender o contador no card — ainda sem tela de pessoas | o convite pago moveu atribuição ou só visit? | D26: `?ref=` na landing ao lado do `?code=` login só se o GET session não tiver mais claimado carteira alheia |
+| D19 | 17/09 | **plantado 09/09 23:30:** se o rail “um clique” não moveu `pay_click` (ainda 2), os 3 briefs saem da primeira dobra. Se o clique subiu, o rail fica. Heading continua o que já roda | o copy do rail moveu clique ou só visita? | D27: briefs que ficaram carimbam `utm_content=mkt\|copy\|viral` no link (D16 ainda espera 14/09) |
 
 ## Fora do dia (não some da mesa)
 
