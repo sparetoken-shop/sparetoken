@@ -221,6 +221,14 @@ não copiar: HTTP 402 / USDC no lugar do Pix; segundo checkout; listar endpoint 
 
 vira D+8: se a visita referred_by ainda não fechou Pix, o teto fica no rail.
 
+## 2026-09-11 11:30 (sell V11)
+
+saiu: 1 comentário no HN “I ran out of AI tokens in one app while holding unused tokens in another”, UTM `s0911`, conta `sparetoken` (já aged). Permalink https://news.ycombinator.com/item?id=49659166 — `verify_sell_live` falhou (GET público sem `sparetoken.shop`; hold). `s0910` morto (0 visit; comentário nunca saiu). `s0903` vive (2 visit). Comentário `s0904` agora é UI-visível no GET público (hold de conta nova levantou) — não reabrir esse thread; não é a prova de hoje. Sem leftoverpzero. Sem indiehackers. Sem `/pulse`. Sem Hashnode. Sem cheapest-cloud-GPU. Sem TabNews. Sem Hugging Face. Sem Cursor forum. Sem claude-code #90152.
+
+não copiar: carimbar SELL_OK com GET vazio; contar hold como live; first-party `/pulse`; USDC / x402 no lugar do Pix; tweet como SELL_OK.
+
+vira D+8: se `s0911` trouxer `visit`, segundo host leftover-hours (HN aged). Se 0, mata este thread unused-tokens — não o HN inteiro, não o artigo `s0903`.
+
 ## Template de pulso
 
 ```

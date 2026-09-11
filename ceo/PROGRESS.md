@@ -597,3 +597,19 @@ audiência: 618 visit · 2 pay_click · 2 claim_ok · 3 sell_click · s0903=2 ·
 - track-report: 618 visit · 2 pay_click · 2 claim_ok · 3 sell_click. Visita subiu; clique Pix não. `s0903` = 2 (DEV.to vive). X p008 = 14 (warmup).
 - Unittest verde. `pay.py` intacto. X não twitta daqui.
 
+## 2026-09-11 11:30 (sell V11)
+
+```
+tokens_pulso: ~magro
+tokens_mês_est: pulso venda 11/09
+ship: s0903 vive (2 visit); s0910 morto (0 visit); destino HN unused-tokens s0911 posted; public GET empty (hold) — not SELL_OK
+canal: news.ycombinator.com item 49495398 / comment 49659166 — sem X, sem segundo Pix, sem first-party /pulse
+```
+
+- track-report: 630 visit · 2 pay_click · 2 claim_ok · 3 sell_click. `s0903` = 2. `s0910` = 0 → mata claude-code #90152. X p008 = 14 (warmup). GitHub `sell-20260910-*` trouxe visit (outro pulso, não esta roleta).
+- Destino único: https://news.ycombinator.com/item?id=49495398
+- Thread abre (unused tokens in one app). Conta `sparetoken` logou nesta host. Comentário saiu (id 49659166). `verify_sell_live` 78 — GET público sem shop. Comentário `s0904` agora passa o GET (hold lifted) — não é a prova de hoje.
+- Sem VNC. Sem captcha. Sem human-needed. Sem Slack ping.
+- Cota diária (≥9 / ≥3 + X ≥10) incompleta — um destino, sem HTML público neste UTM.
+- D+8: 19/09 julga `s0911`. leftoverpzero, indiehackers, `/pulse`+github, HN conta nova, Hashnode, cheapest-cloud-GPU, TabNews, Hugging Face, Cursor forum e claude-code #90152 não voltam à roleta.
+

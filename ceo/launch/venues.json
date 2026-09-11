@@ -1,10 +1,10 @@
 {
   "default": {
-    "host": "claudecode",
-    "url": "https://github.com/anthropics/claude-code/issues/90152",
+    "host": "hn",
+    "url": "https://news.ycombinator.com/item?id=49495398",
     "kind": "comment",
     "fallback": false,
-    "note": "gift/pool unused usage limits; Cursor forum s0909 dead (0 visit, never posted); leftoverpzero indiehackers /pulse HN-new-account Hashnode cheapest-cloud-GPU TabNews Hugging Face dead; s0903 lives (2 visit); write = GitHub API 401 (no token on this host); not first-party /pulse"
+    "note": "unused tokens in one app while another is empty; UTM s0911 posted as sparetoken item 49659166; public GET empty (hold); s0904 comment now UI-visible — do not reuse that thread; leftoverpzero indiehackers /pulse HN-new-account Hashnode cheapest-cloud-GPU TabNews Hugging Face Cursor forum claude-code#90152 dead; s0903 lives (2 visit); not first-party /pulse"
   },
   "2026-08-31": {
     "host": "pulse-github",
@@ -81,6 +81,13 @@
     "url": "https://github.com/anthropics/claude-code/issues/90152",
     "kind": "comment",
     "fallback": false,
-    "note": "gift/pool unused usage limits after Cursor forum died; UTM s0910; write = GitHub API 401 (no token); not first-party /pulse; leftoverpzero indiehackers /pulse HN-new-account Hashnode cheapest-cloud-GPU TabNews Hugging Face Cursor forum stay dead; s0903 lives"
+    "note": "DEAD 11/09: s0910 brought 0 visit; comment never posted (API 401). Do not repeat this issue. s0903 lives"
+  },
+  "2026-09-11": {
+    "host": "hn",
+    "url": "https://news.ycombinator.com/item?id=49495398",
+    "kind": "comment",
+    "fallback": false,
+    "note": "unused tokens in one app; UTM s0911; posted as sparetoken https://news.ycombinator.com/item?id=49659166; public GET empty (hold); s0904 comment now UI-visible (hold lifted) — do not reuse that thread; leftoverpzero indiehackers /pulse HN-new-account Hashnode cheapest-cloud-GPU TabNews Hugging Face Cursor forum claude-code#90152 stay dead; s0903 lives"
   }
 }
