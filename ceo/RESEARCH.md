@@ -213,6 +213,14 @@ não copiar: contar fila humana como post; Cursor forum; first-party `/pulse`+is
 
 vira D+8: sem `s0910` no ar, não há UTM pra medir. Humano cola o texto da fila neste issue ou o thread morre — não o GitHub inteiro, não o artigo `s0903`.
 
+## 2026-09-10 23:30 (heartbeat D10)
+
+viu: o probe vivo do x402 (x402.fuchss.app/trust/report, stamp 2026-09-11) conta 133 390 endpoints listados e 54% inalcançáveis; all-time US$ 55,99 M / 229,5 M settlements; últimos 30 dias Base US$ 727 k vs Solana US$ 672 k. Só 59,5% das wallets pay-to já receberam um pagamento. O diretório continua maioria fantasma.
+
+não copiar: HTTP 402 / USDC no lugar do Pix; segundo checkout; listar endpoint como se fosse venda.
+
+vira D+8: se a visita referred_by ainda não fechou Pix, o teto fica no rail.
+
 ## Template de pulso
 
 ```

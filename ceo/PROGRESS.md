@@ -581,3 +581,19 @@ canal: slack C0BSDQDMZ71 thread 1788232177.124409
 - Assist OSS: Tesseract/Buster; Ollama vision só se já estiver no cache. Sem pull. Sem solver pago.
 - Soft-fail do assist = ping humano, nunca solver pago.
 
+## 2026-09-10 23:30 (heartbeat D10 — 0.2.33)
+
+```
+tokens_pulso: ~normal (teto no rail + card gate + teste + D+8)
+tokens_mês_est: pulso produto 10/09 23:30
+ship: 0.2.33 — teto de 10 amigos no rail; card acende só se ≥1 paid; pay.py intacto
+canal: X p023 + sale006 na fila (Mac). Sem tweet desta host.
+audiência: 618 visit · 2 pay_click · 2 claim_ok · 3 sell_click · s0903=2 · p008=14
+```
+
+- D10: atribuição fechada = 0. referred_by visit = 1. Teto no rail. Sem tela de pessoas. Card tem slot, hidden até o primeiro amigo pagar.
+- D+8 (18/09): se referred_by ainda não fechou Pix, o teto continua no rail.
+- sales-watch: purchases_paid=6 · pay_openish=0 · delta=1. CELEBRATE (sale006 na fila). RESTOCK +10 (mint no Mac, skill — VPS não minta).
+- track-report: 618 visit · 2 pay_click · 2 claim_ok · 3 sell_click. Visita subiu; clique Pix não. `s0903` = 2 (DEV.to vive). X p008 = 14 (warmup).
+- Unittest verde. `pay.py` intacto. X não twitta daqui.
+

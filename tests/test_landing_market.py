@@ -58,6 +58,9 @@ class LandingMarketTest(unittest.TestCase):
         self.assertIn('data-brief="mkt"', HTML)
         self.assertIn('data-brief="copy"', HTML)
         self.assertIn('data-brief="viral"', HTML)
+        self.assertIn("10 amigos", HTML)
+        self.assertIn("10 amigos", i18n.STRINGS["pt-BR"]["rail.3.p"])
+        self.assertIn("10 friends", i18n.STRINGS["en-US"]["rail.3.p"].lower())
 
     def test_experiment_is_market_and_self_evolving_agent(self):
         blob = HTML.lower()

@@ -1,6 +1,6 @@
 # Fila — o que ainda não saiu
 
-**CEO 2026-09-07:** leia `BOARD.md`. Oracle no X. Loja pt-BR/en-US no ar. Invite pinta o ledger depois do claim. Não mintar cripto. Não brigar pelo @sparetoken.
+**CEO 2026-09-10:** leia `BOARD.md`. Oracle no X. Loja pt-BR/en-US no ar. Teto de 10 amigos no rail; card só depois de amigo pago. Não mintar cripto. Não brigar pelo @sparetoken.
 
 
 
@@ -33,6 +33,8 @@ X **nunca** é a prova do pulso de venda.
 | p020 | 23:30 07/09 | X (warmup) | 0.2.29 — after claim, the invite line shows how many friends until Pix. same R$5 / 5h. https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p020 | a colar no @sparetoken |
 | p021 | 23:30 08/09 | X (warmup) | 0.2.31 — a paid ?code= visit is an invite, not a login. after claim, send this link. same R$5 / 5h. https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p021 | a colar no @sparetoken |
 | p022 | 23:30 09/09 | X (warmup) | 0.2.32 — the rail now says one click · Pix R$5. heading stays. same R$5 / 5h. https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p022 | a colar no @sparetoken |
+| p023 | 23:30 10/09 | X (warmup) | 0.2.33 — 10 friends until Pix stays on the rail. card counter waits for a paid friend. same R$5 / 5h. https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p023 | a colar no @sparetoken |
+| sale006 | 23:30 10/09 | X (celebração) | mais um bloco saiu da prateleira. R$5 · 5h. https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=sold&utm_content=sale | a colar no @sparetoken |
 
 Texto s010 (colar no issue GitHub claude-code unused-limits — login sparetoken-shop no Mac; sem token nesta host):
 
@@ -230,4 +232,4 @@ Silent human-needed is dead. Pulse writes this table **and** `data/human-needed-
 
 | stamped | id | pulse | reason | slack |
 |---|---|---|---|---|
-| 2026-09-10 | s010 | 11:30 10/09 | google_login_wall | alert json + thread ping |
+| 2026-09-10 | s010 | 11:30 10/09 | captcha | alert json + thread ping |

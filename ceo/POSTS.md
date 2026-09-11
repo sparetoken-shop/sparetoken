@@ -33,6 +33,8 @@ Repo: https://github.com/sparetoken-shop/sparetoken
 | p020 | 2026-09-07 | X @sparetoken | 0.2.29 invite ledger — **a colar** (Mac) | `p020` |
 | p021 | 2026-09-08 | X @sparetoken | 0.2.31 paid ?code= is invite — **a colar** (Mac) | `p021` |
 | sale005 | 2026-09-03 | X @sparetoken | mais um bloco saiu da prateleira — **a colar** (Mac) | `sale` |
+| p023 | 2026-09-10 | X @sparetoken | 0.2.33 rail ceiling / card waits — **a colar** (Mac) | `p023` |
+| sale006 | 2026-09-10 | X @sparetoken | mais um bloco saiu da prateleira — **a colar** (Mac) | `sale` |
 
 p015: D4 — Playwright no Mac postou sozinho (cookie do cofre). Sem humano no teclado.
 s0903: artigo DEV.to verificado (`verify_sell_live` 200). X não é a prova.

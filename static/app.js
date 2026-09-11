@@ -177,6 +177,27 @@ function showReferral(ledger) {
   el.hidden = false;
 }
 
+function showCardReferral(ledger) {
+  const el = document.getElementById("referral-card");
+  if (!el) return;
+  const paid = ledger ? Number(ledger.paid_closed_friends) : 0;
+  if (!Number.isFinite(paid) || paid < 1) {
+    el.hidden = true;
+    el.textContent = "";
+    return;
+  }
+  if (ledger.can_choose_pix) {
+    el.textContent = t("referral.ready");
+  } else if (typeof ledger.friends_until_pix === "number") {
+    el.textContent = t("referral.left", { n: ledger.friends_until_pix });
+  } else {
+    el.hidden = true;
+    el.textContent = "";
+    return;
+  }
+  el.hidden = false;
+}
+
 function showInviteModal(url) {
   if (!inviteModal || !url) return;
   if (inviteModalUrl) inviteModalUrl.textContent = url;
@@ -191,6 +212,7 @@ function showBlock(code, inviteFromApi, ledger) {
   if (claimCode && !claimCode.value) claimCode.value = code;
   showInvite(code, inviteFromApi);
   showReferral(ledger);
+  showCardReferral(ledger);
 }
 
 function isGenericLabel(label) {

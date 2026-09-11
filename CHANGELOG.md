@@ -14,6 +14,19 @@ Versionamento: [SemVer](https://semver.org/lang/pt-BR/).
 - Fechar chat anônimo e SSH sem senha (ver ROADMAP)
 - Charge cripto (USDT / OSDT) na mesma conta.vc — ver ROADMAP, sem segundo caixa
 
+## [0.2.33] — 2026-09-10
+
+Ten-friend ceiling stays on the rail. Card counter waits for a paid friend.
+
+### Added
+
+- Shelf card `#referral-card` paints `friends_until_pix` only after `paid_closed_friends ≥ 1`. Counter only. No names. No people screen
+
+### Changed
+
+- Rail step 3 names the ceiling: 10 friends until Pix. Same 10% / fuzzy first
+- Same Pix rail. `pay.py` untouched. No second till. No mint on the VPS
+
 ## [0.2.32] — 2026-09-09
 
 Rail copy is one click · Pix R$5. Heading stays.

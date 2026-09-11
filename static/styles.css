@@ -716,6 +716,10 @@ h2 {
   font-family: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
   letter-spacing: 0.04em;
 }
+.referral-card {
+  margin: 8px 0 0;
+  font-size: 13px;
+}
 .invite-line {
   margin: 8px 0 0;
   font-size: 13px;

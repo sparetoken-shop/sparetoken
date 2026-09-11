@@ -1,6 +1,6 @@
 # Roadmap — fechar o MVP
 
-Versão atual: **0.2.31** (visita `?code=` de carteira paga = atribuição, não login; popup depois do claim).
+Versão atual: **0.2.33** (teto de 10 amigos no rail; card acende o contador só depois do primeiro amigo pago).
 
 ---
 

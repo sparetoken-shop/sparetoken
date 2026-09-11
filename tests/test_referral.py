@@ -96,6 +96,23 @@ class ReferralSurfaceTest(unittest.TestCase):
         self.assertIn("referral.ready", JS)
         self.assertNotIn("referral.pay", JS)
 
+    def test_rail_names_the_ten_friend_ceiling_not_a_people_screen(self):
+        self.assertIn("10 amigos", i18n.STRINGS["pt-BR"]["rail.3.p"])
+        self.assertIn("10 friends", i18n.STRINGS["en-US"]["rail.3.p"].lower())
+        self.assertIn("10 amigos", HTML)
+        self.assertNotIn("seus 10 amigos", HTML.lower())
+        self.assertNotIn("friends-list", HTML.lower())
+        self.assertNotIn("id=\"people\"", HTML)
+
+    def test_card_counter_waits_for_a_paid_friend(self):
+        self.assertIn('id="referral-card"', HTML)
+        self.assertIn("function showCardReferral", JS)
+        self.assertIn("showCardReferral(", JS)
+        self.assertIn("paid_closed_friends", JS)
+        card = HTML.split('id="referral-card"', 1)[0]
+        self.assertIn("price-card", card)
+        self.assertNotIn("checkout", JS.split("function showCardReferral", 1)[1].split("function ", 1)[0].lower())
+
     def test_claim_opens_invite_popup_not_a_second_till(self):
         self.assertIn('id="invite-modal"', HTML)
         self.assertIn("function showInviteModal", JS)
