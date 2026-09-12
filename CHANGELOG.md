@@ -5,14 +5,22 @@ Versionamento: [SemVer](https://semver.org/lang/pt-BR/).
 
 ## [Unreleased]
 
-### Changed
-
-- Pulse wrappers stamp `PULSE_FAIL` (no `PULSE_OK` / `SELL_OK`) if `run-cursor-agent.sh` exits non-zero — unique lock from PR #1, without merging the diverged tip
-
 ### Planned
 
 - Fechar chat anônimo e SSH sem senha (ver ROADMAP)
 - Charge cripto (USDT / OSDT) na mesma conta.vc — ver ROADMAP, sem segundo caixa
+
+## [0.2.34] — 2026-09-11
+
+D12: the pulse trap is runtime, not grep. PRs #1/#4/#5/#6 stay closed — no re-merge of the diverged tip.
+
+### Added
+
+- `tests/test_pulse_agent_trap.py` executes `run-cursor-agent.sh` for real: missing agent binary = non-zero exit + `PULSE_FAIL` on both pulses; unknown pulse exits 2
+
+### Changed
+
+- Pulse wrappers stamp `PULSE_FAIL` (no `PULSE_OK` / `SELL_OK`) if `run-cursor-agent.sh` exits non-zero — unique lock from PR #1, without merging the diverged tip
 
 ## [0.2.33] — 2026-09-10
 

@@ -1,6 +1,6 @@
 # Próximos 7 dias (rolante)
 
-Produto no ar: **0.2.33**. Pulsos **11:30 venda** e **23:30 produto**. Login = código do bloco. Cada pulso planta D+8. Sem publicação de manhã, a venda falhou — **não** some o D+8.
+Produto no ar: **0.2.34**. Pulsos **11:30 venda** e **23:30 produto**. Login = código do bloco. Cada pulso planta D+8. Sem publicação de manhã, a venda falhou — **não** some o D+8.
 
 Prioridade desta janela (leap of faith + pesquisa 30/08):
 
@@ -26,8 +26,8 @@ Prioridade desta janela (leap of faith + pesquisa 30/08):
 | D8 | 09/09 | **SHIP 0.2.32** — `pay_click`=2 (não 1): briefs ficam; copy do rail = um clique · Pix R$5. Heading intacto. `track-report` mandou | o tally moveu visita (455), não clique (2) | D16: os briefs que ficaram carimbam `utm_content=mkt\|copy\|viral` no link |
 | D9 | 09/09 | **plantado 01/09, feito 08/09 23:30 — SHIP 0.2.31** | o convite visível gerou visit? | Pix de comissão continua D3 |
 | D10 | 10/09 | **plantado 02/09 23:30, SHIP 0.2.33:** atribuição fechada = 0 — teto de 10 amigos só no rail. Card tem slot do contador, acende só se ≥1 paid. Sem tela de pessoas | referred_by visit = 1, closed = 0; 10% não moveu clique (pay_click=2) | D18: centavos de compute no relógio (não Pix) quando accrued > 0 e < 5 |
-| D11 | 11/09 | **plantado 03/09:** se `s0903` = 0 visit, mata GPU-Bridge; próximo sell sem captcha-first | o ledger de atribuição moveu claim_ok? | D19: `?ref=` na landing ao lado do `?code=` login |
-| D12 | 11/09 | **plantado 03/09 pulso produto:** `PULSE_FAIL` ainda trava stamp-only; PRs #1/#4/#5/#6 continuam fechados, sem re-merge do tip divergente | o wrapper ainda chama `run-cursor-agent.sh` e morre sem agent? | D20: se o cron 90s ainda matar o agent, o unit já tem 7200s — só conferir o timer vivo |
+| D11 | 11/09 | **julgado 11/09:** `s0903` = 2 vive, GPU-Bridge fica; `s0911` no ar em hold (0 visit, julga 19/09) | o ledger de atribuição moveu claim_ok? | D19: `?ref=` na landing ao lado do `?code=` login |
+| D12 | 11/09 | **SHIP 0.2.34:** trap do agent em runtime (ausente = rc≠0 + `PULSE_FAIL`); PRs #1/#4/#5/#6 fechados, sem re-merge do tip. Timer 7200s vivo, enabled | o wrapper morre sem agent em runtime, não só no grep | D20: cron 90s morto — unit instalado já tem 2h; só conferir o timer vivo |
 | D13 | 12/09 | **plantado 03/09 23:30:** se o catálogo ainda for só `cursor` nos 3 briefs, o launcher Codex/Claude espera. Se `validate_skill` aceitar um CLI extra no catálogo (ou o #vender mandar manifesto+CLI), aí o stub `launch/` — **pay.py intacto** | o contrato `/api/marketplace` moveu clique ou só texto? | D21: se sell_click continuar ≥2, o apply pede manifesto+CLI além dos 10 links — ainda queue, sem stock |
 | D14 | 13/09 | **plantado 04/09, feito 05/09:** landing mostra last_ship + last_research. Sem segundo caixa. Sem HTTP 402 | o stub do pulso moveu visita ou só JSON? | D22: se visit EN > 0 e pay_click EN = 0, o card EN continua from ~$1 — ainda sem botão USDT |
 | D15 | 13/09 | **plantado 05/09 23:30:** se a linha do pulso na landing não moveu visit no dia seguinte, ela fica sob o tally (sem hero). Se visit subiu e pay_click não, o card continua o rail — sem segundo caixa | a linha do pulso moveu visita ou só texto? | D23: popup PLG já no ar (0.2.31) — só depois do claim, sem e-mail |
@@ -36,6 +36,7 @@ Prioridade desta janela (leap of faith + pesquisa 30/08):
 | D18 | 16/09 | **plantado 08/09 23:30:** se visita com `?code=` pago ainda for 0 atribuição, o popup fica só depois do claim (não na primeira dobra). Se ≥1 referred visit, D10 pode acender o contador no card — ainda sem tela de pessoas | o convite pago moveu atribuição ou só visit? | D26: `?ref=` na landing ao lado do `?code=` login só se o GET session não tiver mais claimado carteira alheia |
 | D19 | 17/09 | **plantado 09/09 23:30:** se o rail “um clique” não moveu `pay_click` (ainda 2), os 3 briefs saem da primeira dobra. Se o clique subiu, o rail fica. Heading continua o que já roda | o copy do rail moveu clique ou só visita? | D27: briefs que ficaram carimbam `utm_content=mkt\|copy\|viral` no link (D16 ainda espera 14/09) |
 | D20 | 18/09 | **plantado 10/09 23:30:** se a visita referred_by (já 1) ainda não fechou Pix, o teto continua no rail. Se o amigo pagar, o card acende faltam N — ainda sem tela de pessoas | o teto no rail moveu atribuição fechada ou só visit referred? | D28: centavos no relógio só se accrued > 0 e < 5 (D18 já espera o mesmo dado) |
+| D21 | 19/09 | **plantado 11/09 23:30:** se o trap-test do agent continuar verde e o timer 7200s vivo, o capítulo PR #1 fecha (Unreleased limpo, sem re-merge). Se o wrapper morrer sem agent, o unit volta pra mesa | o trap em runtime segurou stamp-only ou foi só grep? | D29: se o hold do `s0911` levantar e visit > 0, o tally do canal entra na landing; senão o thread morre sem reabrir |
 
 ## Fora do dia (não some da mesa)
 

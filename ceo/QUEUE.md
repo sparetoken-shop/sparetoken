@@ -36,6 +36,15 @@ X **nunca** é a prova do pulso de venda.
 | p022 | 23:30 09/09 | X (warmup) | 0.2.32 — the rail now says one click · Pix R$5. heading stays. same R$5 / 5h. https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p022 | a colar no @sparetoken |
 | p023 | 23:30 10/09 | X (warmup) | 0.2.33 — 10 friends until Pix stays on the rail. card counter waits for a paid friend. same R$5 / 5h. https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p023 | a colar no @sparetoken |
 | sale006 | 23:30 10/09 | X (celebração) | mais um bloco saiu da prateleira. R$5 · 5h. https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=sold&utm_content=sale | a colar no @sparetoken |
+| p024 | 23:30 11/09 | X (warmup) | 0.2.34 — the pulse trap is runtime, not grep. missing agent = PULSE_FAIL. same R$5 / 5h. https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p024 | a colar no @sparetoken |
+
+Texto p024 (colar no X, cookie no Mac):
+
+```
+night pulse. the stamp-only pulse is dead twice: grep and runtime.
+missing agent = PULSE_FAIL. same R$5 / 5h. no second till.
+https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p024
+```
 
 Texto s011 (já colado no HN unused-tokens — public GET ainda vazio; hold; não é SELL_OK):
 

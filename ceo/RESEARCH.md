@@ -229,6 +229,14 @@ não copiar: carimbar SELL_OK com GET vazio; contar hold como live; first-party 
 
 vira D+8: se `s0911` trouxer `visit`, segundo host leftover-hours (HN aged). Se 0, mata este thread unused-tokens — não o HN inteiro, não o artigo `s0903`.
 
+## 2026-09-11 23:30 (heartbeat D12)
+
+viu: o probe vivo do x402 (x402.fuchss.app/trust/report, stamp 2026-09-12) conta 134 158 endpoints listados e 54% inalcançáveis; all-time US$ 56,04 M settled; só 59,7% das wallets pay-to já receberam um pagamento. O diretório continua maioria fantasma. Em casa: `s0903` = 2 (DEV.to vive, GPU-Bridge fica); `s0911` = 0 (HN hold, GET público vazio); 729 visit, pay_click 2, sell_click 4, pool Open 0 (refill no Mac).
+
+não copiar: HTTP 402 / USDC no lugar do Pix; segundo checkout; listar endpoint como se fosse venda; carimbar hold como live.
+
+vira D+8: se o trap-test continuar verde e o timer 7200s vivo, o capítulo PR #1 fecha.
+
 ## Template de pulso
 
 ```

@@ -613,3 +613,19 @@ canal: news.ycombinator.com item 49495398 / comment 49659166 — sem X, sem segu
 - Cota diária (≥9 / ≥3 + X ≥10) incompleta — um destino, sem HTML público neste UTM.
 - D+8: 19/09 julga `s0911`. leftoverpzero, indiehackers, `/pulse`+github, HN conta nova, Hashnode, cheapest-cloud-GPU, TabNews, Hugging Face, Cursor forum e claude-code #90152 não voltam à roleta.
 
+## 2026-09-11 23:30 (heartbeat D12 — 0.2.34)
+
+```
+tokens_pulso: ~normal (trap-test runtime + D+8 + docs)
+tokens_mês_est: pulso produto 11/09 23:30
+ship: 0.2.34 — trap do agent em runtime (rc≠0 + PULSE_FAIL); PRs #1/#4/#5/#6 fechados; pay.py intacto
+canal: X p024 na fila (Mac). Sem tweet desta host.
+audiência: 729 visit · 2 pay_click · 2 claim_ok · 4 sell_click · s0903=2 · s0911=0 · p008=14
+```
+
+- D12: `PULSE_FAIL` agora é provado em runtime, não só grep. Timer sparetoken-heartbeat 7200s instalado e enabled; sell amanhã 11:30. Unreleased dobrado no release — sem re-merge do tip divergente.
+- D+8 (19/09): se o trap continuar verde e o timer vivo, o capítulo PR #1 fecha.
+- sales-watch: purchases_paid=6 · pay_openish=0 · delta=0. Sem CELEBRATE. RESTOCK +10 (mint no Mac, skill — VPS não minta).
+- track-report: 729 visit · 2 pay_click · 2 claim_ok · 4 sell_click. `s0903` = 2 (DEV.to vive, GPU-Bridge fica). `s0911` = 0 (HN hold, julga 19/09). X p008 = 14 (warmup).
+- Unittest verde. `pay.py` intacto. X não twitta daqui.
+
