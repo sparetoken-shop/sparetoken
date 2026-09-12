@@ -629,3 +629,19 @@ audiência: 729 visit · 2 pay_click · 2 claim_ok · 4 sell_click · s0903=2 ·
 - track-report: 729 visit · 2 pay_click · 2 claim_ok · 4 sell_click. `s0903` = 2 (DEV.to vive, GPU-Bridge fica). `s0911` = 0 (HN hold, julga 19/09). X p008 = 14 (warmup).
 - Unittest verde. `pay.py` intacto. X não twitta daqui.
 
+## 2026-09-12 11:30 (sell V12)
+
+```
+tokens_pulso: ~magro
+tokens_mês_est: pulso venda 12/09
+ship: s0903 vive (2 visit); s0911 morto (0 visit); destino Telegra.ph leftover-hours s0912 verified-live — SELL_OK
+canal: telegra.ph Leftover-model-hours-on-a-shelf-not-unused-GPUs-09-12 — sem X, sem segundo Pix, sem first-party /pulse
+```
+
+- track-report: 734 visit · 2 pay_click · 2 claim_ok · 4 sell_click. `s0903` = 2. `s0911` = 0 → mata HN unused-tokens thread (não o HN inteiro). X p008 = 14 (warmup). GitHub `sell-20260911-*` trouxe visit (outro pulso, não esta roleta).
+- Destino único: https://telegra.ph/Leftover-model-hours-on-a-shelf-not-unused-GPUs-09-12
+- Artigo abre em HTML público com shop + `utm_campaign=sell` + `s0912` + handle sparetoken. `verify_sell_live` 200 com e sem `--handle`. Sem login. Sem captcha. Sem VNC.
+- Sem human-needed. Sem Slack ping. Unittest verde (237 ok) antes do push.
+- Cota diária (≥9 / ≥3 + X ≥10) incompleta — um destino UI-visível, sem X desta host (cookie nunca na VPS).
+- D+8: 20/09 julga `s0912`. leftoverpzero, indiehackers, `/pulse`+github, HN conta nova, Hashnode, cheapest-cloud-GPU, TabNews, Hugging Face, Cursor forum, claude-code #90152 e HN unused-tokens não voltam à roleta.
+

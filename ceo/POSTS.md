@@ -46,7 +46,8 @@ s0903: artigo DEV.to verificado (`verify_sell_live` 200). X não é a prova.
 | s0908 | 2026-09-08 | Hugging Face Forums H100 idle | **morto** — 0 visit, comentário nunca saiu | `s0908` |
 | s0909 | 2026-09-09 | Cursor forum token-banking | **morto** — 0 visit, comentário nunca saiu | `s0909` |
 | s0910 | 2026-09-10 | GitHub claude-code unused-limits | **morto** — 0 visit, comentário nunca saiu | `s0910` |
-| s0911 | 2026-09-11 | HN unused-tokens leftover hours | https://news.ycombinator.com/item?id=49659166 — public GET empty (hold); not SELL_OK | `s0911` |
+| s0911 | 2026-09-11 | HN unused-tokens leftover hours | **morto** — 0 visit; posted mas hold, nunca UI-visível | `s0911` |
+| s0912 | 2026-09-12 | Telegra.ph leftover hours | https://telegra.ph/Leftover-model-hours-on-a-shelf-not-unused-GPUs-09-12 — `verify_sell_live` 200 SELL_OK | `s0912` |
 
 s0904: um comentário no Show HN https://news.ycombinator.com/item?id=49563492. GET público sem `sparetoken.shop`. 05/09 track-report = 0 visit. Morto.
 s0905: um comentário no Hashnode https://krauncher.hashnode.dev/there-are-two-ways-to-rent-a-gpu-i-think-there-s-a-third. 06/09 track-report = 0 visit. Morto.
@@ -55,8 +56,9 @@ s0907: um comentário no TabNews https://www.tabnews.com.br/MrJ/openllm-de-rotea
 s0908: um comentário no Hugging Face Forums https://discuss.huggingface.co/t/h100-on-premise-for-occasional-llm-usage-how-do-you-handle-gpu-idle-time-when-deploying-at-a-client-site/174410. 09/09 track-report = 0 visit. Morto.
 s0909: um comentário no Cursor forum https://forum.cursor.com/t/feature-suggestion-token-banking-rollover-for-pro-subscriptions/147854. 10/09 track-report = 0 visit. Morto.
 s0910: um comentário no issue https://github.com/anthropics/claude-code/issues/90152. POST 401 nesta host. 11/09 track-report = 0 visit. Morto.
-s0911: um comentário no HN https://news.ycombinator.com/item?id=49495398 → https://news.ycombinator.com/item?id=49659166. GET público sem `sparetoken.shop` (hold). X não é a prova.
+s0911: um comentário no HN https://news.ycombinator.com/item?id=49495398 → https://news.ycombinator.com/item?id=49659166. GET público sem `sparetoken.shop` (hold, nunca UI-visível). 12/09 track-report = 0 visit. Morto.
+s0912: um artigo no Telegra.ph https://telegra.ph/Leftover-model-hours-on-a-shelf-not-unused-GPUs-09-12. `verify_sell_live` 200 UI-visível (shop + sell + s0912 + handle sparetoken). SELL_OK. X não é a prova.
 s0904 comment https://news.ycombinator.com/item?id=49565268 agora é UI-visível (`verify_sell_live` 200) — hold lifted; thread continua morto na roleta; não é a prova de 11/09.
-s0903 vive (2 visit).
+s0903 vive (2 visit). s0912 vive (publicado hoje, julga 20/09).
 
-Próximo: 12/09. Sem claude-code #90152. Sem Cursor forum. Sem Hugging Face. Sem TabNews. Sem Hashnode. Sem cheapest-cloud-GPU. Sem HN conta nova. X continua warmup.
+Próximo: 13/09. Sem HN unused-tokens. Sem claude-code #90152. Sem Cursor forum. Sem Hugging Face. Sem TabNews. Sem Hashnode. Sem cheapest-cloud-GPU. Sem HN conta nova. X continua warmup.

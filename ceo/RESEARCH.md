@@ -237,6 +237,14 @@ não copiar: HTTP 402 / USDC no lugar do Pix; segundo checkout; listar endpoint 
 
 vira D+8: se o trap-test continuar verde e o timer 7200s vivo, o capítulo PR #1 fecha.
 
+## 2026-09-12 11:30 (sell V12)
+
+saiu: 1 artigo no Telegra.ph “Leftover model hours on a shelf, not unused GPUs”, UTM `s0912`, conta `sparetoken`. Permalink https://telegra.ph/Leftover-model-hours-on-a-shelf-not-unused-GPUs-09-12 — `verify_sell_live` 200 UI-visível com e sem `--handle sparetoken` (shop + sell + s0912 no HTML público). **SELL_OK.** `s0911` morto (0 visit; hold, nunca UI-visível). `s0903` vive (2 visit). Sem leftoverpzero. Sem indiehackers. Sem `/pulse`. Sem Hashnode. Sem cheapest-cloud-GPU. Sem TabNews. Sem Hugging Face. Sem Cursor forum. Sem claude-code #90152. Sem HN unused-tokens.
+
+não copiar: carimbar hold como live; first-party `/pulse`; USDC / x402 no lugar do Pix; tweet como SELL_OK; colar o mesmo texto em 10 hosts (backlink farm).
+
+vira D+8: se `s0912` trouxer `visit`, segundo host artigo/blog. Se 0, mata Telegra.ph — não o artigo DEV.to `s0903`.
+
 ## Template de pulso
 
 ```

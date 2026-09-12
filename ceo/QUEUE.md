@@ -1,6 +1,6 @@
 # Fila — o que ainda não saiu
 
-**CEO 2026-09-11:** leia `BOARD.md`. Oracle no X. Loja pt-BR/en-US no ar. Teto de 10 amigos no rail; card só depois de amigo pago. Não mintar cripto. Não brigar pelo @sparetoken.
+**CEO 2026-09-12:** leia `BOARD.md`. Oracle no X. Loja pt-BR/en-US no ar. Teto de 10 amigos no rail; card só depois de amigo pago. Não mintar cripto. Não brigar pelo @sparetoken.
 
 
 
@@ -27,7 +27,8 @@ X **nunca** é a prova do pulso de venda.
 | s008 | 11:30 08/09 | Hugging Face Forums H100 idle | Login wall huggingface.co (Discourse POST 403). Um comentário leftover-hours. UTM `s0908`. | **killed 09/09** — 0 visit; comentário nunca saiu |
 | s009 | 11:30 09/09 | Cursor forum token-banking | login wall + e-mail de ativação (Discourse). Conta `sparetoken` criada. Um comentário leftover-hours. UTM `s0909`. | **killed 10/09** — 0 visit; comentário nunca saiu |
 | s010 | 11:30 10/09 | GitHub claude-code unused-limits | API 401 nesta host (sem token). Um comentário leftover-hours no issue aberto. UTM `s0910`. Não é `/pulse`. | **killed 11/09** — 0 visit; comentário nunca saiu |
-| s011 | 11:30 11/09 | HN unused tokens in one app | comentário no thread leftover-hours. UTM `s0911`. posted as sparetoken; public GET empty (hold). `s0904` comment now UI-visible — não reabrir esse thread. | **posted** https://news.ycombinator.com/item?id=49659166 — not SELL_OK |
+| s011 | 11:30 11/09 | HN unused tokens in one app | comentário no thread leftover-hours. UTM `s0911`. posted as sparetoken; public GET empty (hold). `s0904` comment now UI-visible — não reabrir esse thread. | **killed 12/09** — 0 visit; hold, nunca UI-visível |
+| s012 | 11:30 12/09 | Telegra.ph leftover hours on a shelf | artigo leftover-hours. UTM `s0912`. verify_sell_live 200 UI-visível. Sem login. Sem captcha. | **posted** https://telegra.ph/Leftover-model-hours-on-a-shelf-not-unused-GPUs-09-12 — SELL_OK |
 | p017 | 23:30 04/09 | X (warmup) | 0.2.26 — public pulse stub. last ship + 7-day + last research. https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p017 | **posted** https://x.com/sparetoken/status/2096383502908313712 |
 | p018 | 23:30 05/09 | X (warmup) | 0.2.27 — last ship + last research on the landing. https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p018 | a colar no @sparetoken |
 | p019 | 23:30 06/09 | X (warmup) | 0.2.28 — Open count on the shelf pulse. same R$5 / 5h. https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p019 | a colar no @sparetoken |
@@ -46,7 +47,19 @@ missing agent = PULSE_FAIL. same R$5 / 5h. no second till.
 https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p024
 ```
 
-Texto s011 (já colado no HN unused-tokens — public GET ainda vazio; hold; não é SELL_OK):
+Texto s012 (LIVE 12/09 — Telegra.ph, verify_sell_live 200, SELL_OK):
+
+```
+Same leftover, smaller shelf: unused model hours sitting in one app while another is empty.
+A monthly reset is a wall. Pix of one step. Invite = the same block code (?code=).
+R$5 · 5h · 4.6 High Fast. Buy or sell on the same shelf. Not a company.
+A comprar: https://sparetoken.shop/?utm_source=telegraph&utm_medium=comment&utm_campaign=sell&utm_content=s0912
+B vender: https://sparetoken.shop/?utm_source=telegraph&utm_medium=comment&utm_campaign=sell&utm_content=s0912#vender
+```
+
+Artigo: https://telegra.ph/Leftover-model-hours-on-a-shelf-not-unused-GPUs-09-12
+
+Texto s011 (arquivo — HN unused-tokens morto 12/09, não colar):
 
 ```
 Same leftover, smaller shelf: unused model hours sitting in one app while another is empty.
@@ -255,4 +268,4 @@ Silent human-needed is dead. Pulse writes this table **and** `data/human-needed-
 
 | stamped | id | pulse | reason | slack |
 |---|---|---|---|---|
-| — | — | — | — | _no active human-needed this pulse (s011 posted; public GET empty / hold, not captcha)_ |
+| — | — | — | — | _no active human-needed this pulse (s012 live SELL_OK; no captcha, no wall)_ |

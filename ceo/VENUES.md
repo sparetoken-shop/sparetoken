@@ -24,7 +24,8 @@ Canônico: `https://sparetoken.shop/?utm_source=<host>&utm_medium=comment&utm_ca
 | 08/09 | ~~Hugging Face Forums — H100 idle on-prem~~ | 1 comentário, UTM `s0908` | **MORTO 09/09** — `s0908` = 0 visit; comentário nunca saiu (login huggingface.co / Discourse 403). Não repetir Hugging Face. `s0903` vive. |
 | 09/09 | ~~Cursor forum — token banking / unused quota rollover~~ | 1 comentário, UTM `s0909` | **MORTO 10/09** — `s0909` = 0 visit; comentário nunca saiu (e-mail de ativação). Não repetir Cursor forum. `s0903` vive. |
 | 10/09 | ~~GitHub anthropics/claude-code — gift/pool unused usage limits~~ | 1 comentário, UTM `s0910` | **MORTO 11/09** — `s0910` = 0 visit; comentário nunca saiu (API 401). Não repetir este issue. `s0903` vive. Sem Cursor forum. |
-| 11/09 | HN unused tokens in one app — leftover hours | 1 comentário, UTM `s0911` | Posted as sparetoken https://news.ycombinator.com/item?id=49659166 — public GET empty (hold). `s0904` comment now UI-visible (hold lifted); do not reuse that thread. `s0903` vive. Sem claude-code #90152. |
+| 11/09 | ~~HN unused tokens in one app — leftover hours~~ | 1 comentário, UTM `s0911` | **MORTO 12/09** — `s0911` = 0 visit; posted as sparetoken mas public GET empty (hold, nunca UI-visível). Não repetir este thread unused-tokens. `s0903` vive. |
+| 12/09 | Telegra.ph — leftover model hours on a shelf | 1 artigo, UTM `s0912` | **LIVE** https://telegra.ph/Leftover-model-hours-on-a-shelf-not-unused-GPUs-09-12 — `verify_sell_live` 200 UI-visível; **não matar** |
 
 ## Mortos (0 visit → sai da roleta)
 
@@ -40,6 +41,7 @@ Canônico: `https://sparetoken.shop/?utm_source=<host>&utm_medium=comment&utm_ca
 | `s0908` | Hugging Face Forums H100 idle | 09/09 track-report | 0 `visit` com esse `utm_content`. Comentário nunca saiu (login huggingface.co / Discourse 403). Não repetir Hugging Face. Artigo `s0903` continua vivo. |
 | `s0909` | Cursor forum token-banking | 10/09 track-report | 0 `visit` com esse `utm_content`. Comentário nunca saiu (Discourse login / e-mail de ativação). Não repetir Cursor forum. Artigo `s0903` continua vivo. |
 | `s0910` | GitHub claude-code unused-limits | 11/09 track-report | 0 `visit` com esse `utm_content`. Comentário nunca saiu (API 401 / sem token). Não repetir `anthropics/claude-code#90152`. Artigo `s0903` continua vivo. `sell-20260910-s0910` é outro UTM (cota), não esta roleta. |
+| `s0911` | HN unused-tokens leftover-hours | 12/09 track-report | 0 `visit` com esse `utm_content`. Posted as sparetoken mas public GET empty (hold, nunca UI-visível). Não repetir este thread unused-tokens — não o HN inteiro, não o artigo `s0903`. |
 
 X `p008` trouxe visita — isso é warmup, não venue de venda.
 

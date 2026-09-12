@@ -1,10 +1,10 @@
 {
   "default": {
-    "host": "hn",
-    "url": "https://news.ycombinator.com/item?id=49495398",
-    "kind": "comment",
+    "host": "telegraph",
+    "url": "https://telegra.ph/Leftover-model-hours-on-a-shelf-not-unused-GPUs-09-12",
+    "kind": "article",
     "fallback": false,
-    "note": "unused tokens in one app while another is empty; UTM s0911 posted as sparetoken item 49659166; public GET empty (hold); s0904 comment now UI-visible — do not reuse that thread; leftoverpzero indiehackers /pulse HN-new-account Hashnode cheapest-cloud-GPU TabNews Hugging Face Cursor forum claude-code#90152 dead; s0903 lives (2 visit); not first-party /pulse"
+    "note": "LIVE 12/09: UTM s0912 verify_sell_live 200 UI-visible SELL_OK; s0911 dead (0 visit, hold); leftoverpzero indiehackers /pulse HN-new-account Hashnode cheapest-cloud-GPU TabNews Hugging Face Cursor forum claude-code#90152 HN-unused-tokens dead; s0903 lives (2 visit); not first-party /pulse"
   },
   "2026-08-31": {
     "host": "pulse-github",
@@ -88,6 +88,13 @@
     "url": "https://news.ycombinator.com/item?id=49495398",
     "kind": "comment",
     "fallback": false,
-    "note": "unused tokens in one app; UTM s0911; posted as sparetoken https://news.ycombinator.com/item?id=49659166; public GET empty (hold); s0904 comment now UI-visible (hold lifted) — do not reuse that thread; leftoverpzero indiehackers /pulse HN-new-account Hashnode cheapest-cloud-GPU TabNews Hugging Face Cursor forum claude-code#90152 stay dead; s0903 lives"
+    "note": "DEAD 12/09: s0911 brought 0 visit; posted as sparetoken but public GET empty (hold, never UI-visible). Do not repeat this unused-tokens thread. s0903 lives"
+  },
+  "2026-09-12": {
+    "host": "telegraph",
+    "url": "https://telegra.ph/Leftover-model-hours-on-a-shelf-not-unused-GPUs-09-12",
+    "kind": "article",
+    "fallback": false,
+    "note": "LIVE: UTM s0912 verify_sell_live 200 UI-visible SELL_OK; s0911 dead 0 visit hold; leftoverpzero indiehackers /pulse HN-new-account Hashnode cheapest-cloud-GPU TabNews Hugging Face Cursor forum claude-code#90152 HN-unused-tokens stay dead; s0903 lives"
   }
 }
