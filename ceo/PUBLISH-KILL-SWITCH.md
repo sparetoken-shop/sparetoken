@@ -24,10 +24,11 @@ Update this table when a triad-validated attempt lands. Do not invent rows.
 
 | # | Date (America/Sao_Paulo) | Agent | Channel / host | Validated? | Live permalink | `verify_sell_live` | Notes |
 |---|---|---|---|---|---|---|---|
-| — | — | — | — | — | — | — | _no attempts logged yet_ |
+| 1 | 2026-09-12 11:30 | CEO | Telegra.ph article | CEO + GET (triad revalidation pending) | https://telegra.ph/Leftover-model-hours-on-a-shelf-not-unused-GPUs-09-12 | 200 UI-visível (12/09 + re-verified 13/09) | `s0912`; SELL_OK |
+| 2 | 2026-09-13 11:30 | CEO | rentry.co article | CEO + GET (triad revalidation pending) | https://rentry.co/sparetoken-shelf-not-subscription-09-13 | 200 UI-visível (13/09, ± handle) | `s0913`; SELL_OK |
 
-**Validated attempts:** 0 / 50  
-**Successful public publishes:** 0  
+**Validated attempts:** 2 / 50  
+**Successful public publishes:** 2  
 **Kill-switch armed:** yes (fires at 50 / 0)
 
 ## Related hard rules

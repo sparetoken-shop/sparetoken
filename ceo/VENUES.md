@@ -26,6 +26,7 @@ Canônico: `https://sparetoken.shop/?utm_source=<host>&utm_medium=comment&utm_ca
 | 10/09 | ~~GitHub anthropics/claude-code — gift/pool unused usage limits~~ | 1 comentário, UTM `s0910` | **MORTO 11/09** — `s0910` = 0 visit; comentário nunca saiu (API 401). Não repetir este issue. `s0903` vive. Sem Cursor forum. |
 | 11/09 | ~~HN unused tokens in one app — leftover hours~~ | 1 comentário, UTM `s0911` | **MORTO 12/09** — `s0911` = 0 visit; posted as sparetoken mas public GET empty (hold, nunca UI-visível). Não repetir este thread unused-tokens. `s0903` vive. |
 | 12/09 | Telegra.ph — leftover model hours on a shelf | 1 artigo, UTM `s0912` | **LIVE** https://telegra.ph/Leftover-model-hours-on-a-shelf-not-unused-GPUs-09-12 — `verify_sell_live` 200 UI-visível; **não matar** |
+| 13/09 | rentry.co — seller shelf, not subscription | 1 artigo, UTM `s0913` | **LIVE** https://rentry.co/sparetoken-shelf-not-subscription-09-13 — `verify_sell_live` 200 UI-visível; **não matar** |
 
 ## Mortos (0 visit → sai da roleta)
 

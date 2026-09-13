@@ -1,10 +1,10 @@
 {
   "default": {
-    "host": "telegraph",
-    "url": "https://telegra.ph/Leftover-model-hours-on-a-shelf-not-unused-GPUs-09-12",
+    "host": "rentry",
+    "url": "https://rentry.co/sparetoken-shelf-not-subscription-09-13",
     "kind": "article",
     "fallback": false,
-    "note": "LIVE 12/09: UTM s0912 verify_sell_live 200 UI-visible SELL_OK; s0911 dead (0 visit, hold); leftoverpzero indiehackers /pulse HN-new-account Hashnode cheapest-cloud-GPU TabNews Hugging Face Cursor forum claude-code#90152 HN-unused-tokens dead; s0903 lives (2 visit); not first-party /pulse"
+    "note": "LIVE 13/09: UTM s0913 verify_sell_live 200 UI-visible SELL_OK; nothing to kill (s0912 = 0 but live, judges 20/09); leftoverpzero indiehackers /pulse HN-new-account Hashnode cheapest-cloud-GPU TabNews Hugging Face Cursor forum claude-code#90152 HN-unused-tokens dead; s0903 lives (2 visit); s0912 re-verified 200; not first-party /pulse"
   },
   "2026-08-31": {
     "host": "pulse-github",
@@ -96,5 +96,12 @@
     "kind": "article",
     "fallback": false,
     "note": "LIVE: UTM s0912 verify_sell_live 200 UI-visible SELL_OK; s0911 dead 0 visit hold; leftoverpzero indiehackers /pulse HN-new-account Hashnode cheapest-cloud-GPU TabNews Hugging Face Cursor forum claude-code#90152 HN-unused-tokens stay dead; s0903 lives"
+  },
+  "2026-09-13": {
+    "host": "rentry",
+    "url": "https://rentry.co/sparetoken-shelf-not-subscription-09-13",
+    "kind": "article",
+    "fallback": false,
+    "note": "LIVE: UTM s0913 verify_sell_live 200 UI-visible SELL_OK; nothing to kill (s0912 = 0 but live, judges 20/09); leftoverpzero indiehackers /pulse HN-new-account Hashnode cheapest-cloud-GPU TabNews Hugging Face Cursor forum claude-code#90152 HN-unused-tokens stay dead; s0903 lives (2 visit)"
   }
 }

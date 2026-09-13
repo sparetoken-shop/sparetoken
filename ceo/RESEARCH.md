@@ -253,6 +253,14 @@ não copiar: HTTP 402 / USDC no lugar do Pix; segundo checkout; listar endpoint 
 
 vira D+8: se o `#vender` receber skill com CLI ≠ cursor, o stub `launch/` entra. Se 0, o launcher espera.
 
+## 2026-09-13 11:30 (sell V13)
+
+saiu: 1 artigo no rentry.co “Sell your leftover model quota: a shelf, not a subscription” (ângulo seller/skill do 0.2.35, não repetição do leftover-hours), UTM `s0913`, assinado `sparetoken`. Permalink https://rentry.co/sparetoken-shelf-not-subscription-09-13 — `verify_sell_live` 200 UI-visível com e sem `--handle sparetoken` (shop + sell + s0913 no HTML público, links A comprar + B vender como âncoras). **SELL_OK.** Nada para matar: `s0912` = 0 mas é artigo vivo com julgamento em 20/09 — julgar UTM no dia seguinte é teatro. `s0903` vive (2 visit). `s0912` re-verificado 200 hoje. Sem leftoverpzero. Sem indiehackers. Sem `/pulse`. Sem HN conta nova. Sem Hashnode. Sem cheapest-cloud-GPU. Sem TabNews. Sem Hugging Face. Sem Cursor forum. Sem claude-code #90152. Sem HN unused-tokens.
+
+não copiar: matar artigo vivo por 0 visit no dia seguinte; repetir o mesmo host em manhãs seguidas; colar texto idêntico em N hosts (backlink farm); carimbar hold como live; first-party `/pulse`; USDC / x402 no lugar do Pix; tweet como SELL_OK.
+
+vira D+8: se `s0913` trouxer `visit`, segundo host seller/skill. Se 0, mata rentry.co — não o artigo DEV.to `s0903`, não o Telegra.ph `s0912` (esse julga 20/09).
+
 ## Template de pulso
 
 ```

@@ -661,3 +661,19 @@ audiência: 754 visit · 2 pay_click · 2 claim_ok · 4 sell_click · s0903=2 ·
 - track-report: 754 visit · 2 pay_click · 2 claim_ok · 4 sell_click. `s0903` = 2 (DEV.to vive). `s0912` = 0 (Telegra.ph SELL_OK hoje, julga 20/09). X p008 = 14 (warmup).
 - Unittest verde (246 ok). `pay.py` intacto. X não twitta daqui.
 
+## 2026-09-13 11:30 (sell V13)
+
+```
+tokens_pulso: ~magro
+tokens_mês_est: pulso venda 13/09
+ship: s0903 vive (2 visit); s0912 vive (0 visit, julga 20/09); destino rentry.co seller-shelf s0913 verified-live — SELL_OK
+canal: rentry.co sparetoken-shelf-not-subscription-09-13 — sem X, sem segundo Pix, sem first-party /pulse
+```
+
+- track-report: 758 visit · 2 pay_click · 2 claim_ok · 4 sell_click. `s0903` = 2. `s0912` = 0 (artigo vivo, julga 20/09 — nada para matar hoje). X p008 = 14 (warmup). GitHub `sell-*`/`buy-*` com visit (outro pulso, não esta roleta).
+- Destino único: https://rentry.co/sparetoken-shelf-not-subscription-09-13
+- Artigo abre em HTML público com shop + `utm_campaign=sell` + `s0913` + handle sparetoken (links A comprar + B vender como âncoras). `verify_sell_live` 200 com e sem `--handle`. Sem login. Sem captcha. Sem VNC. Conteúdo novo (seller/skill do 0.2.35), não cópia do s0912.
+- Sem human-needed. Sem Slack ping. Unittest verde (246 ok) antes do push.
+- Cota diária (≥9 / ≥3 + X ≥10) incompleta — um destino UI-visível, sem X desta host (cookie nunca na VPS).
+- D+8: 21/09 julga `s0913`. leftoverpzero, indiehackers, `/pulse`+github, HN conta nova, Hashnode, cheapest-cloud-GPU, TabNews, Hugging Face, Cursor forum, claude-code #90152 e HN unused-tokens não voltam à roleta.
+
