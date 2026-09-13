@@ -10,6 +10,20 @@ Versionamento: [SemVer](https://semver.org/lang/pt-BR/).
 - Fechar chat anônimo e SSH sem senha (ver ROADMAP)
 - Charge cripto (USDT / OSDT) na mesma conta.vc — ver ROADMAP, sem segundo caixa
 
+## [0.2.35] — 2026-09-12
+
+D13: seller apply asks for manifesto + CLI. Launcher still waits.
+
+### Added
+
+- `#vender` collects an optional skill: short title + manifesto (≤280) + one allowlist CLI. Validated through the marketplace contract, queued with the 10 links, never auto-listed
+- `seller.parse_skill` — empty block stays links-only; any field filled requires the full block (slug from handle, CLI in allowlist)
+
+### Changed
+
+- Same Pix rail. `pay.py` untouched. No second till. No mint on the VPS
+- Live briefs stay on cursor — the Codex/Claude launcher waits for the first queued skill with a non-cursor CLI
+
 ## [0.2.34] — 2026-09-11
 
 D12: the pulse trap is runtime, not grep. PRs #1/#4/#5/#6 stay closed — no re-merge of the diverged tip.

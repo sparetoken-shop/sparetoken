@@ -17,6 +17,7 @@ ROOT = Path(__file__).resolve().parents[1]
 SERVER = (ROOT / "server.py").read_text(encoding="utf-8")
 HTML = (ROOT / "static" / "index.html").read_text(encoding="utf-8")
 JS = (ROOT / "static" / "app.js").read_text(encoding="utf-8")
+SELLER_SRC = (ROOT / "seller.py").read_text(encoding="utf-8")
 
 
 def _ten_links(handle: str = "oraculus") -> list[str]:
@@ -80,6 +81,69 @@ class SellerValidateTest(unittest.TestCase):
             seller.validate(_ok_payload(handle="fuzzy"))
 
 
+def _skill_payload(**overrides) -> dict:
+    body = _ok_payload()
+    body.update(
+        {
+            "skill_title": "Noite de sobra",
+            "skill_manifesto": "280 caracteres. R$5 / 5h. Sem cara. O mesmo Pix.",
+            "skill_cli": "codex",
+        }
+    )
+    body.update(overrides)
+    return body
+
+
+class SellerSkillTest(unittest.TestCase):
+    def test_no_skill_fields_stores_null_skill(self):
+        clean = seller.validate(_ok_payload())
+        self.assertIsNone(clean["skill"])
+
+    def test_skill_block_validates_through_marketplace_contract(self):
+        clean = seller.validate(_skill_payload())
+        self.assertIsNotNone(clean["skill"])
+        self.assertEqual(clean["skill"]["title"], "Noite de sobra")
+        self.assertEqual(clean["skill"]["clis"], ["codex"])
+        self.assertEqual(clean["skill"]["sku_brl"], 5)
+        self.assertEqual(clean["skill"]["slug"], "oraculus")
+
+    def test_skill_slug_dashes_handle_underscores(self):
+        clean = seller.validate(_skill_payload(handle="noite_extra"))
+        self.assertEqual(clean["skill"]["slug"], "noite-extra")
+
+    def test_rejects_skill_with_unknown_cli(self):
+        with self.assertRaises(seller.SellerError) as ctx:
+            seller.validate(_skill_payload(skill_cli="openai"))
+        self.assertIn("allowlist", str(ctx.exception).lower())
+
+    def test_rejects_skill_manifesto_over_280(self):
+        with self.assertRaises(seller.SellerError) as ctx:
+            seller.validate(_skill_payload(skill_manifesto="x" * 281))
+        self.assertIn("manifesto", str(ctx.exception).lower())
+
+    def test_manifesto_without_cli_is_rejected(self):
+        with self.assertRaises(seller.SellerError):
+            seller.validate(_skill_payload(skill_cli=""))
+
+    def test_skill_queues_with_links_and_leaves_stock_alone(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            queue = root / "seller-applications"
+            stock = root / "conta-links.txt"
+            stock.write_text("https://app.conta.vc/pay/fuzzy/c/KeepMeSacred\n", encoding="utf-8")
+            result = seller.apply(queue, _skill_payload())
+            self.assertTrue(result["ok"])
+            files = list(queue.glob("*.json"))
+            self.assertEqual(len(files), 1)
+            stored = json.loads(files[0].read_text(encoding="utf-8"))
+            self.assertEqual(stored["skill"]["clis"], ["codex"])
+            self.assertEqual(stored["status"], "queued")
+            self.assertEqual(
+                stock.read_text(encoding="utf-8"),
+                "https://app.conta.vc/pay/fuzzy/c/KeepMeSacred\n",
+            )
+
+
 class SellerStoreTest(unittest.TestCase):
     def setUp(self):
         self.tmp = tempfile.TemporaryDirectory()
@@ -125,3 +189,15 @@ class SellerSurfaceTest(unittest.TestCase):
         self.assertIn('ping("sell_click")', JS)
         self.assertNotIn("download app", HTML.lower())
         self.assertNotIn("baixe o app", HTML.lower())
+
+    def test_landing_skill_fields_and_js_payload(self):
+        self.assertIn('id="seller-skill-title"', HTML)
+        self.assertIn('id="seller-skill-manifesto"', HTML)
+        self.assertIn('id="seller-skill-cli"', HTML)
+        self.assertIn("skill_title", JS)
+        self.assertIn("skill_manifesto", JS)
+        self.assertIn("skill_cli", JS)
+
+    def test_seller_module_does_not_import_pay(self):
+        self.assertNotIn("import pay", SELLER_SRC)
+        self.assertNotIn("from pay", SELLER_SRC)

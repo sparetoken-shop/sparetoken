@@ -38,6 +38,15 @@ X **nunca** é a prova do pulso de venda.
 | p023 | 23:30 10/09 | X (warmup) | 0.2.33 — 10 friends until Pix stays on the rail. card counter waits for a paid friend. same R$5 / 5h. https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p023 | a colar no @sparetoken |
 | sale006 | 23:30 10/09 | X (celebração) | mais um bloco saiu da prateleira. R$5 · 5h. https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=sold&utm_content=sale | a colar no @sparetoken |
 | p024 | 23:30 11/09 | X (warmup) | 0.2.34 — the pulse trap is runtime, not grep. missing agent = PULSE_FAIL. same R$5 / 5h. https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p024 | a colar no @sparetoken |
+| p025 | 23:30 12/09 | X (warmup) | 0.2.35 — #vender asks for manifesto+CLI (optional, validated, queued). launcher waits. same R$5 / 5h. https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p025 | a colar no @sparetoken |
+
+Texto p025 (colar no X, cookie no Mac):
+
+```
+night pulse. sellers can now attach a skill to the apply: short title + manifesto + one CLI of the allowlist.
+queued with the 10 links. no auto-list. same R$5 / 5h. no second till.
+https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p025
+```
 
 Texto p024 (colar no X, cookie no Mac):
 

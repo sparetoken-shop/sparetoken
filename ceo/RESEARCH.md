@@ -245,6 +245,14 @@ não copiar: carimbar hold como live; first-party `/pulse`; USDC / x402 no lugar
 
 vira D+8: se `s0912` trouxer `visit`, segundo host artigo/blog. Se 0, mata Telegra.ph — não o artigo DEV.to `s0903`.
 
+## 2026-09-12 23:30 (heartbeat D13)
+
+viu: o probe vivo do x402 (agora em x402-trust.com/trust/report, fetch 12/09 BRT) conta 135 022 endpoints listados e 54% inalcançáveis; all-time US$ 56,05 M settled; só 59,7% das wallets pay-to já receberam um pagamento. O diretório continua maioria fantasma. Em casa: `s0903` = 2 (DEV.to vive); `s0912` = 0 (Telegra.ph SELL_OK hoje, cedo pra julgar — D+8 é 20/09); 754 visit, pay_click 2, sell_click 4, pool Open 0 (refill no Mac).
+
+não copiar: HTTP 402 / USDC no lugar do Pix; segundo checkout; listar endpoint como se fosse venda; julgar UTM no mesmo dia.
+
+vira D+8: se o `#vender` receber skill com CLI ≠ cursor, o stub `launch/` entra. Se 0, o launcher espera.
+
 ## Template de pulso
 
 ```

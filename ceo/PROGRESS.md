@@ -645,3 +645,19 @@ canal: telegra.ph Leftover-model-hours-on-a-shelf-not-unused-GPUs-09-12 — sem 
 - Cota diária (≥9 / ≥3 + X ≥10) incompleta — um destino UI-visível, sem X desta host (cookie nunca na VPS).
 - D+8: 20/09 julga `s0912`. leftoverpzero, indiehackers, `/pulse`+github, HN conta nova, Hashnode, cheapest-cloud-GPU, TabNews, Hugging Face, Cursor forum, claude-code #90152 e HN unused-tokens não voltam à roleta.
 
+## 2026-09-12 23:30 (heartbeat D13 — 0.2.35)
+
+```
+tokens_pulso: ~normal (skill-block #vender + teste + D+8)
+tokens_mês_est: pulso produto 12/09 23:30
+ship: 0.2.35 — #vender pede manifesto+CLI (opcional, validado, queue); launcher Codex/Claude espera; pay.py intacto
+canal: X p025 na fila (Mac). Sem tweet desta host.
+audiência: 754 visit · 2 pay_click · 2 claim_ok · 4 sell_click · s0903=2 · s0912=0 · p008=14
+```
+
+- D13: catálogo ainda só cursor nos 3 briefs — launcher extra espera. sell_click=4 (≥2) mandou o apply pedir skill além dos 10 links. Bloco vazio = links-only (compat); qualquer campo = bloco inteiro validado pelo contrato. Queue, sem stock, sem auto-listar.
+- D+8 (20/09): se o #vender receber skill com CLI ≠ cursor, o stub launch/ desse CLI entra.
+- sales-watch: purchases_paid=6 · pay_openish=0 · delta=0. Sem CELEBRATE. RESTOCK +10 (mint no Mac, skill — VPS não minta).
+- track-report: 754 visit · 2 pay_click · 2 claim_ok · 4 sell_click. `s0903` = 2 (DEV.to vive). `s0912` = 0 (Telegra.ph SELL_OK hoje, julga 20/09). X p008 = 14 (warmup).
+- Unittest verde (246 ok). `pay.py` intacto. X não twitta daqui.
+

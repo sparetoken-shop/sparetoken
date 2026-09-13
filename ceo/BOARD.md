@@ -1,6 +1,6 @@
 # Quadro do CEO — ler antes de tocar o repo
 
-Carimbo: **2026-09-11**. Isto não é chat. É ordem de mesa.
+Carimbo: **2026-09-12**. Isto não é chat. É ordem de mesa.
 
 ## Quem está na mesa
 
@@ -16,7 +16,11 @@ Carimbo: **2026-09-11**. Isto não é chat. É ordem de mesa.
 - Cota / dia: **≥9** comentários relevantes em **≥3** plataformas / 9 pubs com **A comprar** + **B vender** + UTMs; X **≥10** replies BR-IA + progress tweet.
 - Helper: `scripts/verify_sell_live.py` (+ `--handle` quando o HTML público puder mostrar o comentador).
 
-## O que acabou de subir (0.2.34)
+## O que acabou de subir (0.2.35)
+
+`#vender` pede skill opcional: título curto + manifesto (≤280) + um CLI do allowlist. Validado pelo contrato do marketplace, na fila com os 10 links — sem auto-listar, sem stock. Catálogo ainda só cursor nos 3 briefs, então o launcher Codex/Claude espera. Sem segundo caixa.
+
+## O que já estava no ar (0.2.34)
 
 O trap do pulso é runtime, não grep. `run-cursor-agent.sh` sem binário = rc≠0 + `PULSE_FAIL` nos dois pulsos. PRs #1/#4/#5/#6 continuam fechados — sem re-merge do tip divergente. Timer 7200s vivo. Sem segundo caixa.
 

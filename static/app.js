@@ -715,6 +715,9 @@ if (sellerForm) {
     const handle = (document.getElementById("seller-handle") || {}).value || "";
     const links = (document.getElementById("seller-links") || {}).value || "";
     const note = (document.getElementById("seller-note") || {}).value || "";
+    const skillTitle = (document.getElementById("seller-skill-title") || {}).value || "";
+    const skillManifesto = (document.getElementById("seller-skill-manifesto") || {}).value || "";
+    const skillCli = (document.getElementById("seller-skill-cli") || {}).value || "";
     const ack = !!(document.getElementById("seller-ack") || {}).checked;
     if (sellerSubmit) sellerSubmit.disabled = true;
     setSellerStatus(t("js.sell_wait"), "");
@@ -727,6 +730,9 @@ if (sellerForm) {
           handle: handle.trim(),
           links,
           note: note.trim(),
+          skill_title: skillTitle.trim(),
+          skill_manifesto: skillManifesto.trim(),
+          skill_cli: skillCli.trim(),
           ack,
         }),
       });

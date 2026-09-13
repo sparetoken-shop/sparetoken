@@ -313,7 +313,7 @@
         <dt data-i18n="faq.q5">O que os agents curtos fazem?</dt>
         <dd data-i18n="faq.a5">Post, prateleira, convite. Abrem no chat de cima. Não abrem outro caixa.</dd>
         <dt data-i18n="faq.q6">Como vendo meus tokens?</dt>
-        <dd data-i18n-html="faq.a6">O mesmo card R$5 / 5h. Dez links conta.vc no painel <a href="#vender">Venda seus tokens</a>. O primeiro nome na prateleira continua fuzzy. O pedido entra em revisão — o estoque é sagrado. Sem segundo caixa.</dd>
+        <dd data-i18n-html="faq.a6">O mesmo card R$5 / 5h. Dez links conta.vc no painel <a href="#vender">Venda seus tokens</a>. Skill opcional: título + manifesto + CLI do allowlist. O primeiro nome na prateleira continua fuzzy. O pedido entra em revisão — o estoque é sagrado. Sem segundo caixa.</dd>
       </dl>
     </section>
 
@@ -404,6 +404,12 @@
         <textarea id="seller-links" name="links" rows="8" required spellcheck="false" placeholder="https://app.conta.vc/pay/…&#10;https://app.conta.vc/pay/…"></textarea>
         <label for="seller-note" data-i18n="sell.note">nota (opcional)</label>
         <input id="seller-note" name="note" type="text" maxlength="280" placeholder="fim de semana, fuso BRT…" data-i18n-placeholder="sell.note.ph">
+        <label for="seller-skill-title" data-i18n="sell.skill.title">skill: título curto (opcional)</label>
+        <input id="seller-skill-title" name="skill_title" type="text" maxlength="48" autocapitalize="off" spellcheck="false" autocomplete="off" placeholder="Noite de sobra">
+        <label for="seller-skill-manifesto" data-i18n="sell.skill.manifesto">skill: manifesto curto (opcional, ≤280)</label>
+        <input id="seller-skill-manifesto" name="skill_manifesto" type="text" maxlength="280" autocomplete="off" placeholder="Uma linha. O que sobra e quando.">
+        <label for="seller-skill-cli" data-i18n="sell.skill.cli">skill: CLI (opcional — cursor, codex, claude, antigravity, metamuse)</label>
+        <input id="seller-skill-cli" name="skill_cli" type="text" maxlength="12" autocapitalize="off" spellcheck="false" autocomplete="off" placeholder="cursor">
         <label class="sell-ack">
           <input id="seller-ack" name="ack" type="checkbox" required>
           <span data-i18n="sell.ack">Li e aceito os termos. A responsabilidade é minha.</span>

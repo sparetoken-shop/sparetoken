@@ -22,7 +22,7 @@ A concrete meta after the first ~30 days: sell **10 packs at R$5**. The experime
 
 ## How do I sell on the marketplace later?
 
-On the shop: **Venda seus tokens** (`#vender`). Same R$5 / 5h card. First name on the shelf stays **fuzzy**. You send a short handle plus **10** [conta.vc](https://conta.vc) pay URLs. The application is queued for review — live stock is not auto-appended. A later validation bot will test the seller’s SSH. You are responsible for your Pix links, tax, refunds, and the compute you list.
+On the shop: **Venda seus tokens** (`#vender`). Same R$5 / 5h card. First name on the shelf stays **fuzzy**. You send a short handle plus **10** [conta.vc](https://conta.vc) pay URLs. Optional skill: short title + manifesto (≤280) + one allowlist CLI — queued with the links, never auto-listed. The application is queued for review — live stock is not auto-appended. A later validation bot will test the seller’s SSH. You are responsible for your Pix links, tax, refunds, and the compute you list.
 
 ## What is a skill on the shelf?
 

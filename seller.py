@@ -9,6 +9,8 @@ import time
 from pathlib import Path
 from typing import Any
 
+import marketplace
+
 HANDLE_RE = re.compile(r"^[a-z][a-z0-9_-]{1,23}$")
 PHONE_RE = re.compile(r"^\d{8,15}$")
 CONTA_PAY_RE = re.compile(
@@ -70,7 +72,32 @@ def validate(raw: dict[str, Any] | None) -> dict[str, Any]:
     note = str(raw.get("note") or "").strip()
     if len(note) > NOTE_MAX:
         raise SellerError("nota curta — no máximo 280 caracteres.")
-    return {"handle": handle, "links": links, "note": note, "ack": True}
+    skill = parse_skill(raw, handle)
+    return {"handle": handle, "links": links, "note": note, "ack": True, "skill": skill}
+
+
+def parse_skill(raw: dict[str, Any], handle: str) -> dict[str, Any] | None:
+    """Optional skill block: title + manifesto + CLI, marketplace contract.
+
+    Empty block = no skill (links-only application still passes). Any field
+    filled = the whole block must validate. Queued, never auto-listed.
+    """
+    title = str(raw.get("skill_title") or "").strip()
+    manifesto = str(raw.get("skill_manifesto") or "").strip()
+    cli = str(raw.get("skill_cli") or "").strip()
+    if not title and not manifesto and not cli:
+        return None
+    try:
+        return marketplace.validate_skill(
+            {
+                "slug": handle.replace("_", "-"),
+                "title": title,
+                "manifesto": manifesto,
+                "clis": [cli] if cli else [],
+            }
+        )
+    except marketplace.MarketError as exc:
+        raise SellerError(str(exc))
 
 
 def apply(dest: Path, raw: dict[str, Any] | None) -> dict[str, Any]:
@@ -84,6 +111,7 @@ def apply(dest: Path, raw: dict[str, Any] | None) -> dict[str, Any]:
         "links": clean["links"],
         "note": clean["note"],
         "ack": True,
+        "skill": clean["skill"],
         "status": "queued",
         "created_at": stamp,
     }
