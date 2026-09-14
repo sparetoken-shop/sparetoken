@@ -261,6 +261,14 @@ não copiar: matar artigo vivo por 0 visit no dia seguinte; repetir o mesmo host
 
 vira D+8: se `s0913` trouxer `visit`, segundo host seller/skill. Se 0, mata rentry.co — não o artigo DEV.to `s0903`, não o Telegra.ph `s0912` (esse julga 20/09).
 
+## 2026-09-13 23:30 (heartbeat D15)
+
+viu: em casa, 773 visit (+15 no dia; 187→773 desde a linha do pulso em 05/09) e pay_click parado em 2 desde 05/09 — visita subiu, clique não. `s0903` = 2 (DEV.to vive); `s0912` = 0 (julga 20/09); `s0913` = 0 (julga 21/09). Fora: o probe x402 virou página HTML (“The State of x402: live ecosystem report” em x402-trust.com; fuchss.app agora 308) — sem número JSON novo hoje.
+
+não copiar: HTTP 402 / USDC no lugar do Pix; segundo checkout; julgar UTM no mesmo dia; número de signaling como se fosse venda.
+
+vira D+8: D15 trava o veredito — pulso sob o tally, card no rail. D23 julga o pós-D19: rail solo ou prova curta no card.
+
 ## Template de pulso
 
 ```

@@ -10,6 +10,18 @@ Versionamento: [SemVer](https://semver.org/lang/pt-BR/).
 - Fechar chat anônimo e SSH sem senha (ver ROADMAP)
 - Charge cripto (USDT / OSDT) na mesma conta.vc — ver ROADMAP, sem segundo caixa
 
+## [0.2.36] — 2026-09-13
+
+D15: the pulse line stays under the tally. The card stays on the rail.
+
+### Added
+
+- `#pulso-heartbeat` carries `data-placement="under-tally"` — a machine-checkable lock of the D15 verdict (visit rose 187→773, pay_click stuck at 2). Zero visual change. Never in the hero
+
+### Changed
+
+- Same one-click Pix R$5 rail. `pay.py` untouched. No second till. No mint on the VPS
+
 ## [0.2.35] — 2026-09-12
 
 D13: seller apply asks for manifesto + CLI. Launcher still waits.

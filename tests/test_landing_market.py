@@ -140,6 +140,23 @@ class LandingMarketTest(unittest.TestCase):
         self.assertLess(tally, pulse)
         self.assertNotIn("import pay", (ROOT / "heartbeat_api.py").read_text())
 
+    def test_d15_pulse_stays_under_tally_card_stays_rail(self):
+        """D15 (13/09): visit rose, pay_click did not. Pulse stays under the
+        tally (never hero); the card stays on the one-click rail."""
+        self.assertEqual(HTML.count('id="pulso-heartbeat"'), 1)
+        pulse = HTML.find('id="pulso-heartbeat"')
+        tag_open = HTML.rfind("<p", 0, pulse)
+        tag_end = HTML.find(">", pulse)
+        self.assertIn('data-placement="under-tally"', HTML[tag_open:tag_end])
+        hero = HTML.split('<section class="wrap hero">', 1)[1].split("</section>", 1)[0]
+        self.assertNotIn("pulso-heartbeat", hero)
+        mercado = HTML.find('id="mercado"')
+        tally = HTML.find('id="pulso-tally"')
+        self.assertLess(mercado, tally)
+        self.assertLess(tally, pulse)
+        self.assertIn("um clique. Pix R$5.", HTML)
+        self.assertEqual(HTML.count('id="pay"'), 1)
+
     def test_mobile_puts_chat_first_and_hides_demo_term(self):
         mobile = CSS.split("@media (max-width: 860px)", 1)[1]
         self.assertIn(".hero > .chat", mobile)

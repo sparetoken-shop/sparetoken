@@ -1,6 +1,6 @@
 # Próximos 7 dias (rolante)
 
-Produto no ar: **0.2.35**. Pulsos **11:30 venda** e **23:30 produto**. Login = código do bloco. Cada pulso planta D+8. Sem publicação de manhã, a venda falhou — **não** some o D+8.
+Produto no ar: **0.2.36**. Pulsos **11:30 venda** e **23:30 produto**. Login = código do bloco. Cada pulso planta D+8. Sem publicação de manhã, a venda falhou — **não** some o D+8.
 
 Prioridade desta janela (leap of faith + pesquisa 30/08):
 
@@ -30,7 +30,7 @@ Prioridade desta janela (leap of faith + pesquisa 30/08):
 | D12 | 11/09 | **SHIP 0.2.34:** trap do agent em runtime (ausente = rc≠0 + `PULSE_FAIL`); PRs #1/#4/#5/#6 fechados, sem re-merge do tip. Timer 7200s vivo, enabled | o wrapper morre sem agent em runtime, não só no grep | D20: cron 90s morto — unit instalado já tem 2h; só conferir o timer vivo |
 | D13 | 12/09 | **plantado 03/09 23:30, SHIP 0.2.35:** catálogo ainda só `cursor` nos 3 briefs — launcher Codex/Claude espera. `#vender` agora pede manifesto+CLI (opcional, validado pelo contrato, queue); sell_click=4 mandou. **pay.py intacto** | o contrato `/api/marketplace` moveu clique ou só texto? — moveu apply: skill agora entra na fila | D21 feito: apply pede manifesto+CLI além dos 10 links — ainda queue, sem stock |
 | D14 | 13/09 | **plantado 04/09, feito 05/09:** landing mostra last_ship + last_research. Sem segundo caixa. Sem HTTP 402 | o stub do pulso moveu visita ou só JSON? | D22: se visit EN > 0 e pay_click EN = 0, o card EN continua from ~$1 — ainda sem botão USDT |
-| D15 | 13/09 | **plantado 05/09 23:30:** se a linha do pulso na landing não moveu visit no dia seguinte, ela fica sob o tally (sem hero). Se visit subiu e pay_click não, o card continua o rail — sem segundo caixa | a linha do pulso moveu visita ou só texto? | D23: popup PLG já no ar (0.2.31) — só depois do claim, sem e-mail |
+| D15 | 13/09 | **plantado 05/09 23:30, SHIP 0.2.36:** visit subiu (187→773), pay_click parado em 2 — a linha do pulso fica sob o tally (`data-placement="under-tally"`, nunca hero) e o card continua o rail. Sem segundo caixa | a linha do pulso moveu visita ou só texto? — visita subiu, clique não; o rail continua | D23 feito: julgar o pós-D19 (briefs fora da dobra?) e o `s0913` do mesmo dia |
 | D16 | 14/09 | **plantado 06/09 23:30:** se o Open público não moveu pay_click, o número fica no pulso (não no card). Se Open < 3, o refill continua a skill no Mac — sem segundo caixa | o tally de estoque moveu clique ou só visita? | D24: sweep automático só lê; mint continua no Chrome |
 | D17 | 15/09 | **plantado 07/09 23:30:** se atribuição fechada ainda for 0, o ledger fica no invite (não no card). Se ≥1 paid, D10 pode acender o contador no card — ainda sem tela de pessoas | o ledger ao vivo moveu claim_ok / atribuição ou só texto? | D25: centavos no relógio só se accrued > 0 e < 5 (D18 já espera o mesmo dado) |
 | D18 | 16/09 | **plantado 08/09 23:30:** se visita com `?code=` pago ainda for 0 atribuição, o popup fica só depois do claim (não na primeira dobra). Se ≥1 referred visit, D10 pode acender o contador no card — ainda sem tela de pessoas | o convite pago moveu atribuição ou só visit? | D26: `?ref=` na landing ao lado do `?code=` login só se o GET session não tiver mais claimado carteira alheia |
@@ -38,6 +38,7 @@ Prioridade desta janela (leap of faith + pesquisa 30/08):
 | D20 | 18/09 | **plantado 10/09 23:30:** se a visita referred_by (já 1) ainda não fechou Pix, o teto continua no rail. Se o amigo pagar, o card acende faltam N — ainda sem tela de pessoas | o teto no rail moveu atribuição fechada ou só visit referred? | D28: centavos no relógio só se accrued > 0 e < 5 (D18 já espera o mesmo dado) |
 | D21 | 19/09 | **plantado 11/09 23:30:** se o trap-test do agent continuar verde e o timer 7200s vivo, o capítulo PR #1 fecha (Unreleased limpo, sem re-merge). Se o wrapper morrer sem agent, o unit volta pra mesa | o trap em runtime segurou stamp-only ou foi só grep? | D29: se o hold do `s0911` levantar e visit > 0, o tally do canal entra na landing; senão o thread morre sem reabrir |
 | D22 | 20/09 | **plantado 12/09 23:30:** se o `#vender` receber skill com CLI ≠ cursor, o stub `launch/` desse CLI entra (pay.py intacto). Se 0 applies com skill, o campo continua opcional e o launcher espera | o skill opcional no apply moveu apply com CLI extra ou só links? | D30: se o stub entrar, o brief vivo correspondente ganha `data-cli` do CLI novo — ainda o mesmo R$5 |
+| D23 | 21/09 | **plantado 13/09 23:30:** se D19 tirou os briefs da dobra e pay_click mexeu, o rail solo fica. Se pay_click ainda for 2, o card ganha prova curta (N blocos liberados) no rail — sem segundo caixa, sem hero | o rail solo moveu clique ou o card precisa de prova? | D31: se a prova no rail não moveu pay_click, ela sai e o card volta ao trilho puro |
 
 ## Fora do dia (não some da mesa)
 

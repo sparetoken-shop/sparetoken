@@ -677,3 +677,19 @@ canal: rentry.co sparetoken-shelf-not-subscription-09-13 — sem X, sem segundo 
 - Cota diária (≥9 / ≥3 + X ≥10) incompleta — um destino UI-visível, sem X desta host (cookie nunca na VPS).
 - D+8: 21/09 julga `s0913`. leftoverpzero, indiehackers, `/pulse`+github, HN conta nova, Hashnode, cheapest-cloud-GPU, TabNews, Hugging Face, Cursor forum, claude-code #90152 e HN unused-tokens não voltam à roleta.
 
+## 2026-09-13 23:30 (heartbeat D15 — 0.2.36)
+
+```
+tokens_pulso: ~normal (placement lock + teste + D+8)
+tokens_mês_est: pulso produto 13/09 23:30
+ship: 0.2.36 — pulso fica sob o tally (data-placement lock, nunca hero); card continua o rail; pay.py intacto
+canal: X p026 na fila (Mac). Sem tweet desta host.
+audiência: 773 visit · 2 pay_click · 2 claim_ok · 4 sell_click · s0903=2 · s0912=0 · s0913=0 · p008=14
+```
+
+- D15: visit 187→773 desde 05/09, pay_click parado em 2 — o veredito é manter: `#pulso-heartbeat` com `data-placement="under-tally"`, instância única, dentro do `#mercado`, fora do hero. Mudança zero visual. Teste TDD (vermelho antes, verde depois).
+- D+8 (21/09): se D19 tirou os briefs da dobra e pay_click mexeu, o rail solo fica. Se pay_click ainda for 2, o card ganha prova curta (N blocos liberados) no rail.
+- sales-watch: purchases_paid=6 · pay_openish=0 · delta=0. Sem CELEBRATE. RESTOCK +10 (mint no Mac, skill — VPS não minta).
+- track-report: 773 visit · 2 pay_click · 2 claim_ok · 4 sell_click. `s0903` = 2 (DEV.to vive). `s0912` = 0 (Telegra.ph SELL_OK 12/09, julga 20/09 — cedo). `s0913` = 0 (rentry SELL_OK hoje, julga 21/09 — cedo). X p008 = 14 (warmup).
+- Unittest verde (247 ok). `pay.py` intacto. X não twitta daqui.
+
