@@ -27,6 +27,7 @@ Canônico: `https://sparetoken.shop/?utm_source=<host>&utm_medium=comment&utm_ca
 | 11/09 | ~~HN unused tokens in one app — leftover hours~~ | 1 comentário, UTM `s0911` | **MORTO 12/09** — `s0911` = 0 visit; posted as sparetoken mas public GET empty (hold, nunca UI-visível). Não repetir este thread unused-tokens. `s0903` vive. |
 | 12/09 | Telegra.ph — leftover model hours on a shelf | 1 artigo, UTM `s0912` | **LIVE** https://telegra.ph/Leftover-model-hours-on-a-shelf-not-unused-GPUs-09-12 — `verify_sell_live` 200 UI-visível; **não matar** |
 | 13/09 | rentry.co — seller shelf, not subscription | 1 artigo, UTM `s0913` | **LIVE** https://rentry.co/sparetoken-shelf-not-subscription-09-13 — `verify_sell_live` 200 UI-visível; **não matar** |
+| 14/09 | Telegra.ph — invite is the same code (2º artigo) | 1 artigo, UTM `s0914` | **LIVE** https://telegra.ph/The-invite-is-the-same-code-leftover-model-hours-on-a-shelf-09-14 — `verify_sell_live` 200 UI-visível (+ handle); **não matar** |
 
 ## Mortos (0 visit → sai da roleta)
 
@@ -45,6 +46,8 @@ Canônico: `https://sparetoken.shop/?utm_source=<host>&utm_medium=comment&utm_ca
 | `s0911` | HN unused-tokens leftover-hours | 12/09 track-report | 0 `visit` com esse `utm_content`. Posted as sparetoken mas public GET empty (hold, nunca UI-visível). Não repetir este thread unused-tokens — não o HN inteiro, não o artigo `s0903`. |
 
 X `p008` trouxe visita — isso é warmup, não venue de venda.
+
+write.as anon (14/09): API 201 mas `id=contentisblocked` sem URL — filtro anti-link matou antes de publicar. Não repetir write.as anon com UTM. Não virou venue da roleta.
 
 ## Regras
 

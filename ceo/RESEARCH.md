@@ -269,6 +269,8 @@ não copiar: HTTP 402 / USDC no lugar do Pix; segundo checkout; julgar UTM no me
 
 vira D+8: D15 trava o veredito — pulso sob o tally, card no rail. D23 julga o pós-D19: rail solo ou prova curta no card.
 
+14/09 sell: saiu o 2º artigo Telegra.ph (`s0914`, ângulo invite=`?code=` + referral 10%/Pix R$5, verify 200 + handle) — SELL_OK. write.as anon morreu no filtro (201 `contentisblocked`, sem URL): não repetir anon com UTM.
+
 ## Template de pulso
 
 ```

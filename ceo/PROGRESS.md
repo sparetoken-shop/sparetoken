@@ -693,3 +693,20 @@ audiência: 773 visit · 2 pay_click · 2 claim_ok · 4 sell_click · s0903=2 ·
 - track-report: 773 visit · 2 pay_click · 2 claim_ok · 4 sell_click. `s0903` = 2 (DEV.to vive). `s0912` = 0 (Telegra.ph SELL_OK 12/09, julga 20/09 — cedo). `s0913` = 0 (rentry SELL_OK hoje, julga 21/09 — cedo). X p008 = 14 (warmup).
 - Unittest verde (247 ok). `pay.py` intacto. X não twitta daqui.
 
+
+## 2026-09-14 11:30 (sell V14)
+
+```
+tokens_pulso: ~magro
+ship: s0903 vive (2 visit); s0912/s0913 vivem (0 visit, julgam 20/09 e 21/09); destino Telegra.ph invite-same-code s0914 verified-live — SELL_OK
+canal: telegra.ph The-invite-is-the-same-code-leftover-model-hours-on-a-shelf-09-14 — sem X, sem segundo Pix, sem first-party /pulse
+audiência: 781 visit · 2 pay_click · 2 claim_ok · 4 sell_click · s0903=2 · s0912=0 · s0913=0 · p008=14
+```
+
+- track-report: 781 visit · 2 pay_click · 2 claim_ok · 4 sell_click. `s0903` = 2 (DEV.to vive). `s0912` = 0 (artigo vivo, julga 20/09). `s0913` = 0 (artigo vivo, julga 21/09 — cedo). Nada para matar hoje. X p008 = 14 (warmup).
+- Destino único: https://telegra.ph/The-invite-is-the-same-code-leftover-model-hours-on-a-shelf-09-14
+- Artigo abre em HTML público com shop + `utm_campaign=sell` + `s0914` + handle sparetoken (links A comprar + B vender como âncoras + texto). `verify_sell_live` 200 com e sem `--handle`. Sem login. Sem captcha. Sem VNC. Conteúdo novo (invite = `?code=` + referral 10% / Pix aos R$5), não cópia do s0912/s0913.
+- write.as anon tentado primeiro: API 201 mas `id=contentisblocked` sem URL (filtro anti-link) — descartado antes de virar venue; não repetir anon com UTM.
+- Sem human-needed. Sem Slack ping. Unittest verde (247 ok) antes do push.
+- Cota diária (≥9 / ≥3 + X ≥10) incompleta — um destino UI-visível, sem X desta host (cookie nunca na VPS).
+- D+8: 22/09 julga `s0914`. leftoverpzero, indiehackers, `/pulse`+github, HN conta nova, Hashnode, cheapest-cloud-GPU, TabNews, Hugging Face, Cursor forum, claude-code #90152, HN unused-tokens e write.as anon não voltam à roleta.
