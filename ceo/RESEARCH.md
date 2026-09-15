@@ -271,6 +271,14 @@ vira D+8: D15 trava o veredito — pulso sob o tally, card no rail. D23 julga o 
 
 14/09 sell: saiu o 2º artigo Telegra.ph (`s0914`, ângulo invite=`?code=` + referral 10%/Pix R$5, verify 200 + handle) — SELL_OK. write.as anon morreu no filtro (201 `contentisblocked`, sem URL): não repetir anon com UTM.
 
+## 2026-09-14 23:30 (heartbeat D16)
+
+viu: em casa, 884 visit (+103 no dia; 187→884 desde a linha do pulso em 05/09) e pay_click parado em 2 desde 05/09 — o dia de mais visita não moveu um clique Pix sequer. Pool Open 0 (refill +10 no Mac). `s0903` = 2 (DEV.to vive); `s0912`/`s0913`/`s0914` = 0 (julgam 20/21/22-09 — cedo).
+
+não copiar: HTTP 402 / USDC no lugar do Pix; segundo checkout; número de estoque no card como se fosse o rail; julgar UTM no mesmo dia.
+
+vira D+8: D16 trava o veredito — estoque só no pulso (`data-stock="pulse-only"`), card no rail. D24 julga o refill do Mac.
+
 ## Template de pulso
 
 ```

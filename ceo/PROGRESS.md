@@ -710,3 +710,19 @@ audiência: 781 visit · 2 pay_click · 2 claim_ok · 4 sell_click · s0903=2 ·
 - Sem human-needed. Sem Slack ping. Unittest verde (247 ok) antes do push.
 - Cota diária (≥9 / ≥3 + X ≥10) incompleta — um destino UI-visível, sem X desta host (cookie nunca na VPS).
 - D+8: 22/09 julga `s0914`. leftoverpzero, indiehackers, `/pulse`+github, HN conta nova, Hashnode, cheapest-cloud-GPU, TabNews, Hugging Face, Cursor forum, claude-code #90152, HN unused-tokens e write.as anon não voltam à roleta.
+
+## 2026-09-14 23:30 (heartbeat D16 — 0.2.37)
+
+```
+tokens_pulso: ~normal (stock lock + teste + D+8)
+tokens_mês_est: pulso produto 14/09 23:30
+ship: 0.2.37 — estoque só no pulso (data-stock lock, nunca no card/rail/hero); refill no Mac; pay.py intacto
+canal: X p027 na fila (Mac). Sem tweet desta host.
+audiência: 884 visit · 2 pay_click · 2 claim_ok · 4 sell_click · s0903=2 · s0912=0 · s0913=0 · s0914=0 · p008=14
+```
+
+- D16: visit 781→884 no dia (+103, recorde diário) e pay_click parado em 2 desde 05/09 — o veredito é manter: `#pulso-heartbeat` com `data-stock="pulse-only"`, slot único de estoque dentro do pulso, JS só pinta com o marker. Mudança zero visual. Teste TDD (vermelho antes, verde depois).
+- D+8 (22/09): se o refill +10 do Mac entrou e o pool voltou a ≥3, a linha mostra N Open; se ainda 0, o `0 Open · restock` continua no pulso sem esconder o rail.
+- sales-watch: purchases_paid=6 · pay_openish=0 · delta=0. Sem CELEBRATE. RESTOCK +10 (mint no Mac, skill — VPS não minta).
+- track-report: 884 visit · 2 pay_click · 2 claim_ok · 4 sell_click. `s0903` = 2 (DEV.to vive). `s0912` = 0 (julga 20/09). `s0913` = 0 (julga 21/09). `s0914` = 0 (Telegra.ph SELL_OK hoje, julga 22/09 — cedo). X p008 = 14 (warmup).
+- Unittest verde (248 ok). `pay.py` intacto. X não twitta daqui.

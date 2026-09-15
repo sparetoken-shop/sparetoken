@@ -963,10 +963,11 @@ function fillPulse(data) {
   const shipEl = box.querySelector('[data-pulse="ship"]');
   const researchEl = box.querySelector('[data-pulse="research"]');
   const shelfEl = box.querySelector('[data-pulse="shelf"]');
+  const stockPinned = box.getAttribute("data-stock") === "pulse-only";
   if (shipEl && shipLine) shipEl.textContent = shipLine;
   if (researchEl && researchLine) researchEl.textContent = researchLine;
-  if (shelfEl && shelfLine) shelfEl.textContent = shelfLine;
-  if (shipLine || researchLine || shelfLine) box.hidden = false;
+  if (shelfEl && shelfLine && stockPinned) shelfEl.textContent = shelfLine;
+  if (shipLine || researchLine || (shelfLine && stockPinned)) box.hidden = false;
 }
 
 fetch("/api/heartbeat", { credentials: "same-origin" })

@@ -157,6 +157,29 @@ class LandingMarketTest(unittest.TestCase):
         self.assertIn("um clique. Pix R$5.", HTML)
         self.assertEqual(HTML.count('id="pay"'), 1)
 
+    def test_d16_stock_stays_in_pulse_never_card(self):
+        """D16 (14/09): pay_click stuck at 2, pool Open 0. The stock number
+        stays in the pulse line (never the card, rail, or hero)."""
+        import re
+
+        self.assertEqual(HTML.count('data-pulse="shelf"'), 1)
+        pulse = HTML.find('id="pulso-heartbeat"')
+        tag_open = HTML.rfind("<p", 0, pulse)
+        tag_end = HTML.find(">", pulse)
+        self.assertIn('data-stock="pulse-only"', HTML[tag_open:tag_end])
+        self.assertIn('data-placement="under-tally"', HTML[tag_open:tag_end])
+        shelf_slot = HTML.find('data-pulse="shelf"')
+        pulse_close = HTML.find("</p>", shelf_slot)
+        self.assertLess(pulse, shelf_slot)
+        self.assertLess(shelf_slot, pulse_close)
+        shelf_block = HTML[HTML.find('id="mercado"') : HTML.find('id="pulso-tally"')]
+        self.assertNotRegex(shelf_block, r"\d+\s+Open")
+        hero = HTML.split('<section class="wrap hero">', 1)[1].split("</section>", 1)[0]
+        self.assertNotRegex(hero, r"\d+\s+Open")
+        self.assertIn('box.querySelector(\'[data-pulse="shelf"]\')', JS)
+        self.assertNotIn('document.querySelector(\'[data-pulse="shelf"]\')', JS)
+        self.assertIn('data-stock', JS)
+
     def test_mobile_puts_chat_first_and_hides_demo_term(self):
         mobile = CSS.split("@media (max-width: 860px)", 1)[1]
         self.assertIn(".hero > .chat", mobile)

@@ -42,6 +42,15 @@ X **nunca** é a prova do pulso de venda.
 | p024 | 23:30 11/09 | X (warmup) | 0.2.34 — the pulse trap is runtime, not grep. missing agent = PULSE_FAIL. same R$5 / 5h. https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p024 | a colar no @sparetoken |
 | p025 | 23:30 12/09 | X (warmup) | 0.2.35 — #vender asks for manifesto+CLI (optional, validated, queued). launcher waits. same R$5 / 5h. https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p025 | a colar no @sparetoken |
 | p026 | 23:30 13/09 | X (warmup) | 0.2.36 — pulse line stays under the tally, never hero. card stays on the one-click rail. same R$5 / 5h. https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p026 | a colar no @sparetoken |
+| p027 | 23:30 14/09 | X (warmup) | 0.2.37 — stock number stays in the pulse, never the card. pool Open 0, refill on the Mac. same R$5 / 5h. https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p027 | a colar no @sparetoken |
+
+Texto p027 (colar no X, cookie no Mac):
+
+```
+night pulse. record visits, same 2 Pix clicks — so the stock number stays in the pulse, never the card.
+locked in code. refill on the Mac. same R$5 / 5h. no second till.
+https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p027
+```
 
 Texto p026 (colar no X, cookie no Mac):
 

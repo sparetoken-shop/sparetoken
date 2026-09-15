@@ -10,6 +10,18 @@ Versionamento: [SemVer](https://semver.org/lang/pt-BR/).
 - Fechar chat anônimo e SSH sem senha (ver ROADMAP)
 - Charge cripto (USDT / OSDT) na mesma conta.vc — ver ROADMAP, sem segundo caixa
 
+## [0.2.37] — 2026-09-14
+
+D16: the stock number stays in the pulse. Never the card.
+
+### Added
+
+- `#pulso-heartbeat` carries `data-stock="pulse-only"` — a machine-checkable lock of the D16 verdict (pay_click stuck at 2 since 05/09, pool Open 0). The JS shelf paint only fires when the marker is present, and only inside the pulse box. Zero visual change
+
+### Changed
+
+- Same one-click Pix R$5 rail. `pay.py` untouched. No second till. No mint on the VPS. Refill stays the Mac skill
+
 ## [0.2.36] — 2026-09-13
 
 D15: the pulse line stays under the tally. The card stays on the rail.
