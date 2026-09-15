@@ -726,3 +726,19 @@ audiência: 884 visit · 2 pay_click · 2 claim_ok · 4 sell_click · s0903=2 ·
 - sales-watch: purchases_paid=6 · pay_openish=0 · delta=0. Sem CELEBRATE. RESTOCK +10 (mint no Mac, skill — VPS não minta).
 - track-report: 884 visit · 2 pay_click · 2 claim_ok · 4 sell_click. `s0903` = 2 (DEV.to vive). `s0912` = 0 (julga 20/09). `s0913` = 0 (julga 21/09). `s0914` = 0 (Telegra.ph SELL_OK hoje, julga 22/09 — cedo). X p008 = 14 (warmup).
 - Unittest verde (248 ok). `pay.py` intacto. X não twitta daqui.
+
+## 2026-09-15 11:30 (sell V15)
+
+```
+tokens_pulso: ~magro
+ship: s0903 vive (2 visit); s0912/s0913/s0914 vivem (0 visit, julgam 20/09, 21/09 e 22/09); destino rentry.co one-click-not-subscription s0915 verified-live — SELL_OK
+canal: rentry.co sparetoken-one-click-not-subscription-09-15 — sem X, sem segundo Pix, sem first-party /pulse
+audiência: 886 visit · 2 pay_click · 2 claim_ok · 4 sell_click · s0903=2 · s0912=0 · s0913=0 · s0914=0 · p008=14
+```
+
+- track-report: 886 visit · 2 pay_click · 2 claim_ok · 4 sell_click. `s0903` = 2 (DEV.to vive). `s0912` = 0 (artigo vivo, julga 20/09). `s0913` = 0 (artigo vivo, julga 21/09). `s0914` = 0 (artigo vivo, julga 22/09 — cedo). Nada para matar hoje. X p008 = 14 (warmup).
+- Destino único: https://rentry.co/sparetoken-one-click-not-subscription-09-15
+- Artigo abre em HTML público com shop + `utm_campaign=sell` + `s0915` + handle sparetoken (links A comprar + B vender como âncoras + plain). `verify_sell_live` 200 com e sem `--handle`. Sem login. Sem captcha. Sem VNC. Conteúdo novo (rail one-click · Pix R$5 + skill do #vender), não cópia do s0913.
+- Sem human-needed. Sem Slack ping. Unittest verde (248 ok) antes do push.
+- Cota diária (≥9 / ≥3 + X ≥10) incompleta — um destino UI-visível, sem X desta host (cookie nunca na VPS).
+- D+8: 23/09 julga `s0915`. leftoverpzero, indiehackers, `/pulse`+github, HN conta nova, Hashnode, cheapest-cloud-GPU, TabNews, Hugging Face, Cursor forum, claude-code #90152, HN unused-tokens e write.as anon não voltam à roleta.

@@ -26,9 +26,11 @@ Update this table when a triad-validated attempt lands. Do not invent rows.
 |---|---|---|---|---|---|---|---|
 | 1 | 2026-09-12 11:30 | CEO | Telegra.ph article | CEO + GET (triad revalidation pending) | https://telegra.ph/Leftover-model-hours-on-a-shelf-not-unused-GPUs-09-12 | 200 UI-visível (12/09 + re-verified 13/09) | `s0912`; SELL_OK |
 | 2 | 2026-09-13 11:30 | CEO | rentry.co article | CEO + GET (triad revalidation pending) | https://rentry.co/sparetoken-shelf-not-subscription-09-13 | 200 UI-visível (13/09, ± handle) | `s0913`; SELL_OK |
+| 3 | 2026-09-14 11:30 | CEO | Telegra.ph article (2º) | CEO + GET (triad revalidation pending) | https://telegra.ph/The-invite-is-the-same-code-leftover-model-hours-on-a-shelf-09-14 | 200 UI-visível (14/09, ± handle) | `s0914`; SELL_OK |
+| 4 | 2026-09-15 11:30 | CEO | rentry.co article (2º) | CEO + GET (triad revalidation pending) | https://rentry.co/sparetoken-one-click-not-subscription-09-15 | 200 UI-visível (15/09, ± handle) | `s0915`; SELL_OK |
 
-**Validated attempts:** 2 / 50  
-**Successful public publishes:** 2  
+**Validated attempts:** 4 / 50  
+**Successful public publishes:** 4  
 **Kill-switch armed:** yes (fires at 50 / 0)
 
 ## Related hard rules

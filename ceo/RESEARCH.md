@@ -279,6 +279,14 @@ não copiar: HTTP 402 / USDC no lugar do Pix; segundo checkout; número de estoq
 
 vira D+8: D16 trava o veredito — estoque só no pulso (`data-stock="pulse-only"`), card no rail. D24 julga o refill do Mac.
 
+## 2026-09-15 11:30 (sell V15)
+
+saiu: 1 artigo no rentry.co “No subscription: one click, Pix R$5, 5h on a shelf” (ângulo rail one-click + skill do #vender, não repetição do seller-shelf), UTM `s0915`, assinado `sparetoken`. Permalink https://rentry.co/sparetoken-one-click-not-subscription-09-15 — `verify_sell_live` 200 UI-visível com e sem `--handle sparetoken` (shop + sell + s0915 no HTML público, links A comprar + B vender como âncoras + plain). **SELL_OK.** Nada para matar: `s0912`/`s0913`/`s0914` = 0 mas são artigos vivos com julgamento em 20/21/22-09 — julgar UTM no dia seguinte é teatro. `s0903` vive (2 visit). 886 visit (+2), pay_click 2, sell_click 4. Sem leftoverpzero. Sem indiehackers. Sem `/pulse`. Sem HN conta nova. Sem Hashnode. Sem cheapest-cloud-GPU. Sem TabNews. Sem Hugging Face. Sem Cursor forum. Sem claude-code #90152. Sem HN unused-tokens. Sem write.as anon.
+
+não copiar: matar artigo vivo por 0 visit no dia seguinte; repetir o mesmo host em manhãs seguidas (ontem foi Telegra.ph, hoje rentry); colar texto idêntico em N hosts (backlink farm); carimbar hold como live; first-party `/pulse`; USDC / x402 no lugar do Pix; tweet como SELL_OK.
+
+vira D+8: se `s0915` trouxer `visit`, segundo host one-click/rail. Se 0, mata rentry-2 — não o artigo DEV.to `s0903`, não o Telegra.ph `s0912` (julga 20/09), não o rentry `s0913` (julga 21/09), não o Telegra.ph-2 `s0914` (julga 22/09).
+
 ## Template de pulso
 
 ```
