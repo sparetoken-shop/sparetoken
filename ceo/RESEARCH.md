@@ -287,6 +287,14 @@ não copiar: matar artigo vivo por 0 visit no dia seguinte; repetir o mesmo host
 
 vira D+8: se `s0915` trouxer `visit`, segundo host one-click/rail. Se 0, mata rentry-2 — não o artigo DEV.to `s0903`, não o Telegra.ph `s0912` (julga 20/09), não o rentry `s0913` (julga 21/09), não o Telegra.ph-2 `s0914` (julga 22/09).
 
+## 2026-09-15 23:30 (heartbeat D17)
+
+viu: em casa, 887 visit (+1 no dia) e pay_click parado em 2 desde 05/09; atribuição fechada 0, referred_by visit 1 — o convite andou, o Pix do amigo não. `s0903` = 2 (DEV.to vive); `s0912`–`s0915` = 0 (julgam 20–23/09 — cedo). Fora: AIMultiple 25/08 — mediana do aluguel H100 caiu a ~US$3,38/h, de US$7+/h no início de 2024; piso Vast.ai ~US$1,34–1,49/h (llmhosting 03/09). Placa barateia; a gente vende hora de modelo, não H100.
+
+não copiar: HTTP 402 / USDC no lugar do Pix; segundo checkout; hora de H100 no lugar do bloco R$5/5h; julgar UTM no mesmo dia.
+
+vira D+8: D17 trava o veredito — ledger invite-only, card apagado até o 1º amigo pago. D25 julga se o convite fechou Pix.
+
 ## Template de pulso
 
 ```

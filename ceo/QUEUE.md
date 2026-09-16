@@ -44,6 +44,15 @@ X **nunca** é a prova do pulso de venda.
 | p025 | 23:30 12/09 | X (warmup) | 0.2.35 — #vender asks for manifesto+CLI (optional, validated, queued). launcher waits. same R$5 / 5h. https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p025 | a colar no @sparetoken |
 | p026 | 23:30 13/09 | X (warmup) | 0.2.36 — pulse line stays under the tally, never hero. card stays on the one-click rail. same R$5 / 5h. https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p026 | a colar no @sparetoken |
 | p027 | 23:30 14/09 | X (warmup) | 0.2.37 — stock number stays in the pulse, never the card. pool Open 0, refill on the Mac. same R$5 / 5h. https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p027 | a colar no @sparetoken |
+| p028 | 23:30 15/09 | X (warmup) | 0.2.38 — ledger stays on the invite line, never the card. closed attribution still 0. same R$5 / 5h. https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p028 | a colar no @sparetoken |
+
+Texto p028 (colar no X, cookie no Mac):
+
+```
+night pulse. invite walked (1 referred visit), friend's Pix didn't (0 closed) — so the ledger stays on the invite line, never the card.
+locked in code. same R$5 / 5h. no second till.
+https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p028
+```
 
 Texto p027 (colar no X, cookie no Mac):
 

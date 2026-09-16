@@ -162,6 +162,11 @@ function showReferral(ledger) {
   const el = document.getElementById("referral-ledger");
   const wrap = document.getElementById("invite-wrap");
   if (!el) return;
+  const pinned = el.getAttribute("data-ledger") === "invite-only";
+  if (!pinned) {
+    el.hidden = true;
+    return;
+  }
   if (!ledger || (wrap && wrap.hidden)) {
     el.hidden = true;
     return;

@@ -113,6 +113,29 @@ class ReferralSurfaceTest(unittest.TestCase):
         self.assertIn("price-card", card)
         self.assertNotIn("checkout", JS.split("function showCardReferral", 1)[1].split("function ", 1)[0].lower())
 
+    def test_d17_ledger_stays_in_invite_never_card(self):
+        """D17 (15/09): closed attribution still 0. The live ledger stays on
+        the invite line (never the card body); the card counter still waits
+        for the first paid friend."""
+        self.assertEqual(HTML.count('id="referral-ledger"'), 1)
+        ledger = HTML.find('id="referral-ledger"')
+        tag_open = HTML.rfind("<span", 0, ledger)
+        tag_end = HTML.find(">", ledger)
+        self.assertIn('data-ledger="invite-only"', HTML[tag_open:tag_end])
+        wrap = HTML.find('id="invite-wrap"')
+        wrap_close = HTML.find("</p>", ledger)
+        self.assertLess(wrap, ledger)
+        self.assertLess(ledger, wrap_close)
+        card = HTML.find('id="referral-card"')
+        card_open = HTML.rfind("<p", 0, card)
+        card_end = HTML.find(">", card)
+        self.assertIn("hidden", HTML[card_open:card_end])
+        show = JS.split("function showReferral", 1)[1].split("function ", 1)[0]
+        self.assertIn("data-ledger", show)
+        self.assertIn("invite-only", show)
+        card_fn = JS.split("function showCardReferral", 1)[1].split("function ", 1)[0]
+        self.assertIn("paid < 1", card_fn)
+
     def test_claim_opens_invite_popup_not_a_second_till(self):
         self.assertIn('id="invite-modal"', HTML)
         self.assertIn("function showInviteModal", JS)

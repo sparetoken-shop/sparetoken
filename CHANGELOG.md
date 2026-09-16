@@ -10,6 +10,19 @@ Versionamento: [SemVer](https://semver.org/lang/pt-BR/).
 - Fechar chat anônimo e SSH sem senha (ver ROADMAP)
 - Charge cripto (USDT / OSDT) na mesma conta.vc — ver ROADMAP, sem segundo caixa
 
+## [0.2.38] — 2026-09-15
+
+D17: the ledger stays on the invite line. Never the card.
+
+### Added
+
+- `#referral-ledger` carries `data-ledger="invite-only"` — a machine-checkable lock of the D17 verdict (closed attribution still 0, referred_by visit still 1). `showReferral` only paints when the marker is present, inside `#invite-wrap`. Zero visual change
+
+### Changed
+
+- `#referral-card` stays `hidden` in the static shelf and still gated on `paid_closed_friends ≥ 1` — no people screen, no names
+- Same one-click Pix R$5 rail. `pay.py` untouched. No second till. No mint on the VPS
+
 ## [0.2.37] — 2026-09-14
 
 D16: the stock number stays in the pulse. Never the card.

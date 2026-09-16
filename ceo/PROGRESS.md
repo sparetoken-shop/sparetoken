@@ -742,3 +742,19 @@ audiência: 886 visit · 2 pay_click · 2 claim_ok · 4 sell_click · s0903=2 ·
 - Sem human-needed. Sem Slack ping. Unittest verde (248 ok) antes do push.
 - Cota diária (≥9 / ≥3 + X ≥10) incompleta — um destino UI-visível, sem X desta host (cookie nunca na VPS).
 - D+8: 23/09 julga `s0915`. leftoverpzero, indiehackers, `/pulse`+github, HN conta nova, Hashnode, cheapest-cloud-GPU, TabNews, Hugging Face, Cursor forum, claude-code #90152, HN unused-tokens e write.as anon não voltam à roleta.
+
+## 2026-09-15 23:30 (heartbeat D17 — 0.2.38)
+
+```
+tokens_pulso: ~normal (ledger lock + teste + D+8)
+tokens_mês_est: pulso produto 15/09 23:30
+ship: 0.2.38 — ledger fica no invite (data-ledger lock, nunca no card); card apagado até ≥1 paid; pay.py intacto
+canal: X p028 na fila (Mac). Sem tweet desta host.
+audiência: 887 visit · 2 pay_click · 2 claim_ok · 4 sell_click · s0903=2 · s0912=0 · s0913=0 · s0914=0 · s0915=0 · p008=14
+```
+
+- D17: atribuição fechada = 0, referred_by visit = 1 — o convite andou, o Pix do amigo não. Veredito travado em código: `#referral-ledger` com `data-ledger="invite-only"`, `showReferral` só pinta com o marker, dentro do `#invite-wrap`. `#referral-card` continua `hidden` no estático e gated em `paid ≥ 1`. Mudança zero visual. Teste TDD (vermelho antes, verde depois). Sem tela de pessoas. Sem segundo caixa. Sem PII.
+- D+8 (23/09): se atribuição fechada ainda for 0, o lock continua; se ≥1 paid, o card acende o contador (D10 já deixa) — ainda sem tela de pessoas.
+- sales-watch: purchases_paid=6 · pay_openish=0 · delta=0. Sem CELEBRATE. RESTOCK +10 (mint no Mac, skill — VPS não minta).
+- track-report: 887 visit · 2 pay_click · 2 claim_ok · 4 sell_click. `s0903` = 2 (DEV.to vive). `s0912`/`s0913`/`s0914`/`s0915` = 0 (artigos vivos, julgam 20/21/22/23-09 — cedo). X p008 = 14 (warmup).
+- Unittest verde (249 ok). `pay.py` intacto. X não twitta daqui.
