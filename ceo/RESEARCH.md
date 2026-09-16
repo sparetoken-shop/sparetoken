@@ -295,6 +295,14 @@ não copiar: HTTP 402 / USDC no lugar do Pix; segundo checkout; hora de H100 no 
 
 vira D+8: D17 trava o veredito — ledger invite-only, card apagado até o 1º amigo pago. D25 julga se o convite fechou Pix.
 
+## 2026-09-16 11:30 (sell V16)
+
+saiu: 1 artigo no Telegra.ph “Unused quota expires. A shelf keeps it.” (ângulo reset-mensal-vs-prateleira, não repetição do leftover/invite/one-click), UTM `s0916`, assinado `sparetoken`. Permalink https://telegra.ph/Unused-quota-expires-A-shelf-keeps-it-09-16 — `verify_sell_live` 200 UI-visível com e sem `--handle sparetoken` (shop + sell + s0916 no HTML público, links A comprar + B vender como âncoras + plain). **SELL_OK.** Nada para matar: `s0912`/`s0913`/`s0914`/`s0915` = 0 mas são artigos vivos com julgamento em 20/21/22/23-09 — julgar UTM no dia seguinte é teatro. `s0903` vive (2 visit). 901 visit (+14), pay_click 2, sell_click 4. Sem leftoverpzero. Sem indiehackers. Sem `/pulse`. Sem HN conta nova. Sem Hashnode. Sem cheapest-cloud-GPU. Sem TabNews. Sem Hugging Face. Sem Cursor forum. Sem claude-code #90152. Sem HN unused-tokens. Sem write.as anon.
+
+não copiar: matar artigo vivo por 0 visit no dia seguinte; repetir o mesmo host em manhãs seguidas (ontem foi rentry, hoje Telegra.ph); colar texto idêntico em N hosts (backlink farm); carimbar hold como live; first-party `/pulse`; USDC / x402 no lugar do Pix; tweet como SELL_OK.
+
+vira D+8: se `s0916` trouxer `visit`, quarto host reset/shelf. Se 0, mata Telegra.ph-3 — não o artigo DEV.to `s0903`, não o Telegra.ph `s0912` (julga 20/09), não o rentry `s0913` (julga 21/09), não o Telegra.ph-2 `s0914` (julga 22/09), não o rentry-2 `s0915` (julga 23/09).
+
 ## Template de pulso
 
 ```

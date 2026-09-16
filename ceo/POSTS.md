@@ -51,6 +51,7 @@ s0903: artigo DEV.to verificado (`verify_sell_live` 200). X não é a prova.
 | s0913 | 2026-09-13 | rentry.co seller shelf | https://rentry.co/sparetoken-shelf-not-subscription-09-13 — `verify_sell_live` 200 SELL_OK | `s0913` |
 | s0914 | 2026-09-14 | Telegra.ph invite same code | https://telegra.ph/The-invite-is-the-same-code-leftover-model-hours-on-a-shelf-09-14 — `verify_sell_live` 200 SELL_OK | `s0914` |
 | s0915 | 2026-09-15 | rentry.co one-click, not subscription | https://rentry.co/sparetoken-one-click-not-subscription-09-15 — `verify_sell_live` 200 SELL_OK | `s0915` |
+| s0916 | 2026-09-16 | Telegra.ph reset vs shelf | https://telegra.ph/Unused-quota-expires-A-shelf-keeps-it-09-16 — `verify_sell_live` 200 SELL_OK | `s0916` |
 
 s0904: um comentário no Show HN https://news.ycombinator.com/item?id=49563492. GET público sem `sparetoken.shop`. 05/09 track-report = 0 visit. Morto.
 s0905: um comentário no Hashnode https://krauncher.hashnode.dev/there-are-two-ways-to-rent-a-gpu-i-think-there-s-a-third. 06/09 track-report = 0 visit. Morto.
@@ -64,7 +65,8 @@ s0912: um artigo no Telegra.ph https://telegra.ph/Leftover-model-hours-on-a-shel
 s0913: um artigo no rentry.co https://rentry.co/sparetoken-shelf-not-subscription-09-13. `verify_sell_live` 200 UI-visível (shop + sell + s0913 + handle sparetoken, links A/B como âncoras). SELL_OK. X não é a prova.
 s0914: um artigo no Telegra.ph https://telegra.ph/The-invite-is-the-same-code-leftover-model-hours-on-a-shelf-09-14. `verify_sell_live` 200 UI-visível (shop + sell + s0914 + handle sparetoken, links A/B como âncoras + plain). SELL_OK. X não é a prova.
 s0915: um artigo no rentry.co https://rentry.co/sparetoken-one-click-not-subscription-09-15. `verify_sell_live` 200 UI-visível (shop + sell + s0915 + handle sparetoken, links A/B como âncoras + plain). SELL_OK. X não é a prova.
+s0916: um artigo no Telegra.ph https://telegra.ph/Unused-quota-expires-A-shelf-keeps-it-09-16. `verify_sell_live` 200 UI-visível (shop + sell + s0916 + handle sparetoken, links A/B como âncoras + plain). SELL_OK. X não é a prova.
 s0904 comment https://news.ycombinator.com/item?id=49565268 agora é UI-visível (`verify_sell_live` 200) — hold lifted; thread continua morto na roleta; não é a prova de 11/09.
-s0903 vive (2 visit). s0912 vive (publicado 12/09, julga 20/09). s0913 vive (publicado 13/09, julga 21/09). s0914 vive (publicado 14/09, julga 22/09). s0915 vive (publicado hoje, julga 23/09).
+s0903 vive (2 visit). s0912 vive (publicado 12/09, julga 20/09). s0913 vive (publicado 13/09, julga 21/09). s0914 vive (publicado 14/09, julga 22/09). s0915 vive (publicado 15/09, julga 23/09). s0916 vive (publicado hoje, julga 24/09).
 
-Próximo: 16/09. Sem rentry.co repetido. Sem Telegra.ph repetido em manhãs seguidas. Sem HN unused-tokens. Sem claude-code #90152. Sem Cursor forum. Sem Hugging Face. Sem TabNews. Sem Hashnode. Sem cheapest-cloud-GPU. Sem HN conta nova. Sem write.as anon. X continua warmup.
+Próximo: 17/09. Sem Telegra.ph repetido em manhãs seguidas. Sem rentry.co repetido. Sem HN unused-tokens. Sem claude-code #90152. Sem Cursor forum. Sem Hugging Face. Sem TabNews. Sem Hashnode. Sem cheapest-cloud-GPU. Sem HN conta nova. Sem write.as anon. X continua warmup.
