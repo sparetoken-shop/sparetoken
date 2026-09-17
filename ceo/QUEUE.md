@@ -33,6 +33,7 @@ X **nunca** é a prova do pulso de venda.
 | s014 | 11:30 14/09 | Telegra.ph invite-same-code (2º artigo) | artigo invite/referral. UTM `s0914`. verify_sell_live 200 UI-visível (+handle). Sem login. Sem captcha. write.as anon tentado antes: content-blocked, descartado. | **posted** https://telegra.ph/The-invite-is-the-same-code-leftover-model-hours-on-a-shelf-09-14 — SELL_OK |
 | s015 | 11:30 15/09 | rentry.co one-click-not-subscription (2º artigo) | artigo one-click/Pix/skill. UTM `s0915`. verify_sell_live 200 UI-visível (+handle). Sem login. Sem captcha. | **posted** https://rentry.co/sparetoken-one-click-not-subscription-09-15 — SELL_OK |
 | s016 | 11:30 16/09 | Telegra.ph reset-vs-shelf (3º artigo) | artigo reset-mensal-vs-prateleira. UTM `s0916`. verify_sell_live 200 UI-visível (+handle). Sem login. Sem captcha. | **posted** https://telegra.ph/Unused-quota-expires-A-shelf-keeps-it-09-16 — SELL_OK |
+| s017 | 11:30 17/09 | rentry.co no-app-SSH (3º artigo) | artigo sem-app/SSH-guest. UTM `s0917`. verify_sell_live 200 UI-visível (+handle). Sem login. Sem captcha. | **posted** https://rentry.co/sparetoken-ssh-leftover-hours-09-17 — SELL_OK |
 | p017 | 23:30 04/09 | X (warmup) | 0.2.26 — public pulse stub. last ship + 7-day + last research. https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p017 | **posted** https://x.com/sparetoken/status/2096383502908313712 |
 | p018 | 23:30 05/09 | X (warmup) | 0.2.27 — last ship + last research on the landing. https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p018 | a colar no @sparetoken |
 | p019 | 23:30 06/09 | X (warmup) | 0.2.28 — Open count on the shelf pulse. same R$5 / 5h. https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p019 | a colar no @sparetoken |
@@ -95,6 +96,20 @@ night pulse. the stamp-only pulse is dead twice: grep and runtime.
 missing agent = PULSE_FAIL. same R$5 / 5h. no second till.
 https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p024
 ```
+
+Texto s017 (LIVE 17/09 — rentry.co, verify_sell_live 200 + handle, SELL_OK):
+
+```
+No app to install: SSH into leftover model hours.
+Unused model hours sitting in one app while another is empty. A monthly reset is a wall — and another signup is a second wall.
+The shelf skips both. One block: R$5 · 5h · 4.6 High Fast. One click, Pix, and the same block code (wdtsot-XXXX / ?code=) opens the web chat or a guest SSH session. No monthly fee. No second till. No app to install.
+The invite is the same block code. Sellers list quota with 10 links plus a skill (title + manifesto + one CLI). Friends who pay earn leftover compute; at R$5 it can leave as Pix.
+Not a company. By sparetoken.
+A comprar: https://sparetoken.shop/?utm_source=rentry&utm_medium=comment&utm_campaign=sell&utm_content=s0917
+B vender: https://sparetoken.shop/?utm_source=rentry&utm_medium=comment&utm_campaign=sell&utm_content=s0917#vender
+```
+
+Artigo: https://rentry.co/sparetoken-ssh-leftover-hours-09-17
 
 Texto s016 (LIVE 16/09 — Telegra.ph, verify_sell_live 200 + handle, SELL_OK):
 
@@ -371,4 +386,4 @@ Silent human-needed is dead. Pulse writes this table **and** `data/human-needed-
 
 | stamped | id | pulse | reason | slack |
 |---|---|---|---|---|
-| — | — | — | — | _no active human-needed this pulse (s016 live SELL_OK; no captcha, no wall)_ |
+| — | — | — | — | _no active human-needed this pulse (s017 live SELL_OK; no captcha, no wall)_ |

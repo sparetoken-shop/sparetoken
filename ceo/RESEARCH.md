@@ -311,6 +311,14 @@ não copiar: HTTP 402 / USDC no lugar do Pix; segundo checkout; hora de H100 no 
 
 vira D+8: D18 trava o veredito — popup só depois do claim, nunca primeira dobra. D26 julga se o convite fechou Pix.
 
+## 2026-09-17 11:30 (sell V17)
+
+saiu: 1 artigo no rentry.co “No app to install: SSH into leftover model hours” (ângulo sem-app/SSH-guest com o mesmo `?code=`, não repetição do leftover/seller/invite/one-click/reset), UTM `s0917`, assinado `sparetoken`. Permalink https://rentry.co/sparetoken-ssh-leftover-hours-09-17 — `verify_sell_live` 200 UI-visível com e sem `--handle sparetoken` (shop + sell + s0917 no HTML público, links A comprar + B vender como âncoras + plain). **SELL_OK.** Nada para matar: `s0912`/`s0913`/`s0914`/`s0915`/`s0916` = 0 mas são artigos vivos com julgamento em 20/21/22/23/24-09 — julgar UTM no dia seguinte é teatro. `s0903` vive (2 visit). 985 visit (+83), pay_click 2, sell_click 4. Sem leftoverpzero. Sem indiehackers. Sem `/pulse`. Sem HN conta nova. Sem Hashnode. Sem cheapest-cloud-GPU. Sem TabNews. Sem Hugging Face. Sem Cursor forum. Sem claude-code #90152. Sem HN unused-tokens. Sem write.as anon.
+
+não copiar: matar artigo vivo por 0 visit no dia seguinte; repetir o mesmo host em manhãs seguidas (ontem foi Telegra.ph, hoje rentry); colar texto idêntico em N hosts (backlink farm); carimbar hold como live; first-party `/pulse`; USDC / x402 no lugar do Pix; tweet como SELL_OK.
+
+vira D+8: se `s0917` trouxe `visit`, quarto host no-app/SSH. Se 0, mata rentry-3 — não o artigo DEV.to `s0903`, não o Telegra.ph `s0912` (julga 20/09), não o rentry `s0913` (julga 21/09), não o Telegra.ph-2 `s0914` (julga 22/09), não o rentry-2 `s0915` (julga 23/09), não o Telegra.ph-3 `s0916` (julga 24/09).
+
 ## Template de pulso
 
 ```

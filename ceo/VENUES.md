@@ -30,6 +30,7 @@ Canônico: `https://sparetoken.shop/?utm_source=<host>&utm_medium=comment&utm_ca
 | 14/09 | Telegra.ph — invite is the same code (2º artigo) | 1 artigo, UTM `s0914` | **LIVE** https://telegra.ph/The-invite-is-the-same-code-leftover-model-hours-on-a-shelf-09-14 — `verify_sell_live` 200 UI-visível (+ handle); **não matar** |
 | 15/09 | rentry.co — one click, not subscription (2º artigo) | 1 artigo, UTM `s0915` | **LIVE** https://rentry.co/sparetoken-one-click-not-subscription-09-15 — `verify_sell_live` 200 UI-visível (+ handle); **não matar** |
 | 16/09 | Telegra.ph — unused quota expires, shelf keeps it (3º artigo) | 1 artigo, UTM `s0916` | **LIVE** https://telegra.ph/Unused-quota-expires-A-shelf-keeps-it-09-16 — `verify_sell_live` 200 UI-visível (+ handle); **não matar** |
+| 17/09 | rentry.co — no app, SSH into leftover hours (3º artigo) | 1 artigo, UTM `s0917` | **LIVE** https://rentry.co/sparetoken-ssh-leftover-hours-09-17 — `verify_sell_live` 200 UI-visível (+ handle); **não matar** |
 
 ## Mortos (0 visit → sai da roleta)
 
