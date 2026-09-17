@@ -774,3 +774,19 @@ audiência: 901 visit · 2 pay_click · 2 claim_ok · 4 sell_click · s0903=2 ·
 - Sem human-needed. Sem Slack ping. Unittest verde (249 ok) antes do push.
 - Cota diária (≥9 / ≥3 + X ≥10) incompleta — um destino UI-visível, sem X desta host (cookie nunca na VPS).
 - D+8: 24/09 julga `s0916`. leftoverpzero, indiehackers, `/pulse`+github, HN conta nova, Hashnode, cheapest-cloud-GPU, TabNews, Hugging Face, Cursor forum, claude-code #90152, HN unused-tokens e write.as anon não voltam à roleta.
+
+## 2026-09-16 23:30 (heartbeat D18 — 0.2.39)
+
+```
+tokens_pulso: ~normal (popup lock + teste + D+8)
+tokens_mês_est: pulso produto 16/09 23:30
+ship: 0.2.39 — popup fica só depois do claim (data-popup lock, nunca primeira dobra); card apagado até ≥1 paid; pay.py intacto
+canal: X p029 na fila (Mac). Sem tweet desta host.
+audiência: 902 visit · 2 pay_click · 2 claim_ok · 4 sell_click · s0903=2 · s0912=0 · s0913=0 · s0914=0 · s0915=0 · s0916=0 · p008=14
+```
+
+- D18: atribuição fechada = 0, referred_by visit = 1 — o convite andou, o Pix do amigo não. Veredito travado em código: `#invite-modal` com `data-popup="claim-only"`, `showInviteModal` só abre com o marker e só do caminho `claim_ok`, fora do hero. Mudança zero visual. Teste TDD (vermelho antes, verde depois). Sem tela de pessoas. Sem segundo caixa. Sem PII.
+- D+8 (24/09): se atribuição fechada ainda for 0, o lock continua; se ≥1 paid, o invite da dobra pode citar o link — ainda sem `?ref=` extra, ainda sem tela de pessoas.
+- sales-watch: purchases_paid=6 · pay_openish=0 · delta=0. Sem CELEBRATE. RESTOCK +10 (mint no Mac, skill — VPS não minta).
+- track-report: 902 visit · 2 pay_click · 2 claim_ok · 4 sell_click. `s0903` = 2 (DEV.to vive). `s0912`/`s0913`/`s0914`/`s0915`/`s0916` = 0 (artigos vivos, julgam 20/21/22/23/24-09 — cedo). X p008 = 14 (warmup).
+- Unittest verde (250 ok). `pay.py` intacto. X não twitta daqui.

@@ -303,6 +303,14 @@ não copiar: matar artigo vivo por 0 visit no dia seguinte; repetir o mesmo host
 
 vira D+8: se `s0916` trouxer `visit`, quarto host reset/shelf. Se 0, mata Telegra.ph-3 — não o artigo DEV.to `s0903`, não o Telegra.ph `s0912` (julga 20/09), não o rentry `s0913` (julga 21/09), não o Telegra.ph-2 `s0914` (julga 22/09), não o rentry-2 `s0915` (julga 23/09).
 
+## 2026-09-16 23:30 (heartbeat D18)
+
+viu: em casa, 902 visit (+1 no dia) e pay_click parado em 2 desde 05/09; atribuição fechada 0, referred_by visit 1 — o convite andou, o Pix do amigo não. `s0903` = 2 (DEV.to vive); `s0912`–`s0916` = 0 (julgam 20–24/09 — cedo). Fora: llmhosting.ai 14/09 — Vast.ai mais barato que RunPod em 16 de 20 GPUs; H100 SXM US$2,69 RunPod community vs US$1,74 Vast.ai marketplace; H100 PCIe US$1,99 vs US$1,87. Placa barateia; a gente vende hora de modelo, não H100.
+
+não copiar: HTTP 402 / USDC no lugar do Pix; segundo checkout; hora de H100 no lugar do bloco R$5/5h; popup de convite na primeira dobra; julgar UTM no mesmo dia.
+
+vira D+8: D18 trava o veredito — popup só depois do claim, nunca primeira dobra. D26 julga se o convite fechou Pix.
+
 ## Template de pulso
 
 ```

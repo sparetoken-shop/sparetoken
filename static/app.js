@@ -205,6 +205,7 @@ function showCardReferral(ledger) {
 
 function showInviteModal(url) {
   if (!inviteModal || !url) return;
+  if (inviteModal.getAttribute("data-popup") !== "claim-only") return;
   if (inviteModalUrl) inviteModalUrl.textContent = url;
   if (inviteModalCopy) inviteModalCopy.dataset.copy = url;
   if (typeof inviteModal.showModal === "function") inviteModal.showModal();

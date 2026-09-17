@@ -146,6 +146,26 @@ class ReferralSurfaceTest(unittest.TestCase):
         self.assertNotIn("whatsapp", modal)
         self.assertNotIn("checkout", modal)
 
+    def test_d18_popup_stays_after_claim_never_first_fold(self):
+        """D18 (16/09): closed attribution still 0. The invite popup opens
+        only after claim (never the first fold)."""
+        self.assertEqual(HTML.count('id="invite-modal"'), 1)
+        pos = HTML.find('id="invite-modal"')
+        tag_open = HTML.rfind("<dialog", 0, pos)
+        tag_end = HTML.find(">", pos)
+        self.assertIn('data-popup="claim-only"', HTML[tag_open:tag_end])
+        hero = HTML.split('<section class="wrap hero">', 1)[1].split("</section>", 1)[0]
+        self.assertNotIn("invite-modal", hero)
+        show = JS.split("function showInviteModal", 1)[1].split("function ", 1)[0]
+        self.assertIn("data-popup", show)
+        self.assertIn("claim-only", show)
+        self.assertEqual(JS.count("showInviteModal("), 2)
+        call = JS.find("showInviteModal(data.invite_url)")
+        ping = JS.find('ping("claim_ok")')
+        self.assertGreater(call, 0)
+        self.assertGreater(ping, 0)
+        self.assertLess(abs(call - ping), 500)
+
     def test_public_ledger_has_no_names_or_second_till(self):
         ledger = referral.public_ledger(0)
         self.assertEqual(ledger["friends_until_pix"], 10)

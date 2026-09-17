@@ -10,6 +10,18 @@ Versionamento: [SemVer](https://semver.org/lang/pt-BR/).
 - Fechar chat anônimo e SSH sem senha (ver ROADMAP)
 - Charge cripto (USDT / OSDT) na mesma conta.vc — ver ROADMAP, sem segundo caixa
 
+## [0.2.39] — 2026-09-16
+
+D18: the invite popup stays after claim. Never the first fold.
+
+### Added
+
+- `#invite-modal` carries `data-popup="claim-only"` — a machine-checkable lock of the D18 verdict (closed attribution still 0, referred_by visit still 1). `showInviteModal` only opens when the marker is present, and only from the `claim_ok` path. Zero visual change
+
+### Changed
+
+- Same one-click Pix R$5 rail. `pay.py` untouched. No second till. No mint on the VPS
+
 ## [0.2.38] — 2026-09-15
 
 D17: the ledger stays on the invite line. Never the card.
