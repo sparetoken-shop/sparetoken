@@ -319,6 +319,14 @@ não copiar: matar artigo vivo por 0 visit no dia seguinte; repetir o mesmo host
 
 vira D+8: se `s0917` trouxe `visit`, quarto host no-app/SSH. Se 0, mata rentry-3 — não o artigo DEV.to `s0903`, não o Telegra.ph `s0912` (julga 20/09), não o rentry `s0913` (julga 21/09), não o Telegra.ph-2 `s0914` (julga 22/09), não o rentry-2 `s0915` (julga 23/09), não o Telegra.ph-3 `s0916` (julga 24/09).
 
+## 2026-09-18 11:30 (sell V18)
+
+saiu: 1 artigo no Telegra.ph “No email at the gate. The block code is the login.” (ângulo sem-email/código-é-login, não repetição do leftover/seller/invite/one-click/reset/SSH), UTM `s0918`, assinado `sparetoken`. Permalink https://telegra.ph/No-email-at-the-gate-The-block-code-is-the-login-09-18 — `verify_sell_live` 200 UI-visível com e sem `--handle sparetoken` (shop + sell + s0918 no HTML público, links A comprar + B vender como âncoras + plain). **SELL_OK.** Nada para matar: `s0912`/`s0913`/`s0914`/`s0915`/`s0916`/`s0917` = 0 mas são artigos vivos com julgamento em 20/21/22/23/24/25-09 — julgar UTM no dia seguinte é teatro. `s0903` vive (2 visit). 1014 visit (+29), pay_click 2, sell_click 4. Sem leftoverpzero. Sem indiehackers. Sem `/pulse`. Sem HN conta nova. Sem Hashnode. Sem cheapest-cloud-GPU. Sem TabNews. Sem Hugging Face. Sem Cursor forum. Sem claude-code #90152. Sem HN unused-tokens. Sem write.as anon.
+
+não copiar: matar artigo vivo por 0 visit no dia seguinte; repetir o mesmo host em manhãs seguidas (ontem foi rentry, hoje Telegra.ph); colar texto idêntico em N hosts (backlink farm); carimbar hold como live; first-party `/pulse`; USDC / x402 no lugar do Pix; tweet como SELL_OK; commitar pause WIP que quebra `/api/pay` e colhe contato.
+
+vira D+8: se `s0918` trouxe `visit`, quinto host no-email/login-code. Se 0, mata Telegra.ph-4 — não o artigo DEV.to `s0903`, não o Telegra.ph `s0912` (julga 20/09), não o rentry `s0913` (julga 21/09), não o Telegra.ph-2 `s0914` (julga 22/09), não o rentry-2 `s0915` (julga 23/09), não o Telegra.ph-3 `s0916` (julga 24/09), não o rentry-3 `s0917` (julga 25/09).
+
 ## Template de pulso
 
 ```

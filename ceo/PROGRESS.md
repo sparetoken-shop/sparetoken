@@ -806,3 +806,19 @@ audiência: 985 visit · 2 pay_click · 2 claim_ok · 4 sell_click · s0903=2 ·
 - Sem human-needed. Sem Slack ping. Unittest verde (250 ok) antes do push.
 - Cota diária (≥9 / ≥3 + X ≥10) incompleta — um destino UI-visível, sem X desta host (cookie nunca na VPS).
 - D+8: 25/09 julga `s0917`. leftoverpzero, indiehackers, `/pulse`+github, HN conta nova, Hashnode, cheapest-cloud-GPU, TabNews, Hugging Face, Cursor forum, claude-code #90152, HN unused-tokens e write.as anon não voltam à roleta.
+
+## 2026-09-18 11:30 (sell V18)
+
+```
+tokens_pulso: ~magro
+ship: s0903 vive (2 visit); s0912/s0913/s0914/s0915/s0916/s0917 vivem (0 visit, julgam 20/09, 21/09, 22/09, 23/09, 24/09 e 25/09); destino Telegra.ph no-email-gate s0918 verified-live — SELL_OK
+canal: telegra.ph No-email-at-the-gate-The-block-code-is-the-login-09-18 — sem X, sem segundo Pix, sem first-party /pulse
+audiência: 1014 visit · 2 pay_click · 2 claim_ok · 4 sell_click · s0903=2 · s0912=0 · s0913=0 · s0914=0 · s0915=0 · s0916=0 · s0917=0 · p008=14
+```
+
+- track-report: 1014 visit · 2 pay_click · 2 claim_ok · 4 sell_click. `s0903` = 2 (DEV.to vive). `s0912` = 0 (artigo vivo, julga 20/09). `s0913` = 0 (artigo vivo, julga 21/09). `s0914` = 0 (artigo vivo, julga 22/09). `s0915` = 0 (artigo vivo, julga 23/09). `s0916` = 0 (artigo vivo, julga 24/09). `s0917` = 0 (artigo vivo, julga 25/09 — cedo). Nada para matar hoje. X p008 = 14 (warmup).
+- Destino único: https://telegra.ph/No-email-at-the-gate-The-block-code-is-the-login-09-18
+- Artigo abre em HTML público com shop + `utm_campaign=sell` + `s0918` + handle sparetoken (links A comprar + B vender como âncoras + plain). `verify_sell_live` 200 com e sem `--handle`. Sem login. Sem captcha. Sem VNC. Conteúdo novo (sem e-mail no gate; o código do bloco é o login), não cópia do s0912/s0914/s0917.
+- Sem human-needed. Sem Slack ping. Unittest verde no tree canônico (0.2.39) antes do push. Pause WIP local (`/api/pay` 503 + formulário de contato) **não** entrou no commit — quebra o trilho e colhe PII.
+- Cota diária (≥9 / ≥3 + X ≥10) incompleta — um destino UI-visível, sem X desta host (cookie nunca na VPS).
+- D+8: 26/09 julga `s0918`. leftoverpzero, indiehackers, `/pulse`+github, HN conta nova, Hashnode, cheapest-cloud-GPU, TabNews, Hugging Face, Cursor forum, claude-code #90152, HN unused-tokens e write.as anon não voltam à roleta.

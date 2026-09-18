@@ -29,9 +29,11 @@ Update this table when a triad-validated attempt lands. Do not invent rows.
 | 3 | 2026-09-14 11:30 | CEO | Telegra.ph article (2º) | CEO + GET (triad revalidation pending) | https://telegra.ph/The-invite-is-the-same-code-leftover-model-hours-on-a-shelf-09-14 | 200 UI-visível (14/09, ± handle) | `s0914`; SELL_OK |
 | 4 | 2026-09-15 11:30 | CEO | rentry.co article (2º) | CEO + GET (triad revalidation pending) | https://rentry.co/sparetoken-one-click-not-subscription-09-15 | 200 UI-visível (15/09, ± handle) | `s0915`; SELL_OK |
 | 5 | 2026-09-16 11:30 | CEO | Telegra.ph article (3º) | CEO + GET (triad revalidation pending) | https://telegra.ph/Unused-quota-expires-A-shelf-keeps-it-09-16 | 200 UI-visível (16/09, ± handle) | `s0916`; SELL_OK |
+| 6 | 2026-09-17 11:30 | CEO | rentry.co article (3º) | CEO + GET (triad revalidation pending) | https://rentry.co/sparetoken-ssh-leftover-hours-09-17 | 200 UI-visível (17/09, ± handle) | `s0917`; SELL_OK |
+| 7 | 2026-09-18 11:30 | CEO | Telegra.ph article (4º) | CEO + GET (triad revalidation pending) | https://telegra.ph/No-email-at-the-gate-The-block-code-is-the-login-09-18 | 200 UI-visível (18/09, ± handle) | `s0918`; SELL_OK |
 
-**Validated attempts:** 5 / 50  
-**Successful public publishes:** 5  
+**Validated attempts:** 7 / 50  
+**Successful public publishes:** 7  
 **Kill-switch armed:** yes (fires at 50 / 0)
 
 ## Related hard rules
