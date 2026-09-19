@@ -10,6 +10,18 @@ Versionamento: [SemVer](https://semver.org/lang/pt-BR/).
 - Fechar chat anônimo e SSH sem senha (ver ROADMAP)
 - Charge cripto (USDT / OSDT) na mesma conta.vc — ver ROADMAP, sem segundo caixa
 
+## [0.2.40] — 2026-09-18
+
+D20: the ten-friend ceiling stays on the rail. Never a people screen.
+
+### Added
+
+- Rail step 3 carries `data-ceiling="rail-only"` — a machine-checkable lock of the D20 verdict (closed attribution still 0, referred_by visit still 1). `showCardReferral` only paints when the rail owns the ceiling, and only after `paid_closed_friends ≥ 1`. Zero visual change
+
+### Changed
+
+- Same one-click Pix R$5 rail. `pay.py` untouched. No second till. No mint on the VPS
+
 ## [0.2.39] — 2026-09-16
 
 D18: the invite popup stays after claim. Never the first fold.

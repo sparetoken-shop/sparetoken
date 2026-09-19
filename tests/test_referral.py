@@ -166,6 +166,31 @@ class ReferralSurfaceTest(unittest.TestCase):
         self.assertGreater(ping, 0)
         self.assertLess(abs(call - ping), 500)
 
+    def test_d20_ceiling_stays_on_rail_never_people_screen(self):
+        """D20 (18/09): referred_by visit still 1, closed still 0.
+        Ten-friend ceiling stays on the rail. Card lights faltam N only
+        after a paid friend, and only if the rail owns the ceiling."""
+        self.assertEqual(HTML.count('data-ceiling="rail-only"'), 1)
+        rail = HTML.find('class="shelf-rail"')
+        ceiling = HTML.find('data-ceiling="rail-only"')
+        self.assertGreater(ceiling, rail)
+        rail_close = HTML.find("</ol>", rail)
+        self.assertLess(ceiling, rail_close)
+        step = HTML[ceiling:rail_close]
+        self.assertIn("10 amigos", step)
+        self.assertIn("rail.3.p", step)
+        self.assertNotIn("friends-list", HTML.lower())
+        self.assertNotIn('id="people"', HTML)
+        card = HTML.find('id="referral-card"')
+        card_open = HTML.rfind("<p", 0, card)
+        card_end = HTML.find(">", card)
+        self.assertIn("hidden", HTML[card_open:card_end])
+        self.assertNotIn("data-ceiling", HTML[card_open:card_end])
+        card_fn = JS.split("function showCardReferral", 1)[1].split("function ", 1)[0]
+        self.assertIn("data-ceiling", card_fn)
+        self.assertIn("rail-only", card_fn)
+        self.assertIn("paid < 1", card_fn)
+
     def test_public_ledger_has_no_names_or_second_till(self):
         ledger = referral.public_ledger(0)
         self.assertEqual(ledger["friends_until_pix"], 10)

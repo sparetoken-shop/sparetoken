@@ -185,8 +185,9 @@ function showReferral(ledger) {
 function showCardReferral(ledger) {
   const el = document.getElementById("referral-card");
   if (!el) return;
+  const railOwns = document.querySelector('.shelf-rail [data-ceiling="rail-only"]');
   const paid = ledger ? Number(ledger.paid_closed_friends) : 0;
-  if (!Number.isFinite(paid) || paid < 1) {
+  if (!railOwns || !Number.isFinite(paid) || paid < 1) {
     el.hidden = true;
     el.textContent = "";
     return;

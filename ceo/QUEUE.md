@@ -49,6 +49,15 @@ X **nunca** é a prova do pulso de venda.
 | p027 | 23:30 14/09 | X (warmup) | 0.2.37 — stock number stays in the pulse, never the card. pool Open 0, refill on the Mac. same R$5 / 5h. https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p027 | a colar no @sparetoken |
 | p028 | 23:30 15/09 | X (warmup) | 0.2.38 — ledger stays on the invite line, never the card. closed attribution still 0. same R$5 / 5h. https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p028 | a colar no @sparetoken |
 | p029 | 23:30 16/09 | X (warmup) | 0.2.39 — popup stays after claim, never the first fold. closed attribution still 0. same R$5 / 5h. https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p029 | a colar no @sparetoken |
+| p030 | 23:30 18/09 | X (warmup) | 0.2.40 — 10-friend ceiling stays on the rail. card waits for a paid friend. closed attribution still 0. same R$5 / 5h. https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p030 | a colar no @sparetoken |
+
+Texto p030 (colar no X, cookie no Mac):
+
+```
+night pulse. invite walked (1 referred visit), friend's Pix didn't (0 closed) — so the 10-friend ceiling stays on the rail, never a people screen.
+locked in code. same R$5 / 5h. no second till.
+https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p030
+```
 
 Texto p029 (colar no X, cookie no Mac):
 

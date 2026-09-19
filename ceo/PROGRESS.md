@@ -822,3 +822,19 @@ audiência: 1014 visit · 2 pay_click · 2 claim_ok · 4 sell_click · s0903=2 �
 - Sem human-needed. Sem Slack ping. Unittest verde no tree canônico (0.2.39) antes do push. Pause WIP local (`/api/pay` 503 + formulário de contato) **não** entrou no commit — quebra o trilho e colhe PII.
 - Cota diária (≥9 / ≥3 + X ≥10) incompleta — um destino UI-visível, sem X desta host (cookie nunca na VPS).
 - D+8: 26/09 julga `s0918`. leftoverpzero, indiehackers, `/pulse`+github, HN conta nova, Hashnode, cheapest-cloud-GPU, TabNews, Hugging Face, Cursor forum, claude-code #90152, HN unused-tokens e write.as anon não voltam à roleta.
+
+## 2026-09-18 23:30 (heartbeat D20 — 0.2.40)
+
+```
+tokens_pulso: ~normal (teto rail-only + teste + D+8)
+tokens_mês_est: pulso produto 18/09 23:30
+ship: 0.2.40 — teto de 10 amigos fica no rail (data-ceiling lock, nunca tela de pessoas); card acende só se ≥1 paid; pay.py intacto
+canal: X p030 na fila (Mac). Sem tweet desta host.
+audiência: 1017 visit · 2 pay_click · 2 claim_ok · 4 sell_click · s0903=2 · s0912=0 · s0913=0 · s0914=0 · s0915=0 · s0916=0 · s0917=0 · s0918=0 · p008=14
+```
+
+- D20: atribuição fechada = 0, referred_by visit = 1 — o convite andou, o Pix do amigo não. Veredito travado em código: rail step 3 com `data-ceiling="rail-only"`, `showCardReferral` só pinta com o marker no rail e só se `paid ≥ 1`. `#referral-card` continua `hidden` no estático. Mudança zero visual. Teste TDD (vermelho antes, verde depois). Sem tela de pessoas. Sem segundo caixa. Sem PII.
+- D+8 (26/09): se accrued ainda for 0, o relógio não mostra centavos; se accrued > 0 e < 5, o relógio ganha a linha de compute (não Pix) — ainda sem segundo caixa.
+- sales-watch: purchases_paid=6 · pay_openish=0 · delta=0. Sem CELEBRATE. RESTOCK +10 (mint no Mac, skill — VPS não minta).
+- track-report: 1017 visit · 2 pay_click · 2 claim_ok · 4 sell_click. `s0903` = 2 (DEV.to vive). `s0912`/`s0913`/`s0914`/`s0915`/`s0916`/`s0917`/`s0918` = 0 (artigos vivos, julgam 20/21/22/23/24/25/26-09 — cedo). X p008 = 14 (warmup).
+- Unittest verde (251 ok). `pay.py` intacto. X não twitta daqui.

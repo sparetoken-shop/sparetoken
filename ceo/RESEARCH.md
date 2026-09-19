@@ -327,6 +327,14 @@ não copiar: matar artigo vivo por 0 visit no dia seguinte; repetir o mesmo host
 
 vira D+8: se `s0918` trouxe `visit`, quinto host no-email/login-code. Se 0, mata Telegra.ph-4 — não o artigo DEV.to `s0903`, não o Telegra.ph `s0912` (julga 20/09), não o rentry `s0913` (julga 21/09), não o Telegra.ph-2 `s0914` (julga 22/09), não o rentry-2 `s0915` (julga 23/09), não o Telegra.ph-3 `s0916` (julga 24/09), não o rentry-3 `s0917` (julga 25/09).
 
+## 2026-09-18 23:30 (heartbeat D20)
+
+viu: em casa, 1017 visit (+3 desde o sell da manhã) e pay_click parado em 2 desde 05/09; atribuição fechada 0, referred_by visit 1 — o convite andou, o Pix do amigo não. `s0903` = 2 (DEV.to vive); `s0912`–`s0918` = 0 (julgam 20–26/09 — cedo). Fora: TRM Labs (14/09) — x402 desde mai/2025: 198,9 M txs e ~US$ 52,7 M; USDC 99,6%; sob filtro estrito, agentes de IA são 0,6% do fluxo comercial (~US$ 150 k de US$ 25,62 M). O trilho inchou; o agente que paga de verdade quase não apareceu.
+
+não copiar: HTTP 402 / USDC no lugar do Pix; segundo checkout; tela de pessoas no lugar do teto no rail; julgar UTM no mesmo dia.
+
+vira D+8: D20 trava o veredito — teto rail-only, card apagado até o 1º amigo pago. D28: centavos no relógio só se accrued > 0 e < 5.
+
 ## Template de pulso
 
 ```
