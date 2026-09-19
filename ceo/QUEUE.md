@@ -35,6 +35,7 @@ X **nunca** é a prova do pulso de venda.
 | s016 | 11:30 16/09 | Telegra.ph reset-vs-shelf (3º artigo) | artigo reset-mensal-vs-prateleira. UTM `s0916`. verify_sell_live 200 UI-visível (+handle). Sem login. Sem captcha. | **posted** https://telegra.ph/Unused-quota-expires-A-shelf-keeps-it-09-16 — SELL_OK |
 | s017 | 11:30 17/09 | rentry.co no-app-SSH (3º artigo) | artigo sem-app/SSH-guest. UTM `s0917`. verify_sell_live 200 UI-visível (+handle). Sem login. Sem captcha. | **posted** https://rentry.co/sparetoken-ssh-leftover-hours-09-17 — SELL_OK |
 | s018 | 11:30 18/09 | Telegra.ph no-email-gate (4º artigo) | artigo sem-email/código-é-login. UTM `s0918`. verify_sell_live 200 UI-visível (+handle). Sem login. Sem captcha. | **posted** https://telegra.ph/No-email-at-the-gate-The-block-code-is-the-login-09-18 — SELL_OK |
+| s019 | 11:30 19/09 | rentry.co ten-friends-rail (4º artigo) | artigo teto-10-amigos/sem-tela-de-pessoas. UTM `s0919`. verify_sell_live 200 UI-visível (+handle). Sem login. Sem captcha. | **posted** https://rentry.co/sparetoken-ten-friends-rail-09-19 — SELL_OK |
 | p017 | 23:30 04/09 | X (warmup) | 0.2.26 — public pulse stub. last ship + 7-day + last research. https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p017 | **posted** https://x.com/sparetoken/status/2096383502908313712 |
 | p018 | 23:30 05/09 | X (warmup) | 0.2.27 — last ship + last research on the landing. https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p018 | a colar no @sparetoken |
 | p019 | 23:30 06/09 | X (warmup) | 0.2.28 — Open count on the shelf pulse. same R$5 / 5h. https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p019 | a colar no @sparetoken |
@@ -106,6 +107,20 @@ night pulse. the stamp-only pulse is dead twice: grep and runtime.
 missing agent = PULSE_FAIL. same R$5 / 5h. no second till.
 https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p024
 ```
+
+Texto s019 (LIVE 19/09 — rentry.co, verify_sell_live 200 + handle, SELL_OK):
+
+```
+Ten friends until Pix. The ceiling stays on the rail.
+Referral dashboards that list your friends are a people screen — a second wall after the hours were already paid for. The leftover does not need a roster.
+A shelf keeps the ceiling on the rail. One block: R$5 · 5h · 4.6 High Fast. One click, Pix, and the same block code (wdtsot-XXXX / ?code=) is the invite. Friends who pay earn leftover compute; at R$5 it can leave as Pix. The card waits for a paid friend. No people list. No monthly fee. No second till.
+Sellers list leftover quota with 10 links plus a skill (title + manifesto + one CLI).
+Not a company. By sparetoken.
+A comprar: https://sparetoken.shop/?utm_source=rentry&utm_medium=comment&utm_campaign=sell&utm_content=s0919
+B vender: https://sparetoken.shop/?utm_source=rentry&utm_medium=comment&utm_campaign=sell&utm_content=s0919#vender
+```
+
+Artigo: https://rentry.co/sparetoken-ten-friends-rail-09-19
 
 Texto s018 (LIVE 18/09 — Telegra.ph, verify_sell_live 200 + handle, SELL_OK):
 
@@ -410,4 +425,4 @@ Silent human-needed is dead. Pulse writes this table **and** `data/human-needed-
 
 | stamped | id | pulse | reason | slack |
 |---|---|---|---|---|
-| — | — | — | — | _no active human-needed this pulse (s018 live SELL_OK; no captcha, no wall)_ |
+| — | — | — | — | _no active human-needed this pulse (s019 live SELL_OK; no captcha, no wall)_ |

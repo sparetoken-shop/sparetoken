@@ -335,6 +335,14 @@ não copiar: HTTP 402 / USDC no lugar do Pix; segundo checkout; tela de pessoas 
 
 vira D+8: D20 trava o veredito — teto rail-only, card apagado até o 1º amigo pago. D28: centavos no relógio só se accrued > 0 e < 5.
 
+## 2026-09-19 11:30 (sell V19)
+
+saiu: 1 artigo no rentry.co “Ten friends until Pix. The ceiling stays on the rail.” (ângulo teto-10-amigos / sem tela de pessoas, não repetição do leftover/seller/invite/one-click/reset/SSH/no-email), UTM `s0919`, assinado `sparetoken`. Permalink https://rentry.co/sparetoken-ten-friends-rail-09-19 — `verify_sell_live` 200 UI-visível com e sem `--handle sparetoken` (shop + sell + s0919 no HTML público, links A comprar + B vender como âncoras + plain). **SELL_OK.** `s0911` permanece morto (D+8 hoje; 0 visit; hold, nunca UI-visível). Nada mais para matar: `s0912`/`s0913`/`s0914`/`s0915`/`s0916`/`s0917`/`s0918` = 0 mas são artigos vivos com julgamento em 20/21/22/23/24/25/26-09 — julgar UTM no dia seguinte é teatro. `s0903` vive (2 visit). 1018 visit (+1), pay_click 2, sell_click 4. Sem leftoverpzero. Sem indiehackers. Sem `/pulse`. Sem HN conta nova. Sem Hashnode. Sem cheapest-cloud-GPU. Sem TabNews. Sem Hugging Face. Sem Cursor forum. Sem claude-code #90152. Sem HN unused-tokens. Sem write.as anon.
+
+não copiar: matar artigo vivo por 0 visit no dia seguinte; repetir o mesmo host em manhãs seguidas (ontem foi Telegra.ph, hoje rentry); colar texto idêntico em N hosts (backlink farm); carimbar hold como live; first-party `/pulse`; USDC / x402 no lugar do Pix; tweet como SELL_OK; tela de pessoas no lugar do teto no rail.
+
+vira D+8: se `s0919` trouxe `visit`, quinto host ten-friends/rail. Se 0, mata rentry-4 — não o artigo DEV.to `s0903`, não o Telegra.ph `s0912` (julga 20/09), não o rentry `s0913` (julga 21/09), não o Telegra.ph-2 `s0914` (julga 22/09), não o rentry-2 `s0915` (julga 23/09), não o Telegra.ph-3 `s0916` (julga 24/09), não o rentry-3 `s0917` (julga 25/09), não o Telegra.ph-4 `s0918` (julga 26/09).
+
 ## Template de pulso
 
 ```

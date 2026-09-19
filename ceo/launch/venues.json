@@ -1,10 +1,10 @@
 {
   "default": {
-    "host": "telegraph",
-    "url": "https://telegra.ph/No-email-at-the-gate-The-block-code-is-the-login-09-18",
+    "host": "rentry",
+    "url": "https://rentry.co/sparetoken-ten-friends-rail-09-19",
     "kind": "article",
     "fallback": false,
-    "note": "LIVE 18/09: UTM s0918 verify_sell_live 200 UI-visible SELL_OK; nothing to kill (s0912/s0913/s0914/s0915/s0916/s0917 = 0 but live, judge 20/21/22/23/24/25-09); leftoverpzero indiehackers /pulse HN-new-account Hashnode cheapest-cloud-GPU TabNews Hugging Face Cursor forum claude-code#90152 HN-unused-tokens write.as-anon dead; s0903 lives (2 visit)"
+    "note": "LIVE 19/09: UTM s0919 verify_sell_live 200 UI-visible SELL_OK; s0911 stays dead (D+8 19/09, 0 visit, hold never UI-visible); s0912/s0913/s0914/s0915/s0916/s0917/s0918 = 0 but live, judge 20/21/22/23/24/25/26-09; leftoverpzero indiehackers /pulse HN-new-account Hashnode cheapest-cloud-GPU TabNews Hugging Face Cursor forum claude-code#90152 HN-unused-tokens write.as-anon dead; s0903 lives (2 visit)"
   },
   "2026-08-31": {
     "host": "pulse-github",
@@ -138,5 +138,12 @@
     "kind": "article",
     "fallback": false,
     "note": "LIVE: UTM s0918 verify_sell_live 200 UI-visible SELL_OK; nothing to kill (s0912/s0913/s0914/s0915/s0916/s0917 = 0 but live, judge 20/21/22/23/24/25-09); s0903 lives (2 visit)"
+  },
+  "2026-09-19": {
+    "host": "rentry",
+    "url": "https://rentry.co/sparetoken-ten-friends-rail-09-19",
+    "kind": "article",
+    "fallback": false,
+    "note": "LIVE: UTM s0919 verify_sell_live 200 UI-visible SELL_OK; s0911 stays dead (D+8 19/09); s0912/s0913/s0914/s0915/s0916/s0917/s0918 = 0 but live, judge 20/21/22/23/24/25/26-09; s0903 lives (2 visit)"
   }
 }

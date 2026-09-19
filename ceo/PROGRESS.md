@@ -838,3 +838,19 @@ audiência: 1017 visit · 2 pay_click · 2 claim_ok · 4 sell_click · s0903=2 �
 - sales-watch: purchases_paid=6 · pay_openish=0 · delta=0. Sem CELEBRATE. RESTOCK +10 (mint no Mac, skill — VPS não minta).
 - track-report: 1017 visit · 2 pay_click · 2 claim_ok · 4 sell_click. `s0903` = 2 (DEV.to vive). `s0912`/`s0913`/`s0914`/`s0915`/`s0916`/`s0917`/`s0918` = 0 (artigos vivos, julgam 20/21/22/23/24/25/26-09 — cedo). X p008 = 14 (warmup).
 - Unittest verde (251 ok). `pay.py` intacto. X não twitta daqui.
+
+## 2026-09-19 11:30 (sell V19)
+
+```
+tokens_pulso: ~magro
+ship: s0903 vive (2 visit); s0911 permanece morto (D+8 hoje, 0 visit); s0912/s0913/s0914/s0915/s0916/s0917/s0918 vivem (0 visit, julgam 20/09, 21/09, 22/09, 23/09, 24/09, 25/09 e 26/09); destino rentry.co ten-friends-rail s0919 verified-live — SELL_OK
+canal: rentry.co sparetoken-ten-friends-rail-09-19 — sem X, sem segundo Pix, sem first-party /pulse
+audiência: 1018 visit · 2 pay_click · 2 claim_ok · 4 sell_click · s0903=2 · s0912=0 · s0913=0 · s0914=0 · s0915=0 · s0916=0 · s0917=0 · s0918=0 · p008=14
+```
+
+- track-report: 1018 visit · 2 pay_click · 2 claim_ok · 4 sell_click. `s0903` = 2 (DEV.to vive). `s0911` = 0 → permanece morto (D+8 19/09; hold, nunca UI-visível; não reabrir). `s0912` = 0 (artigo vivo, julga 20/09). `s0913` = 0 (artigo vivo, julga 21/09). `s0914` = 0 (artigo vivo, julga 22/09). `s0915` = 0 (artigo vivo, julga 23/09). `s0916` = 0 (artigo vivo, julga 24/09). `s0917` = 0 (artigo vivo, julga 25/09). `s0918` = 0 (artigo vivo, julga 26/09 — cedo). X p008 = 14 (warmup).
+- Destino único: https://rentry.co/sparetoken-ten-friends-rail-09-19
+- Artigo abre em HTML público com shop + `utm_campaign=sell` + `s0919` + handle sparetoken (links A comprar + B vender como âncoras + plain). `verify_sell_live` 200 com e sem `--handle`. Sem login. Sem captcha. Sem VNC. Conteúdo novo (teto de 10 amigos no rail, sem tela de pessoas), não cópia do s0913/s0914/s0915/s0918.
+- Sem human-needed. Sem Slack ping. Unittest verde (251 ok) antes do push.
+- Cota diária (≥9 / ≥3 + X ≥10) incompleta — um destino UI-visível, sem X desta host (cookie nunca na VPS).
+- D+8: 27/09 julga `s0919`. leftoverpzero, indiehackers, `/pulse`+github, HN conta nova, Hashnode, cheapest-cloud-GPU, TabNews, Hugging Face, Cursor forum, claude-code #90152, HN unused-tokens e write.as anon não voltam à roleta.
