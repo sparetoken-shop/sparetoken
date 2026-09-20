@@ -180,6 +180,24 @@ class LandingMarketTest(unittest.TestCase):
         self.assertNotIn('document.querySelector(\'[data-pulse="shelf"]\')', JS)
         self.assertIn('data-stock', JS)
 
+    def test_d21_trap_chapter_closed_runtime_lock(self):
+        """D21 (19/09): trap-test green, timer 7200s alive. PR #1 chapter
+        closes. The pulse line only paints with data-trap=runtime."""
+        self.assertEqual(HTML.count('data-trap="runtime"'), 1)
+        pulse = HTML.find('id="pulso-heartbeat"')
+        tag_open = HTML.rfind("<p", 0, pulse)
+        tag_end = HTML.find(">", pulse)
+        self.assertIn('data-trap="runtime"', HTML[tag_open:tag_end])
+        self.assertIn('data-placement="under-tally"', HTML[tag_open:tag_end])
+        self.assertIn('data-stock="pulse-only"', HTML[tag_open:tag_end])
+        hero = HTML.split('<section class="wrap hero">', 1)[1].split("</section>", 1)[0]
+        self.assertNotIn("data-trap", hero)
+        fn = JS.split("function fillPulse", 1)[1].split("fetch(", 1)[0]
+        self.assertIn("data-trap", fn)
+        self.assertIn("runtime", fn)
+        self.assertIn("um clique. Pix R$5.", HTML)
+        self.assertEqual(HTML.count('id="pay"'), 1)
+
     def test_mobile_puts_chat_first_and_hides_demo_term(self):
         mobile = CSS.split("@media (max-width: 860px)", 1)[1]
         self.assertIn(".hero > .chat", mobile)

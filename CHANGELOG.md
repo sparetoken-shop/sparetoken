@@ -10,6 +10,18 @@ Versionamento: [SemVer](https://semver.org/lang/pt-BR/).
 - Fechar chat anônimo e SSH sem senha (ver ROADMAP)
 - Charge cripto (USDT / OSDT) na mesma conta.vc — ver ROADMAP, sem segundo caixa
 
+## [0.2.41] — 2026-09-19
+
+D21: the pulse trap stays runtime. PR #1 chapter closes. Unreleased stays Planned.
+
+### Added
+
+- `#pulso-heartbeat` carries `data-trap="runtime"` — a machine-checkable lock of the D21 verdict (trap-test still green, timer 7200s alive). `fillPulse` and the first paint only show when the marker is present. Zero visual change
+
+### Changed
+
+- Same one-click Pix R$5 rail. `pay.py` untouched. No second till. No mint on the VPS. No re-merge of the diverged tip
+
 ## [0.2.40] — 2026-09-18
 
 D20: the ten-friend ceiling stays on the rail. Never a people screen.

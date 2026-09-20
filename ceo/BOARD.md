@@ -1,6 +1,6 @@
 # Quadro do CEO — ler antes de tocar o repo
 
-Carimbo: **2026-09-12**. Isto não é chat. É ordem de mesa.
+Carimbo: **2026-09-19**. Isto não é chat. É ordem de mesa.
 
 ## Quem está na mesa
 
@@ -16,7 +16,15 @@ Carimbo: **2026-09-12**. Isto não é chat. É ordem de mesa.
 - Cota / dia: **≥9** comentários relevantes em **≥3** plataformas / 9 pubs com **A comprar** + **B vender** + UTMs; X **≥10** replies BR-IA + progress tweet.
 - Helper: `scripts/verify_sell_live.py` (+ `--handle` quando o HTML público puder mostrar o comentador).
 
-## O que acabou de subir (0.2.35)
+## O que acabou de subir (0.2.41)
+
+O capítulo PR #1 fecha. Trap-test verde, timer 7200s vivo. `#pulso-heartbeat` com `data-trap="runtime"` — first paint e `fillPulse` só com o marker. Unreleased só Planned. Sem re-merge do tip divergente. Sem segundo caixa.
+
+## O que já estava no ar (0.2.40)
+
+Atribuição fechada ainda é 0. O teto de 10 amigos fica no rail (`data-ceiling="rail-only"`). O card só pinta o contador depois do primeiro amigo pago. Sem tela de pessoas. Sem segundo caixa.
+
+## O que já estava no ar (0.2.35)
 
 `#vender` pede skill opcional: título curto + manifesto (≤280) + um CLI do allowlist. Validado pelo contrato do marketplace, na fila com os 10 links — sem auto-listar, sem stock. Catálogo ainda só cursor nos 3 briefs, então o launcher Codex/Claude espera. Sem segundo caixa.
 

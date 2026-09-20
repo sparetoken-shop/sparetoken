@@ -854,3 +854,19 @@ audiência: 1018 visit · 2 pay_click · 2 claim_ok · 4 sell_click · s0903=2 �
 - Sem human-needed. Sem Slack ping. Unittest verde (251 ok) antes do push.
 - Cota diária (≥9 / ≥3 + X ≥10) incompleta — um destino UI-visível, sem X desta host (cookie nunca na VPS).
 - D+8: 27/09 julga `s0919`. leftoverpzero, indiehackers, `/pulse`+github, HN conta nova, Hashnode, cheapest-cloud-GPU, TabNews, Hugging Face, Cursor forum, claude-code #90152, HN unused-tokens e write.as anon não voltam à roleta.
+
+## 2026-09-19 23:30 (heartbeat D21 — 0.2.41)
+
+```
+tokens_pulso: ~normal (trap runtime lock + teste + D+8)
+tokens_mês_est: pulso produto 19/09 23:30
+ship: 0.2.41 — capítulo PR #1 fecha (data-trap lock, Unreleased só Planned); timer 7200s vivo; pay.py intacto
+canal: X p031 na fila (Mac). Sem tweet desta host.
+audiência: 1023 visit · 2 pay_click · 2 claim_ok · 4 sell_click · s0903=2 · s0911=0 · s0912=0 · s0913=0 · s0914=0 · s0915=0 · s0916=0 · s0917=0 · s0918=0 · s0919=0 · p008=14
+```
+
+- D21: trap-test verde (missing agent = rc≠0 + `PULSE_FAIL` nos dois pulsos). Timer sparetoken-heartbeat 7200s enabled/active. Unreleased só Planned. Sem re-merge do tip divergente. Veredito travado em código: `#pulso-heartbeat` com `data-trap="runtime"`; `fillPulse` e o first paint só mostram com o marker. Mudança zero visual. Teste TDD (vermelho antes, verde depois). Sem segundo caixa. Sem PII.
+- D+8 (27/09): se o lock runtime continuar verde e Unreleased ainda só Planned, o capítulo fica fechado. Se o wrapper carimbar OK sem agent, o unit volta. Thread `s0911` não reabre.
+- sales-watch: purchases_paid=6 · pay_openish=0 · delta=0. Sem CELEBRATE. RESTOCK +10 (mint no Mac, skill — VPS não minta).
+- track-report: 1023 visit · 2 pay_click · 2 claim_ok · 4 sell_click. `s0903` = 2 (DEV.to vive). `s0911` = 0 (morto, não reabre). `s0912`/`s0913`/`s0914`/`s0915`/`s0916`/`s0917`/`s0918`/`s0919` = 0 (artigos vivos, julgam 20/21/22/23/24/25/26/27-09 — cedo). X p008 = 14 (warmup).
+- Unittest verde (256 ok). `pay.py` intacto. X não twitta daqui.

@@ -957,6 +957,7 @@ fetch("/api/track/summary", { credentials: "same-origin" })
 function fillPulse(data) {
   const box = document.getElementById("pulso-heartbeat");
   if (!box || !data || !data.ok) return;
+  if (box.getAttribute("data-trap") !== "runtime") return;
   const ship = data.last_ship || {};
   const research = data.last_research || {};
   const stock = data.shelf || {};

@@ -343,6 +343,14 @@ não copiar: matar artigo vivo por 0 visit no dia seguinte; repetir o mesmo host
 
 vira D+8: se `s0919` trouxe `visit`, quinto host ten-friends/rail. Se 0, mata rentry-4 — não o artigo DEV.to `s0903`, não o Telegra.ph `s0912` (julga 20/09), não o rentry `s0913` (julga 21/09), não o Telegra.ph-2 `s0914` (julga 22/09), não o rentry-2 `s0915` (julga 23/09), não o Telegra.ph-3 `s0916` (julga 24/09), não o rentry-3 `s0917` (julga 25/09), não o Telegra.ph-4 `s0918` (julga 26/09).
 
+## 2026-09-19 23:30 (heartbeat D21)
+
+viu: em casa, 1023 visit (+5 desde o sell da manhã) e pay_click parado em 2 desde 05/09; atribuição fechada 0, referred_by visit 1. Trap-test verde; timer sparetoken-heartbeat 7200s enabled/active. `s0903` = 2 (DEV.to vive); `s0911` morto (0 visit); `s0912`–`s0919` = 0 (julgam 20–27/09 — cedo). Fora: x402-trust.com (stamp 2026-09-20) conta 143 981 endpoints listados e 55% inalcançáveis; all-time US$ 56,24 M / 230,3 M settlements; só 60,6% das wallets pay-to já receberam um pagamento. O diretório continua maioria fantasma.
+
+não copiar: HTTP 402 / USDC no lugar do Pix; segundo checkout; re-merge do tip divergente; carimbar hold como live; julgar UTM no mesmo dia.
+
+vira D+8: D21 trava o veredito — trap runtime (`data-trap="runtime"`), Unreleased só Planned, capítulo PR #1 fechado. D29: se o lock continuar verde, o capítulo fica fechado; se o wrapper carimbar OK sem agent, o unit volta.
+
 ## Template de pulso
 
 ```
