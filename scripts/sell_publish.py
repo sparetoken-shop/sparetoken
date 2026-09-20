@@ -89,6 +89,14 @@ def _verify(url: str, utm: str, fetch=None) -> bool:
     return ok
 
 
+def proof_url_from_disk() -> str:
+    """Agent-published permalink. Read before VNC — VNC is not a handoff path."""
+    proof_file = Path(os.environ.get("SELL_PROOF_URL_FILE", str(ROOT / "data" / "sell-proof-url.txt")))
+    if proof_file.is_file():
+        return proof_file.read_text(encoding="utf-8").strip()
+    return ""
+
+
 def run(
     *,
     fetch=None,
@@ -109,9 +117,10 @@ def run(
     print(f"venue={venue.get('host')} url={venue.get('url')} utm={utm}", flush=True)
 
     notifier = notify or notify_all
-    proof_url = os.environ.get("SELL_PROOF_URL", "").strip()
+    proof_url = os.environ.get("SELL_PROOF_URL", "").strip() or proof_url_from_disk()
     if proof_url and _verify(proof_url, utm, fetch=fetch):
-        append_proof({"day": day, "url": proof_url, "via": "proof-env", "utm_content": utm})
+        via = "proof-env" if os.environ.get("SELL_PROOF_URL", "").strip() else "proof-file"
+        append_proof({"day": day, "url": proof_url, "via": via, "utm_content": utm})
         return 0
 
     starter = start_vnc or vnc_start

@@ -28,10 +28,12 @@ class SellPublishTest(unittest.TestCase):
         os.environ["SELL_UTM_CONTENT"] = "s0831"
         os.environ["SELL_HUMAN_WAIT_SEC"] = "0"
         os.environ["SELL_PROOF_FILE"] = str(Path(self.tmp.name) / "proof.jsonl")
+        os.environ["SELL_PROOF_URL_FILE"] = str(Path(self.tmp.name) / "missing-proof-url.txt")
 
     def tearDown(self):
         self.tmp.cleanup()
         os.environ.pop("SELL_PROOF_URL", None)
+        os.environ.pop("SELL_PROOF_URL_FILE", None)
 
     def test_human_proof_url_short_circuits(self):
         os.environ["SELL_PROOF_URL"] = "https://dev.to/sparetoken/ok"
@@ -49,6 +51,27 @@ class SellPublishTest(unittest.TestCase):
             fallback=lambda *_a, **_k: (_ for _ in ()).throw(AssertionError("no fallback")),
         )
         self.assertEqual(code, 0)
+
+    def test_proof_file_short_circuits_without_vnc(self):
+        proof = Path(self.tmp.name) / "sell-proof-url.txt"
+        proof.write_text("https://dpaste.com/sparetoken-s0831\n", encoding="utf-8")
+        os.environ["SELL_PROOF_URL_FILE"] = str(proof)
+        called = []
+
+        def fetch(_url: str):
+            return 200, "https://dpaste.com/sparetoken-s0831", GOOD
+
+        code = sp.run(
+            fetch=fetch,
+            notify=lambda m: called.append(("zapi", m)) or (0, 0),
+            start_vnc=lambda *_a, **_k: called.append("vnc") or {"url": "https://sparetoken.shop/pulse-vnc/x/"},
+            stop_vnc=lambda: None,
+            signup=lambda: called.append("signup") or {"challenge": False},
+            sleep=lambda _s: None,
+            fallback=lambda *_a, **_k: called.append("fallback") or {},
+        )
+        self.assertEqual(code, 0)
+        self.assertEqual(called, [])
 
     def test_fallback_needs_both_live_urls(self):
         def fetch(url: str):

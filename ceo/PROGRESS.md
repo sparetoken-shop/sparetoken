@@ -870,3 +870,19 @@ audiência: 1023 visit · 2 pay_click · 2 claim_ok · 4 sell_click · s0903=2 �
 - sales-watch: purchases_paid=6 · pay_openish=0 · delta=0. Sem CELEBRATE. RESTOCK +10 (mint no Mac, skill — VPS não minta).
 - track-report: 1023 visit · 2 pay_click · 2 claim_ok · 4 sell_click. `s0903` = 2 (DEV.to vive). `s0911` = 0 (morto, não reabre). `s0912`/`s0913`/`s0914`/`s0915`/`s0916`/`s0917`/`s0918`/`s0919` = 0 (artigos vivos, julgam 20/21/22/23/24/25/26/27-09 — cedo). X p008 = 14 (warmup).
 - Unittest verde (256 ok). `pay.py` intacto. X não twitta daqui.
+
+## 2026-09-20 11:30 (sell V20)
+
+```
+tokens_pulso: ~magro
+ship: s0903 vive (2 visit); s0912 morto (D+8 hoje, 0 visit, Telegra.ph sai da roleta); s0913/s0914/s0915/s0916/s0917/s0918/s0919 vivem (0 visit, julgam 21/09, 22/09, 23/09, 24/09, 25/09, 26/09 e 27/09); destino dpaste.com leftover-compute-referral s0920 verified-live — SELL_OK
+canal: dpaste.com DETATUFZ6 — sem X, sem segundo Pix, sem first-party /pulse, sem Telegra.ph
+audiência: 1038 visit · 2 pay_click · 2 claim_ok · 4 sell_click · s0903=2 · s0911=0 · s0912=0 · s0913=0 · s0914=0 · s0915=0 · s0916=0 · s0917=0 · s0918=0 · s0919=0 · p008=14
+```
+
+- track-report: 1038 visit · 2 pay_click · 2 claim_ok · 4 sell_click. `s0903` = 2 (DEV.to vive). `s0912` = 0 → morto (D+8 20/09; Telegra.ph sai da roleta; não reabrir). `s0913` = 0 (artigo vivo, julga 21/09). `s0914` = 0 (artigo vivo, julga 22/09). `s0915` = 0 (artigo vivo, julga 23/09). `s0916` = 0 (artigo vivo, julga 24/09). `s0917` = 0 (artigo vivo, julga 25/09). `s0918` = 0 (artigo vivo, julga 26/09). `s0919` = 0 (artigo vivo, julga 27/09 — cedo). X p008 = 14 (warmup).
+- Destino único: https://dpaste.com/DETATUFZ6
+- Artigo abre em HTML público com shop + `utm_campaign=sell` + `s0920` + handle sparetoken (links A comprar + B vender). `verify_sell_live` 200 com e sem `--handle`. Sem login. Sem captcha. Sem VNC. Conteúdo novo (referral é leftover compute, Pix só aos R$5 — sem cupom preso), não cópia do s0913/s0914/s0919.
+- Sem human-needed. Sem Slack ping. Publisher lê `data/sell-proof-url.txt` antes do VNC.
+- Cota diária (≥9 / ≥3 + X ≥10) incompleta — um destino UI-visível, sem X desta host (cookie nunca na VPS).
+- D+8: 28/09 julga `s0920`. leftoverpzero, indiehackers, `/pulse`+github, HN conta nova, Hashnode, cheapest-cloud-GPU, TabNews, Hugging Face, Cursor forum, claude-code #90152, HN unused-tokens, write.as anon e Telegra.ph não voltam à roleta.

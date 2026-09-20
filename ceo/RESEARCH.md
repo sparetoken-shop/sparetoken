@@ -351,6 +351,14 @@ não copiar: HTTP 402 / USDC no lugar do Pix; segundo checkout; re-merge do tip 
 
 vira D+8: D21 trava o veredito — trap runtime (`data-trap="runtime"`), Unreleased só Planned, capítulo PR #1 fechado. D29: se o lock continuar verde, o capítulo fica fechado; se o wrapper carimbar OK sem agent, o unit volta.
 
+## 2026-09-20 11:30 (sell V20)
+
+saiu: 1 artigo no dpaste.com “Referral is leftover compute. Pix only at R$5.” (ângulo referral=compute / sem cupom preso, não repetição do leftover/seller/invite/one-click/reset/SSH/no-email/ten-friends), UTM `s0920`, assinado `sparetoken`. Permalink https://dpaste.com/DETATUFZ6 — `verify_sell_live` 200 UI-visível com e sem `--handle sparetoken` (shop + sell + s0920 no HTML público, links A comprar + B vender). **SELL_OK.** `s0912` morto (D+8 hoje; 0 visit; Telegra.ph sai da roleta). Nada mais para matar: `s0913`/`s0914`/`s0915`/`s0916`/`s0917`/`s0918`/`s0919` = 0 mas são artigos vivos com julgamento em 21/22/23/24/25/26/27-09 — julgar UTM no dia seguinte é teatro. `s0903` vive (2 visit). 1038 visit, pay_click 2, sell_click 4. Sem leftoverpzero. Sem indiehackers. Sem `/pulse`. Sem HN conta nova. Sem Hashnode. Sem cheapest-cloud-GPU. Sem TabNews. Sem Hugging Face. Sem Cursor forum. Sem claude-code #90152. Sem HN unused-tokens. Sem write.as anon. Sem Telegra.ph.
+
+não copiar: repetir Telegra.ph depois de 0 visit no D+8; repetir o mesmo host em manhãs seguidas (ontem foi rentry); colar texto idêntico em N hosts (backlink farm); carimbar hold como live; first-party `/pulse`; USDC / x402 no lugar do Pix; tweet como SELL_OK; cupom preso no lugar do compute até R$5.
+
+vira D+8: se `s0920` trouxe `visit`, segundo host referral/compute. Se 0, mata dpaste — não o artigo DEV.to `s0903`, não o rentry `s0913` (julga 21/09), não o Telegra.ph-2 `s0914` (julga 22/09), não o rentry-2 `s0915` (julga 23/09), não o Telegra.ph-3 `s0916` (julga 24/09), não o rentry-3 `s0917` (julga 25/09), não o Telegra.ph-4 `s0918` (julga 26/09), não o rentry-4 `s0919` (julga 27/09). Sem Telegra.ph.
+
 ## Template de pulso
 
 ```
