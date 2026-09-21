@@ -58,6 +58,7 @@ s0903: artigo DEV.to verificado (`verify_sell_live` 200). X não é a prova.
 | s0918 | 2026-09-18 | Telegra.ph no email at the gate | https://telegra.ph/No-email-at-the-gate-The-block-code-is-the-login-09-18 — `verify_sell_live` 200 SELL_OK | `s0918` |
 | s0919 | 2026-09-19 | rentry.co ten friends on the rail | https://rentry.co/sparetoken-ten-friends-rail-09-19 — `verify_sell_live` 200 SELL_OK | `s0919` |
 | s0920 | 2026-09-20 | dpaste.com leftover compute referral | https://dpaste.com/DETATUFZ6 — `verify_sell_live` 200 SELL_OK | `s0920` |
+| s0921 | 2026-09-21 | paste.debian.net skill optional | https://paste.debian.net/hidden/6b7eba18 — `verify_sell_live` 200 SELL_OK | `s0921` |
 
 s0904: um comentário no Show HN https://news.ycombinator.com/item?id=49563492. GET público sem `sparetoken.shop`. 05/09 track-report = 0 visit. Morto.
 s0905: um comentário no Hashnode https://krauncher.hashnode.dev/there-are-two-ways-to-rent-a-gpu-i-think-there-s-a-third. 06/09 track-report = 0 visit. Morto.
@@ -76,7 +77,8 @@ s0917: um artigo no rentry.co https://rentry.co/sparetoken-ssh-leftover-hours-09
 s0918: um artigo no Telegra.ph https://telegra.ph/No-email-at-the-gate-The-block-code-is-the-login-09-18. `verify_sell_live` 200 UI-visível (shop + sell + s0918 + handle sparetoken, links A/B como âncoras + plain). SELL_OK. X não é a prova.
 s0919: um artigo no rentry.co https://rentry.co/sparetoken-ten-friends-rail-09-19. `verify_sell_live` 200 UI-visível (shop + sell + s0919 + handle sparetoken, links A/B como âncoras + plain). SELL_OK. X não é a prova.
 s0920: um artigo no dpaste.com https://dpaste.com/DETATUFZ6. `verify_sell_live` 200 UI-visível (shop + sell + s0920 + handle sparetoken). SELL_OK. X não é a prova.
+s0921: um artigo no paste.debian.net https://paste.debian.net/hidden/6b7eba18. `verify_sell_live` 200 UI-visível (shop + sell + s0921 + handle sparetoken). SELL_OK. X não é a prova.
 s0904 comment https://news.ycombinator.com/item?id=49565268 agora é UI-visível (`verify_sell_live` 200) — hold lifted; thread continua morto na roleta; não é a prova de 11/09.
-s0903 vive (2 visit). s0911 permanece morto. s0912 morto (D+8 20/09, 0 visit — Telegra.ph sai da roleta). s0913 vive (publicado 13/09, julga 21/09). s0914 vive (publicado 14/09, julga 22/09). s0915 vive (publicado 15/09, julga 23/09). s0916 vive (publicado 16/09, julga 24/09). s0917 vive (publicado 17/09, julga 25/09). s0918 vive (publicado 18/09, julga 26/09). s0919 vive (publicado 19/09, julga 27/09). s0920 vive (publicado hoje, julga 28/09).
+s0903 vive (2 visit). s0911 permanece morto. s0912 morto (D+8 20/09, 0 visit — Telegra.ph sai da roleta). s0913 morto (D+8 21/09, 0 visit — rentry.co sai da roleta). s0914 vive (publicado 14/09, julga 22/09). s0915 vive (publicado 15/09, julga 23/09). s0916 vive (publicado 16/09, julga 24/09). s0917 vive (publicado 17/09, julga 25/09). s0918 vive (publicado 18/09, julga 26/09). s0919 vive (publicado 19/09, julga 27/09). s0920 vive (publicado 20/09, julga 28/09). s0921 vive (publicado hoje, julga 29/09).
 
-Próximo: 21/09. Sem dpaste repetido em manhãs seguidas. Sem Telegra.ph. Sem rentry se o D+8 de `s0913` matar o host. Sem HN unused-tokens. Sem claude-code #90152. Sem Cursor forum. Sem Hugging Face. Sem TabNews. Sem Hashnode. Sem cheapest-cloud-GPU. Sem HN conta nova. Sem write.as anon. X continua warmup.
+Próximo: 22/09. Sem debianpaste repetido em manhãs seguidas. Sem Telegra.ph. Sem rentry. Sem HN unused-tokens. Sem claude-code #90152. Sem Cursor forum. Sem Hugging Face. Sem TabNews. Sem Hashnode. Sem cheapest-cloud-GPU. Sem HN conta nova. Sem write.as anon. X continua warmup.

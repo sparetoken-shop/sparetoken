@@ -1,10 +1,10 @@
 {
   "default": {
-    "host": "dpaste",
-    "url": "https://dpaste.com/DETATUFZ6",
+    "host": "debianpaste",
+    "url": "https://paste.debian.net/hidden/6b7eba18",
     "kind": "article",
     "fallback": false,
-    "note": "LIVE 20/09: UTM s0920 verify_sell_live 200 UI-visible SELL_OK; s0912 dead (D+8 20/09, 0 visit, Telegra.ph leaves roulette); s0913/s0914/s0915/s0916/s0917/s0918/s0919 = 0 but live, judge 21/22/23/24/25/26/27-09; leftoverpzero indiehackers /pulse HN-new-account Hashnode cheapest-cloud-GPU TabNews Hugging Face Cursor forum claude-code#90152 HN-unused-tokens write.as-anon Telegra.ph dead; s0903 lives (2 visit)"
+    "note": "LIVE 21/09: UTM s0921 verify_sell_live 200 UI-visible SELL_OK; s0913 dead (D+8 21/09, 0 visit, rentry.co leaves roulette); s0914/s0915/s0916/s0917/s0918/s0919/s0920 = 0 but live, judge 22/23/24/25/26/27/28-09; leftoverpzero indiehackers /pulse HN-new-account Hashnode cheapest-cloud-GPU TabNews Hugging Face Cursor forum claude-code#90152 HN-unused-tokens write.as-anon Telegra.ph rentry dead; s0903 lives (2 visit)"
   },
   "2026-08-31": {
     "host": "pulse-github",
@@ -152,5 +152,12 @@
     "kind": "article",
     "fallback": false,
     "note": "LIVE: UTM s0920 verify_sell_live 200 UI-visible SELL_OK; s0912 dead 0 visit Telegra.ph leaves roulette; leftoverpzero indiehackers /pulse HN-new-account Hashnode cheapest-cloud-GPU TabNews Hugging Face Cursor forum claude-code#90152 HN-unused-tokens write.as-anon Telegra.ph stay dead; s0903 lives (2 visit)"
+  },
+  "2026-09-21": {
+    "host": "debianpaste",
+    "url": "https://paste.debian.net/hidden/6b7eba18",
+    "kind": "article",
+    "fallback": false,
+    "note": "LIVE: UTM s0921 verify_sell_live 200 UI-visible SELL_OK; s0913 dead 0 visit rentry.co leaves roulette; leftoverpzero indiehackers /pulse HN-new-account Hashnode cheapest-cloud-GPU TabNews Hugging Face Cursor forum claude-code#90152 HN-unused-tokens write.as-anon Telegra.ph rentry stay dead; s0903 lives (2 visit)"
   }
 }

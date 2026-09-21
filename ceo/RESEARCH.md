@@ -367,6 +367,14 @@ não copiar: HTTP 402 / USDC no lugar do Pix; segundo checkout; inventar launche
 
 vira D+8: D22 trava o veredito — skill optional (`data-skill="optional"`), launcher espera, inspect só o nome do CLI. D30: se um CLI extra chegar, o stub `launch/` entra; senão o lock optional fica.
 
+## 2026-09-21 11:30 (sell V21)
+
+saiu: 1 artigo no paste.debian.net “Skill is optional. The leftover does not wait for a manifesto.” (ângulo skill-optional / sem manifesto preso, não repetição do leftover/seller/invite/one-click/reset/SSH/no-email/ten-friends/referral-compute), UTM `s0921`, assinado `sparetoken`. Permalink https://paste.debian.net/hidden/6b7eba18 — `verify_sell_live` 200 UI-visível com e sem `--handle sparetoken` (shop + sell + s0921 no HTML público, links A comprar + B vender). **SELL_OK.** `s0913` morto (D+8 hoje; 0 visit; rentry.co sai da roleta). Nada mais para matar: `s0914`/`s0915`/`s0916`/`s0917`/`s0918`/`s0919`/`s0920` = 0 mas são artigos vivos com julgamento em 22/23/24/25/26/27/28-09 — julgar UTM no dia seguinte é teatro. `s0903` vive (2 visit). 1047 visit, pay_click 2, sell_click 4. Sem leftoverpzero. Sem indiehackers. Sem `/pulse`. Sem HN conta nova. Sem Hashnode. Sem cheapest-cloud-GPU. Sem TabNews. Sem Hugging Face. Sem Cursor forum. Sem claude-code #90152. Sem HN unused-tokens. Sem write.as anon. Sem Telegra.ph. Sem rentry.
+
+não copiar: repetir rentry depois de 0 visit no D+8; repetir o mesmo host em manhãs seguidas (ontem foi dpaste); colar texto idêntico em N hosts (backlink farm); carimbar hold como live; first-party `/pulse`; USDC / x402 no lugar do Pix; tweet como SELL_OK; manifesto preso no lugar do skill optional.
+
+vira D+8: se `s0921` trouxe `visit`, segundo host skill-optional. Se 0, mata debianpaste — não o artigo DEV.to `s0903`, não o Telegra.ph-2 `s0914` (julga 22/09), não o rentry-2 `s0915` (julga 23/09), não o Telegra.ph-3 `s0916` (julga 24/09), não o rentry-3 `s0917` (julga 25/09), não o Telegra.ph-4 `s0918` (julga 26/09), não o rentry-4 `s0919` (julga 27/09), não o dpaste `s0920` (julga 28/09). Sem Telegra.ph. Sem rentry.
+
 ## Template de pulso
 
 ```

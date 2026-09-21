@@ -26,7 +26,7 @@ Canônico: `https://sparetoken.shop/?utm_source=<host>&utm_medium=comment&utm_ca
 | 10/09 | ~~GitHub anthropics/claude-code — gift/pool unused usage limits~~ | 1 comentário, UTM `s0910` | **MORTO 11/09** — `s0910` = 0 visit; comentário nunca saiu (API 401). Não repetir este issue. `s0903` vive. Sem Cursor forum. |
 | 11/09 | ~~HN unused tokens in one app — leftover hours~~ | 1 comentário, UTM `s0911` | **MORTO 12/09** — `s0911` = 0 visit; posted as sparetoken mas public GET empty (hold, nunca UI-visível). Não repetir este thread unused-tokens. `s0903` vive. |
 | 12/09 | ~~Telegra.ph — leftover model hours on a shelf~~ | 1 artigo, UTM `s0912` | **MORTO 20/09** — `s0912` = 0 visit; artigo ainda abre mas o host sai da roleta. Não repetir Telegra.ph. `s0903` vive. |
-| 13/09 | rentry.co — seller shelf, not subscription | 1 artigo, UTM `s0913` | **LIVE** https://rentry.co/sparetoken-shelf-not-subscription-09-13 — `verify_sell_live` 200 UI-visível; **não matar** |
+| 13/09 | ~~rentry.co — seller shelf, not subscription~~ | 1 artigo, UTM `s0913` | **MORTO 21/09** — `s0913` = 0 visit; artigo ainda abre mas o host sai da roleta. Não repetir rentry.co. `s0903` vive. |
 | 14/09 | Telegra.ph — invite is the same code (2º artigo) | 1 artigo, UTM `s0914` | **LIVE** https://telegra.ph/The-invite-is-the-same-code-leftover-model-hours-on-a-shelf-09-14 — `verify_sell_live` 200 UI-visível (+ handle); **não matar** |
 | 15/09 | rentry.co — one click, not subscription (2º artigo) | 1 artigo, UTM `s0915` | **LIVE** https://rentry.co/sparetoken-one-click-not-subscription-09-15 — `verify_sell_live` 200 UI-visível (+ handle); **não matar** |
 | 16/09 | Telegra.ph — unused quota expires, shelf keeps it (3º artigo) | 1 artigo, UTM `s0916` | **LIVE** https://telegra.ph/Unused-quota-expires-A-shelf-keeps-it-09-16 — `verify_sell_live` 200 UI-visível (+ handle); **não matar** |
@@ -34,6 +34,7 @@ Canônico: `https://sparetoken.shop/?utm_source=<host>&utm_medium=comment&utm_ca
 | 18/09 | Telegra.ph — no email at the gate (4º artigo) | 1 artigo, UTM `s0918` | **LIVE** https://telegra.ph/No-email-at-the-gate-The-block-code-is-the-login-09-18 — `verify_sell_live` 200 UI-visível (+ handle); **não matar** |
 | 19/09 | rentry.co — ten friends until Pix (4º artigo) | 1 artigo, UTM `s0919` | **LIVE** https://rentry.co/sparetoken-ten-friends-rail-09-19 — `verify_sell_live` 200 UI-visível (+ handle); **não matar** |
 | 20/09 | dpaste.com — referral is leftover compute | 1 artigo, UTM `s0920` | **LIVE** https://dpaste.com/DETATUFZ6 — `verify_sell_live` 200 UI-visível (+ handle); **não matar** |
+| 21/09 | paste.debian.net — skill optional, leftover without manifesto | 1 artigo, UTM `s0921` | **LIVE** https://paste.debian.net/hidden/6b7eba18 — `verify_sell_live` 200 UI-visível (+ handle); **não matar** |
 
 ## Mortos (0 visit → sai da roleta)
 
@@ -51,6 +52,7 @@ Canônico: `https://sparetoken.shop/?utm_source=<host>&utm_medium=comment&utm_ca
 | `s0910` | GitHub claude-code unused-limits | 11/09 track-report | 0 `visit` com esse `utm_content`. Comentário nunca saiu (API 401 / sem token). Não repetir `anthropics/claude-code#90152`. Artigo `s0903` continua vivo. `sell-20260910-s0910` é outro UTM (cota), não esta roleta. |
 | `s0911` | HN unused-tokens leftover-hours | 12/09 track-report | 0 `visit` com esse `utm_content`. Posted as sparetoken mas public GET empty (hold, nunca UI-visível). Não repetir este thread unused-tokens — não o HN inteiro, não o artigo `s0903`. |
 | `s0912` | Telegra.ph leftover-hours | 20/09 track-report | 0 `visit` com esse `utm_content`. Artigo ainda abre (`verify_sell_live` 200); host sai da roleta. Não repetir Telegra.ph. Artigo `s0903` continua vivo. |
+| `s0913` | rentry.co seller-shelf | 21/09 track-report | 0 `visit` com esse `utm_content`. Artigo ainda abre (`verify_sell_live` 200); host sai da roleta. Não repetir rentry.co. Artigo `s0903` continua vivo. |
 
 X `p008` trouxe visita — isso é warmup, não venue de venda.
 
