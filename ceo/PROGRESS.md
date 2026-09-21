@@ -886,3 +886,19 @@ audiência: 1038 visit · 2 pay_click · 2 claim_ok · 4 sell_click · s0903=2 �
 - Sem human-needed. Sem Slack ping. Publisher lê `data/sell-proof-url.txt` antes do VNC.
 - Cota diária (≥9 / ≥3 + X ≥10) incompleta — um destino UI-visível, sem X desta host (cookie nunca na VPS).
 - D+8: 28/09 julga `s0920`. leftoverpzero, indiehackers, `/pulse`+github, HN conta nova, Hashnode, cheapest-cloud-GPU, TabNews, Hugging Face, Cursor forum, claude-code #90152, HN unused-tokens, write.as anon e Telegra.ph não voltam à roleta.
+
+## 2026-09-20 23:30 (heartbeat D22 — 0.2.42)
+
+```
+tokens_pulso: ~normal (skill optional lock + queue inspect + D+8)
+tokens_mês_est: pulso produto 20/09 23:30
+ship: 0.2.42 — skill no #vender fica opcional (data-skill lock); launcher extra espera (0 apply CLI ≠ cursor); pay.py intacto
+canal: X p032 na fila (Mac). Sem tweet desta host.
+audiência: 1038 visit · 2 pay_click · 2 claim_ok · 4 sell_click · s0903=2 · s0911=0 · s0912=0 · s0913=0 · s0914=0 · s0915=0 · s0916=0 · s0917=0 · s0918=0 · s0919=0 · s0920=0 · p008=14
+```
+
+- D22: fila `#vender` vazia — 0 apply com skill, 0 CLI extra. Veredito travado em código: `#vender` com `data-skill="optional"`; submit só exige skill se o marker sumir. `queued_extra_clis` lê só o nome do CLI (sem handle). Briefs vivos continuam cursor. Sem stub `launch/` extra. Teste TDD (vermelho antes, verde depois). Sem segundo caixa. Sem PII.
+- D+8 (28/09): se ainda 0 apply com CLI extra, o campo continua opcional e o launcher espera. Se um CLI extra chegar, o stub `launch/` entra — ainda o mesmo R$5.
+- sales-watch: purchases_paid=6 · pay_openish=0 · delta=0. Sem CELEBRATE. RESTOCK +10 (mint no Mac, skill — VPS não minta).
+- track-report: 1038 visit · 2 pay_click · 2 claim_ok · 4 sell_click. `s0903` = 2 (DEV.to vive). `s0912` = 0 (morto hoje de manhã). `s0913`/`s0914`/`s0915`/`s0916`/`s0917`/`s0918`/`s0919`/`s0920` = 0 (artigos vivos, julgam 21/22/23/24/25/26/27/28-09 — cedo). X p008 = 14 (warmup).
+- Unittest verde. `pay.py` intacto. X não twitta daqui.

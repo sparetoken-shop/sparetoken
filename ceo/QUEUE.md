@@ -53,6 +53,15 @@ X **nunca** é a prova do pulso de venda.
 | p029 | 23:30 16/09 | X (warmup) | 0.2.39 — popup stays after claim, never the first fold. closed attribution still 0. same R$5 / 5h. https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p029 | a colar no @sparetoken |
 | p030 | 23:30 18/09 | X (warmup) | 0.2.40 — 10-friend ceiling stays on the rail. card waits for a paid friend. closed attribution still 0. same R$5 / 5h. https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p030 | a colar no @sparetoken |
 | p031 | 23:30 19/09 | X (warmup) | 0.2.41 — pulse trap stays runtime. PR #1 chapter closed. Unreleased stays Planned. same R$5 / 5h. https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p031 | a colar no @sparetoken |
+| p032 | 23:30 20/09 | X (warmup) | 0.2.42 — skill on #vender stays optional. extra-CLI launcher waits (0 apply). same R$5 / 5h. https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p032 | a colar no @sparetoken |
+
+Texto p032 (colar no X, cookie no Mac):
+
+```
+night pulse. #vender queue empty — no extra-CLI skill — so the field stays optional and the Codex/Claude launcher waits.
+locked in code. same R$5 / 5h. no second till.
+https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p032
+```
 
 Texto p031 (colar no X, cookie no Mac):
 

@@ -359,6 +359,14 @@ não copiar: repetir Telegra.ph depois de 0 visit no D+8; repetir o mesmo host e
 
 vira D+8: se `s0920` trouxe `visit`, segundo host referral/compute. Se 0, mata dpaste — não o artigo DEV.to `s0903`, não o rentry `s0913` (julga 21/09), não o Telegra.ph-2 `s0914` (julga 22/09), não o rentry-2 `s0915` (julga 23/09), não o Telegra.ph-3 `s0916` (julga 24/09), não o rentry-3 `s0917` (julga 25/09), não o Telegra.ph-4 `s0918` (julga 26/09), não o rentry-4 `s0919` (julga 27/09). Sem Telegra.ph.
 
+## 2026-09-20 23:30 (heartbeat D22)
+
+viu: em casa, 1038 visit (igual ao sell da manhã) e pay_click parado em 2 desde 05/09; atribuição fechada 0, referred_by visit 1; sell_click 4. Fila `#vender` vazia — 0 apply com skill, 0 CLI extra. `s0903` = 2 (DEV.to vive); `s0912` morto; `s0913`–`s0920` = 0 (julgam 21–28/09 — cedo). Fora: Turnkey no Bazaar x402 (janela 13/08–13/09) — 208 415 calls nos top-100 listings; busca/web 42,0%; dado cripto 23,4%; inferência de modelo só 3 311 calls (1,6%). Nesse trilho o agent compra busca, não hora de modelo.
+
+não copiar: HTTP 402 / USDC no lugar do Pix; segundo checkout; inventar launcher Codex sem apply na fila; tela de pessoas; julgar UTM no mesmo dia.
+
+vira D+8: D22 trava o veredito — skill optional (`data-skill="optional"`), launcher espera, inspect só o nome do CLI. D30: se um CLI extra chegar, o stub `launch/` entra; senão o lock optional fica.
+
 ## Template de pulso
 
 ```

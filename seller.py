@@ -117,3 +117,41 @@ def apply(dest: Path, raw: dict[str, Any] | None) -> dict[str, Any]:
     }
     path.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     return {"ok": True, "queued": True}
+
+
+def queued_extra_clis(dest: Path) -> tuple[str, ...]:
+    """Unique allowlist CLIs other than cursor, from queued applies.
+
+    Names only. No handle, no links, no note. Empty dir / missing dir = wait.
+    """
+    if not dest.is_dir():
+        return ()
+    found: list[str] = []
+    for path in sorted(dest.glob("*.json")):
+        try:
+            payload = json.loads(path.read_text(encoding="utf-8"))
+        except (OSError, json.JSONDecodeError):
+            continue
+        if not isinstance(payload, dict):
+            continue
+        skill = payload.get("skill")
+        if not isinstance(skill, dict):
+            continue
+        clis = skill.get("clis") or []
+        if not isinstance(clis, list):
+            continue
+        for raw in clis:
+            name = str(raw or "").strip().lower()
+            if (
+                name
+                and name != "cursor"
+                and name in marketplace.ALLOWED_CLIS
+                and name not in found
+            ):
+                found.append(name)
+    return tuple(found)
+
+
+def launcher_should_wait(dest: Path) -> bool:
+    """D22: extra-CLI launch stub only after a queued non-cursor skill."""
+    return not queued_extra_clis(dest)

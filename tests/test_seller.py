@@ -201,3 +201,48 @@ class SellerSurfaceTest(unittest.TestCase):
     def test_seller_module_does_not_import_pay(self):
         self.assertNotIn("import pay", SELLER_SRC)
         self.assertNotIn("from pay", SELLER_SRC)
+
+
+class SellerQueueExtraCliTest(unittest.TestCase):
+    """D22 20/09: 0 applies with a non-cursor skill. Field stays optional.
+    Launcher waits. Inspect returns CLI names only — no handle, no links.
+    """
+
+    def test_empty_queue_means_launcher_waits(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            dest = Path(tmp) / "seller-applications"
+            dest.mkdir()
+            self.assertEqual(seller.queued_extra_clis(dest), ())
+            self.assertTrue(seller.launcher_should_wait(dest))
+
+    def test_missing_dir_means_launcher_waits(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            dest = Path(tmp) / "no-such-queue"
+            self.assertEqual(seller.queued_extra_clis(dest), ())
+            self.assertTrue(seller.launcher_should_wait(dest))
+
+    def test_links_only_and_cursor_skill_still_wait(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            dest = Path(tmp) / "seller-applications"
+            seller.apply(dest, _ok_payload())
+            seller.apply(
+                dest,
+                _skill_payload(handle="noite", skill_cli="cursor"),
+            )
+            self.assertEqual(seller.queued_extra_clis(dest), ())
+            self.assertTrue(seller.launcher_should_wait(dest))
+
+    def test_codex_apply_lists_cli_without_handle(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            dest = Path(tmp) / "seller-applications"
+            seller.apply(dest, _skill_payload(handle="oraculus", skill_cli="codex"))
+            self.assertEqual(seller.queued_extra_clis(dest), ("codex",))
+            self.assertFalse(seller.launcher_should_wait(dest))
+            blob = " ".join(seller.queued_extra_clis(dest))
+            self.assertNotIn("oraculus", blob)
+            self.assertNotIn("conta.vc", blob)
+
+    def test_d22_no_extra_cli_launch_stub_while_queue_inspect_waits(self):
+        for name in ("codex", "claude", "antigravity", "metamuse"):
+            self.assertFalse((ROOT / "ceo" / "launch" / f"{name}.sh").exists())
+            self.assertFalse((ROOT / "ceo" / "launch" / f"{name}.md").exists())

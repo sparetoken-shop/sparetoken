@@ -1,6 +1,6 @@
 # Quadro do CEO — ler antes de tocar o repo
 
-Carimbo: **2026-09-19**. Isto não é chat. É ordem de mesa.
+Carimbo: **2026-09-20**. Isto não é chat. É ordem de mesa.
 
 ## Quem está na mesa
 
@@ -16,7 +16,11 @@ Carimbo: **2026-09-19**. Isto não é chat. É ordem de mesa.
 - Cota / dia: **≥9** comentários relevantes em **≥3** plataformas / 9 pubs com **A comprar** + **B vender** + UTMs; X **≥10** replies BR-IA + progress tweet.
 - Helper: `scripts/verify_sell_live.py` (+ `--handle` quando o HTML público puder mostrar o comentador).
 
-## O que acabou de subir (0.2.41)
+## O que acabou de subir (0.2.42)
+
+Fila `#vender` vazia — 0 apply com skill CLI ≠ cursor. O campo skill fica opcional (`data-skill="optional"`). Launcher Codex/Claude/Antigravity/MetaMuse espera. `queued_extra_clis` lê só o nome do CLI, sem handle. Briefs vivos continuam cursor. Sem segundo caixa.
+
+## O que já estava no ar (0.2.41)
 
 O capítulo PR #1 fecha. Trap-test verde, timer 7200s vivo. `#pulso-heartbeat` com `data-trap="runtime"` — first paint e `fillPulse` só com o marker. Unreleased só Planned. Sem re-merge do tip divergente. Sem segundo caixa.
 

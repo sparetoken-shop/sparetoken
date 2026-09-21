@@ -198,6 +198,34 @@ class LandingMarketTest(unittest.TestCase):
         self.assertIn("um clique. Pix R$5.", HTML)
         self.assertEqual(HTML.count('id="pay"'), 1)
 
+    def test_d22_skill_stays_optional_launcher_waits(self):
+        """D22 (20/09): 0 extra-CLI applies. #vender skill stays optional.
+        Live briefs stay cursor. No launch stub for a second CLI."""
+        self.assertEqual(HTML.count('id="vender"'), 1)
+        tag_open = HTML.find("<dialog")
+        vender = HTML.find('id="vender"')
+        tag_open = HTML.rfind("<dialog", 0, vender + 1)
+        tag_end = HTML.find(">", vender)
+        self.assertIn('data-skill="optional"', HTML[tag_open:tag_end])
+        self.assertEqual(HTML.count('data-skill="optional"'), 1)
+        for field_id in (
+            "seller-skill-title",
+            "seller-skill-manifesto",
+            "seller-skill-cli",
+        ):
+            start = HTML.find(f'id="{field_id}"')
+            self.assertGreater(start, 0)
+            tag_end = HTML.find(">", start)
+            self.assertNotIn("required", HTML[start:tag_end])
+        self.assertEqual(HTML.count('data-cli="cursor"'), 3)
+        self.assertNotIn('data-cli="codex"', HTML)
+        self.assertNotIn('data-cli="claude"', HTML)
+        fn = JS.split("if (sellerForm)", 1)[1].split("if (claimForm)", 1)[0]
+        self.assertIn("data-skill", fn)
+        self.assertIn("optional", fn)
+        self.assertIn("um clique. Pix R$5.", HTML)
+        self.assertEqual(HTML.count('id="pay"'), 1)
+
     def test_mobile_puts_chat_first_and_hides_demo_term(self):
         mobile = CSS.split("@media (max-width: 860px)", 1)[1]
         self.assertIn(".hero > .chat", mobile)

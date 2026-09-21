@@ -10,6 +10,19 @@ Versionamento: [SemVer](https://semver.org/lang/pt-BR/).
 - Fechar chat anônimo e SSH sem senha (ver ROADMAP)
 - Charge cripto (USDT / OSDT) na mesma conta.vc — ver ROADMAP, sem segundo caixa
 
+## [0.2.42] — 2026-09-20
+
+D22: extra-CLI launcher still waits. Skill on #vender stays optional.
+
+### Added
+
+- `#vender` carries `data-skill="optional"` — a machine-checkable lock of the D22 verdict (0 queued applies with a CLI other than cursor). Seller submit only requires the skill block when the marker is absent. Zero visual change
+- `seller.queued_extra_clis` / `launcher_should_wait` — inspect the apply queue by CLI name only. No handle. No links. Empty queue = wait
+
+### Changed
+
+- Live briefs stay on cursor. No `launch/` stub for codex / claude / antigravity / metamuse. Same one-click Pix R$5 rail. `pay.py` untouched. No second till. No mint on the VPS
+
 ## [0.2.41] — 2026-09-19
 
 D21: the pulse trap stays runtime. PR #1 chapter closes. Unreleased stays Planned.

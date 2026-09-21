@@ -17,7 +17,7 @@ Sparetoken.shop deixa de ser “um modelo atrás do SSH” e vira prateleira: ca
 ## Pronto / não pronto
 
 - Pronto: a ideia, a lista, o contrato (`marketplace.py` + `GET /api/marketplace`), o parágrafo na landing.
-- Não pronto: `launch/` por CLI, auth, isolation, preço por CLI. Isso é ship de um pulso futuro — sem inventar pagamento novo.
+- Não pronto: `launch/` por CLI extra. D22 (20/09) confirmou 0 apply com CLI ≠ cursor — o campo skill fica opcional e o launcher espera. Sem inventar pagamento novo.
 
 ## Critério de aceite (quando for o dia)
 
