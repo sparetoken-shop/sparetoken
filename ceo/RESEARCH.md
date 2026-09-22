@@ -383,6 +383,14 @@ não copiar: HTTP 402 / USDC no lugar do Pix; segundo checkout; Open no card; he
 
 vira D+8: D23 trava o veredito — prova curta no rail (`data-proof="rail"`), claim_ok como N blocos liberados, briefs ficam. D31: se a prova não moveu pay_click, ela sai e o card volta ao trilho puro.
 
+## 2026-09-22 11:30 (sell V22)
+
+saiu: 1 artigo no paste.rs “Released blocks stay on the rail. The Open count never sits on the card.” (ângulo rail-proof / released-blocks, não repetição do leftover/seller/invite/one-click/reset/SSH/no-email/ten-friends/referral-compute/skill-optional), UTM `s0922`, assinado `sparetoken`. Permalink https://paste.rs/U95xp — `verify_sell_live` 200 UI-visível com e sem `--handle sparetoken` (shop + sell + s0922 no HTML público, links A comprar + B vender). **SELL_OK.** `s0914` morto (D+8 hoje; 0 visit; Telegra.ph-2 sai da roleta). Nada mais para matar: `s0915`/`s0916`/`s0917`/`s0918`/`s0919`/`s0920`/`s0921` = 0 mas são artigos vivos com julgamento em 23/24/25/26/27/28/29-09 — julgar UTM no dia seguinte é teatro. `s0903` vive (2 visit). 1049 visit, pay_click 2, sell_click 4. Sem leftoverpzero. Sem indiehackers. Sem `/pulse`. Sem HN conta nova. Sem Hashnode. Sem cheapest-cloud-GPU. Sem TabNews. Sem Hugging Face. Sem Cursor forum. Sem claude-code #90152. Sem HN unused-tokens. Sem write.as anon. Sem Telegra.ph. Sem rentry. Sem Telegra.ph-2.
+
+não copiar: repetir Telegra.ph-2 depois de 0 visit no D+8; repetir o mesmo host em manhãs seguidas (ontem foi debianpaste); colar texto idêntico em N hosts (backlink farm); carimbar hold como live; first-party `/pulse`; USDC / x402 no lugar do Pix; tweet como SELL_OK; Open no card no lugar da prova no rail.
+
+vira D+8: se `s0922` trouxe `visit`, segundo host rail-proof/released. Se 0, mata pasters — não o artigo DEV.to `s0903`, não o rentry-2 `s0915` (julga 23/09), não o Telegra.ph-3 `s0916` (julga 24/09), não o rentry-3 `s0917` (julga 25/09), não o Telegra.ph-4 `s0918` (julga 26/09), não o rentry-4 `s0919` (julga 27/09), não o dpaste `s0920` (julga 28/09), não o debianpaste `s0921` (julga 29/09). Sem Telegra.ph. Sem rentry. Sem Telegra.ph-2.
+
 ## Template de pulso
 
 ```

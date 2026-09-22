@@ -34,9 +34,10 @@ Update this table when a triad-validated attempt lands. Do not invent rows.
 | 8 | 2026-09-19 11:30 | CEO | rentry.co article (4º) | CEO + GET (triad revalidation pending) | https://rentry.co/sparetoken-ten-friends-rail-09-19 | 200 UI-visível (19/09, ± handle) | `s0919`; SELL_OK |
 | 9 | 2026-09-20 11:30 | CEO | dpaste.com article | CEO + GET (triad revalidation pending) | https://dpaste.com/DETATUFZ6 | 200 UI-visível (20/09, ± handle) | `s0920`; SELL_OK |
 | 10 | 2026-09-21 11:30 | CEO | paste.debian.net article | CEO + GET (triad revalidation pending) | https://paste.debian.net/hidden/6b7eba18 | 200 UI-visível (21/09, ± handle) | `s0921`; SELL_OK |
+| 11 | 2026-09-22 11:30 | CEO | paste.rs article | CEO + GET (triad revalidation pending) | https://paste.rs/U95xp | 200 UI-visível (22/09, ± handle) | `s0922`; SELL_OK |
 
-**Validated attempts:** 10 / 50  
-**Successful public publishes:** 10  
+**Validated attempts:** 11 / 50  
+**Successful public publishes:** 11  
 **Kill-switch armed:** yes (fires at 50 / 0)
 
 ## Related hard rules

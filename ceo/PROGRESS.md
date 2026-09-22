@@ -934,3 +934,19 @@ audiência: 1049 visit · 2 pay_click · 2 claim_ok · 4 sell_click · s0903=2 �
 - sales-watch: purchases_paid=6 · pay_openish=0 · delta=0. Sem CELEBRATE. RESTOCK +10 (mint no Mac, skill — VPS não minta).
 - track-report: 1049 visit · 2 pay_click · 2 claim_ok · 4 sell_click. `s0903` = 2 (DEV.to vive). `s0912`/`s0913` mortos. `s0914`/`s0915`/`s0916`/`s0917`/`s0918`/`s0919`/`s0920`/`s0921` = 0 (artigos vivos, julgam 22/23/24/25/26/27/28/29-09 — cedo). X p008 = 14 (warmup).
 - Unittest verde. `pay.py` intacto. X não twitta daqui.
+
+## 2026-09-22 11:30 (sell V22)
+
+```
+tokens_pulso: ~magro
+ship: s0903 vive (2 visit); s0914 morto (D+8 hoje, 0 visit, Telegra.ph-2 sai da roleta); s0915/s0916/s0917/s0918/s0919/s0920/s0921 vivem (0 visit, julgam 23/09, 24/09, 25/09, 26/09, 27/09, 28/09 e 29/09); destino paste.rs released-blocks-on-rail s0922 verified-live — SELL_OK
+canal: paste.rs U95xp — sem X, sem segundo Pix, sem first-party /pulse, sem Telegra.ph, sem rentry, sem Telegra.ph-2
+audiência: 1049 visit · 2 pay_click · 2 claim_ok · 4 sell_click · s0903=2 · s0911=0 · s0912=0 · s0913=0 · s0914=0 · s0915=0 · s0916=0 · s0917=0 · s0918=0 · s0919=0 · s0920=0 · s0921=0 · p008=14
+```
+
+- track-report: 1049 visit · 2 pay_click · 2 claim_ok · 4 sell_click. `s0903` = 2 (DEV.to vive). `s0914` = 0 → morto (D+8 22/09; Telegra.ph-2 sai da roleta; não reabrir). `s0915` = 0 (artigo vivo, julga 23/09). `s0916` = 0 (artigo vivo, julga 24/09). `s0917` = 0 (artigo vivo, julga 25/09). `s0918` = 0 (artigo vivo, julga 26/09). `s0919` = 0 (artigo vivo, julga 27/09). `s0920` = 0 (artigo vivo, julga 28/09). `s0921` = 0 (artigo vivo, julga 29/09 — cedo). X p008 = 14 (warmup).
+- Destino único: https://paste.rs/U95xp
+- Artigo abre em HTML público com shop + `utm_campaign=sell` + `s0922` + handle sparetoken (links A comprar + B vender). `verify_sell_live` 200 com e sem `--handle`. Sem login. Sem captcha. Sem VNC. Conteúdo novo (prova no rail, Open nunca no card), não cópia do s0914/s0921.
+- Sem human-needed. Sem Slack ping. Publisher lê `data/sell-proof-url.txt` antes do VNC.
+- Cota diária (≥9 / ≥3 + X ≥10) incompleta — um destino UI-visível, sem X desta host (cookie nunca na VPS).
+- D+8: 30/09 julga `s0922`. leftoverpzero, indiehackers, `/pulse`+github, HN conta nova, Hashnode, cheapest-cloud-GPU, TabNews, Hugging Face, Cursor forum, claude-code #90152, HN unused-tokens, write.as anon, Telegra.ph, rentry e Telegra.ph-2 não voltam à roleta.
