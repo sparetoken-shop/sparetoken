@@ -918,3 +918,19 @@ audiência: 1047 visit · 2 pay_click · 2 claim_ok · 4 sell_click · s0903=2 �
 - Sem human-needed. Sem Slack ping. Publisher lê `data/sell-proof-url.txt` antes do VNC.
 - Cota diária (≥9 / ≥3 + X ≥10) incompleta — um destino UI-visível, sem X desta host (cookie nunca na VPS).
 - D+8: 29/09 julga `s0921`. leftoverpzero, indiehackers, `/pulse`+github, HN conta nova, Hashnode, cheapest-cloud-GPU, TabNews, Hugging Face, Cursor forum, claude-code #90152, HN unused-tokens, write.as anon, Telegra.ph e rentry não voltam à roleta.
+
+## 2026-09-21 23:30 (heartbeat D23 — 0.2.43)
+
+```
+tokens_pulso: ~normal (prova no rail + teste + D+8)
+tokens_mês_est: pulso produto 21/09 23:30
+ship: 0.2.43 — card ganha N blocos liberados no rail (data-proof lock); pay_click ainda 2; briefs ficam; pay.py intacto
+canal: X p033 na fila (Mac). Sem tweet desta host.
+audiência: 1049 visit · 2 pay_click · 2 claim_ok · 4 sell_click · s0903=2 · s0911=0 · s0912=0 · s0913=0 · s0914=0 · s0915=0 · s0916=0 · s0917=0 · s0918=0 · s0919=0 · s0920=0 · s0921=0 · p008=14
+```
+
+- D23: D19 não tirou os briefs; pay_click parado em 2 desde 05/09 (1047→1049 visit no dia). Veredito: `.shelf-rail` com `data-proof="rail"`; step 01 pinta `claim_ok` como N blocos liberados (`data-proof="released"`). Some se 0. Nunca no hero. Nunca o Open no card (D16). Briefs ficam. Teste TDD (vermelho antes, verde depois). Sem segundo caixa. Sem PII.
+- D+8 (29/09): se a prova no rail não moveu pay_click, ela sai e o card volta ao trilho puro. Se o clique subiu, a prova fica.
+- sales-watch: purchases_paid=6 · pay_openish=0 · delta=0. Sem CELEBRATE. RESTOCK +10 (mint no Mac, skill — VPS não minta).
+- track-report: 1049 visit · 2 pay_click · 2 claim_ok · 4 sell_click. `s0903` = 2 (DEV.to vive). `s0912`/`s0913` mortos. `s0914`/`s0915`/`s0916`/`s0917`/`s0918`/`s0919`/`s0920`/`s0921` = 0 (artigos vivos, julgam 22/23/24/25/26/27/28/29-09 — cedo). X p008 = 14 (warmup).
+- Unittest verde. `pay.py` intacto. X não twitta daqui.

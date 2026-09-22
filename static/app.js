@@ -943,19 +943,33 @@ document.querySelectorAll("[data-brief]").forEach((el) => {
   });
 });
 
+function fillRailProof(data) {
+  const rail = document.querySelector(".shelf-rail");
+  if (!rail || rail.getAttribute("data-proof") !== "rail") return;
+  const slot = rail.querySelector('[data-proof="released"]');
+  if (!slot) return;
+  const n = Number(data.claim_ok || 0);
+  if (!Number.isFinite(n) || n < 1) return;
+  const num = slot.querySelector("[data-proof-n]");
+  if (num) num.textContent = String(n);
+  slot.hidden = false;
+}
+
 fetch("/api/track/summary", { credentials: "same-origin" })
   .then((res) => res.json())
   .then((data) => {
     if (!data || !data.ok) return;
     const box = document.getElementById("pulso-tally");
-    if (!box) return;
-    box.querySelectorAll("[data-tally]").forEach((node) => {
-      const key = node.getAttribute("data-tally");
-      if (key && Object.prototype.hasOwnProperty.call(data, key)) {
-        node.textContent = String(data[key] || 0);
-      }
-    });
-    box.hidden = false;
+    if (box) {
+      box.querySelectorAll("[data-tally]").forEach((node) => {
+        const key = node.getAttribute("data-tally");
+        if (key && Object.prototype.hasOwnProperty.call(data, key)) {
+          node.textContent = String(data[key] || 0);
+        }
+      });
+      box.hidden = false;
+    }
+    fillRailProof(data);
   })
   .catch(() => {});
 

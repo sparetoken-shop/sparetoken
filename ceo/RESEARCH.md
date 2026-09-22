@@ -375,6 +375,14 @@ não copiar: repetir rentry depois de 0 visit no D+8; repetir o mesmo host em ma
 
 vira D+8: se `s0921` trouxe `visit`, segundo host skill-optional. Se 0, mata debianpaste — não o artigo DEV.to `s0903`, não o Telegra.ph-2 `s0914` (julga 22/09), não o rentry-2 `s0915` (julga 23/09), não o Telegra.ph-3 `s0916` (julga 24/09), não o rentry-3 `s0917` (julga 25/09), não o Telegra.ph-4 `s0918` (julga 26/09), não o rentry-4 `s0919` (julga 27/09), não o dpaste `s0920` (julga 28/09). Sem Telegra.ph. Sem rentry.
 
+## 2026-09-21 23:30 (heartbeat D23)
+
+viu: em casa, 1049 visit (+2 desde o sell da manhã) e pay_click parado em 2 desde 05/09; claim_ok 2; D19 não tirou os briefs. Fora: agenteconomy.to (stamp 2026-09-21 UTC) conta 187 998 870 txs x402 e US$ 41,79 M em 12 chains — e o dia 21/09 fechou com 7 settlements. O acumulado inchou; o pulso diário quase parou.
+
+não copiar: HTTP 402 / USDC no lugar do Pix; segundo checkout; Open no card; hero no lugar do rail; julgar UTM no mesmo dia.
+
+vira D+8: D23 trava o veredito — prova curta no rail (`data-proof="rail"`), claim_ok como N blocos liberados, briefs ficam. D31: se a prova não moveu pay_click, ela sai e o card volta ao trilho puro.
+
 ## Template de pulso
 
 ```

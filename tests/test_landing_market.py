@@ -226,6 +226,38 @@ class LandingMarketTest(unittest.TestCase):
         self.assertIn("um clique. Pix R$5.", HTML)
         self.assertEqual(HTML.count('id="pay"'), 1)
 
+    def test_d23_released_proof_sits_on_the_rail(self):
+        """D23 (21/09): D19 never pulled the briefs; pay_click still 2.
+        The card gets a short claim_ok proof on the rail (never hero,
+        never Open stock on the card)."""
+        self.assertEqual(HTML.count('data-proof="rail"'), 1)
+        rail_open = HTML.find('class="shelf-rail"')
+        self.assertGreater(rail_open, 0)
+        tag_open = HTML.rfind("<ol", 0, rail_open + 1)
+        tag_end = HTML.find(">", rail_open)
+        self.assertIn('data-proof="rail"', HTML[tag_open:tag_end])
+        rail_close = HTML.find("</ol>", rail_open)
+        rail = HTML[tag_open:rail_close]
+        self.assertIn('data-proof="released"', rail)
+        self.assertIn("data-proof-n", rail)
+        self.assertIn("blocos liberados", rail)
+        self.assertIn("tally.blocks", rail)
+        hero = HTML.split('<section class="wrap hero">', 1)[1].split("</section>", 1)[0]
+        self.assertNotIn("data-proof", hero)
+        self.assertNotIn("data-proof-n", hero)
+        shelf_block = HTML[HTML.find('id="mercado"') : HTML.find('id="pulso-tally"')]
+        self.assertNotRegex(shelf_block, r"\d+\s+Open")
+        fn = JS.split("function fillRailProof", 1)[1].split("fetch(", 1)[0]
+        self.assertIn("data-proof", fn)
+        self.assertIn("rail", fn)
+        self.assertIn("claim_ok", fn)
+        self.assertNotIn("data.shelf", fn)
+        self.assertIn("fillRailProof", JS)
+        self.assertIn("um clique. Pix R$5.", HTML)
+        self.assertIn('data-brief="mkt"', HTML)
+        self.assertEqual(HTML.count('id="pay"'), 1)
+        self.assertIn(".rail-proof", CSS)
+
     def test_mobile_puts_chat_first_and_hides_demo_term(self):
         mobile = CSS.split("@media (max-width: 860px)", 1)[1]
         self.assertIn(".hero > .chat", mobile)

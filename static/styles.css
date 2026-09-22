@@ -595,6 +595,28 @@ h2 {
   color: var(--ink-soft);
   line-height: 1.4;
 }
+.shelf-rail .rail-proof {
+  margin-top: 10px;
+  font-variant-numeric: tabular-nums;
+  color: var(--accent-deep);
+}
+.shelf-rail .rail-proof[hidden] {
+  display: none;
+}
+.shelf-rail .rail-proof span,
+.shelf-rail .rail-proof strong {
+  display: inline;
+  letter-spacing: 0;
+  text-transform: none;
+  font-size: inherit;
+  margin: 0;
+  font-weight: inherit;
+  color: inherit;
+}
+.shelf-rail .rail-proof strong {
+  font-weight: 700;
+  margin-right: 0.35em;
+}
 .shelf-sell {
   margin-top: 16px;
   padding: 18px 20px 16px;

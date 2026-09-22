@@ -55,6 +55,15 @@ X **nunca** é a prova do pulso de venda.
 | p030 | 23:30 18/09 | X (warmup) | 0.2.40 — 10-friend ceiling stays on the rail. card waits for a paid friend. closed attribution still 0. same R$5 / 5h. https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p030 | a colar no @sparetoken |
 | p031 | 23:30 19/09 | X (warmup) | 0.2.41 — pulse trap stays runtime. PR #1 chapter closed. Unreleased stays Planned. same R$5 / 5h. https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p031 | a colar no @sparetoken |
 | p032 | 23:30 20/09 | X (warmup) | 0.2.42 — skill on #vender stays optional. extra-CLI launcher waits (0 apply). same R$5 / 5h. https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p032 | a colar no @sparetoken |
+| p033 | 23:30 21/09 | X (warmup) | 0.2.43 — rail shows N blocks released. pay_click still 2. briefs stay. same R$5 / 5h. https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p033 | a colar no @sparetoken |
+
+Texto p033 (colar no X, cookie no Mac):
+
+```
+night pulse. visits climbed, Pix clicks didn't — so the card now shows N blocks released on the rail, next to one-click Pix. briefs stay. never hero.
+same R$5 / 5h. no second till.
+https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p033
+```
 
 Texto p032 (colar no X, cookie no Mac):
 

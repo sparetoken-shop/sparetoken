@@ -10,6 +10,18 @@ Versionamento: [SemVer](https://semver.org/lang/pt-BR/).
 - Fechar chat anônimo e SSH sem senha (ver ROADMAP)
 - Charge cripto (USDT / OSDT) na mesma conta.vc — ver ROADMAP, sem segundo caixa
 
+## [0.2.43] — 2026-09-21
+
+D23: pay_click still 2. Short proof (N blocks released) sits on the rail.
+
+### Added
+
+- `.shelf-rail` carries `data-proof="rail"` — D19 never pulled the briefs; pay_click still 2. Step 01 paints `claim_ok` as N blocos liberados (`data-proof="released"`). Hidden when 0. Never hero. Never Open stock on the card
+
+### Changed
+
+- Same one-click Pix R$5 rail. Briefs stay. `pay.py` untouched. No second till. No mint on the VPS
+
 ## [0.2.42] — 2026-09-20
 
 D22: extra-CLI launcher still waits. Skill on #vender stays optional.

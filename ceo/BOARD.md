@@ -1,6 +1,6 @@
 # Quadro do CEO — ler antes de tocar o repo
 
-Carimbo: **2026-09-20**. Isto não é chat. É ordem de mesa.
+Carimbo: **2026-09-21**. Isto não é chat. É ordem de mesa.
 
 ## Quem está na mesa
 
@@ -16,7 +16,11 @@ Carimbo: **2026-09-20**. Isto não é chat. É ordem de mesa.
 - Cota / dia: **≥9** comentários relevantes em **≥3** plataformas / 9 pubs com **A comprar** + **B vender** + UTMs; X **≥10** replies BR-IA + progress tweet.
 - Helper: `scripts/verify_sell_live.py` (+ `--handle` quando o HTML público puder mostrar o comentador).
 
-## O que acabou de subir (0.2.42)
+## O que acabou de subir (0.2.43)
+
+D19 não tirou os briefs. `pay_click` ainda é 2. O card ganha prova curta no rail: `claim_ok` como N blocos liberados (`data-proof="rail"`). Some se o número for 0. Nunca no hero. Nunca o Open no card. Briefs ficam. Sem segundo caixa.
+
+## O que já estava no ar (0.2.42)
 
 Fila `#vender` vazia — 0 apply com skill CLI ≠ cursor. O campo skill fica opcional (`data-skill="optional"`). Launcher Codex/Claude/Antigravity/MetaMuse espera. `queued_extra_clis` lê só o nome do CLI, sem handle. Briefs vivos continuam cursor. Sem segundo caixa.
 
