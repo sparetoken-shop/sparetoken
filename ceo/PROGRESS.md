@@ -950,3 +950,19 @@ audiência: 1049 visit · 2 pay_click · 2 claim_ok · 4 sell_click · s0903=2 �
 - Sem human-needed. Sem Slack ping. Publisher lê `data/sell-proof-url.txt` antes do VNC.
 - Cota diária (≥9 / ≥3 + X ≥10) incompleta — um destino UI-visível, sem X desta host (cookie nunca na VPS).
 - D+8: 30/09 julga `s0922`. leftoverpzero, indiehackers, `/pulse`+github, HN conta nova, Hashnode, cheapest-cloud-GPU, TabNews, Hugging Face, Cursor forum, claude-code #90152, HN unused-tokens, write.as anon, Telegra.ph, rentry e Telegra.ph-2 não voltam à roleta.
+
+## 2026-09-22 23:30 (heartbeat D24 — 0.2.44)
+
+```
+tokens_pulso: ~normal (restock lock + rail stays + D+8)
+tokens_mês_est: pulso produto 22/09 23:30
+ship: 0.2.44 — pool Open ainda 0; pulso fica 0 Open · restock (data-refill pending); rail fica (data-rail stays); pay.py intacto
+canal: X p034 na fila (Mac). Sem tweet desta host.
+audiência: 1050 visit · 2 pay_click · 2 claim_ok · 4 sell_click · s0903=2 · s0911=0 · s0912=0 · s0913=0 · s0914=0 · s0915=0 · s0916=0 · s0917=0 · s0918=0 · s0919=0 · s0920=0 · s0921=0 · s0922=0 · p008=14
+```
+
+- D24: refill +10 do Mac não entrou. pay_links no sqlite: 11 consumed, 0 idle/open/reserved. Veredito: `#pulso-heartbeat` com `data-refill="pending"` pinta `0 Open · restock` quando o Open é 0; se o pool voltar a ≥3 a linha mostra N Open sem o sufixo. `.shelf-rail` com `data-rail="stays"` — o paint tira `hidden` e o CSS mantém o grid. Open continua fora do card. Teste TDD (vermelho antes, verde depois). Sem segundo caixa. Sem PII. Sem mint na VPS.
+- D+8 (30/09): se o pool voltar a esvaziar <3, o CEO lembra refill de novo; o número nunca entra no card. Se ≥3, a linha mostra N Open sem o sufixo.
+- sales-watch: purchases_paid=6 · pay_openish=0 · delta=0. Sem CELEBRATE. RESTOCK +10 (mint no Mac, skill — VPS não minta).
+- track-report: 1050 visit · 2 pay_click · 2 claim_ok · 4 sell_click. `s0903` = 2 (DEV.to vive). `s0914` morto hoje de manhã. `s0915`/`s0916`/`s0917`/`s0918`/`s0919`/`s0920`/`s0921`/`s0922` = 0 (artigos vivos, julgam 23/24/25/26/27/28/29/30-09 — cedo). X p008 = 14 (warmup).
+- Unittest verde. `pay.py` intacto. X não twitta daqui.

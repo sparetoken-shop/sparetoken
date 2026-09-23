@@ -1,6 +1,6 @@
 # Quadro do CEO — ler antes de tocar o repo
 
-Carimbo: **2026-09-21**. Isto não é chat. É ordem de mesa.
+Carimbo: **2026-09-22**. Isto não é chat. É ordem de mesa.
 
 ## Quem está na mesa
 
@@ -16,7 +16,11 @@ Carimbo: **2026-09-21**. Isto não é chat. É ordem de mesa.
 - Cota / dia: **≥9** comentários relevantes em **≥3** plataformas / 9 pubs com **A comprar** + **B vender** + UTMs; X **≥10** replies BR-IA + progress tweet.
 - Helper: `scripts/verify_sell_live.py` (+ `--handle` quando o HTML público puder mostrar o comentador).
 
-## O que acabou de subir (0.2.43)
+## O que acabou de subir (0.2.44)
+
+Refill +10 do Mac não entrou. Pool Open ainda é 0. O pulso continua `0 Open · restock` (`data-refill="pending"`). Se o pool voltar a ≥3, a linha mostra N Open sem o sufixo. O rail fica (`data-rail="stays"`). Sem mint na VPS. Sem segundo caixa. Sem Open no card.
+
+## O que já estava no ar (0.2.43)
 
 D19 não tirou os briefs. `pay_click` ainda é 2. O card ganha prova curta no rail: `claim_ok` como N blocos liberados (`data-proof="rail"`). Some se o número for 0. Nunca no hero. Nunca o Open no card. Briefs ficam. Sem segundo caixa.
 

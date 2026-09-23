@@ -258,6 +258,41 @@ class LandingMarketTest(unittest.TestCase):
         self.assertEqual(HTML.count('id="pay"'), 1)
         self.assertIn(".rail-proof", CSS)
 
+    def test_d24_zero_pool_keeps_restock_and_rail_stays(self):
+        """D24 (22/09): Mac refill did not land (pool Open 0).
+        The pulse keeps 0 Open · restock. The rail stays visible.
+        A recovered pool (>=3) shows N Open without the restock suffix."""
+        self.assertEqual(HTML.count('data-refill="pending"'), 1)
+        pulse = HTML.find('id="pulso-heartbeat"')
+        tag_open = HTML.rfind("<p", 0, pulse)
+        tag_end = HTML.find(">", pulse)
+        tag = HTML[tag_open:tag_end]
+        self.assertIn('data-refill="pending"', tag)
+        self.assertIn('data-stock="pulse-only"', tag)
+        self.assertIn('data-placement="under-tally"', tag)
+        rail_open = HTML.find('class="shelf-rail"')
+        rail_tag_open = HTML.rfind("<ol", 0, rail_open + 1)
+        rail_tag_end = HTML.find(">", rail_open)
+        rail_tag = HTML[rail_tag_open:rail_tag_end]
+        self.assertIn('data-rail="stays"', rail_tag)
+        self.assertNotIn("hidden", rail_tag)
+        hero = HTML.split('<section class="wrap hero">', 1)[1].split("</section>", 1)[0]
+        self.assertNotIn("data-refill", hero)
+        self.assertNotIn("data-rail", hero)
+        shelf_block = HTML[HTML.find('id="mercado"') : HTML.find('id="pulso-tally"')]
+        self.assertNotRegex(shelf_block, r"\d+\s+Open")
+        fn = JS.split("function fillPulse", 1)[1].split("fetch(", 1)[0]
+        self.assertIn("data-refill", fn)
+        self.assertIn("pending", fn)
+        self.assertIn("0 Open · restock", fn)
+        self.assertIn("n >= 3", fn)
+        self.assertIn("data-rail", fn)
+        self.assertIn("stays", fn)
+        self.assertIn("rail.hidden = false", fn)
+        self.assertIn('.shelf-rail[data-rail="stays"]', CSS)
+        self.assertIn("um clique. Pix R$5.", HTML)
+        self.assertEqual(HTML.count('id="pay"'), 1)
+
     def test_mobile_puts_chat_first_and_hides_demo_term(self):
         mobile = CSS.split("@media (max-width: 860px)", 1)[1]
         self.assertIn(".hero > .chat", mobile)

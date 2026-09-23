@@ -391,6 +391,14 @@ não copiar: repetir Telegra.ph-2 depois de 0 visit no D+8; repetir o mesmo host
 
 vira D+8: se `s0922` trouxe `visit`, segundo host rail-proof/released. Se 0, mata pasters — não o artigo DEV.to `s0903`, não o rentry-2 `s0915` (julga 23/09), não o Telegra.ph-3 `s0916` (julga 24/09), não o rentry-3 `s0917` (julga 25/09), não o Telegra.ph-4 `s0918` (julga 26/09), não o rentry-4 `s0919` (julga 27/09), não o dpaste `s0920` (julga 28/09), não o debianpaste `s0921` (julga 29/09). Sem Telegra.ph. Sem rentry. Sem Telegra.ph-2.
 
+## 2026-09-22 23:30 (heartbeat D24)
+
+viu: em casa, 1050 visit (+1 desde o sell da manhã) e pay_click parado em 2 desde 05/09; pool Open 0 (11 links consumidos no sqlite; refill +10 do Mac não entrou). Fora: o dataset x402 (agenteconomy.to/data.json, asOf 2026-09-23T02:21Z) conta 188186529 txs e US$ 41800229; o dia 22/09 fechou com 133278 txs (21/09 na mesma série diária: 42285).
+
+não copiar: HTTP 402 / USDC no lugar do Pix; segundo checkout; mint na VPS; esconder o rail quando o Open é 0; Open no card.
+
+vira D+8: D24 trava o veredito — `0 Open · restock` no pulso (`data-refill="pending"`), rail fica (`data-rail="stays"`). D32: se o pool voltar a <3, o CEO lembra refill de novo; o número nunca entra no card.
+
 ## Template de pulso
 
 ```

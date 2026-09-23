@@ -567,6 +567,9 @@ h2 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 12px;
 }
+.shelf-rail[data-rail="stays"] {
+  display: grid;
+}
 .shelf-rail li {
   background: var(--paper-2);
   border: 1px solid var(--line);

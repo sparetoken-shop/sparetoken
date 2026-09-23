@@ -982,15 +982,25 @@ function fillPulse(data) {
   const stock = data.shelf || {};
   const shipLine = [ship.version, ship.title].filter(Boolean).join(" — ");
   const researchLine = research.line || "";
+  const refillPending = box.getAttribute("data-refill") === "pending";
   let shelfLine = "";
   if (stock.open !== null && stock.open !== undefined) {
-    shelfLine = String(stock.open) + " Open";
-    if (stock.restock) shelfLine += " · restock";
+    const n = Number(stock.open);
+    if (Number.isFinite(n) && n >= 3) {
+      shelfLine = String(n) + " Open";
+    } else if (Number.isFinite(n) && n === 0 && refillPending) {
+      shelfLine = "0 Open · restock";
+    } else {
+      shelfLine = String(stock.open) + " Open";
+      if (stock.restock) shelfLine += " · restock";
+    }
   }
   const shipEl = box.querySelector('[data-pulse="ship"]');
   const researchEl = box.querySelector('[data-pulse="research"]');
   const shelfEl = box.querySelector('[data-pulse="shelf"]');
   const stockPinned = box.getAttribute("data-stock") === "pulse-only";
+  const rail = document.querySelector(".shelf-rail");
+  if (rail && rail.getAttribute("data-rail") === "stays") rail.hidden = false;
   if (shipEl && shipLine) shipEl.textContent = shipLine;
   if (researchEl && researchLine) researchEl.textContent = researchLine;
   if (shelfEl && shelfLine && stockPinned) shelfEl.textContent = shelfLine;

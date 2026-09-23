@@ -10,6 +10,19 @@ Versionamento: [SemVer](https://semver.org/lang/pt-BR/).
 - Fechar chat anônimo e SSH sem senha (ver ROADMAP)
 - Charge cripto (USDT / OSDT) na mesma conta.vc — ver ROADMAP, sem segundo caixa
 
+## [0.2.44] — 2026-09-22
+
+D24: pool still 0. Restock stays on the pulse. The rail stays.
+
+### Added
+
+- `#pulso-heartbeat` carries `data-refill="pending"` — Mac refill did not land (pool Open 0). Zero stock paints `0 Open · restock` on the pulse. A recovered pool (`n >= 3`) paints `N Open` without the restock suffix
+- `.shelf-rail` carries `data-rail="stays"` — zero stock never hides the one-click rail. The paint forces the rail visible
+
+### Changed
+
+- Same one-click Pix R$5 rail. Stock number stays off the card. `pay.py` untouched. No second till. No mint on the VPS
+
 ## [0.2.43] — 2026-09-21
 
 D23: pay_click still 2. Short proof (N blocks released) sits on the rail.
