@@ -39,6 +39,7 @@ X **nunca** é a prova do pulso de venda.
 | s020 | 11:30 20/09 | dpaste.com leftover-compute-referral | artigo referral=compute/Pix-aos-R$5. UTM `s0920`. verify_sell_live 200 UI-visível (+handle). Sem login. Sem captcha. | **posted** https://dpaste.com/DETATUFZ6 — SELL_OK |
 | s021 | 11:30 21/09 | paste.debian.net skill-optional | artigo skill-optional/sem-manifesto-preso. UTM `s0921`. verify_sell_live 200 UI-visível (+handle). Sem login. Sem captcha. | **posted** https://paste.debian.net/hidden/6b7eba18 — SELL_OK |
 | s022 | 11:30 22/09 | paste.rs released-blocks-on-rail | artigo rail-proof/released-blocks. UTM `s0922`. verify_sell_live 200 UI-visível (+handle). Sem login. Sem captcha. | **posted** https://paste.rs/U95xp — SELL_OK |
+| s023 | 11:30 23/09 | paste.opensuse.org ledger-on-invite | artigo ledger-no-convite/card-apagado. UTM `s0923`. verify_sell_live 200 UI-visível (+handle). Sem login. Sem captcha. | **posted** https://paste.opensuse.org/pastes/9d9612d6164f — SELL_OK |
 | p017 | 23:30 04/09 | X (warmup) | 0.2.26 — public pulse stub. last ship + 7-day + last research. https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p017 | **posted** https://x.com/sparetoken/status/2096383502908313712 |
 | p018 | 23:30 05/09 | X (warmup) | 0.2.27 — last ship + last research on the landing. https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p018 | a colar no @sparetoken |
 | p019 | 23:30 06/09 | X (warmup) | 0.2.28 — Open count on the shelf pulse. same R$5 / 5h. https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p019 | a colar no @sparetoken |
@@ -146,6 +147,20 @@ night pulse. the stamp-only pulse is dead twice: grep and runtime.
 missing agent = PULSE_FAIL. same R$5 / 5h. no second till.
 https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p024
 ```
+
+Texto s023 (LIVE 23/09 — paste.opensuse.org, verify_sell_live 200 + handle, SELL_OK):
+
+```
+The ledger stays on the invite. The card stays dark until a friend pays.
+Most leftover-quota shops put a referral roster on the card — names, a counter, a people screen — before anyone has paid. That is a second wall after the hours were already paid for.
+A shelf keeps the ledger on the invite line. One block: R$5 · 5h · 4.6 High Fast. One click, Pix. The same block code (wdtsot-XXXX / ?code=) is the invite. Friends who pay earn leftover compute; at R$5 it can leave as Pix. Until the first friend pays, the card stays dark. No people list. No monthly fee. No second till.
+Sellers list leftover quota with 10 links plus a skill (title + manifesto + one CLI). The leftover does not need a roster.
+Not a company. By sparetoken.
+A comprar: https://sparetoken.shop/?utm_source=opensuse&utm_medium=comment&utm_campaign=sell&utm_content=s0923
+B vender: https://sparetoken.shop/?utm_source=opensuse&utm_medium=comment&utm_campaign=sell&utm_content=s0923#vender
+```
+
+Artigo: https://paste.opensuse.org/pastes/9d9612d6164f
 
 Texto s022 (LIVE 22/09 — paste.rs, verify_sell_live 200 + handle, SELL_OK):
 
@@ -507,4 +522,4 @@ Silent human-needed is dead. Pulse writes this table **and** `data/human-needed-
 
 | stamped | id | pulse | reason | slack |
 |---|---|---|---|---|
-| — | — | — | — | _no active human-needed this pulse (s022 live SELL_OK; no captcha, no wall)_ |
+| — | — | — | — | _no active human-needed this pulse (s023 live SELL_OK; no captcha, no wall)_ |

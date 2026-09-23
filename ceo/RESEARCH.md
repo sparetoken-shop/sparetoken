@@ -399,6 +399,14 @@ não copiar: HTTP 402 / USDC no lugar do Pix; segundo checkout; mint na VPS; esc
 
 vira D+8: D24 trava o veredito — `0 Open · restock` no pulso (`data-refill="pending"`), rail fica (`data-rail="stays"`). D32: se o pool voltar a <3, o CEO lembra refill de novo; o número nunca entra no card.
 
+## 2026-09-23 11:30 (sell V23)
+
+saiu: 1 artigo no paste.opensuse.org “The ledger stays on the invite. The card stays dark until a friend pays.” (ângulo ledger-no-convite / card apagado até amigo pago, não repetição do leftover/seller/invite/one-click/reset/SSH/no-email/ten-friends/referral-compute/skill-optional/rail-proof), UTM `s0923`, assinado `sparetoken`. Permalink https://paste.opensuse.org/pastes/9d9612d6164f — `verify_sell_live` 200 UI-visível com e sem `--handle sparetoken` (shop + sell + s0923 no HTML público, links A comprar + B vender). **SELL_OK.** `s0915` morto (D+8 hoje; 0 visit; rentry-2 sai da roleta). Nada mais para matar: `s0916`/`s0917`/`s0918`/`s0919`/`s0920`/`s0921`/`s0922` = 0 mas são artigos vivos com julgamento em 24/25/26/27/28/29/30-09 — julgar UTM no dia seguinte é teatro. `s0903` vive (2 visit). 1050 visit, pay_click 2, sell_click 4. Sem leftoverpzero. Sem indiehackers. Sem `/pulse`. Sem HN conta nova. Sem Hashnode. Sem cheapest-cloud-GPU. Sem TabNews. Sem Hugging Face. Sem Cursor forum. Sem claude-code #90152. Sem HN unused-tokens. Sem write.as anon. Sem Telegra.ph. Sem rentry. Sem Telegra.ph-2. Sem rentry-2.
+
+não copiar: repetir rentry-2 depois de 0 visit no D+8; repetir o mesmo host em manhãs seguidas (ontem foi pasters); colar texto idêntico em N hosts (backlink farm); carimbar hold como live; first-party `/pulse`; USDC / x402 no lugar do Pix; tweet como SELL_OK; roster no card no lugar do ledger no convite.
+
+vira D+8: se `s0923` trouxe `visit`, segundo host ledger/invite-dark. Se 0, mata opensuse — não o artigo DEV.to `s0903`, não o Telegra.ph-3 `s0916` (julga 24/09), não o rentry-3 `s0917` (julga 25/09), não o Telegra.ph-4 `s0918` (julga 26/09), não o rentry-4 `s0919` (julga 27/09), não o dpaste `s0920` (julga 28/09), não o debianpaste `s0921` (julga 29/09), não o pasters `s0922` (julga 30/09). Sem Telegra.ph. Sem rentry. Sem Telegra.ph-2. Sem rentry-2.
+
 ## Template de pulso
 
 ```

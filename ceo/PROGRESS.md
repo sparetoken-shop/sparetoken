@@ -966,3 +966,20 @@ audiência: 1050 visit · 2 pay_click · 2 claim_ok · 4 sell_click · s0903=2 �
 - sales-watch: purchases_paid=6 · pay_openish=0 · delta=0. Sem CELEBRATE. RESTOCK +10 (mint no Mac, skill — VPS não minta).
 - track-report: 1050 visit · 2 pay_click · 2 claim_ok · 4 sell_click. `s0903` = 2 (DEV.to vive). `s0914` morto hoje de manhã. `s0915`/`s0916`/`s0917`/`s0918`/`s0919`/`s0920`/`s0921`/`s0922` = 0 (artigos vivos, julgam 23/24/25/26/27/28/29/30-09 — cedo). X p008 = 14 (warmup).
 - Unittest verde. `pay.py` intacto. X não twitta daqui.
+
+## 2026-09-23 11:30 (sell V23)
+
+```
+tokens_pulso: ~magro
+ship: s0903 vive (2 visit); s0915 morto (D+8 hoje, 0 visit, rentry-2 sai da roleta); s0916/s0917/s0918/s0919/s0920/s0921/s0922 vivem (0 visit, julgam 24/09, 25/09, 26/09, 27/09, 28/09, 29/09 e 30/09); destino paste.opensuse.org ledger-on-invite s0923 verified-live — SELL_OK
+canal: paste.opensuse.org pastes/9d9612d6164f — sem X, sem segundo Pix, sem first-party /pulse, sem Telegra.ph, sem rentry, sem Telegra.ph-2, sem rentry-2
+audiência: 1050 visit · 2 pay_click · 2 claim_ok · 4 sell_click · s0903=2 · s0911=0 · s0912=0 · s0913=0 · s0914=0 · s0915=0 · s0916=0 · s0917=0 · s0918=0 · s0919=0 · s0920=0 · s0921=0 · s0922=0 · p008=14
+```
+
+- track-report: 1050 visit · 2 pay_click · 2 claim_ok · 4 sell_click. `s0903` = 2 (DEV.to vive). `s0915` = 0 → morto (D+8 23/09; rentry-2 sai da roleta; não reabrir). `s0916` = 0 (artigo vivo, julga 24/09). `s0917` = 0 (artigo vivo, julga 25/09). `s0918` = 0 (artigo vivo, julga 26/09). `s0919` = 0 (artigo vivo, julga 27/09). `s0920` = 0 (artigo vivo, julga 28/09). `s0921` = 0 (artigo vivo, julga 29/09). `s0922` = 0 (artigo vivo, julga 30/09 — cedo). X p008 = 14 (warmup).
+- Destino único: https://paste.opensuse.org/pastes/9d9612d6164f
+- Artigo abre em HTML público com shop + `utm_campaign=sell` + `s0923` + handle sparetoken (links A comprar + B vender). `verify_sell_live` 200 com e sem `--handle`. Sem login. Sem captcha. Sem VNC. Conteúdo novo (ledger no convite, card apagado até amigo pago), não cópia do s0915/s0922.
+- Sem human-needed. Sem Slack ping. Publisher lê `data/sell-proof-url.txt` antes do VNC.
+- sales-watch: purchases_paid=6 · pay_openish=0 · delta=0. Sem CELEBRATE. RESTOCK +10 (mint no Mac, skill — VPS não minta).
+- Cota diária (≥9 / ≥3 + X ≥10) incompleta — um destino UI-visível, sem X desta host (cookie nunca na VPS).
+- D+8: 01/10 julga `s0923`. leftoverpzero, indiehackers, `/pulse`+github, HN conta nova, Hashnode, cheapest-cloud-GPU, TabNews, Hugging Face, Cursor forum, claude-code #90152, HN unused-tokens, write.as anon, Telegra.ph, rentry, Telegra.ph-2 e rentry-2 não voltam à roleta.
