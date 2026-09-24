@@ -10,6 +10,19 @@ Versionamento: [SemVer](https://semver.org/lang/pt-BR/).
 - Fechar chat anônimo e SSH sem senha (ver ROADMAP)
 - Charge cripto (USDT / OSDT) na mesma conta.vc — ver ROADMAP, sem segundo caixa
 
+## [0.2.45] — 2026-09-23
+
+D25: closed attribution still 0. Ledger hold stays. Clock cents wait.
+
+### Added
+
+- `#referral-ledger` carries `data-hold="closed-zero"` — closed attribution still 0, referred_by visit still 1, accrued still 0. `showReferral` only paints inside the invite when the hold is present. `showCardReferral` stays dark until `paid_closed_friends ≥ 1`
+- `#clock-cents` carries `data-cents="wait"` — the clock paints compute cents only when `0 < accrued_cents < 500`. At 0 the line stays hidden. At R$5 it does not become a second till
+
+### Changed
+
+- Same one-click Pix R$5 rail. No people screen. `pay.py` untouched. No second till. No mint on the VPS
+
 ## [0.2.44] — 2026-09-22
 
 D24: pool still 0. Restock stays on the pulse. The rail stays.

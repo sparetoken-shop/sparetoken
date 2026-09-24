@@ -166,6 +166,57 @@ class ReferralSurfaceTest(unittest.TestCase):
         self.assertGreater(ping, 0)
         self.assertLess(abs(call - ping), 500)
 
+    def test_d25_ledger_hold_and_clock_cents_wait(self):
+        """D25 (23/09): closed attribution still 0, accrued still 0.
+        Ledger stays invite-only. Card stays dark. Clock shows compute
+        cents only when 0 < accrued < R$5."""
+        self.assertEqual(HTML.count('data-hold="closed-zero"'), 1)
+        ledger = HTML.find('id="referral-ledger"')
+        tag_open = HTML.rfind("<span", 0, ledger)
+        tag_end = HTML.find(">", ledger)
+        tag = HTML[tag_open:tag_end]
+        self.assertIn('data-ledger="invite-only"', tag)
+        self.assertIn('data-hold="closed-zero"', tag)
+        card = HTML.find('id="referral-card"')
+        card_open = HTML.rfind("<p", 0, card)
+        card_end = HTML.find(">", card)
+        self.assertIn("hidden", HTML[card_open:card_end])
+        self.assertNotIn("data-hold", HTML[card_open:card_end])
+        self.assertNotIn('id="people"', HTML)
+        cents = HTML.find('id="clock-cents"')
+        self.assertGreater(cents, 0)
+        cents_open = HTML.rfind("<", 0, cents)
+        cents_end = HTML.find(">", cents)
+        cents_tag = HTML[cents_open:cents_end]
+        self.assertIn('data-cents="wait"', cents_tag)
+        self.assertIn("hidden", cents_tag)
+        hero_clock = HTML.find('id="hero-clock"')
+        self.assertGreater(cents, hero_clock)
+        price = HTML.find('id="preco"')
+        self.assertLess(cents, price)
+        show = JS.split("function showReferral", 1)[1].split("function ", 1)[0]
+        self.assertIn("data-hold", show)
+        self.assertIn("closed-zero", show)
+        card_fn = JS.split("function showCardReferral", 1)[1].split("function ", 1)[0]
+        self.assertIn("data-hold", card_fn)
+        self.assertIn("closed-zero", card_fn)
+        self.assertIn("paid < 1", card_fn)
+        cents_fn = JS.split("function showClockCents", 1)[1].split("function ", 1)[0]
+        self.assertIn('data-cents', cents_fn)
+        self.assertIn("wait", cents_fn)
+        self.assertIn("accrued_cents", cents_fn)
+        self.assertIn("accrued <= 0", cents_fn)
+        self.assertIn("accrued >= 500", cents_fn)
+        self.assertIn("showClockCents(", JS)
+        pt = i18n.STRINGS["pt-BR"]["clock.cents"]
+        en = i18n.STRINGS["en-US"]["clock.cents"]
+        self.assertIn("compute", pt.lower())
+        self.assertIn("compute", en.lower())
+        blob = (pt + en).lower()
+        self.assertNotIn("checkout", blob)
+        self.assertNotIn("whatsapp", blob)
+        self.assertNotIn("pague r$", blob)
+
     def test_d20_ceiling_stays_on_rail_never_people_screen(self):
         """D20 (18/09): referred_by visit still 1, closed still 0.
         Ten-friend ceiling stays on the rail. Card lights faltam N only

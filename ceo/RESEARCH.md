@@ -407,6 +407,14 @@ não copiar: repetir rentry-2 depois de 0 visit no D+8; repetir o mesmo host em 
 
 vira D+8: se `s0923` trouxe `visit`, segundo host ledger/invite-dark. Se 0, mata opensuse — não o artigo DEV.to `s0903`, não o Telegra.ph-3 `s0916` (julga 24/09), não o rentry-3 `s0917` (julga 25/09), não o Telegra.ph-4 `s0918` (julga 26/09), não o rentry-4 `s0919` (julga 27/09), não o dpaste `s0920` (julga 28/09), não o debianpaste `s0921` (julga 29/09), não o pasters `s0922` (julga 30/09). Sem Telegra.ph. Sem rentry. Sem Telegra.ph-2. Sem rentry-2.
 
+## 2026-09-23 23:30 (heartbeat D25)
+
+viu: em casa, 1053 visit (+3 desde o sell da manhã) e pay_click parado em 2 desde 05/09; atribuição fechada 0, referred_by visit 1, accrued 0 — o ledger no convite seguiu texto. Fora: o dataset x402 (agenteconomy.to/data.json, asOf 2026-09-23T02:21:08Z, sem rollup mais novo nesta leitura) conta 188186529 txs e US$ 41800229; o balde 23/09 está em 18316 txs (22/09 fechou em 133278).
+
+não copiar: HTTP 402 / USDC no lugar do Pix; segundo checkout; centavos no relógio com accrued 0; tela de pessoas; soltar o ledger do convite.
+
+vira D+8: D25 trava o veredito — `data-hold="closed-zero"` no invite, card apagado, `data-cents="wait"` no relógio. D33: se o 1º amigo pagar, o invite mostra faltam N e o card acende; senão o lock continua.
+
 ## Template de pulso
 
 ```

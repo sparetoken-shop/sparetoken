@@ -115,6 +115,10 @@
             <span data-i18n="term.remaining">remaining</span>
             <span class="clock" id="hero-clock">05:00:00</span>
           </div>
+          <div class="term-row" id="clock-cents" data-cents="wait" hidden>
+            <span data-i18n="clock.cents.label">compute</span>
+            <span data-cents-n>0</span>
+          </div>
           <div class="term-row used-row" id="used-row" hidden>
             <span data-i18n="term.processed">processed</span>
             <span id="hero-used">00:00:00</span>
@@ -206,7 +210,7 @@
             <span data-i18n="invite.send">manda este link:</span> <code id="invite-url"></code>
             <button type="button" class="copy" id="invite-copy" data-copy="" data-i18n="invite.copy">copiar</button>
             <span class="muted" id="referral-note" data-i18n="referral.note">10% em compute · Pix aos R$5 · primeiro indicador: fuzzy</span>
-            <span class="muted" id="referral-ledger" data-ledger="invite-only" hidden></span>
+            <span class="muted" id="referral-ledger" data-ledger="invite-only" data-hold="closed-zero" hidden></span>
           </p>
           <form class="claim" id="claim" autocomplete="on">
             <label for="claim-code" data-i18n="claim.label">código do bloco ou link do Pix</label>

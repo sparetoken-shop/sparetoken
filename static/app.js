@@ -163,7 +163,8 @@ function showReferral(ledger) {
   const wrap = document.getElementById("invite-wrap");
   if (!el) return;
   const pinned = el.getAttribute("data-ledger") === "invite-only";
-  if (!pinned) {
+  const held = el.getAttribute("data-hold") === "closed-zero";
+  if (!pinned || !held) {
     el.hidden = true;
     return;
   }
@@ -186,8 +187,9 @@ function showCardReferral(ledger) {
   const el = document.getElementById("referral-card");
   if (!el) return;
   const railOwns = document.querySelector('.shelf-rail [data-ceiling="rail-only"]');
+  const held = document.querySelector('#referral-ledger[data-hold="closed-zero"]');
   const paid = ledger ? Number(ledger.paid_closed_friends) : 0;
-  if (!railOwns || !Number.isFinite(paid) || paid < 1) {
+  if (!held || !railOwns || !Number.isFinite(paid) || paid < 1) {
     el.hidden = true;
     el.textContent = "";
     return;
@@ -220,6 +222,22 @@ function showBlock(code, inviteFromApi, ledger) {
   showInvite(code, inviteFromApi);
   showReferral(ledger);
   showCardReferral(ledger);
+  showClockCents(ledger);
+}
+
+function showClockCents(ledger) {
+  const el = document.getElementById("clock-cents");
+  if (!el) return;
+  const wait = el.getAttribute("data-cents") === "wait";
+  const accrued = ledger ? Number(ledger.accrued_cents) : 0;
+  const slot = el.querySelector("[data-cents-n]");
+  if (!wait || !Number.isFinite(accrued) || accrued <= 0 || accrued >= 500) {
+    el.hidden = true;
+    if (slot) slot.textContent = "";
+    return;
+  }
+  if (slot) slot.textContent = t("clock.cents", { n: (accrued / 100).toFixed(2) });
+  el.hidden = false;
 }
 
 function isGenericLabel(label) {

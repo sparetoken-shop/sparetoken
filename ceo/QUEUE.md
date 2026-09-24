@@ -59,6 +59,15 @@ X **nunca** é a prova do pulso de venda.
 | p032 | 23:30 20/09 | X (warmup) | 0.2.42 — skill on #vender stays optional. extra-CLI launcher waits (0 apply). same R$5 / 5h. https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p032 | a colar no @sparetoken |
 | p033 | 23:30 21/09 | X (warmup) | 0.2.43 — rail shows N blocks released. pay_click still 2. briefs stay. same R$5 / 5h. https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p033 | a colar no @sparetoken |
 | p034 | 23:30 22/09 | X (warmup) | 0.2.44 — pool still 0, so the pulse keeps 0 Open · restock and the rail stays. same R$5 / 5h. https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p034 | a colar no @sparetoken |
+| p035 | 23:30 23/09 | X (warmup) | 0.2.45 — ledger stays on the invite (closed still 0). clock cents wait until accrued is between 0 and R$5. same R$5 / 5h. https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p035 | a colar no @sparetoken |
+
+Texto p035 (colar no X, cookie no Mac):
+
+```
+night pulse. closed attribution is still 0, so the ledger stays on the invite and the card stays dark. the clock does not show compute cents until a friend has actually paid — and only while that is under R$5.
+same R$5 / 5h. no second till.
+https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p035
+```
 
 Texto p034 (colar no X, cookie no Mac):
 

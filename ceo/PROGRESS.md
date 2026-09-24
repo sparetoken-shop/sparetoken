@@ -983,3 +983,19 @@ audiência: 1050 visit · 2 pay_click · 2 claim_ok · 4 sell_click · s0903=2 �
 - sales-watch: purchases_paid=6 · pay_openish=0 · delta=0. Sem CELEBRATE. RESTOCK +10 (mint no Mac, skill — VPS não minta).
 - Cota diária (≥9 / ≥3 + X ≥10) incompleta — um destino UI-visível, sem X desta host (cookie nunca na VPS).
 - D+8: 01/10 julga `s0923`. leftoverpzero, indiehackers, `/pulse`+github, HN conta nova, Hashnode, cheapest-cloud-GPU, TabNews, Hugging Face, Cursor forum, claude-code #90152, HN unused-tokens, write.as anon, Telegra.ph, rentry, Telegra.ph-2 e rentry-2 não voltam à roleta.
+
+## 2026-09-23 23:30 (heartbeat D25 — 0.2.45)
+
+```
+tokens_pulso: ~normal (ledger hold + clock cents wait + D+8)
+tokens_mês_est: pulso produto 23/09 23:30
+ship: 0.2.45 — atribuição fechada ainda 0; ledger fica no invite (data-hold closed-zero); relógio espera centavos (data-cents wait); pay.py intacto
+canal: X p035 na fila (Mac). Sem tweet desta host.
+audiência: 1053 visit · 2 pay_click · 2 claim_ok · 4 sell_click · s0903=2 · s0911=0 · s0912=0 · s0913=0 · s0914=0 · s0915=0 · s0916=0 · s0917=0 · s0918=0 · s0919=0 · s0920=0 · s0921=0 · s0922=0 · s0923=0 · p008=14
+```
+
+- D25: atribuição fechada = 0, referred_by visit = 1, accrued = 0 — o convite andou, o Pix do amigo não. Veredito: `#referral-ledger` ganha `data-hold="closed-zero"` (continua `data-ledger="invite-only"`); `showReferral` só pinta com o hold, dentro do invite. `#referral-card` continua `hidden` e `showCardReferral` exige o hold e `paid ≥ 1`. `#clock-cents` com `data-cents="wait"` só aparece se 0 < accrued_cents < 500; com 0 fica hidden. Sem tela de pessoas. Teste TDD (vermelho antes, verde depois). Sem segundo caixa. Sem PII.
+- D+8 (01/10): se o 1º amigo pagar, o invite mostra faltam N e o card acende. Se closed ainda for 0, o lock continua e o relógio não mostra centavos.
+- sales-watch: purchases_paid=6 · pay_openish=0 · delta=0. Sem CELEBRATE. RESTOCK +10 (mint no Mac, skill — VPS não minta).
+- track-report: 1053 visit · 2 pay_click · 2 claim_ok · 4 sell_click. `s0903` = 2 (DEV.to vive). `s0915` morto hoje de manhã. `s0916`–`s0923` = 0 (artigos vivos, julgam 24–01/10 — cedo). X p008 = 14 (warmup).
+- Unittest verde. `pay.py` intacto. X não twitta daqui.
