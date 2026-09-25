@@ -137,11 +137,17 @@ function setRemaining(n) {
     n <= 0 ? t("js.hint0") : n === 1 ? t("js.hint1") : t("js.hintn", { n });
 }
 
-function showInvite(code, urlFromApi) {
+function showInvite(code, urlFromApi, ledger) {
   const wrap = document.getElementById("invite-wrap");
   const urlEl = document.getElementById("invite-url");
   const copyBtn = document.getElementById("invite-copy");
   if (!wrap || !urlEl) return;
+  const cite = wrap.getAttribute("data-cite") === "after-paid";
+  const paid = ledger ? Number(ledger.paid_closed_friends) : 0;
+  if (!cite || !Number.isFinite(paid) || paid < 1) {
+    wrap.hidden = true;
+    return;
+  }
   let url = urlFromApi || "";
   if (!url) {
     const clean = (code || "").trim();
@@ -149,7 +155,7 @@ function showInvite(code, urlFromApi) {
       url = `https://sparetoken.shop/?code=${encodeURIComponent(clean)}`;
     }
   }
-  if (!url) {
+  if (!url || url.indexOf("?ref=") !== -1 || url.indexOf("&ref=") !== -1) {
     wrap.hidden = true;
     return;
   }
@@ -219,7 +225,7 @@ function showBlock(code, inviteFromApi, ledger) {
   blockCode.textContent = code;
   blockWrap.hidden = false;
   if (claimCode && !claimCode.value) claimCode.value = code;
-  showInvite(code, inviteFromApi);
+  showInvite(code, inviteFromApi, ledger);
   showReferral(ledger);
   showCardReferral(ledger);
   showClockCents(ledger);

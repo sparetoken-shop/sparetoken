@@ -217,6 +217,38 @@ class ReferralSurfaceTest(unittest.TestCase):
         self.assertNotIn("whatsapp", blob)
         self.assertNotIn("pague r$", blob)
 
+    def test_d26_fold_cites_link_only_after_paid_friend(self):
+        """D26 (24/09): closed attribution still 0, claim_ok is 2.
+        The popup stays after claim. The fold cites the invite link
+        only after a paid friend, and never grows ?ref=."""
+        self.assertEqual(HTML.count('id="invite-wrap"'), 1)
+        wrap = HTML.find('id="invite-wrap"')
+        tag_open = HTML.rfind("<p", 0, wrap)
+        tag_end = HTML.find(">", wrap)
+        tag = HTML[tag_open:tag_end]
+        self.assertIn('data-cite="after-paid"', tag)
+        self.assertIn("hidden", tag)
+        hero = HTML.split('<section class="wrap hero">', 1)[1].split("</section>", 1)[0]
+        self.assertNotIn("invite-url", hero)
+        self.assertNotIn("?ref=", hero)
+        self.assertNotIn("?ref=", HTML)
+        self.assertNotIn('id="people"', HTML)
+        modal = HTML.find('id="invite-modal"')
+        modal_open = HTML.rfind("<dialog", 0, modal)
+        modal_end = HTML.find(">", modal)
+        self.assertIn('data-popup="claim-only"', HTML[modal_open:modal_end])
+        show = JS.split("function showInvite", 1)[1].split("function ", 1)[0]
+        self.assertIn("data-cite", show)
+        self.assertIn("after-paid", show)
+        self.assertIn("paid_closed_friends", show)
+        self.assertIn("paid < 1", show)
+        self.assertIn('indexOf("?ref=")', show)
+        self.assertIn('indexOf("&ref=")', show)
+        self.assertIn("?code=", show)
+        self.assertNotIn("?ref=${", show)
+        block = JS.split("function showBlock", 1)[1].split("function ", 1)[0]
+        self.assertIn("showInvite(code, inviteFromApi, ledger)", block)
+
     def test_d20_ceiling_stays_on_rail_never_people_screen(self):
         """D20 (18/09): referred_by visit still 1, closed still 0.
         Ten-friend ceiling stays on the rail. Card lights faltam N only

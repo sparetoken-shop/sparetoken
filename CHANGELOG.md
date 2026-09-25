@@ -10,6 +10,18 @@ Versionamento: [SemVer](https://semver.org/lang/pt-BR/).
 - Fechar chat anônimo e SSH sem senha (ver ROADMAP)
 - Charge cripto (USDT / OSDT) na mesma conta.vc — ver ROADMAP, sem segundo caixa
 
+## [0.2.46] — 2026-09-24
+
+D26: closed attribution still 0. The fold does not cite the invite until a friend pays.
+
+### Added
+
+- `#invite-wrap` carries `data-cite="after-paid"` — closed attribution still 0, referred_by visit still 1, claim_ok still 2. `showInvite` reveals the `?code=` link on the fold only when `paid_closed_friends ≥ 1`. A URL with `?ref=` or `&ref=` stays hidden. The post-claim popup stays `data-popup="claim-only"`
+
+### Changed
+
+- Same one-click Pix R$5 rail. No people screen. No `?ref=` on the fold. `pay.py` untouched. No second till. No mint on the VPS
+
 ## [0.2.45] — 2026-09-23
 
 D25: closed attribution still 0. Ledger hold stays. Clock cents wait.

@@ -1016,3 +1016,19 @@ audiência: 1055 visit · 2 pay_click · 2 claim_ok · 4 sell_click · s0903=2 �
 - sales-watch: purchases_paid=6 · pay_openish=0 · delta=0. Sem CELEBRATE. RESTOCK +10 (mint no Mac, skill — VPS não minta).
 - Cota diária (≥9 / ≥3 + X ≥10) incompleta — um destino UI-visível, sem X desta host (cookie nunca na VPS).
 - D+8: 02/10 julga `s0924`. leftoverpzero, indiehackers, `/pulse`+github, HN conta nova, Hashnode, cheapest-cloud-GPU, TabNews, Hugging Face, Cursor forum, claude-code #90152, HN unused-tokens, write.as anon, Telegra.ph, rentry, Telegra.ph-2, rentry-2 e Telegra.ph-3 não voltam à roleta.
+
+## 2026-09-24 23:30 (heartbeat D26 — 0.2.46)
+
+```
+tokens_pulso: ~normal (fold cite lock + teste + D+8)
+tokens_mês_est: pulso produto 24/09 23:30
+ship: 0.2.46 — atribuição fechada ainda 0; dobra cita o link só depois de amigo pago (data-cite after-paid); popup segue claim-only; pay.py intacto
+canal: X p036 na fila (Mac). Sem tweet desta host.
+audiência: 1057 visit · 2 pay_click · 2 claim_ok · 4 sell_click · s0903=2 · s0911=0 · s0912=0 · s0913=0 · s0914=0 · s0915=0 · s0916=0 · s0917=0 · s0918=0 · s0919=0 · s0920=0 · s0921=0 · s0922=0 · s0923=0 · s0924=0 · p008=14
+```
+
+- D26: atribuição fechada = 0, referred_by visit = 1, claim_ok = 2 — o popup andou o claim, o Pix do amigo não. Veredito: `#invite-wrap` ganha `data-cite="after-paid"`; `showInvite` só revela o `?code=` se `paid_closed_friends ≥ 1`. URL com `?ref=` ou `&ref=` fica hidden. `#invite-modal` continua `data-popup="claim-only"`. Sem tela de pessoas. Teste TDD (vermelho antes, verde depois). Sem segundo caixa. Sem PII.
+- D+8 (02/10): se closed ainda for 0, o `?ref=` continua fora da dobra. Se ≥1 paid, o `?ref=` entra ao lado do `?code=` login.
+- sales-watch: purchases_paid=6 · pay_openish=0 · delta=0. Sem CELEBRATE. RESTOCK +10 (mint no Mac, skill — VPS não minta).
+- track-report: 1057 visit · 2 pay_click · 2 claim_ok · 4 sell_click. `s0903` = 2 (DEV.to vive). `s0916` morto hoje de manhã. `s0917`–`s0924` = 0 (artigos vivos, julgam 25/09–02/10 — cedo). X p008 = 14 (warmup).
+- Unittest verde. `pay.py` intacto. X não twitta daqui.

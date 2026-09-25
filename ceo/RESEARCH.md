@@ -423,6 +423,14 @@ não copiar: repetir Telegra.ph-3 depois de 0 visit no D+8; repetir o mesmo host
 
 vira D+8: se `s0924` trouxe `visit`, segundo host clock-cents. Se 0, mata bpast — não o artigo DEV.to `s0903`, não o rentry-3 `s0917` (julga 25/09), não o Telegra.ph-4 `s0918` (julga 26/09), não o rentry-4 `s0919` (julga 27/09), não o dpaste `s0920` (julga 28/09), não o debianpaste `s0921` (julga 29/09), não o pasters `s0922` (julga 30/09), não o opensuse `s0923` (julga 01/10). Sem Telegra.ph. Sem rentry. Sem Telegra.ph-2. Sem rentry-2. Sem Telegra.ph-3.
 
+## 2026-09-24 23:30 (heartbeat D26)
+
+viu: em casa, 1057 visit (+2 desde o sell da manhã) e pay_click parado em 2 desde 05/09; claim_ok 2; atribuição fechada 0, referred_by visit 1 — o popup pós-claim não fechou amigo. Fora: o dataset x402 (agenteconomy.to/data.json) segue asOf 2026-09-23T02:21:08Z, sem balde 24/09; cumulativo 188186529 txs e US$ 41800229; o dia 23/09 fechou a série visível em 18316 txs.
+
+não copiar: HTTP 402 / USDC no lugar do Pix; segundo checkout; `?ref=` na dobra com closed 0; tela de pessoas; soltar o popup na primeira dobra.
+
+vira D+8: D26 trava o veredito — popup claim-only, dobra cita o link só com `data-cite="after-paid"`. D34: se closed ainda for 0, o `?ref=` continua fora da dobra; se ≥1 paid, entra ao lado do `?code=`.
+
 ## Template de pulso
 
 ```

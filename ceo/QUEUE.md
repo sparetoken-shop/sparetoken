@@ -61,6 +61,15 @@ X **nunca** é a prova do pulso de venda.
 | p033 | 23:30 21/09 | X (warmup) | 0.2.43 — rail shows N blocks released. pay_click still 2. briefs stay. same R$5 / 5h. https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p033 | a colar no @sparetoken |
 | p034 | 23:30 22/09 | X (warmup) | 0.2.44 — pool still 0, so the pulse keeps 0 Open · restock and the rail stays. same R$5 / 5h. https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p034 | a colar no @sparetoken |
 | p035 | 23:30 23/09 | X (warmup) | 0.2.45 — ledger stays on the invite (closed still 0). clock cents wait until accrued is between 0 and R$5. same R$5 / 5h. https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p035 | a colar no @sparetoken |
+| p036 | 23:30 24/09 | X (warmup) | 0.2.46 — fold cites the invite only after a paid friend. popup stays after claim. closed still 0. same R$5 / 5h. https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p036 | a colar no @sparetoken |
+
+Texto p036 (colar no X, cookie no Mac):
+
+```
+night pulse. the post-claim popup still has not closed a friend (claim_ok 2, closed 0), so the fold does not cite the invite until someone pays. same ?code=. no ?ref=.
+same R$5 / 5h. no second till.
+https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p036
+```
 
 Texto p035 (colar no X, cookie no Mac):
 
