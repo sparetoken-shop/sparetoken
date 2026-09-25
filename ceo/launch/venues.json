@@ -1,10 +1,10 @@
 {
   "default": {
-    "host": "bpast",
-    "url": "https://bpa.st/F3WQ",
+    "host": "pastebinfi",
+    "url": "https://pastebin.fi/p/4ZPWEr7",
     "kind": "article",
     "fallback": false,
-    "note": "LIVE 24/09: UTM s0924 verify_sell_live 200 UI-visible SELL_OK; s0916 dead (D+8 24/09, 0 visit, Telegra.ph-3 leaves roulette); s0917/s0918/s0919/s0920/s0921/s0922/s0923 = 0 but live, judge 25/26/27/28/29/30-09 and 01/10; leftoverpzero indiehackers /pulse HN-new-account Hashnode cheapest-cloud-GPU TabNews Hugging Face Cursor forum claude-code#90152 HN-unused-tokens write.as-anon Telegra.ph rentry Telegra.ph-2 rentry-2 Telegra.ph-3 dead; s0903 lives (2 visit)"
+    "note": "LIVE 25/09: UTM s0925 verify_sell_live 200 UI-visible SELL_OK; s0917 dead (D+8 25/09, 0 visit, rentry-3 leaves roulette); s0918/s0919/s0920/s0921/s0922/s0923/s0924 = 0 but live, judge 26/27/28/29/30-09 and 01/02-10; leftoverpzero indiehackers /pulse HN-new-account Hashnode cheapest-cloud-GPU TabNews Hugging Face Cursor forum claude-code#90152 HN-unused-tokens write.as-anon Telegra.ph rentry Telegra.ph-2 rentry-2 Telegra.ph-3 rentry-3 dead; s0903 lives (2 visit)"
   },
   "2026-08-31": {
     "host": "pulse-github",
@@ -130,7 +130,7 @@
     "url": "https://rentry.co/sparetoken-ssh-leftover-hours-09-17",
     "kind": "article",
     "fallback": false,
-    "note": "LIVE: UTM s0917 verify_sell_live 200 UI-visible SELL_OK; nothing to kill (s0912/s0913/s0914/s0915/s0916 = 0 but live, judge 20/21/22/23/24-09); s0903 lives (2 visit)"
+    "note": "DEAD 25/09: UTM s0917 brought 0 visit; rentry-3 leaves roulette (host already dead 21/09). Do not repeat rentry.co. s0903 lives"
   },
   "2026-09-18": {
     "host": "telegraph",
@@ -180,5 +180,12 @@
     "kind": "article",
     "fallback": false,
     "note": "LIVE: UTM s0924 verify_sell_live 200 UI-visible SELL_OK; s0916 dead 0 visit Telegra.ph-3 leaves roulette; leftoverpzero indiehackers /pulse HN-new-account Hashnode cheapest-cloud-GPU TabNews Hugging Face Cursor forum claude-code#90152 HN-unused-tokens write.as-anon Telegra.ph rentry Telegra.ph-2 rentry-2 Telegra.ph-3 stay dead; s0903 lives (2 visit)"
+  },
+  "2026-09-25": {
+    "host": "pastebinfi",
+    "url": "https://pastebin.fi/p/4ZPWEr7",
+    "kind": "article",
+    "fallback": false,
+    "note": "LIVE: UTM s0925 verify_sell_live 200 UI-visible SELL_OK; s0917 dead 0 visit rentry-3 leaves roulette; leftoverpzero indiehackers /pulse HN-new-account Hashnode cheapest-cloud-GPU TabNews Hugging Face Cursor forum claude-code#90152 HN-unused-tokens write.as-anon Telegra.ph rentry Telegra.ph-2 rentry-2 Telegra.ph-3 rentry-3 stay dead; s0903 lives (2 visit)"
   }
 }

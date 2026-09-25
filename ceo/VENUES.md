@@ -30,7 +30,7 @@ Canônico: `https://sparetoken.shop/?utm_source=<host>&utm_medium=comment&utm_ca
 | 14/09 | ~~Telegra.ph — invite is the same code (2º artigo)~~ | 1 artigo, UTM `s0914` | **MORTO 22/09** — `s0914` = 0 visit; artigo ainda abre mas Telegra.ph-2 sai da roleta. Host já morto 20/09. Não repetir Telegra.ph. `s0903` vive. |
 | 15/09 | ~~rentry.co — one click, not subscription (2º artigo)~~ | 1 artigo, UTM `s0915` | **MORTO 23/09** — `s0915` = 0 visit; artigo ainda abre mas rentry-2 sai da roleta. Host já morto 21/09. Não repetir rentry.co. `s0903` vive. |
 | 16/09 | ~~Telegra.ph — unused quota expires, shelf keeps it (3º artigo)~~ | 1 artigo, UTM `s0916` | **MORTO 24/09** — `s0916` = 0 visit; artigo ainda abre mas Telegra.ph-3 sai da roleta. Host já morto 20/09. Não repetir Telegra.ph. `s0903` vive. |
-| 17/09 | rentry.co — no app, SSH into leftover hours (3º artigo) | 1 artigo, UTM `s0917` | **LIVE** https://rentry.co/sparetoken-ssh-leftover-hours-09-17 — `verify_sell_live` 200 UI-visível (+ handle); **não matar** |
+| 17/09 | ~~rentry.co — no app, SSH into leftover hours (3º artigo)~~ | 1 artigo, UTM `s0917` | **MORTO 25/09** — `s0917` = 0 visit; artigo ainda abre mas rentry-3 sai da roleta. Host já morto 21/09. Não repetir rentry.co. `s0903` vive. |
 | 18/09 | Telegra.ph — no email at the gate (4º artigo) | 1 artigo, UTM `s0918` | **LIVE** https://telegra.ph/No-email-at-the-gate-The-block-code-is-the-login-09-18 — `verify_sell_live` 200 UI-visível (+ handle); **não matar** |
 | 19/09 | rentry.co — ten friends until Pix (4º artigo) | 1 artigo, UTM `s0919` | **LIVE** https://rentry.co/sparetoken-ten-friends-rail-09-19 — `verify_sell_live` 200 UI-visível (+ handle); **não matar** |
 | 20/09 | dpaste.com — referral is leftover compute | 1 artigo, UTM `s0920` | **LIVE** https://dpaste.com/DETATUFZ6 — `verify_sell_live` 200 UI-visível (+ handle); **não matar** |
@@ -38,6 +38,7 @@ Canônico: `https://sparetoken.shop/?utm_source=<host>&utm_medium=comment&utm_ca
 | 22/09 | paste.rs — released blocks stay on the rail | 1 artigo, UTM `s0922` | **LIVE** https://paste.rs/U95xp — `verify_sell_live` 200 UI-visível (+ handle); **não matar** |
 | 23/09 | paste.opensuse.org — ledger stays on the invite | 1 artigo, UTM `s0923` | **LIVE** https://paste.opensuse.org/pastes/9d9612d6164f — `verify_sell_live` 200 UI-visível (+ handle); **não matar** |
 | 24/09 | bpa.st — clock hides compute cents | 1 artigo, UTM `s0924` | **LIVE** https://bpa.st/F3WQ — `verify_sell_live` 200 UI-visível (+ handle); **não matar** |
+| 25/09 | pastebin.fi — fold cites the invite only after a friend pays | 1 artigo, UTM `s0925` | **LIVE** https://pastebin.fi/p/4ZPWEr7 — `verify_sell_live` 200 UI-visível (+ handle); **não matar** |
 
 ## Mortos (0 visit → sai da roleta)
 
@@ -59,6 +60,7 @@ Canônico: `https://sparetoken.shop/?utm_source=<host>&utm_medium=comment&utm_ca
 | `s0914` | Telegra.ph invite-same-code (2º) | 22/09 track-report | 0 `visit` com esse `utm_content`. Artigo ainda abre (`verify_sell_live` 200); Telegra.ph-2 sai da roleta. Host já morto 20/09. Não repetir Telegra.ph. Artigo `s0903` continua vivo. |
 | `s0915` | rentry.co one-click (2º) | 23/09 track-report | 0 `visit` com esse `utm_content`. Artigo ainda abre (`verify_sell_live` 200); rentry-2 sai da roleta. Host já morto 21/09. Não repetir rentry.co. Artigo `s0903` continua vivo. |
 | `s0916` | Telegra.ph reset-vs-shelf (3º) | 24/09 track-report | 0 `visit` com esse `utm_content`. Artigo ainda abre (`verify_sell_live` 200); Telegra.ph-3 sai da roleta. Host já morto 20/09. Não repetir Telegra.ph. Artigo `s0903` continua vivo. |
+| `s0917` | rentry.co no-app-SSH (3º) | 25/09 track-report | 0 `visit` com esse `utm_content`. Artigo ainda abre (`verify_sell_live` 200); rentry-3 sai da roleta. Host já morto 21/09. Não repetir rentry.co. Artigo `s0903` continua vivo. |
 
 X `p008` trouxe visita — isso é warmup, não venue de venda.
 
