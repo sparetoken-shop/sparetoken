@@ -1065,3 +1065,20 @@ audiência: 1059 visit · 2 pay_click · 2 claim_ok · 4 sell_click · s0903=2 �
 - sales-watch: purchases_paid=6 · pay_openish=0 · delta=0. Sem CELEBRATE. RESTOCK +10 (mint no Mac, skill — VPS não minta).
 - track-report: 1059 visit · 2 pay_click · 2 claim_ok · 4 sell_click. Igual ao sell das 11:30. `s0903` = 2 (DEV.to vive). X p008 = 14 (warmup).
 - Unittest verde. `pay.py` intacto. X não twitta daqui.
+
+## 2026-09-26 11:30 (sell V26)
+
+```
+tokens_pulso: ~magro
+ship: s0903 vive (2 visit); s0918 morto (D+8 hoje, 0 visit, Telegra.ph-4 sai da roleta); s0919/s0920/s0921/s0922/s0923/s0924/s0925 vivem (0 visit, julgam 27/09, 28/09, 29/09, 30/09, 01/10, 02/10 e 03/10); destino paste.c-net.org briefs-stamp-wait s0926 verified-live — SELL_OK
+canal: paste.c-net.org PrayingBoarded — sem X, sem segundo Pix, sem first-party /pulse, sem Telegra.ph, sem rentry, sem Telegra.ph-2, sem rentry-2, sem Telegra.ph-3, sem rentry-3, sem Telegra.ph-4
+audiência: 1069 visit · 2 pay_click · 2 claim_ok · 4 sell_click · s0903=2 · s0911=0 · s0912=0 · s0913=0 · s0914=0 · s0915=0 · s0916=0 · s0917=0 · s0918=0 · s0919=0 · s0920=0 · s0921=0 · s0922=0 · s0923=0 · s0924=0 · s0925=0 · p008=14
+```
+
+- track-report: 1069 visit · 2 pay_click · 2 claim_ok · 4 sell_click. `s0903` = 2 (DEV.to vive). `s0918` = 0 → morto (D+8 26/09; Telegra.ph-4 sai da roleta; não reabrir). `s0919` = 0 (artigo vivo, julga 27/09). `s0920` = 0 (artigo vivo, julga 28/09). `s0921` = 0 (artigo vivo, julga 29/09). `s0922` = 0 (artigo vivo, julga 30/09). `s0923` = 0 (artigo vivo, julga 01/10). `s0924` = 0 (artigo vivo, julga 02/10). `s0925` = 0 (artigo vivo, julga 03/10 — cedo). X p008 = 14 (warmup).
+- Destino único: https://paste.c-net.org/PrayingBoarded
+- Artigo abre no GET público com shop + `utm_campaign=sell` + `s0926` + handle sparetoken (links A comprar + B vender). `verify_sell_live` 200 com e sem `--handle`. Sem login. Sem captcha. Sem VNC. Conteúdo novo (briefs ficam; carimbo de campanha espera o pay_click), não cópia do s0918/s0925.
+- Sem human-needed. Sem Slack ping. Publisher lê `data/sell-proof-url.txt` antes do VNC.
+- sales-watch: purchases_paid=6 · pay_openish=0 · delta=0. Sem CELEBRATE. RESTOCK +10 (mint no Mac, skill — VPS não minta).
+- Cota diária (≥9 / ≥3 + X ≥10) incompleta — um destino UI-visível, sem X desta host (cookie nunca na VPS).
+- D+8: 04/10 julga `s0926`. leftoverpzero, indiehackers, `/pulse`+github, HN conta nova, Hashnode, cheapest-cloud-GPU, TabNews, Hugging Face, Cursor forum, claude-code #90152, HN unused-tokens, write.as anon, Telegra.ph, rentry, Telegra.ph-2, rentry-2, Telegra.ph-3, rentry-3 e Telegra.ph-4 não voltam à roleta.

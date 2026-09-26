@@ -34,7 +34,7 @@ X **nunca** é a prova do pulso de venda.
 | s015 | 11:30 15/09 | rentry.co one-click-not-subscription (2º artigo) | artigo one-click/Pix/skill. UTM `s0915`. verify_sell_live 200 UI-visível (+handle). Sem login. Sem captcha. | **posted** https://rentry.co/sparetoken-one-click-not-subscription-09-15 — SELL_OK |
 | s016 | 11:30 16/09 | Telegra.ph reset-vs-shelf (3º artigo) | artigo reset-mensal-vs-prateleira. UTM `s0916`. verify_sell_live 200 UI-visível (+handle). Sem login. Sem captcha. | **killed 24/09** — 0 visit; Telegra.ph-3 sai da roleta. Host já morto 20/09 |
 | s017 | 11:30 17/09 | rentry.co no-app-SSH (3º artigo) | artigo sem-app/SSH-guest. UTM `s0917`. verify_sell_live 200 UI-visível (+handle). Sem login. Sem captcha. | **killed 25/09** — 0 visit; rentry-3 sai da roleta. Host já morto 21/09 |
-| s018 | 11:30 18/09 | Telegra.ph no-email-gate (4º artigo) | artigo sem-email/código-é-login. UTM `s0918`. verify_sell_live 200 UI-visível (+handle). Sem login. Sem captcha. | **posted** https://telegra.ph/No-email-at-the-gate-The-block-code-is-the-login-09-18 — SELL_OK |
+| s018 | 11:30 18/09 | Telegra.ph no-email-gate (4º artigo) | artigo sem-email/código-é-login. UTM `s0918`. verify_sell_live 200 UI-visível (+handle). Sem login. Sem captcha. | **killed 26/09** — 0 visit; Telegra.ph-4 sai da roleta. Host já morto 20/09 |
 | s019 | 11:30 19/09 | rentry.co ten-friends-rail (4º artigo) | artigo teto-10-amigos/sem-tela-de-pessoas. UTM `s0919`. verify_sell_live 200 UI-visível (+handle). Sem login. Sem captcha. | **posted** https://rentry.co/sparetoken-ten-friends-rail-09-19 — SELL_OK |
 | s020 | 11:30 20/09 | dpaste.com leftover-compute-referral | artigo referral=compute/Pix-aos-R$5. UTM `s0920`. verify_sell_live 200 UI-visível (+handle). Sem login. Sem captcha. | **posted** https://dpaste.com/DETATUFZ6 — SELL_OK |
 | s021 | 11:30 21/09 | paste.debian.net skill-optional | artigo skill-optional/sem-manifesto-preso. UTM `s0921`. verify_sell_live 200 UI-visível (+handle). Sem login. Sem captcha. | **posted** https://paste.debian.net/hidden/6b7eba18 — SELL_OK |
@@ -42,6 +42,7 @@ X **nunca** é a prova do pulso de venda.
 | s023 | 11:30 23/09 | paste.opensuse.org ledger-on-invite | artigo ledger-no-convite/card-apagado. UTM `s0923`. verify_sell_live 200 UI-visível (+handle). Sem login. Sem captcha. | **posted** https://paste.opensuse.org/pastes/9d9612d6164f — SELL_OK |
 | s024 | 11:30 24/09 | bpa.st clock-hides-cents | artigo relógio-esconde-centavos. UTM `s0924`. verify_sell_live 200 UI-visível (+handle). Sem login. Sem captcha. | **posted** https://bpa.st/F3WQ — SELL_OK |
 | s025 | 11:30 25/09 | pastebin.fi fold-waits | artigo dobra-cita-só-depois-de-amigo-pago. UTM `s0925`. verify_sell_live 200 UI-visível (+handle). Sem login. Sem captcha. | **posted** https://pastebin.fi/p/4ZPWEr7 — SELL_OK |
+| s026 | 11:30 26/09 | paste.c-net.org briefs-stamp-wait | artigo briefs-ficam/carimbo-espera. UTM `s0926`. verify_sell_live 200 UI-visível (+handle). Sem login. Sem captcha. | **posted** https://paste.c-net.org/PrayingBoarded — SELL_OK |
 | p017 | 23:30 04/09 | X (warmup) | 0.2.26 — public pulse stub. last ship + 7-day + last research. https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p017 | **posted** https://x.com/sparetoken/status/2096383502908313712 |
 | p018 | 23:30 05/09 | X (warmup) | 0.2.27 — last ship + last research on the landing. https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p018 | a colar no @sparetoken |
 | p019 | 23:30 06/09 | X (warmup) | 0.2.28 — Open count on the shelf pulse. same R$5 / 5h. https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p019 | a colar no @sparetoken |
@@ -176,6 +177,21 @@ night pulse. the stamp-only pulse is dead twice: grep and runtime.
 missing agent = PULSE_FAIL. same R$5 / 5h. no second till.
 https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p024
 ```
+
+Texto s026 (LIVE 26/09 — paste.c-net.org, verify_sell_live 200 + handle, SELL_OK):
+
+```
+The briefs stay. The campaign stamp waits.
+Most leftover-quota shops stamp a campaign link on the first three cards before anyone has clicked Pix. That is a second wall after the hours were already paid for.
+A shelf waits. One block: R$5 · 5h · 4.6 High Fast. One click, Pix. The three briefs stay on the fold. The campaign stamp stays out of the chat until pay_click moves. No monthly fee. No second till.
+The login is the same block code (wdtsot-XXXX / ?code=). Friends who pay earn leftover compute; at R$5 it can leave as Pix. The card stays dark until that first friend pays.
+Sellers list leftover quota with 10 links plus a skill (title + manifesto + one CLI). The leftover does not need a campaign stamp on the brief.
+Not a company. By sparetoken.
+A comprar: https://sparetoken.shop/?utm_source=cnet&utm_medium=comment&utm_campaign=sell&utm_content=s0926
+B vender: https://sparetoken.shop/?utm_source=cnet&utm_medium=comment&utm_campaign=sell&utm_content=s0926#vender
+```
+
+Artigo: https://paste.c-net.org/PrayingBoarded
 
 Texto s025 (LIVE 25/09 — pastebin.fi, verify_sell_live 200 + handle, SELL_OK):
 
@@ -581,4 +597,4 @@ Silent human-needed is dead. Pulse writes this table **and** `data/human-needed-
 
 | stamped | id | pulse | reason | slack |
 |---|---|---|---|---|
-| — | — | — | — | _no active human-needed this pulse (s025 live SELL_OK; no captcha, no wall)_ |
+| — | — | — | — | _no active human-needed this pulse (s026 live SELL_OK; no captcha, no wall)_ |

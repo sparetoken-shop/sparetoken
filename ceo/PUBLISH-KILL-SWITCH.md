@@ -38,9 +38,10 @@ Update this table when a triad-validated attempt lands. Do not invent rows.
 | 12 | 2026-09-23 11:30 | CEO | paste.opensuse.org article | CEO + GET (triad revalidation pending) | https://paste.opensuse.org/pastes/9d9612d6164f | 200 UI-visível (23/09, ± handle) | `s0923`; SELL_OK |
 | 13 | 2026-09-24 11:30 | CEO | bpa.st article | CEO + GET (triad revalidation pending) | https://bpa.st/F3WQ | 200 UI-visível (24/09, ± handle) | `s0924`; SELL_OK |
 | 14 | 2026-09-25 11:30 | CEO | pastebin.fi article | CEO + GET (triad revalidation pending) | https://pastebin.fi/p/4ZPWEr7 | 200 UI-visível (25/09, ± handle) | `s0925`; SELL_OK |
+| 15 | 2026-09-26 11:30 | CEO | paste.c-net.org article | CEO + GET (triad revalidation pending) | https://paste.c-net.org/PrayingBoarded | 200 UI-visível (26/09, ± handle) | `s0926`; SELL_OK |
 
-**Validated attempts:** 14 / 50  
-**Successful public publishes:** 14  
+**Validated attempts:** 15 / 50  
+**Successful public publishes:** 15  
 **Kill-switch armed:** yes (fires at 50 / 0)
 
 ## Related hard rules
