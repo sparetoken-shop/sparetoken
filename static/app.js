@@ -938,6 +938,16 @@ const BRIEFS = { mkt: "brief.mkt", copy: "brief.copy", viral: "brief.viral" };
 function briefText(key) {
   let text = t(`brief.${key}`);
   if (text === `brief.${key}`) text = "";
+  const card = document.querySelector(`[data-brief="${key}"]`);
+  const stampWaits = !!(card && card.getAttribute("data-stamp") === "wait");
+  if (stampWaits) {
+    text = text
+      .replace(
+        /\s*Link:\s*https:\/\/sparetoken\.shop\/\?utm_source=shop&utm_medium=web&utm_campaign=agent&utm_content=(?:mkt|copy|viral)\b/g,
+        ""
+      )
+      .trim();
+  }
   const code = ((claimCode && claimCode.value) || params.get("code") || "").trim();
   if (text && /^wdtsot-[A-Za-z0-9]{3,16}$/.test(code)) {
     text += t("brief.invite", {

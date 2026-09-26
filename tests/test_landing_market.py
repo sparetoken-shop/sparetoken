@@ -258,6 +258,42 @@ class LandingMarketTest(unittest.TestCase):
         self.assertEqual(HTML.count('id="pay"'), 1)
         self.assertIn(".rail-proof", CSS)
 
+    def test_d27_briefs_stay_campaign_stamp_waits(self):
+        """D27 (25/09): briefs stayed on the fold, pay_click still 2.
+        The chat brief does not carry utm_content=mkt|copy|viral
+        until the click moves. data-stamp=wait strips that link."""
+        import i18n
+
+        self.assertEqual(HTML.count('data-stamp="wait"'), 3)
+        for key in ("mkt", "copy", "viral"):
+            start = HTML.find(f'data-brief="{key}"')
+            self.assertGreater(start, 0)
+            tag_open = HTML.rfind("<article", 0, start)
+            tag_end = HTML.find(">", start)
+            tag = HTML[tag_open:tag_end]
+            self.assertIn('data-stamp="wait"', tag)
+            self.assertIn('data-cli="cursor"', tag)
+            self.assertIn("is-live", tag)
+        design = HTML.find('data-i18n="skill.design.t"')
+        soon_open = HTML.rfind("<article", 0, design)
+        soon_end = HTML.find(">", design)
+        self.assertNotIn("data-stamp", HTML[soon_open:soon_end])
+        self.assertNotIn("data-brief", HTML[soon_open:soon_end])
+        fn = JS.split("function briefText", 1)[1].split("function fillBrief", 1)[0]
+        self.assertIn("data-stamp", fn)
+        self.assertIn("wait", fn)
+        self.assertIn("utm_content=(?:mkt|copy|viral)", fn)
+        self.assertNotIn("utm_content=${", fn)
+        self.assertNotIn("utm_content=copy", fn)
+        self.assertNotIn("utm_content=viral", fn)
+        for loc in ("pt-BR", "en-US"):
+            pack = i18n.STRINGS[loc]
+            self.assertIn("utm_content=mkt", pack["brief.mkt"])
+            self.assertNotIn("utm_content=", pack["brief.copy"])
+            self.assertNotIn("utm_content=", pack["brief.viral"])
+        self.assertIn("um clique. Pix R$5.", HTML)
+        self.assertEqual(HTML.count('id="pay"'), 1)
+
     def test_d24_zero_pool_keeps_restock_and_rail_stays(self):
         """D24 (22/09): Mac refill did not land (pool Open 0).
         The pulse keeps 0 Open · restock. The rail stays visible.

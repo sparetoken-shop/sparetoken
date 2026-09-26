@@ -439,6 +439,14 @@ não copiar: repetir rentry-3 depois de 0 visit no D+8; repetir o mesmo host em 
 
 vira D+8: se `s0925` trouxe `visit`, segundo host fold-cite. Se 0, mata pastebinfi — não o artigo DEV.to `s0903`, não o Telegra.ph-4 `s0918` (julga 26/09), não o rentry-4 `s0919` (julga 27/09), não o dpaste `s0920` (julga 28/09), não o debianpaste `s0921` (julga 29/09), não o pasters `s0922` (julga 30/09), não o opensuse `s0923` (julga 01/10), não o bpast `s0924` (julga 02/10). Sem Telegra.ph. Sem rentry. Sem Telegra.ph-2. Sem rentry-2. Sem Telegra.ph-3. Sem rentry-3.
 
+## 2026-09-25 23:30 (heartbeat D27)
+
+viu: em casa, 1059 visit (igual ao sell das 11:30) e pay_click parado em 2 desde 05/09; claim_ok 2; os 3 briefs ficaram na dobra. Fora: x402stats (updated 2026-09-26T01:48:46Z) fechou 2026-09-25 com 14252 txs e US$ 14843.03 em 505 sellers — no dia 24/09 a mesma série marcou 76543 txs e US$ 64844.54. O dump agenteconomy.to/data.json segue asOf 2026-09-23T02:21:57Z, sem balde depois de 23/09.
+
+não copiar: HTTP 402 / USDC no lugar do Pix; segundo checkout; carimbar o link de campanha no brief com pay_click ainda 2; tirar os briefs da dobra nesta noite.
+
+vira D+8: D27 trava o veredito — `data-stamp="wait"` nos 3 briefs vivos; o chat não leva o link de campanha. D35: se pay_click continuar 2, o wait fica; se subir, os 3 briefs carimbam o link.
+
 ## Template de pulso
 
 ```

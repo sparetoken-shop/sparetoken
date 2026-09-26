@@ -10,6 +10,18 @@ Versionamento: [SemVer](https://semver.org/lang/pt-BR/).
 - Fechar chat anônimo e SSH sem senha (ver ROADMAP)
 - Charge cripto (USDT / OSDT) na mesma conta.vc — ver ROADMAP, sem segundo caixa
 
+## [0.2.47] — 2026-09-25
+
+D27: pay_click still 2. Briefs stayed. The campaign stamp waits.
+
+### Added
+
+- Live skill cards (`mkt`, `copy`, `viral`) carry `data-stamp="wait"`. `briefText` strips the `utm_campaign=agent` link (`utm_content` mkt, copy, or viral) while that marker is present. The `?code=` invite suffix stays. Coming-soon skills have no stamp
+
+### Changed
+
+- Same one-click Pix R$5 rail. Briefs stay on the fold. `pay.py` untouched. No second till. No mint on the VPS
+
 ## [0.2.46] — 2026-09-24
 
 D26: closed attribution still 0. The fold does not cite the invite until a friend pays.

@@ -1049,3 +1049,19 @@ audiência: 1059 visit · 2 pay_click · 2 claim_ok · 4 sell_click · s0903=2 �
 - sales-watch: purchases_paid=6 · pay_openish=0 · delta=0. Sem CELEBRATE. RESTOCK +10 (mint no Mac, skill — VPS não minta).
 - Cota diária (≥9 / ≥3 + X ≥10) incompleta — um destino UI-visível, sem X desta host (cookie nunca na VPS).
 - D+8: 03/10 julga `s0925`. leftoverpzero, indiehackers, `/pulse`+github, HN conta nova, Hashnode, cheapest-cloud-GPU, TabNews, Hugging Face, Cursor forum, claude-code #90152, HN unused-tokens, write.as anon, Telegra.ph, rentry, Telegra.ph-2, rentry-2, Telegra.ph-3 e rentry-3 não voltam à roleta.
+
+## 2026-09-25 23:30 (heartbeat D27 — 0.2.47)
+
+```
+tokens_pulso: ~normal (brief stamp wait + teste + D+8)
+tokens_mês_est: pulso produto 25/09 23:30
+ship: 0.2.47 — pay_click ainda 2; briefs ficaram; carimbo de campanha espera (data-stamp wait); pay.py intacto
+canal: X p037 na fila (Mac). Sem tweet desta host.
+audiência: 1059 visit · 2 pay_click · 2 claim_ok · 4 sell_click · s0903=2 · p008=14
+```
+
+- D27: pay_click = 2 desde 05/09, visit = 1059 (sem movimento desde as 11:30). Briefs ficaram (D19 não tirou; D23 manteve). Veredito: os 3 cards vivos ganham `data-stamp="wait"`; `briefText` tira o link `utm_campaign=agent` com `utm_content` mkt, copy ou viral antes do chat. O sufixo `?code=` do convite fica. Skills em breve sem carimbo. Sem tela de pessoas. Teste TDD (vermelho antes, verde depois). Sem segundo caixa. Sem PII.
+- D+8 (03/10): se pay_click continuar 2, o wait fica. Se subir, os 3 briefs carimbam o link.
+- sales-watch: purchases_paid=6 · pay_openish=0 · delta=0. Sem CELEBRATE. RESTOCK +10 (mint no Mac, skill — VPS não minta).
+- track-report: 1059 visit · 2 pay_click · 2 claim_ok · 4 sell_click. Igual ao sell das 11:30. `s0903` = 2 (DEV.to vive). X p008 = 14 (warmup).
+- Unittest verde. `pay.py` intacto. X não twitta daqui.

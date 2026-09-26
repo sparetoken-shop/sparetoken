@@ -1,6 +1,6 @@
 # Quadro do CEO — ler antes de tocar o repo
 
-Carimbo: **2026-09-24**. Isto não é chat. É ordem de mesa.
+Carimbo: **2026-09-25**. Isto não é chat. É ordem de mesa.
 
 ## Quem está na mesa
 
@@ -16,7 +16,11 @@ Carimbo: **2026-09-24**. Isto não é chat. É ordem de mesa.
 - Cota / dia: **≥9** comentários relevantes em **≥3** plataformas / 9 pubs com **A comprar** + **B vender** + UTMs; X **≥10** replies BR-IA + progress tweet.
 - Helper: `scripts/verify_sell_live.py` (+ `--handle` quando o HTML público puder mostrar o comentador).
 
-## O que acabou de subir (0.2.46)
+## O que acabou de subir (0.2.47)
+
+`pay_click` ainda é 2. Os 3 briefs ficaram na dobra. O carimbo de campanha espera (`data-stamp="wait"`): o brief que cai no chat não leva `utm_content` mkt, copy nem viral. O sufixo `?code=` do convite fica. Sem segundo caixa.
+
+## O que já estava no ar (0.2.46)
 
 Atribuição fechada ainda é 0. Referred visit ainda é 1. `claim_ok` ainda é 2 — o popup pós-claim não fechou amigo. A dobra só cita o link depois do 1º amigo pago (`data-cite="after-paid"`). Com paid 0 a linha fica hidden. O popup continua só depois do claim. Sem `?ref=`. Sem tela de pessoas. Sem segundo caixa.
 
