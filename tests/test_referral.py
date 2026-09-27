@@ -217,6 +217,44 @@ class ReferralSurfaceTest(unittest.TestCase):
         self.assertNotIn("whatsapp", blob)
         self.assertNotIn("pague r$", blob)
 
+    def test_d28_clock_hides_cents_while_accrued_zero(self):
+        """D28 (26/09): accrued still 0, closed still 0, referred visit still 1.
+        Clock stays hidden at 0. Compute line only in (0, R$5). Never Pix."""
+        self.assertEqual(HTML.count('data-hold="accrued-zero"'), 1)
+        cents = HTML.find('id="clock-cents"')
+        self.assertGreater(cents, 0)
+        cents_open = HTML.rfind("<", 0, cents)
+        cents_end = HTML.find(">", cents)
+        cents_tag = HTML[cents_open:cents_end]
+        self.assertIn('data-cents="wait"', cents_tag)
+        self.assertIn('data-hold="accrued-zero"', cents_tag)
+        self.assertIn("hidden", cents_tag)
+        hero_clock = HTML.find('id="hero-clock"')
+        self.assertGreater(cents, hero_clock)
+        price = HTML.find('id="preco"')
+        self.assertLess(cents, price)
+        self.assertNotIn('id="people"', HTML)
+        card = HTML.find('id="referral-card"')
+        card_open = HTML.rfind("<p", 0, card)
+        card_end = HTML.find(">", card)
+        self.assertNotIn("data-hold", HTML[card_open:card_end])
+        cents_fn = JS.split("function showClockCents", 1)[1].split("function ", 1)[0]
+        self.assertIn("data-hold", cents_fn)
+        self.assertIn("accrued-zero", cents_fn)
+        self.assertIn("data-cents", cents_fn)
+        self.assertIn("wait", cents_fn)
+        self.assertIn("accrued_cents", cents_fn)
+        self.assertIn("accrued <= 0", cents_fn)
+        self.assertIn("accrued >= 500", cents_fn)
+        self.assertNotIn("can_choose_pix", cents_fn)
+        self.assertNotIn("checkout", cents_fn.lower())
+        pt = i18n.STRINGS["pt-BR"]["clock.cents"]
+        en = i18n.STRINGS["en-US"]["clock.cents"]
+        blob = (pt + en).lower()
+        self.assertIn("compute", blob)
+        self.assertNotIn("pix", blob)
+        self.assertNotIn("checkout", blob)
+
     def test_d26_fold_cites_link_only_after_paid_friend(self):
         """D26 (24/09): closed attribution still 0, claim_ok is 2.
         The popup stays after claim. The fold cites the invite link

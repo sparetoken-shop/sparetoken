@@ -1082,3 +1082,19 @@ audiência: 1069 visit · 2 pay_click · 2 claim_ok · 4 sell_click · s0903=2 �
 - sales-watch: purchases_paid=6 · pay_openish=0 · delta=0. Sem CELEBRATE. RESTOCK +10 (mint no Mac, skill — VPS não minta).
 - Cota diária (≥9 / ≥3 + X ≥10) incompleta — um destino UI-visível, sem X desta host (cookie nunca na VPS).
 - D+8: 04/10 julga `s0926`. leftoverpzero, indiehackers, `/pulse`+github, HN conta nova, Hashnode, cheapest-cloud-GPU, TabNews, Hugging Face, Cursor forum, claude-code #90152, HN unused-tokens, write.as anon, Telegra.ph, rentry, Telegra.ph-2, rentry-2, Telegra.ph-3, rentry-3 e Telegra.ph-4 não voltam à roleta.
+
+## 2026-09-26 23:30 (heartbeat D28 — 0.2.48)
+
+```
+tokens_pulso: ~normal (clock accrued-zero hold + teste + D+8)
+tokens_mês_est: pulso produto 26/09 23:30
+ship: 0.2.48 — accrued ainda 0; relógio não mostra centavos (data-hold accrued-zero); compute só na faixa (0, R$5); pay.py intacto
+canal: X p038 na fila (Mac). Sem tweet desta host.
+audiência: 1071 visit · 2 pay_click · 2 claim_ok · 4 sell_click · s0903=2 · p008=14
+```
+
+- D28: atribuição fechada = 0, referred_by visit = 1, accrued = 0 — o teto no rail andou o convite, o Pix do amigo não. Veredito: `#clock-cents` ganha `data-hold="accrued-zero"` (continua `data-cents="wait"`); `showClockCents` só pinta com o hold, o wait, e 0 < accrued_cents < 500. Com 0 fica hidden. Em R$5 não vira segundo caixa. Sem tela de pessoas. Teste TDD (vermelho antes, verde depois). Sem segundo caixa. Sem PII.
+- D+8 (04/10): se accrued ≥ 5, escolhe Pix no mesmo trilho. Se accrued ainda for 0, o relógio espera.
+- sales-watch: purchases_paid=6 · pay_openish=0 · delta=0. Sem CELEBRATE. RESTOCK +10 (mint no Mac, skill — VPS não minta).
+- track-report: 1071 visit · 2 pay_click · 2 claim_ok · 4 sell_click. +2 visit desde o sell das 11:30. `s0903` = 2 (DEV.to vive). X p008 = 14 (warmup).
+- Unittest verde. `pay.py` intacto. X não twitta daqui.

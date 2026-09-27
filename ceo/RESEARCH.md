@@ -455,6 +455,14 @@ não copiar: repetir Telegra.ph-4 depois de 0 visit no D+8; repetir o mesmo host
 
 vira D+8: se `s0926` trouxe `visit`, segundo host brief-stamp. Se 0, mata cnet — não o artigo DEV.to `s0903`, não o rentry-4 `s0919` (julga 27/09), não o dpaste `s0920` (julga 28/09), não o debianpaste `s0921` (julga 29/09), não o pasters `s0922` (julga 30/09), não o opensuse `s0923` (julga 01/10), não o bpast `s0924` (julga 02/10), não o pastebinfi `s0925` (julga 03/10). Sem Telegra.ph. Sem rentry. Sem Telegra.ph-2. Sem rentry-2. Sem Telegra.ph-3. Sem rentry-3. Sem Telegra.ph-4.
 
+## 2026-09-26 23:30 (heartbeat D28)
+
+viu: em casa, 1071 visit (+2 desde o sell da manhã) e pay_click parado em 2 desde 05/09; atribuição fechada 0, referred_by visit 1, accrued 0 — o teto no rail não fechou amigo. Fora: x402stats (updated 2026-09-27T01:52:16Z) já tem o balde 26/09: 20817 txs e US$ 2779.32 em 832 sellers / 2270 buyers; 25/09 na mesma série agora lê 67254 txs e US$ 37091.48 (revisou o 14252 / US$ 14843 da leitura de ontem). O dump agenteconomy.to/data.json segue asOf 2026-09-23T02:21:57Z.
+
+não copiar: HTTP 402 / USDC no lugar do Pix; segundo checkout; centavos no relógio com accrued 0; tela de pessoas; Pix no relógio quando accrued ≥ 5.
+
+vira D+8: D28 trava o veredito — `data-hold="accrued-zero"` no relógio, compute só na faixa (0, R$5). D36: se accrued ≥ 5, escolhe Pix no mesmo trilho; senão o relógio espera.
+
 ## Template de pulso
 
 ```

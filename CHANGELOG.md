@@ -10,6 +10,18 @@ Versionamento: [SemVer](https://semver.org/lang/pt-BR/).
 - Fechar chat anônimo e SSH sem senha (ver ROADMAP)
 - Charge cripto (USDT / OSDT) na mesma conta.vc — ver ROADMAP, sem segundo caixa
 
+## [0.2.48] — 2026-09-26
+
+D28: accrued still 0. Clock hides cents. Compute waits for the band.
+
+### Added
+
+- `#clock-cents` carries `data-hold="accrued-zero"` — accrued still 0, referred_by visit still 1, closed still 0. `showClockCents` only paints when the hold is present, `data-cents="wait"` is present, and `0 < accrued_cents < 500`. At 0 the line stays hidden. At R$5 it does not become a second till
+
+### Changed
+
+- Same one-click Pix R$5 rail. No people screen. `pay.py` untouched. No second till. No mint on the VPS
+
 ## [0.2.47] — 2026-09-25
 
 D27: pay_click still 2. Briefs stayed. The campaign stamp waits.

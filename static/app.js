@@ -235,9 +235,10 @@ function showClockCents(ledger) {
   const el = document.getElementById("clock-cents");
   if (!el) return;
   const wait = el.getAttribute("data-cents") === "wait";
+  const held = el.getAttribute("data-hold") === "accrued-zero";
   const accrued = ledger ? Number(ledger.accrued_cents) : 0;
   const slot = el.querySelector("[data-cents-n]");
-  if (!wait || !Number.isFinite(accrued) || accrued <= 0 || accrued >= 500) {
+  if (!wait || !held || !Number.isFinite(accrued) || accrued <= 0 || accrued >= 500) {
     el.hidden = true;
     if (slot) slot.textContent = "";
     return;

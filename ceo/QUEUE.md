@@ -65,6 +65,15 @@ X **nunca** é a prova do pulso de venda.
 | p035 | 23:30 23/09 | X (warmup) | 0.2.45 — ledger stays on the invite (closed still 0). clock cents wait until accrued is between 0 and R$5. same R$5 / 5h. https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p035 | a colar no @sparetoken |
 | p036 | 23:30 24/09 | X (warmup) | 0.2.46 — fold cites the invite only after a paid friend. popup stays after claim. closed still 0. same R$5 / 5h. https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p036 | a colar no @sparetoken |
 | p037 | 23:30 25/09 | X (warmup) | 0.2.47 — briefs stayed, pay_click still 2, so the campaign stamp waits. same R$5 / 5h. https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p037 | a colar no @sparetoken |
+| p038 | 23:30 26/09 | X (warmup) | 0.2.48 — accrued still 0, so the clock hides cents. compute waits for the (0, R$5) band. same R$5 / 5h. https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p038 | a colar no @sparetoken |
+
+Texto p038 (colar no X, cookie no Mac):
+
+```
+night pulse. accrued is still 0, so the clock stays without cents. compute only after a friend pays, and only under R$5.
+same R$5 / 5h. no second till.
+https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p038
+```
 
 Texto p037 (colar no X, cookie no Mac):
 
