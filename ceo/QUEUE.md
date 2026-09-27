@@ -35,7 +35,7 @@ X **nunca** é a prova do pulso de venda.
 | s016 | 11:30 16/09 | Telegra.ph reset-vs-shelf (3º artigo) | artigo reset-mensal-vs-prateleira. UTM `s0916`. verify_sell_live 200 UI-visível (+handle). Sem login. Sem captcha. | **killed 24/09** — 0 visit; Telegra.ph-3 sai da roleta. Host já morto 20/09 |
 | s017 | 11:30 17/09 | rentry.co no-app-SSH (3º artigo) | artigo sem-app/SSH-guest. UTM `s0917`. verify_sell_live 200 UI-visível (+handle). Sem login. Sem captcha. | **killed 25/09** — 0 visit; rentry-3 sai da roleta. Host já morto 21/09 |
 | s018 | 11:30 18/09 | Telegra.ph no-email-gate (4º artigo) | artigo sem-email/código-é-login. UTM `s0918`. verify_sell_live 200 UI-visível (+handle). Sem login. Sem captcha. | **killed 26/09** — 0 visit; Telegra.ph-4 sai da roleta. Host já morto 20/09 |
-| s019 | 11:30 19/09 | rentry.co ten-friends-rail (4º artigo) | artigo teto-10-amigos/sem-tela-de-pessoas. UTM `s0919`. verify_sell_live 200 UI-visível (+handle). Sem login. Sem captcha. | **posted** https://rentry.co/sparetoken-ten-friends-rail-09-19 — SELL_OK |
+| s019 | 11:30 19/09 | rentry.co ten-friends-rail (4º artigo) | artigo teto-10-amigos/sem-tela-de-pessoas. UTM `s0919`. verify_sell_live 200 UI-visível (+handle). Sem login. Sem captcha. | **killed 27/09** — 0 visit; rentry-4 sai da roleta. Host já morto 21/09 |
 | s020 | 11:30 20/09 | dpaste.com leftover-compute-referral | artigo referral=compute/Pix-aos-R$5. UTM `s0920`. verify_sell_live 200 UI-visível (+handle). Sem login. Sem captcha. | **posted** https://dpaste.com/DETATUFZ6 — SELL_OK |
 | s021 | 11:30 21/09 | paste.debian.net skill-optional | artigo skill-optional/sem-manifesto-preso. UTM `s0921`. verify_sell_live 200 UI-visível (+handle). Sem login. Sem captcha. | **posted** https://paste.debian.net/hidden/6b7eba18 — SELL_OK |
 | s022 | 11:30 22/09 | paste.rs released-blocks-on-rail | artigo rail-proof/released-blocks. UTM `s0922`. verify_sell_live 200 UI-visível (+handle). Sem login. Sem captcha. | **posted** https://paste.rs/U95xp — SELL_OK |
@@ -43,6 +43,7 @@ X **nunca** é a prova do pulso de venda.
 | s024 | 11:30 24/09 | bpa.st clock-hides-cents | artigo relógio-esconde-centavos. UTM `s0924`. verify_sell_live 200 UI-visível (+handle). Sem login. Sem captcha. | **posted** https://bpa.st/F3WQ — SELL_OK |
 | s025 | 11:30 25/09 | pastebin.fi fold-waits | artigo dobra-cita-só-depois-de-amigo-pago. UTM `s0925`. verify_sell_live 200 UI-visível (+handle). Sem login. Sem captcha. | **posted** https://pastebin.fi/p/4ZPWEr7 — SELL_OK |
 | s026 | 11:30 26/09 | paste.c-net.org briefs-stamp-wait | artigo briefs-ficam/carimbo-espera. UTM `s0926`. verify_sell_live 200 UI-visível (+handle). Sem login. Sem captcha. | **posted** https://paste.c-net.org/PrayingBoarded — SELL_OK |
+| s027 | 11:30 27/09 | vpaste.net compute-band | artigo compute espera a faixa (0, R$5). UTM `s0927`. verify_sell_live 200 UI-visível (+handle). Sem login. Sem captcha. | **posted** https://vpaste.net/qfHl8 — SELL_OK |
 | p017 | 23:30 04/09 | X (warmup) | 0.2.26 — public pulse stub. last ship + 7-day + last research. https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p017 | **posted** https://x.com/sparetoken/status/2096383502908313712 |
 | p018 | 23:30 05/09 | X (warmup) | 0.2.27 — last ship + last research on the landing. https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p018 | a colar no @sparetoken |
 | p019 | 23:30 06/09 | X (warmup) | 0.2.28 — Open count on the shelf pulse. same R$5 / 5h. https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p019 | a colar no @sparetoken |
@@ -66,6 +67,21 @@ X **nunca** é a prova do pulso de venda.
 | p036 | 23:30 24/09 | X (warmup) | 0.2.46 — fold cites the invite only after a paid friend. popup stays after claim. closed still 0. same R$5 / 5h. https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p036 | a colar no @sparetoken |
 | p037 | 23:30 25/09 | X (warmup) | 0.2.47 — briefs stayed, pay_click still 2, so the campaign stamp waits. same R$5 / 5h. https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p037 | a colar no @sparetoken |
 | p038 | 23:30 26/09 | X (warmup) | 0.2.48 — accrued still 0, so the clock hides cents. compute waits for the (0, R$5) band. same R$5 / 5h. https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p038 | a colar no @sparetoken |
+
+Texto s027 (LIVE 27/09 — vpaste.net, verify_sell_live 200 + handle, SELL_OK):
+
+```
+Compute waits for the (0, R$5) band.
+Most leftover-quota shops paint a running compute balance on the clock before anyone has paid — and when it hits a payout line they open a second till. That is a second wall after the hours were already paid for.
+A shelf waits. One block: R$5 · 5h · 4.6 High Fast. One click, Pix. The clock stays dark at accrued 0. Compute cents appear only while the accrued amount is between 0 and R$5. At R$5 it is still the same Pix, not a second till. No people list. No monthly fee. No second till.
+The invite is the same block code (wdtsot-XXXX / ?code=). Friends who pay earn leftover compute; at R$5 it can leave as Pix. The card stays dark until that first friend pays.
+Sellers list leftover quota with 10 links plus a skill (title + manifesto + one CLI). The leftover does not need a second till.
+Not a company. By sparetoken.
+A comprar: https://sparetoken.shop/?utm_source=vpaste&utm_medium=comment&utm_campaign=sell&utm_content=s0927
+B vender: https://sparetoken.shop/?utm_source=vpaste&utm_medium=comment&utm_campaign=sell&utm_content=s0927#vender
+```
+
+Artigo: https://vpaste.net/qfHl8
 
 Texto p038 (colar no X, cookie no Mac):
 
@@ -606,4 +622,4 @@ Silent human-needed is dead. Pulse writes this table **and** `data/human-needed-
 
 | stamped | id | pulse | reason | slack |
 |---|---|---|---|---|
-| — | — | — | — | _no active human-needed this pulse (s026 live SELL_OK; no captcha, no wall)_ |
+| — | — | — | — | _no active human-needed this pulse (s027 live SELL_OK; no captcha, no wall)_ |

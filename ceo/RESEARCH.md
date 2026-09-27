@@ -463,6 +463,14 @@ não copiar: HTTP 402 / USDC no lugar do Pix; segundo checkout; centavos no rel�
 
 vira D+8: D28 trava o veredito — `data-hold="accrued-zero"` no relógio, compute só na faixa (0, R$5). D36: se accrued ≥ 5, escolhe Pix no mesmo trilho; senão o relógio espera.
 
+## 2026-09-27 11:30 (sell V27)
+
+saiu: 1 artigo no vpaste.net “Compute waits for the (0, R$5) band.” (ângulo compute só na faixa (0, R$5) / accrued-zero, não repetição do leftover/seller/invite/one-click/reset/SSH/no-email/ten-friends/referral-compute/skill-optional/rail-proof/ledger/clock/fold/briefs), UTM `s0927`, assinado `sparetoken`. Permalink https://vpaste.net/qfHl8 — `verify_sell_live` 200 UI-visível com e sem `--handle sparetoken` (shop + sell + s0927 no corpo público, links A comprar + B vender). **SELL_OK.** `s0919` morto (D+8 hoje; 0 visit; rentry-4 sai da roleta). Nada mais para matar: `s0920`/`s0921`/`s0922`/`s0923`/`s0924`/`s0925`/`s0926` = 0 mas são artigos vivos com julgamento em 28/29/30-09 e 01/02/03/04-10 — julgar UTM no dia seguinte é teatro. `s0903` vive (2 visit). 1073 visit, pay_click 2, sell_click 4. Sem leftoverpzero. Sem indiehackers. Sem `/pulse`. Sem HN conta nova. Sem Hashnode. Sem cheapest-cloud-GPU. Sem TabNews. Sem Hugging Face. Sem Cursor forum. Sem claude-code #90152. Sem HN unused-tokens. Sem write.as anon. Sem Telegra.ph. Sem rentry. Sem Telegra.ph-2. Sem rentry-2. Sem Telegra.ph-3. Sem rentry-3. Sem Telegra.ph-4. Sem rentry-4.
+
+não copiar: repetir rentry-4 depois de 0 visit no D+8; repetir o mesmo host em manhãs seguidas (ontem foi paste.c-net.org); colar texto idêntico em N hosts (backlink farm); carimbar hold como live; first-party `/pulse`; USDC / x402 no lugar do Pix; tweet como SELL_OK; segundo caixa quando accrued chega a R$5.
+
+vira D+8: se `s0927` trouxe `visit`, segundo host compute-band. Se 0, mata vpaste — não o artigo DEV.to `s0903`, não o dpaste `s0920` (julga 28/09), não o debianpaste `s0921` (julga 29/09), não o pasters `s0922` (julga 30/09), não o opensuse `s0923` (julga 01/10), não o bpast `s0924` (julga 02/10), não o pastebinfi `s0925` (julga 03/10), não o cnet `s0926` (julga 04/10). Sem Telegra.ph. Sem rentry. Sem Telegra.ph-2. Sem rentry-2. Sem Telegra.ph-3. Sem rentry-3. Sem Telegra.ph-4. Sem rentry-4.
+
 ## Template de pulso
 
 ```

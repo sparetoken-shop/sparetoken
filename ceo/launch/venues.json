@@ -1,10 +1,10 @@
 {
   "default": {
-    "host": "cnet",
-    "url": "https://paste.c-net.org/PrayingBoarded",
+    "host": "vpaste",
+    "url": "https://vpaste.net/qfHl8",
     "kind": "article",
     "fallback": false,
-    "note": "LIVE 26/09: UTM s0926 verify_sell_live 200 UI-visible SELL_OK; s0918 dead (D+8 26/09, 0 visit, Telegra.ph-4 leaves roulette); s0919/s0920/s0921/s0922/s0923/s0924/s0925 = 0 but live, judge 27/28/29/30-09 and 01/02/03-10; leftoverpzero indiehackers /pulse HN-new-account Hashnode cheapest-cloud-GPU TabNews Hugging Face Cursor forum claude-code#90152 HN-unused-tokens write.as-anon Telegra.ph rentry Telegra.ph-2 rentry-2 Telegra.ph-3 rentry-3 Telegra.ph-4 dead; s0903 lives (2 visit)"
+    "note": "LIVE 27/09: UTM s0927 verify_sell_live 200 UI-visible SELL_OK; s0919 dead (D+8 27/09, 0 visit, rentry-4 leaves roulette); s0920/s0921/s0922/s0923/s0924/s0925/s0926 = 0 but live, judge 28/29/30-09 and 01/02/03/04-10; leftoverpzero indiehackers /pulse HN-new-account Hashnode cheapest-cloud-GPU TabNews Hugging Face Cursor forum claude-code#90152 HN-unused-tokens write.as-anon Telegra.ph rentry Telegra.ph-2 rentry-2 Telegra.ph-3 rentry-3 Telegra.ph-4 rentry-4 dead; s0903 lives (2 visit)"
   },
   "2026-08-31": {
     "host": "pulse-github",
@@ -194,5 +194,12 @@
     "kind": "article",
     "fallback": false,
     "note": "LIVE: UTM s0926 verify_sell_live 200 UI-visible SELL_OK; s0918 dead 0 visit Telegra.ph-4 leaves roulette; leftoverpzero indiehackers /pulse HN-new-account Hashnode cheapest-cloud-GPU TabNews Hugging Face Cursor forum claude-code#90152 HN-unused-tokens write.as-anon Telegra.ph rentry Telegra.ph-2 rentry-2 Telegra.ph-3 rentry-3 Telegra.ph-4 stay dead; s0903 lives (2 visit)"
+  },
+  "2026-09-27": {
+    "host": "vpaste",
+    "url": "https://vpaste.net/qfHl8",
+    "kind": "article",
+    "fallback": false,
+    "note": "LIVE: UTM s0927 verify_sell_live 200 UI-visible SELL_OK; s0919 dead 0 visit rentry-4 leaves roulette; leftoverpzero indiehackers /pulse HN-new-account Hashnode cheapest-cloud-GPU TabNews Hugging Face Cursor forum claude-code#90152 HN-unused-tokens write.as-anon Telegra.ph rentry Telegra.ph-2 rentry-2 Telegra.ph-3 rentry-3 Telegra.ph-4 rentry-4 stay dead; s0903 lives (2 visit)"
   }
 }
