@@ -198,6 +198,26 @@ class LandingMarketTest(unittest.TestCase):
         self.assertIn("um clique. Pix R$5.", HTML)
         self.assertEqual(HTML.count('id="pay"'), 1)
 
+    def test_d29_chapter_stays_closed(self):
+        """D29 (27/09): trap-test still green, Unreleased still Planned-only.
+        PR #1 chapter stays closed. Pulse only paints with data-chapter=closed
+        next to the runtime trap. s0911 stays hold."""
+        self.assertEqual(HTML.count('data-chapter="closed"'), 1)
+        pulse = HTML.find('id="pulso-heartbeat"')
+        tag_open = HTML.rfind("<p", 0, pulse)
+        tag_end = HTML.find(">", pulse)
+        tag = HTML[tag_open:tag_end]
+        self.assertIn('data-trap="runtime"', tag)
+        self.assertIn('data-chapter="closed"', tag)
+        self.assertIn('data-placement="under-tally"', tag)
+        hero = HTML.split('<section class="wrap hero">', 1)[1].split("</section>", 1)[0]
+        self.assertNotIn("data-chapter", hero)
+        fn = JS.split("function fillPulse", 1)[1].split("fetch(", 1)[0]
+        self.assertIn("data-chapter", fn)
+        self.assertIn("closed", fn)
+        self.assertIn("um clique. Pix R$5.", HTML)
+        self.assertEqual(HTML.count('id="pay"'), 1)
+
     def test_d22_skill_stays_optional_launcher_waits(self):
         """D22 (20/09): 0 extra-CLI applies. #vender skill stays optional.
         Live briefs stay cursor. No launch stub for a second CLI."""

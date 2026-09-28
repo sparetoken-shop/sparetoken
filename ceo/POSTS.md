@@ -36,6 +36,7 @@ Repo: https://github.com/sparetoken-shop/sparetoken
 | p023 | 2026-09-10 | X @sparetoken | 0.2.33 rail ceiling / card waits — **a colar** (Mac) | `p023` |
 | p031 | 2026-09-19 | X @sparetoken | 0.2.41 trap runtime / PR #1 closed — **a colar** (Mac) | `p031` |
 | p032 | 2026-09-20 | X @sparetoken | 0.2.42 skill optional / launcher waits — **a colar** (Mac) | `p032` |
+| p039 | 2026-09-27 | X @sparetoken | 0.2.49 chapter stays closed / both locks — **a colar** (Mac) | `p039` |
 | sale006 | 2026-09-10 | X @sparetoken | mais um bloco saiu da prateleira — **a colar** (Mac) | `sale` |
 
 p015: D4 — Playwright no Mac postou sozinho (cookie do cofre). Sem humano no teclado.

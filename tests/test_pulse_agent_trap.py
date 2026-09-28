@@ -92,3 +92,24 @@ class PulseChapterClosedTest(unittest.TestCase):
         fn = js.split("function fillPulse", 1)[1].split("fetch(", 1)[0]
         self.assertIn("data-trap", fn)
         self.assertIn("runtime", fn)
+
+    def test_d29_chapter_stays_closed_lock(self):
+        """D29 27/09: trap stayed green, Unreleased still Planned-only.
+        PR #1 chapter stays closed. Pulse only paints with both locks."""
+        html = (ROOT / "static" / "index.html").read_text(encoding="utf-8")
+        js = (ROOT / "static" / "app.js").read_text(encoding="utf-8")
+        pulse = html.find('id="pulso-heartbeat"')
+        tag_open = html.rfind("<p", 0, pulse)
+        tag_end = html.find(">", pulse)
+        tag = html[tag_open:tag_end]
+        self.assertIn('data-trap="runtime"', tag)
+        self.assertIn('data-chapter="closed"', tag)
+        fn = js.split("function fillPulse", 1)[1].split("fetch(", 1)[0]
+        self.assertIn("data-chapter", fn)
+        self.assertIn("closed", fn)
+        queue = (ROOT / "ceo" / "QUEUE.md").read_text(encoding="utf-8")
+        venues = (ROOT / "ceo" / "launch" / "venues.json").read_text(encoding="utf-8")
+        self.assertIn("s0911", queue)
+        self.assertIn("killed 12/09", queue)
+        self.assertIn("HN-unused-tokens", venues)
+        self.assertNotIn('"host": "hn"', venues.split('"default"', 1)[1].split("{", 1)[1][:200])

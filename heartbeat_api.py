@@ -218,7 +218,8 @@ def apply_html(html: str, root: Path | None = None) -> str:
     out = _PULSE_SLOT.sub(_slot, html)
     pulse_tag = re.search(r"<p\b[^>]*\bid=\"pulso-heartbeat\"[^>]*>", out)
     trap_ok = bool(pulse_tag and 'data-trap="runtime"' in pulse_tag.group(0))
-    if trap_ok and (filled["ship"] or filled["research"] or filled["shelf"]):
+    chapter_ok = bool(pulse_tag and 'data-chapter="closed"' in pulse_tag.group(0))
+    if trap_ok and chapter_ok and (filled["ship"] or filled["research"] or filled["shelf"]):
         out = re.sub(
             r'(<p\b[^>]*\bid="pulso-heartbeat"[^>]*)\s+hidden\b',
             r"\1",

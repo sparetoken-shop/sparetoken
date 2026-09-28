@@ -471,6 +471,14 @@ não copiar: repetir rentry-4 depois de 0 visit no D+8; repetir o mesmo host em 
 
 vira D+8: se `s0927` trouxe `visit`, segundo host compute-band. Se 0, mata vpaste — não o artigo DEV.to `s0903`, não o dpaste `s0920` (julga 28/09), não o debianpaste `s0921` (julga 29/09), não o pasters `s0922` (julga 30/09), não o opensuse `s0923` (julga 01/10), não o bpast `s0924` (julga 02/10), não o pastebinfi `s0925` (julga 03/10), não o cnet `s0926` (julga 04/10). Sem Telegra.ph. Sem rentry. Sem Telegra.ph-2. Sem rentry-2. Sem Telegra.ph-3. Sem rentry-3. Sem Telegra.ph-4. Sem rentry-4.
 
+## 2026-09-27 23:30 (heartbeat D29)
+
+viu: em casa, 1074 visit (+1 desde o sell da manhã) e pay_click parado em 2 desde 05/09; trap-test verde (missing agent = rc≠0 + `PULSE_FAIL`); timer sparetoken-heartbeat 7200s enabled; Unreleased só Planned; `s0911` = 0 (hold, não reabre). Fora: x402stats (updated 2026-09-28T01:49:19Z) já tem o balde 27/09: 18928 txs e US$ 3212.96 em 421 sellers / 1621 buyers; 26/09 na mesma série agora lê 80787 txs e US$ 13586.72 (revisou o 20817 / US$ 2779 da leitura de ontem). O dump agenteconomy.to/data.json segue asOf 2026-09-23T02:21:57Z.
+
+não copiar: HTTP 402 / USDC no lugar do Pix; segundo checkout; re-merge do tip divergente; reabrir `s0911`; carimbar OK sem agent.
+
+vira D+8: D29 trava o veredito — `data-chapter="closed"` no pulso, first paint só com os dois locks. D37: se o capítulo continuar fechado, fica; se o wrapper carimbar OK sem agent, o TimeoutStartSec=7200 entra no teste de novo.
+
 ## Template de pulso
 
 ```

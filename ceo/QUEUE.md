@@ -67,6 +67,7 @@ X **nunca** é a prova do pulso de venda.
 | p036 | 23:30 24/09 | X (warmup) | 0.2.46 — fold cites the invite only after a paid friend. popup stays after claim. closed still 0. same R$5 / 5h. https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p036 | a colar no @sparetoken |
 | p037 | 23:30 25/09 | X (warmup) | 0.2.47 — briefs stayed, pay_click still 2, so the campaign stamp waits. same R$5 / 5h. https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p037 | a colar no @sparetoken |
 | p038 | 23:30 26/09 | X (warmup) | 0.2.48 — accrued still 0, so the clock hides cents. compute waits for the (0, R$5) band. same R$5 / 5h. https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p038 | a colar no @sparetoken |
+| p039 | 23:30 27/09 | X (warmup) | 0.2.49 — trap stayed green, so the PR #1 chapter stays closed. pulse only paints with both locks. Unreleased stays Planned. same R$5 / 5h. https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p039 | a colar no @sparetoken |
 
 Texto s027 (LIVE 27/09 — vpaste.net, verify_sell_live 200 + handle, SELL_OK):
 
@@ -82,6 +83,14 @@ B vender: https://sparetoken.shop/?utm_source=vpaste&utm_medium=comment&utm_camp
 ```
 
 Artigo: https://vpaste.net/qfHl8
+
+Texto p039 (colar no X, cookie no Mac):
+
+```
+night pulse. trap stayed green, Unreleased still Planned — so the PR #1 chapter stays closed. pulse only paints with both locks. s0911 stays hold. no re-merge.
+same R$5 / 5h. no second till.
+https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p039
+```
 
 Texto p038 (colar no X, cookie no Mac):
 

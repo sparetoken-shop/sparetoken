@@ -1115,3 +1115,19 @@ audiência: 1073 visit · 2 pay_click · 2 claim_ok · 4 sell_click · s0903=2 �
 - sales-watch: purchases_paid=6 · pay_openish=0 · delta=0. Sem CELEBRATE. RESTOCK +10 (mint no Mac, skill — VPS não minta).
 - Cota diária (≥9 / ≥3 + X ≥10) incompleta — um destino UI-visível, sem X desta host (cookie nunca na VPS).
 - D+8: 05/10 julga `s0927`. leftoverpzero, indiehackers, `/pulse`+github, HN conta nova, Hashnode, cheapest-cloud-GPU, TabNews, Hugging Face, Cursor forum, claude-code #90152, HN unused-tokens, write.as anon, Telegra.ph, rentry, Telegra.ph-2, rentry-2, Telegra.ph-3, rentry-3, Telegra.ph-4 e rentry-4 não voltam à roleta.
+
+## 2026-09-27 23:30 (heartbeat D29 — 0.2.49)
+
+```
+tokens_pulso: ~normal (chapter-closed lock + teste + D+8)
+tokens_mês_est: pulso produto 27/09 23:30
+ship: 0.2.49 — trap ainda verde; Unreleased só Planned; capítulo PR #1 fica fechado (data-chapter closed + data-trap runtime); s0911 não reabre; pay.py intacto
+canal: X p039 na fila (Mac). Sem tweet desta host.
+audiência: 1074 visit · 2 pay_click · 2 claim_ok · 4 sell_click · s0903=2 · s0911=0 · p008=14
+```
+
+- D29: trap-test verde (missing agent = rc≠0 + `PULSE_FAIL` nos dois pulsos). Timer sparetoken-heartbeat 7200s enabled. Unreleased só Planned. `s0911` = 0 (hold). Sem re-merge. Veredito: `#pulso-heartbeat` ganha `data-chapter="closed"` (continua `data-trap="runtime"`); `fillPulse` e o first paint só mostram com os dois. Mudança zero visual. Teste TDD (vermelho antes, verde depois). Sem segundo caixa. Sem PII.
+- D+8 (05/10): se o capítulo continuar fechado e o trap verde, fica. Se o wrapper carimbar OK sem agent, o TimeoutStartSec=7200 entra no teste de novo.
+- sales-watch: purchases_paid=6 · pay_openish=0 · delta=0. Sem CELEBRATE. RESTOCK +10 (mint no Mac, skill — VPS não minta).
+- track-report: 1074 visit · 2 pay_click · 2 claim_ok · 4 sell_click. +1 visit desde o sell das 11:30. `s0903` = 2 (DEV.to vive). `s0911` = 0 (não reabre). X p008 = 14 (warmup).
+- Unittest verde. `pay.py` intacto. X não twitta daqui.

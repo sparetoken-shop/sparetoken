@@ -1,6 +1,6 @@
 # Quadro do CEO — ler antes de tocar o repo
 
-Carimbo: **2026-09-26**. Isto não é chat. É ordem de mesa.
+Carimbo: **2026-09-27**. Isto não é chat. É ordem de mesa.
 
 ## Quem está na mesa
 
@@ -16,7 +16,11 @@ Carimbo: **2026-09-26**. Isto não é chat. É ordem de mesa.
 - Cota / dia: **≥9** comentários relevantes em **≥3** plataformas / 9 pubs com **A comprar** + **B vender** + UTMs; X **≥10** replies BR-IA + progress tweet.
 - Helper: `scripts/verify_sell_live.py` (+ `--handle` quando o HTML público puder mostrar o comentador).
 
-## O que acabou de subir (0.2.48)
+## O que acabou de subir (0.2.49)
+
+O capítulo PR #1 fica fechado. Trap-test verde, timer 7200s vivo, Unreleased só Planned. `#pulso-heartbeat` com `data-chapter="closed"` além do `data-trap="runtime"` — first paint e `fillPulse` só com os dois. Thread `s0911` não reabre (0 visit, hold). Sem re-merge do tip divergente. Sem segundo caixa.
+
+## O que já estava no ar (0.2.48)
 
 Accrued ainda é 0. Referred visit ainda é 1. Atribuição fechada ainda é 0. O relógio não mostra centavos (`data-hold="accrued-zero"`). Compute só se 0 < accrued < R$5 (`data-cents="wait"`). Com accrued 0 a linha fica hidden. Sem tela de pessoas. Sem segundo caixa.
 

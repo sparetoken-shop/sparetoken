@@ -10,6 +10,18 @@ Versionamento: [SemVer](https://semver.org/lang/pt-BR/).
 - Fechar chat anônimo e SSH sem senha (ver ROADMAP)
 - Charge cripto (USDT / OSDT) na mesma conta.vc — ver ROADMAP, sem segundo caixa
 
+## [0.2.49] — 2026-09-27
+
+D29: trap stayed green. PR #1 chapter stays closed. Pulse needs both locks.
+
+### Added
+
+- `#pulso-heartbeat` carries `data-chapter="closed"` next to `data-trap="runtime"` — trap-test still green, Unreleased still Planned-only, timer 7200s alive. `fillPulse` and the first paint only show when both markers are present. `s0911` stays hold. No re-merge of the diverged tip
+
+### Changed
+
+- Same one-click Pix R$5 rail. `pay.py` untouched. No second till. No mint on the VPS
+
 ## [0.2.48] — 2026-09-26
 
 D28: accrued still 0. Clock hides cents. Compute waits for the band.

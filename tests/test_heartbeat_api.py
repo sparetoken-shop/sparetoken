@@ -103,7 +103,7 @@ class HeartbeatPublicLineTest(unittest.TestCase):
         with tempfile.TemporaryDirectory() as raw:
             root = _fixture(Path(raw))
             html = (
-                '<p class="pulso-heartbeat" id="pulso-heartbeat" data-trap="runtime" hidden>'
+                '<p class="pulso-heartbeat" id="pulso-heartbeat" data-trap="runtime" data-chapter="closed" hidden>'
                 '<strong data-pulse="ship"></strong>'
                 '<span data-pulse="research"></span>'
                 '<span data-pulse="shelf"></span>'
@@ -133,6 +133,20 @@ class HeartbeatPublicLineTest(unittest.TestCase):
             root = _fixture(Path(raw))
             html = (
                 '<p class="pulso-heartbeat" id="pulso-heartbeat" hidden>'
+                '<strong data-pulse="ship"></strong>'
+                "</p>"
+            )
+            out = heartbeat_api.apply_html(html, root)
+            self.assertIn("0.2.26", out)
+            self.assertRegex(out, r'id="pulso-heartbeat"[^>]*\bhidden\b')
+
+    def test_apply_html_stays_hidden_without_chapter_lock(self):
+        """D29: first paint stays hidden unless the chapter-closed lock is on
+        next to the runtime trap."""
+        with tempfile.TemporaryDirectory() as raw:
+            root = _fixture(Path(raw))
+            html = (
+                '<p class="pulso-heartbeat" id="pulso-heartbeat" data-trap="runtime" hidden>'
                 '<strong data-pulse="ship"></strong>'
                 "</p>"
             )
