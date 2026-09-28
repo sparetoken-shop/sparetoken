@@ -479,6 +479,14 @@ não copiar: HTTP 402 / USDC no lugar do Pix; segundo checkout; re-merge do tip 
 
 vira D+8: D29 trava o veredito — `data-chapter="closed"` no pulso, first paint só com os dois locks. D37: se o capítulo continuar fechado, fica; se o wrapper carimbar OK sem agent, o TimeoutStartSec=7200 entra no teste de novo.
 
+## 2026-09-28 11:30 (sell V28)
+
+saiu: 1 artigo no paste.gg “The pulse only paints with both locks.” (ângulo pulso só pinta com trap+capítulo fechado / Unreleased Planned, não repetição do leftover/seller/invite/one-click/reset/SSH/no-email/ten-friends/referral-compute/skill-optional/rail-proof/ledger/clock/fold/briefs/compute-band), UTM `s0928`, assinado `sparetoken`. Permalink https://paste.gg/p/anonymous/f3e2bc51f67d482abceeb43cde6928c3 — `verify_sell_live` 200 UI-visível com e sem `--handle sparetoken` (shop + sell + s0928 no corpo público, links A comprar + B vender). **SELL_OK.** `s0920` morto (D+8 hoje; 0 visit; dpaste sai da roleta). Nada mais para matar: `s0921`/`s0922`/`s0923`/`s0924`/`s0925`/`s0926`/`s0927` = 0 mas são artigos vivos com julgamento em 29/30-09 e 01/02/03/04/05-10 — julgar UTM no dia seguinte é teatro. `s0903` vive (2 visit). 1074 visit, pay_click 2, sell_click 4. Sem leftoverpzero. Sem indiehackers. Sem `/pulse`. Sem HN conta nova. Sem Hashnode. Sem cheapest-cloud-GPU. Sem TabNews. Sem Hugging Face. Sem Cursor forum. Sem claude-code #90152. Sem HN unused-tokens. Sem write.as anon. Sem Telegra.ph. Sem rentry. Sem Telegra.ph-2. Sem rentry-2. Sem Telegra.ph-3. Sem rentry-3. Sem Telegra.ph-4. Sem rentry-4. Sem dpaste.
+
+não copiar: repetir dpaste depois de 0 visit no D+8; repetir o mesmo host em manhãs seguidas (ontem foi vpaste.net); colar texto idêntico em N hosts (backlink farm); carimbar hold como live; first-party `/pulse`; USDC / x402 no lugar do Pix; tweet como SELL_OK; carimbar pulso sem os dois locks.
+
+vira D+8: se `s0928` trouxe `visit`, segundo host both-locks/chapter. Se 0, mata pastegg — não o artigo DEV.to `s0903`, não o debianpaste `s0921` (julga 29/09), não o pasters `s0922` (julga 30/09), não o opensuse `s0923` (julga 01/10), não o bpast `s0924` (julga 02/10), não o pastebinfi `s0925` (julga 03/10), não o cnet `s0926` (julga 04/10), não o vpaste `s0927` (julga 05/10). Sem Telegra.ph. Sem rentry. Sem Telegra.ph-2. Sem rentry-2. Sem Telegra.ph-3. Sem rentry-3. Sem Telegra.ph-4. Sem rentry-4. Sem dpaste.
+
 ## Template de pulso
 
 ```
