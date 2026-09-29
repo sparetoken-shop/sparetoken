@@ -37,7 +37,7 @@ X **nunca** é a prova do pulso de venda.
 | s018 | 11:30 18/09 | Telegra.ph no-email-gate (4º artigo) | artigo sem-email/código-é-login. UTM `s0918`. verify_sell_live 200 UI-visível (+handle). Sem login. Sem captcha. | **killed 26/09** — 0 visit; Telegra.ph-4 sai da roleta. Host já morto 20/09 |
 | s019 | 11:30 19/09 | rentry.co ten-friends-rail (4º artigo) | artigo teto-10-amigos/sem-tela-de-pessoas. UTM `s0919`. verify_sell_live 200 UI-visível (+handle). Sem login. Sem captcha. | **killed 27/09** — 0 visit; rentry-4 sai da roleta. Host já morto 21/09 |
 | s020 | 11:30 20/09 | dpaste.com leftover-compute-referral | artigo referral=compute/Pix-aos-R$5. UTM `s0920`. verify_sell_live 200 UI-visível (+handle). Sem login. Sem captcha. | **killed 28/09** — 0 visit; dpaste sai da roleta |
-| s021 | 11:30 21/09 | paste.debian.net skill-optional | artigo skill-optional/sem-manifesto-preso. UTM `s0921`. verify_sell_live 200 UI-visível (+handle). Sem login. Sem captcha. | **posted** https://paste.debian.net/hidden/6b7eba18 — SELL_OK |
+| s021 | 11:30 21/09 | paste.debian.net skill-optional | artigo skill-optional/sem-manifesto-preso. UTM `s0921`. verify_sell_live 200 UI-visível (+handle). Sem login. Sem captcha. | **killed 29/09** — 0 visit; debianpaste sai da roleta |
 | s022 | 11:30 22/09 | paste.rs released-blocks-on-rail | artigo rail-proof/released-blocks. UTM `s0922`. verify_sell_live 200 UI-visível (+handle). Sem login. Sem captcha. | **posted** https://paste.rs/U95xp — SELL_OK |
 | s023 | 11:30 23/09 | paste.opensuse.org ledger-on-invite | artigo ledger-no-convite/card-apagado. UTM `s0923`. verify_sell_live 200 UI-visível (+handle). Sem login. Sem captcha. | **posted** https://paste.opensuse.org/pastes/9d9612d6164f — SELL_OK |
 | s024 | 11:30 24/09 | bpa.st clock-hides-cents | artigo relógio-esconde-centavos. UTM `s0924`. verify_sell_live 200 UI-visível (+handle). Sem login. Sem captcha. | **posted** https://bpa.st/F3WQ — SELL_OK |
@@ -45,6 +45,7 @@ X **nunca** é a prova do pulso de venda.
 | s026 | 11:30 26/09 | paste.c-net.org briefs-stamp-wait | artigo briefs-ficam/carimbo-espera. UTM `s0926`. verify_sell_live 200 UI-visível (+handle). Sem login. Sem captcha. | **posted** https://paste.c-net.org/PrayingBoarded — SELL_OK |
 | s027 | 11:30 27/09 | vpaste.net compute-band | artigo compute espera a faixa (0, R$5). UTM `s0927`. verify_sell_live 200 UI-visível (+handle). Sem login. Sem captcha. | **posted** https://vpaste.net/qfHl8 — SELL_OK |
 | s028 | 11:30 28/09 | paste.gg both-locks | artigo pulso só pinta com os dois locks. UTM `s0928`. verify_sell_live 200 UI-visível (+handle). Sem login. Sem captcha. | **posted** https://paste.gg/p/anonymous/f3e2bc51f67d482abceeb43cde6928c3 — SELL_OK |
+| s029 | 11:30 29/09 | paste.centos.org rail-proof-leaves | artigo prova no rail sai se Pix não clicou. UTM `s0929`. verify_sell_live 200 UI-visível (+handle). Sem login. Sem captcha. | **posted** https://paste.centos.org/view/dfc3a90b — SELL_OK |
 | p017 | 23:30 04/09 | X (warmup) | 0.2.26 — public pulse stub. last ship + 7-day + last research. https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p017 | **posted** https://x.com/sparetoken/status/2096383502908313712 |
 | p018 | 23:30 05/09 | X (warmup) | 0.2.27 — last ship + last research on the landing. https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p018 | a colar no @sparetoken |
 | p019 | 23:30 06/09 | X (warmup) | 0.2.28 — Open count on the shelf pulse. same R$5 / 5h. https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p019 | a colar no @sparetoken |
@@ -70,6 +71,21 @@ X **nunca** é a prova do pulso de venda.
 | p038 | 23:30 26/09 | X (warmup) | 0.2.48 — accrued still 0, so the clock hides cents. compute waits for the (0, R$5) band. same R$5 / 5h. https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p038 | a colar no @sparetoken |
 | p039 | 23:30 27/09 | X (warmup) | 0.2.49 — trap stayed green, so the PR #1 chapter stays closed. pulse only paints with both locks. Unreleased stays Planned. same R$5 / 5h. https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p039 | a colar no @sparetoken |
 | p040 | 23:30 28/09 | X (warmup) | 0.2.50 — extra-CLI launcher still waits (0 apply). skill on #vender stays optional + wait lock. same R$5 / 5h. https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p040 | a colar no @sparetoken |
+
+Texto s029 (LIVE 29/09 — paste.centos.org, verify_sell_live 200 + handle, SELL_OK):
+
+```
+The rail proof leaves. The card stays one-click.
+Most leftover-quota shops leave a released-blocks ticker on the card after Pix did not move — proof that pretends the shelf sold when the click stayed at two. That is a second wall after the hours were already paid for.
+A shelf waits. One block: R$5 · 5h · 4.6 High Fast. One click, Pix. If pay_click stays at 2, the rail proof leaves. The card goes back to the one-click rail. No stock on the card. No monthly fee. No second till.
+The invite is the same block code (wdtsot-XXXX / ?code=). Friends who pay earn leftover compute; at R$5 it can leave as Pix. The card stays dark until that first friend pays.
+Sellers list leftover quota with 10 links plus a skill (title + manifesto + one CLI). The leftover does not need a ticker that outlives the click.
+Not a company. By sparetoken.
+A comprar: https://sparetoken.shop/?utm_source=centos&utm_medium=comment&utm_campaign=sell&utm_content=s0929
+B vender: https://sparetoken.shop/?utm_source=centos&utm_medium=comment&utm_campaign=sell&utm_content=s0929#vender
+```
+
+Artigo: https://paste.centos.org/view/dfc3a90b
 
 Texto s028 (LIVE 28/09 — paste.gg, verify_sell_live 200 + handle, SELL_OK):
 
@@ -656,4 +672,4 @@ Silent human-needed is dead. Pulse writes this table **and** `data/human-needed-
 
 | stamped | id | pulse | reason | slack |
 |---|---|---|---|---|
-| — | — | — | — | _no active human-needed this pulse (s028 live SELL_OK; no captcha, no wall)_ |
+| — | — | — | — | _no active human-needed this pulse (s029 live SELL_OK; no captcha, no wall)_ |

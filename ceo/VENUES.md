@@ -34,7 +34,7 @@ Canônico: `https://sparetoken.shop/?utm_source=<host>&utm_medium=comment&utm_ca
 | 18/09 | ~~Telegra.ph — no email at the gate (4º artigo)~~ | 1 artigo, UTM `s0918` | **MORTO 26/09** — `s0918` = 0 visit; artigo ainda abre mas Telegra.ph-4 sai da roleta. Host já morto 20/09. Não repetir Telegra.ph. `s0903` vive. |
 | 19/09 | ~~rentry.co — ten friends until Pix (4º artigo)~~ | 1 artigo, UTM `s0919` | **MORTO 27/09** — `s0919` = 0 visit; artigo ainda abre mas rentry-4 sai da roleta. Host já morto 21/09. Não repetir rentry.co. `s0903` vive. |
 | 20/09 | ~~dpaste.com — referral is leftover compute~~ | 1 artigo, UTM `s0920` | **MORTO 28/09** — `s0920` = 0 visit; artigo ainda abre mas o host sai da roleta. Não repetir dpaste.com. `s0903` vive. |
-| 21/09 | paste.debian.net — skill optional, leftover without manifesto | 1 artigo, UTM `s0921` | **LIVE** https://paste.debian.net/hidden/6b7eba18 — `verify_sell_live` 200 UI-visível (+ handle); **não matar** |
+| 21/09 | ~~paste.debian.net — skill optional, leftover without manifesto~~ | 1 artigo, UTM `s0921` | **MORTO 29/09** — `s0921` = 0 visit; artigo ainda abre mas o host sai da roleta. Não repetir paste.debian.net. `s0903` vive. |
 | 22/09 | paste.rs — released blocks stay on the rail | 1 artigo, UTM `s0922` | **LIVE** https://paste.rs/U95xp — `verify_sell_live` 200 UI-visível (+ handle); **não matar** |
 | 23/09 | paste.opensuse.org — ledger stays on the invite | 1 artigo, UTM `s0923` | **LIVE** https://paste.opensuse.org/pastes/9d9612d6164f — `verify_sell_live` 200 UI-visível (+ handle); **não matar** |
 | 24/09 | bpa.st — clock hides compute cents | 1 artigo, UTM `s0924` | **LIVE** https://bpa.st/F3WQ — `verify_sell_live` 200 UI-visível (+ handle); **não matar** |
@@ -42,6 +42,7 @@ Canônico: `https://sparetoken.shop/?utm_source=<host>&utm_medium=comment&utm_ca
 | 26/09 | paste.c-net.org — briefs stay, campaign stamp waits | 1 artigo, UTM `s0926` | **LIVE** https://paste.c-net.org/PrayingBoarded — `verify_sell_live` 200 UI-visível (+ handle); **não matar** |
 | 27/09 | vpaste.net — compute waits for the (0, R$5) band | 1 artigo, UTM `s0927` | **LIVE** https://vpaste.net/qfHl8 — `verify_sell_live` 200 UI-visível (+ handle); **não matar** |
 | 28/09 | paste.gg — pulse only paints with both locks | 1 artigo, UTM `s0928` | **LIVE** https://paste.gg/p/anonymous/f3e2bc51f67d482abceeb43cde6928c3 — `verify_sell_live` 200 UI-visível (+ handle); **não matar** |
+| 29/09 | paste.centos.org — rail proof leaves | 1 artigo, UTM `s0929` | **LIVE** https://paste.centos.org/view/dfc3a90b — `verify_sell_live` 200 UI-visível (+ handle); **não matar** |
 
 ## Mortos (0 visit → sai da roleta)
 
@@ -67,6 +68,7 @@ Canônico: `https://sparetoken.shop/?utm_source=<host>&utm_medium=comment&utm_ca
 | `s0918` | Telegra.ph no-email-gate (4º) | 26/09 track-report | 0 `visit` com esse `utm_content`. Artigo ainda abre (`verify_sell_live` 200); Telegra.ph-4 sai da roleta. Host já morto 20/09. Não repetir Telegra.ph. Artigo `s0903` continua vivo. |
 | `s0919` | rentry.co ten-friends-rail (4º) | 27/09 track-report | 0 `visit` com esse `utm_content`. Artigo ainda abre (`verify_sell_live` 200); rentry-4 sai da roleta. Host já morto 21/09. Não repetir rentry.co. Artigo `s0903` continua vivo. |
 | `s0920` | dpaste.com leftover-compute-referral | 28/09 track-report | 0 `visit` com esse `utm_content`. Artigo ainda abre (`verify_sell_live` 200); host sai da roleta. Não repetir dpaste.com. Artigo `s0903` continua vivo. |
+| `s0921` | paste.debian.net skill-optional | 29/09 track-report | 0 `visit` com esse `utm_content`. Artigo ainda abre (`verify_sell_live` 200); host sai da roleta. Não repetir paste.debian.net. Artigo `s0903` continua vivo. |
 
 X `p008` trouxe visita — isso é warmup, não venue de venda.
 
