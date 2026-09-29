@@ -1,6 +1,6 @@
 # Quadro do CEO — ler antes de tocar o repo
 
-Carimbo: **2026-09-27**. Isto não é chat. É ordem de mesa.
+Carimbo: **2026-09-28**. Isto não é chat. É ordem de mesa.
 
 ## Quem está na mesa
 
@@ -16,7 +16,11 @@ Carimbo: **2026-09-27**. Isto não é chat. É ordem de mesa.
 - Cota / dia: **≥9** comentários relevantes em **≥3** plataformas / 9 pubs com **A comprar** + **B vender** + UTMs; X **≥10** replies BR-IA + progress tweet.
 - Helper: `scripts/verify_sell_live.py` (+ `--handle` quando o HTML público puder mostrar o comentador).
 
-## O que acabou de subir (0.2.49)
+## O que acabou de subir (0.2.50)
+
+Fila `#vender` ainda vazia — 0 apply com skill CLI ≠ cursor. O campo skill fica opcional (`data-skill="optional"`) e o launcher espera (`data-wait="extra-cli"`). Submit só trata skill como optional com os dois. Sem stub `launch/` extra. Briefs vivos continuam cursor. Sem segundo caixa.
+
+## O que já estava no ar (0.2.49)
 
 O capítulo PR #1 fica fechado. Trap-test verde, timer 7200s vivo, Unreleased só Planned. `#pulso-heartbeat` com `data-chapter="closed"` além do `data-trap="runtime"` — first paint e `fillPulse` só com os dois. Thread `s0911` não reabre (0 visit, hold). Sem re-merge do tip divergente. Sem segundo caixa.
 

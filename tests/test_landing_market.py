@@ -246,6 +246,29 @@ class LandingMarketTest(unittest.TestCase):
         self.assertIn("um clique. Pix R$5.", HTML)
         self.assertEqual(HTML.count('id="pay"'), 1)
 
+    def test_d30_extra_cli_wait_lock_keeps_skill_optional(self):
+        """D30 (28/09): still 0 extra-CLI applies. #vender keeps
+        data-skill=optional and gains data-wait=extra-cli. Submit treats
+        skill as optional only with both markers. No launch stub."""
+        self.assertEqual(HTML.count('id="vender"'), 1)
+        vender = HTML.find('id="vender"')
+        tag_open = HTML.rfind("<dialog", 0, vender + 1)
+        tag_end = HTML.find(">", vender)
+        tag = HTML[tag_open:tag_end]
+        self.assertIn('data-skill="optional"', tag)
+        self.assertIn('data-wait="extra-cli"', tag)
+        self.assertEqual(HTML.count('data-wait="extra-cli"'), 1)
+        self.assertEqual(HTML.count('data-cli="cursor"'), 3)
+        self.assertNotIn('data-cli="codex"', HTML)
+        self.assertNotIn('data-cli="claude"', HTML)
+        fn = JS.split("if (sellerForm)", 1)[1].split("if (claimForm)", 1)[0]
+        self.assertIn("data-skill", fn)
+        self.assertIn("optional", fn)
+        self.assertIn("data-wait", fn)
+        self.assertIn("extra-cli", fn)
+        self.assertIn("um clique. Pix R$5.", HTML)
+        self.assertEqual(HTML.count('id="pay"'), 1)
+
     def test_d23_released_proof_sits_on_the_rail(self):
         """D23 (21/09): D19 never pulled the briefs; pay_click still 2.
         The card gets a short claim_ok proof on the rail (never hero,

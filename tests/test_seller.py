@@ -246,3 +246,16 @@ class SellerQueueExtraCliTest(unittest.TestCase):
         for name in ("codex", "claude", "antigravity", "metamuse"):
             self.assertFalse((ROOT / "ceo" / "launch" / f"{name}.sh").exists())
             self.assertFalse((ROOT / "ceo" / "launch" / f"{name}.md").exists())
+
+    def test_d30_live_queue_still_waits_no_stub(self):
+        """D30: inspect the live apply queue. Still 0 extra CLI → wait.
+        No launch/ stub for a second CLI. Names only — no handle."""
+        dest = ROOT / "data" / "seller-applications"
+        extras = seller.queued_extra_clis(dest)
+        self.assertEqual(extras, ())
+        self.assertTrue(seller.launcher_should_wait(dest))
+        blob = " ".join(extras)
+        self.assertNotIn("conta.vc", blob)
+        for name in ("codex", "claude", "antigravity", "metamuse"):
+            self.assertFalse((ROOT / "ceo" / "launch" / f"{name}.sh").exists())
+            self.assertFalse((ROOT / "ceo" / "launch" / f"{name}.md").exists())

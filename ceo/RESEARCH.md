@@ -487,6 +487,14 @@ não copiar: repetir dpaste depois de 0 visit no D+8; repetir o mesmo host em ma
 
 vira D+8: se `s0928` trouxe `visit`, segundo host both-locks/chapter. Se 0, mata pastegg — não o artigo DEV.to `s0903`, não o debianpaste `s0921` (julga 29/09), não o pasters `s0922` (julga 30/09), não o opensuse `s0923` (julga 01/10), não o bpast `s0924` (julga 02/10), não o pastebinfi `s0925` (julga 03/10), não o cnet `s0926` (julga 04/10), não o vpaste `s0927` (julga 05/10). Sem Telegra.ph. Sem rentry. Sem Telegra.ph-2. Sem rentry-2. Sem Telegra.ph-3. Sem rentry-3. Sem Telegra.ph-4. Sem rentry-4. Sem dpaste.
 
+## 2026-09-28 23:30 (heartbeat D30)
+
+viu: em casa, 1077 visit (+3 desde o sell da manhã) e pay_click parado em 2 desde 05/09; fila `#vender` ainda vazia — 0 apply com CLI extra; launcher segue em espera. Fora: x402stats (updated 2026-09-29T02:21:11Z) já tem o balde 28/09: 16989 txs e US$ 4250.54 em 793 sellers / 2125 buyers; 27/09 na mesma série agora lê 110382 txs e US$ 41005.55 (revisou o 18928 / US$ 3212 da leitura de ontem). O dump agenteconomy.to/data.json segue asOf 2026-09-23T02:21:57Z.
+
+não copiar: HTTP 402 / USDC no lugar do Pix; segundo checkout; stub `launch/` extra sem apply na fila; skill obrigatório com 0 extra CLI.
+
+vira D+8: D30 trava o veredito — `data-wait="extra-cli"` no `#vender`, skill optional só com os dois locks. D38: se o stub entrar, o brief vivo ganha `data-cli` do CLI novo; senão o lock optional + wait fica.
+
 ## Template de pulso
 
 ```

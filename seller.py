@@ -153,5 +153,8 @@ def queued_extra_clis(dest: Path) -> tuple[str, ...]:
 
 
 def launcher_should_wait(dest: Path) -> bool:
-    """D22: extra-CLI launch stub only after a queued non-cursor skill."""
+    """D22/D30: extra-CLI launch stub only after a queued non-cursor skill.
+
+    Empty extras = wait. Field stays optional. No ceo/launch/<cli>.sh.
+    """
     return not queued_extra_clis(dest)

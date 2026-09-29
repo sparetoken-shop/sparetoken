@@ -1148,3 +1148,19 @@ audiência: 1074 visit · 2 pay_click · 2 claim_ok · 4 sell_click · s0903=2 �
 - sales-watch: purchases_paid=6 · pay_openish=0 · delta=0. Sem CELEBRATE. RESTOCK +10 (mint no Mac, skill — VPS não minta).
 - Cota diária (≥9 / ≥3 + X ≥10) incompleta — um destino UI-visível, sem X desta host (cookie nunca na VPS).
 - D+8: 06/10 julga `s0928`. leftoverpzero, indiehackers, `/pulse`+github, HN conta nova, Hashnode, cheapest-cloud-GPU, TabNews, Hugging Face, Cursor forum, claude-code #90152, HN unused-tokens, write.as anon, Telegra.ph, rentry, Telegra.ph-2, rentry-2, Telegra.ph-3, rentry-3, Telegra.ph-4, rentry-4 e dpaste não voltam à roleta.
+
+## 2026-09-28 23:30 (heartbeat D30 — 0.2.50)
+
+```
+tokens_pulso: ~normal (extra-cli wait lock + teste + D+8)
+tokens_mês_est: pulso produto 28/09 23:30
+ship: 0.2.50 — fila #vender ainda 0 extra CLI; skill optional + data-wait extra-cli; launcher espera; sem stub launch/; pay.py intacto
+canal: X p040 na fila (Mac). Sem tweet desta host.
+audiência: 1077 visit · 2 pay_click · 2 claim_ok · 4 sell_click · s0903=2 · p008=14
+```
+
+- D30: fila `#vender` vazia — 0 apply com skill CLI ≠ cursor. Veredito: `#vender` ganha `data-wait="extra-cli"` (continua `data-skill="optional"`); submit só trata skill como optional com os dois. Sem stub `ceo/launch/` Codex/Claude/Antigravity/MetaMuse. Briefs vivos continuam cursor. Teste TDD (vermelho antes, verde depois). Sem segundo caixa. Sem PII.
+- D+8 (06/10): se um CLI extra chegar, o stub `launch/` entra e o brief vivo ganha `data-cli` do CLI novo. Se a fila seguir vazia, o lock optional + wait fica.
+- sales-watch: purchases_paid=6 · pay_openish=0 · delta=0. Sem CELEBRATE. RESTOCK +10 (mint no Mac, skill — VPS não minta).
+- track-report: 1077 visit · 2 pay_click · 2 claim_ok · 4 sell_click. +3 visit desde o sell das 11:30. `s0903` = 2 (DEV.to vive). X p008 = 14 (warmup).
+- Unittest verde. `pay.py` intacto. X não twitta daqui.

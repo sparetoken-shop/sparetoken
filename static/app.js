@@ -751,7 +751,11 @@ if (sellerForm) {
     const skillManifesto = (document.getElementById("seller-skill-manifesto") || {}).value || "";
     const skillCli = (document.getElementById("seller-skill-cli") || {}).value || "";
     const ack = !!(document.getElementById("seller-ack") || {}).checked;
-    const skillOptional = !!(sellModal && sellModal.getAttribute("data-skill") === "optional");
+    const skillOptional = !!(
+      sellModal
+      && sellModal.getAttribute("data-skill") === "optional"
+      && sellModal.getAttribute("data-wait") === "extra-cli"
+    );
     if (!skillOptional && !(skillTitle.trim() && skillManifesto.trim() && skillCli.trim())) {
       setSellerStatus(t("js.sell_fail"), "err");
       return;

@@ -69,6 +69,7 @@ X **nunca** é a prova do pulso de venda.
 | p037 | 23:30 25/09 | X (warmup) | 0.2.47 — briefs stayed, pay_click still 2, so the campaign stamp waits. same R$5 / 5h. https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p037 | a colar no @sparetoken |
 | p038 | 23:30 26/09 | X (warmup) | 0.2.48 — accrued still 0, so the clock hides cents. compute waits for the (0, R$5) band. same R$5 / 5h. https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p038 | a colar no @sparetoken |
 | p039 | 23:30 27/09 | X (warmup) | 0.2.49 — trap stayed green, so the PR #1 chapter stays closed. pulse only paints with both locks. Unreleased stays Planned. same R$5 / 5h. https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p039 | a colar no @sparetoken |
+| p040 | 23:30 28/09 | X (warmup) | 0.2.50 — extra-CLI launcher still waits (0 apply). skill on #vender stays optional + wait lock. same R$5 / 5h. https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p040 | a colar no @sparetoken |
 
 Texto s028 (LIVE 28/09 — paste.gg, verify_sell_live 200 + handle, SELL_OK):
 
@@ -99,6 +100,14 @@ B vender: https://sparetoken.shop/?utm_source=vpaste&utm_medium=comment&utm_camp
 ```
 
 Artigo: https://vpaste.net/qfHl8
+
+Texto p040 (colar no X, cookie no Mac):
+
+```
+night pulse. #vender queue still empty — no extra-CLI skill — so the field stays optional and the launcher keeps waiting. both locks.
+same R$5 / 5h. no second till.
+https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p040
+```
 
 Texto p039 (colar no X, cookie no Mac):
 
