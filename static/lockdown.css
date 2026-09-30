@@ -1,0 +1,5 @@
+/* sparetoken lockdown 2026-09-30: resale of SSH/CLI access is off. Remove this file + link to reopen. */
+#pay, #pay-modal, #claim, a[href="#claim"], #pay-note, #block-wrap, #invite-wrap, #referral-card,
+.price-card noscript, #terminal, .sell-ssh, #resume-ssh-cmd, #resume-copy-ssh,
+.resume-block:has(#resume-ssh-cmd), ol[data-rail], p[data-i18n-html="shelf.open"], p[data-placement="under-tally"], #pulso-tally, .price-card .price-top, .price-card .checks, .price-card .actions, .price-card .alpha, .price-card form.claim { display: none !important; }
+.lockdown-banner { border: 2px solid currentColor; padding: 1rem 1.25rem; border-radius: 12px; margin: 0 0 1rem; }

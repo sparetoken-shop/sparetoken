@@ -69,6 +69,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,400..700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles.css">
+  <!-- sparetoken lockdown 2026-09-30: resale of SSH/CLI access is off. Remove this block to reopen. -->
+  <link rel="stylesheet" href="/lockdown.css" id="lockdown-2026-09-30">
 </head>
 <body>
   <header class="wrap site-header">
@@ -187,6 +189,7 @@
 
       <div class="shelf">
         <article class="shelf-card price-card" id="preco" data-reseller="fuzzy">
+          <div class="lockdown-banner" id="lockdown-banner" role="status"><strong>Fora do ar.</strong> A prateleira está vazia: não vendemos mais acesso SSH/CLI nem horas de token, e não há Pix aberto. <em>Off the shelf: SSH/CLI access is no longer sold and no Pix is open.</em></div>
           <p class="reseller" id="reseller">fuzzy</p>
           <div class="price-top">
             <strong>R$5</strong>
@@ -204,7 +207,7 @@
           </div>
           <p class="alpha" id="pay-note" data-i18n-html="pay.note">Pix de um passo. O código do bloco é o login — e o mesmo <code>?code=</code> é o convite.</p>
           <p class="muted referral-card" id="referral-card" hidden></p>
-          <noscript><p class="alpha"><a href="https://app.conta.vc/pay/fuzzy/c/Y_saWXtd37j5fMagI3klioK95ZyBd9iSMMB-ggzI5gI" target="_blank" rel="noopener" data-i18n="pay.noscript">Abrir pagamento R$5</a></p></noscript>
+          
           <p class="block-code" id="block-wrap" hidden><span data-i18n="block.keep">guarde este código:</span> <strong id="block-code"></strong></p>
           <p class="invite-line" id="invite-wrap" data-cite="after-paid" hidden>
             <span data-i18n="invite.send">manda este link:</span> <code id="invite-url"></code>
@@ -256,8 +259,8 @@
       <p class="note" data-i18n="term.note">Use it from the browser. Or don’t. The same model, in an isolated workspace — not an open Linux shell.</p>
       <div class="term-panel">
         <p class="ssh">
-          <code>ssh -t agent-guest@wdtsot.shop</code>
-          <button class="copy" type="button" data-copy="ssh -t agent-guest@wdtsot.shop" data-i18n="term.copy">copiar</button>
+          <code>—</code>
+          <button class="copy" type="button" data-copy="" data-i18n="term.copy">copiar</button>
         </p>
         <p class="note" data-i18n="term.sshnote">O SSH pede só o código do bloco (wdtsot-XXXX). Se ainda não pagou, mostra um Pix Open. Depois de pagar, a mesma carteira das 5h — só o tempo de processamento do modelo. O mesmo código indica um amigo.</p>
       </div>
@@ -426,8 +429,8 @@
         <p class="shelf-sell-kicker" data-i18n="sell.ssh.k">como entra no SSH</p>
         <p data-i18n="sell.ssh.1">O produto é um comando. Sem app para baixar.</p>
         <p class="ssh">
-          <code>ssh -t agent-guest@wdtsot.shop</code>
-          <button class="copy" type="button" data-copy="ssh -t agent-guest@wdtsot.shop" data-i18n="term.copy">copiar</button>
+          <code>—</code>
+          <button class="copy" type="button" data-copy="" data-i18n="term.copy">copiar</button>
         </p>
         <p data-i18n="sell.ssh.2">macOS e Linux: o comando acima. Windows: Windows Terminal ou OpenSSH — o mesmo comando.</p>
         <p data-i18n-html="sell.ssh.3">Enter vazio no login = Pix ainda Open. Depois de pagar, o código <code>wdtsot-XXXX</code> é o login — web e SSH. Conta só o tempo que o modelo gera.</p>
