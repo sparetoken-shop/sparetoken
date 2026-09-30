@@ -269,22 +269,10 @@ class LandingMarketTest(unittest.TestCase):
         self.assertIn("um clique. Pix R$5.", HTML)
         self.assertEqual(HTML.count('id="pay"'), 1)
 
-    def test_d23_released_proof_sits_on_the_rail(self):
-        """D23 (21/09): D19 never pulled the briefs; pay_click still 2.
-        The card gets a short claim_ok proof on the rail (never hero,
-        never Open stock on the card)."""
-        self.assertEqual(HTML.count('data-proof="rail"'), 1)
-        rail_open = HTML.find('class="shelf-rail"')
-        self.assertGreater(rail_open, 0)
-        tag_open = HTML.rfind("<ol", 0, rail_open + 1)
-        tag_end = HTML.find(">", rail_open)
-        self.assertIn('data-proof="rail"', HTML[tag_open:tag_end])
-        rail_close = HTML.find("</ol>", rail_open)
-        rail = HTML[tag_open:rail_close]
-        self.assertIn('data-proof="released"', rail)
-        self.assertIn("data-proof-n", rail)
-        self.assertIn("blocos liberados", rail)
-        self.assertIn("tally.blocks", rail)
+    def test_d23_released_proof_never_hero_never_open_on_card(self):
+        """D23 (21/09): proof sat on the rail. D31 took the marker off.
+        The painter still no-ops without data-proof=rail. Never hero,
+        never Open stock on the card."""
         hero = HTML.split('<section class="wrap hero">', 1)[1].split("</section>", 1)[0]
         self.assertNotIn("data-proof", hero)
         self.assertNotIn("data-proof-n", hero)
@@ -295,11 +283,43 @@ class LandingMarketTest(unittest.TestCase):
         self.assertIn("rail", fn)
         self.assertIn("claim_ok", fn)
         self.assertNotIn("data.shelf", fn)
+        self.assertIn('getAttribute("data-proof") !== "rail"', fn)
         self.assertIn("fillRailProof", JS)
         self.assertIn("um clique. Pix R$5.", HTML)
         self.assertIn('data-brief="mkt"', HTML)
         self.assertEqual(HTML.count('id="pay"'), 1)
-        self.assertIn(".rail-proof", CSS)
+
+    def test_d31_rail_proof_leaves_card_stays_pure(self):
+        """D31 (29/09): rail proof did not move pay_click (still 2).
+        data-proof leaves. The card goes back to the one-click rail.
+        Briefs stay. No Open on the card. No second till."""
+        self.assertEqual(HTML.count('data-proof="rail"'), 0)
+        self.assertEqual(HTML.count('data-proof="released"'), 0)
+        self.assertEqual(HTML.count("data-proof-n"), 0)
+        rail_open = HTML.find('class="shelf-rail"')
+        self.assertGreater(rail_open, 0)
+        tag_open = HTML.rfind("<ol", 0, rail_open + 1)
+        tag_end = HTML.find(">", rail_open)
+        rail_tag = HTML[tag_open:tag_end]
+        self.assertNotIn("data-proof", rail_tag)
+        self.assertIn('data-rail="stays"', rail_tag)
+        rail_close = HTML.find("</ol>", rail_open)
+        rail = HTML[tag_open:rail_close]
+        self.assertNotIn("rail-proof", rail)
+        self.assertNotIn("data-proof", rail)
+        hero = HTML.split('<section class="wrap hero">', 1)[1].split("</section>", 1)[0]
+        self.assertNotIn("data-proof", hero)
+        shelf_block = HTML[HTML.find('id="mercado"') : HTML.find('id="pulso-tally"')]
+        self.assertNotRegex(shelf_block, r"\d+\s+Open")
+        self.assertNotIn("data-proof", shelf_block)
+        fn = JS.split("function fillRailProof", 1)[1].split("fetch(", 1)[0]
+        self.assertIn('getAttribute("data-proof") !== "rail"', fn)
+        self.assertIn("fillRailProof", JS)
+        self.assertIn("um clique. Pix R$5.", HTML)
+        self.assertIn('data-brief="mkt"', HTML)
+        self.assertIn('data-brief="copy"', HTML)
+        self.assertIn('data-brief="viral"', HTML)
+        self.assertEqual(HTML.count('id="pay"'), 1)
 
     def test_d27_briefs_stay_campaign_stamp_waits(self):
         """D27 (25/09): briefs stayed on the fold, pay_click still 2.

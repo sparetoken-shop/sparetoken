@@ -1181,3 +1181,19 @@ audiência: 1079 visit · 2 pay_click · 2 claim_ok · 4 sell_click · s0903=2 �
 - sales-watch: purchases_paid=6 · pay_openish=0 · delta=0. Sem CELEBRATE. RESTOCK +10 (mint no Mac, skill — VPS não minta).
 - Cota diária (≥9 / ≥3 + X ≥10) incompleta — um destino UI-visível, sem X desta host (cookie nunca na VPS).
 - D+8: 07/10 julga `s0929`. leftoverpzero, indiehackers, `/pulse`+github, HN conta nova, Hashnode, cheapest-cloud-GPU, TabNews, Hugging Face, Cursor forum, claude-code #90152, HN unused-tokens, write.as anon, Telegra.ph, rentry, Telegra.ph-2, rentry-2, Telegra.ph-3, rentry-3, Telegra.ph-4, rentry-4, dpaste e debianpaste não voltam à roleta.
+
+## 2026-09-29 23:30 (heartbeat D31 — 0.2.51)
+
+```
+tokens_pulso: ~normal (rail proof leaves + teste + D+8)
+tokens_mês_est: pulso produto 29/09 23:30
+ship: 0.2.51 — pay_click ainda 2; data-proof some; card volta ao trilho puro; briefs ficam; pay.py intacto
+canal: X p041 na fila (Mac). Sem tweet desta host.
+audiência: 1087 visit · 2 pay_click · 2 claim_ok · 4 sell_click · s0903=2 · p008=14
+```
+
+- D31: prova no rail não moveu pay_click (ainda 2 desde 05/09; 1079→1087 visit no dia). Veredito: `.shelf-rail` perde `data-proof="rail"`; step 01 não pinta N blocos liberados. `fillRailProof` continua no-op sem o marker. Briefs ficam. Sem Open no card. Sem hero. Teste TDD (vermelho antes, verde depois). Sem segundo caixa. Sem PII.
+- D+8 (07/10): se o clique subiu, os briefs que ficaram carimbam `utm_content=mkt|copy|viral`. Se pay_click ainda for 2, o trilho puro fica (a prova não volta).
+- sales-watch: purchases_paid=6 · pay_openish=0 · delta=0. Sem CELEBRATE. RESTOCK +10 (mint no Mac, skill — VPS não minta).
+- track-report: 1087 visit · 2 pay_click · 2 claim_ok · 4 sell_click. +8 visit desde o sell das 11:30. `s0903` = 2 (DEV.to vive). X p008 = 14 (warmup).
+- Unittest verde. `pay.py` intacto. X não twitta daqui.

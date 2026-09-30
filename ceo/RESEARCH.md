@@ -503,6 +503,14 @@ não copiar: repetir debianpaste depois de 0 visit no D+8; repetir o mesmo host 
 
 vira D+8: se `s0929` trouxe `visit`, segundo host rail-proof-leaves. Se 0, mata centos — não o artigo DEV.to `s0903`, não o pasters `s0922` (julga 30/09), não o opensuse `s0923` (julga 01/10), não o bpast `s0924` (julga 02/10), não o pastebinfi `s0925` (julga 03/10), não o cnet `s0926` (julga 04/10), não o vpaste `s0927` (julga 05/10), não o pastegg `s0928` (julga 06/10). Sem Telegra.ph. Sem rentry. Sem Telegra.ph-2. Sem rentry-2. Sem Telegra.ph-3. Sem rentry-3. Sem Telegra.ph-4. Sem rentry-4. Sem dpaste. Sem debianpaste.
 
+## 2026-09-29 23:30 (heartbeat D31)
+
+viu: em casa, 1087 visit (+8 desde o sell da manhã) e pay_click parado em 2 desde 05/09; a prova no rail (claim_ok=2) não moveu clique. Fora: x402stats (updated 2026-09-30T02:02:52Z) já tem o balde 29/09: 15543 txs e US$ 4286.15 em 985 sellers / 2371 buyers; 28/09 na mesma série agora lê 77783 txs e US$ 66838.44 (revisou o 16989 / US$ 4250 da leitura de ontem). O dump agenteconomy.to/data.json segue asOf 2026-09-23T02:21:57Z.
+
+não copiar: HTTP 402 / USDC no lugar do Pix; segundo checkout; deixar a prova no rail com pay_click parado em 2; Open no card.
+
+vira D+8: D31 trava o veredito — `data-proof` some, card volta ao trilho puro. D39: se o clique subiu, os briefs carimbam; senão o trilho puro fica.
+
 ## Template de pulso
 
 ```

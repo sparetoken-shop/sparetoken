@@ -71,6 +71,7 @@ X **nunca** é a prova do pulso de venda.
 | p038 | 23:30 26/09 | X (warmup) | 0.2.48 — accrued still 0, so the clock hides cents. compute waits for the (0, R$5) band. same R$5 / 5h. https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p038 | a colar no @sparetoken |
 | p039 | 23:30 27/09 | X (warmup) | 0.2.49 — trap stayed green, so the PR #1 chapter stays closed. pulse only paints with both locks. Unreleased stays Planned. same R$5 / 5h. https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p039 | a colar no @sparetoken |
 | p040 | 23:30 28/09 | X (warmup) | 0.2.50 — extra-CLI launcher still waits (0 apply). skill on #vender stays optional + wait lock. same R$5 / 5h. https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p040 | a colar no @sparetoken |
+| p041 | 23:30 29/09 | X (warmup) | 0.2.51 — rail proof left (pay_click still 2). card is the one-click rail again. same R$5 / 5h. https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p041 | a colar no @sparetoken |
 
 Texto s029 (LIVE 29/09 — paste.centos.org, verify_sell_live 200 + handle, SELL_OK):
 
@@ -116,6 +117,14 @@ B vender: https://sparetoken.shop/?utm_source=vpaste&utm_medium=comment&utm_camp
 ```
 
 Artigo: https://vpaste.net/qfHl8
+
+Texto p041 (colar no X, cookie no Mac):
+
+```
+night pulse. pay_click still 2, so the rail proof left. the card is the one-click rail again. no released-blocks ticker. briefs stay.
+same R$5 / 5h. no second till.
+https://sparetoken.shop/?utm_source=x&utm_medium=social&utm_campaign=heartbeat&utm_content=p041
+```
 
 Texto p040 (colar no X, cookie no Mac):
 

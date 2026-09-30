@@ -1,6 +1,6 @@
 # Quadro do CEO — ler antes de tocar o repo
 
-Carimbo: **2026-09-28**. Isto não é chat. É ordem de mesa.
+Carimbo: **2026-09-29**. Isto não é chat. É ordem de mesa.
 
 ## Quem está na mesa
 
@@ -16,7 +16,11 @@ Carimbo: **2026-09-28**. Isto não é chat. É ordem de mesa.
 - Cota / dia: **≥9** comentários relevantes em **≥3** plataformas / 9 pubs com **A comprar** + **B vender** + UTMs; X **≥10** replies BR-IA + progress tweet.
 - Helper: `scripts/verify_sell_live.py` (+ `--handle` quando o HTML público puder mostrar o comentador).
 
-## O que acabou de subir (0.2.50)
+## O que acabou de subir (0.2.51)
+
+`pay_click` ainda é 2. A prova no rail não moveu clique — `data-proof` some e o card volta ao trilho puro (um clique · Pix R$5). `fillRailProof` continua no-op sem o marker. Briefs ficam. Sem Open no card. Sem hero. Sem segundo caixa.
+
+## O que já estava no ar (0.2.50)
 
 Fila `#vender` ainda vazia — 0 apply com skill CLI ≠ cursor. O campo skill fica opcional (`data-skill="optional"`) e o launcher espera (`data-wait="extra-cli"`). Submit só trata skill como optional com os dois. Sem stub `launch/` extra. Briefs vivos continuam cursor. Sem segundo caixa.
 
