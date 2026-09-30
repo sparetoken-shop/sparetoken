@@ -47,6 +47,11 @@ def app_version() -> str:
     return (ROOT / "VERSION").read_text(encoding="utf-8").strip()
 HOST = os.environ.get("WDTSOT_HOST", "0.0.0.0")
 PORT = int(os.environ.get("WDTSOT_PORT", "8787"))
+# sparetoken lockdown 2026-09-30: resale off by default. Set SPARETOKEN_LOCKED=0 to reopen.
+LOCKED = os.environ.get("SPARETOKEN_LOCKED", "1") != "0"
+LOCK_MSG = "fora do ar. a revenda de acesso SSH/CLI foi encerrada."
+if LOCKED:
+    pay.PAY_URL = ""  # never hand out a Pix link while locked
 COOKIE = "wdtsot_sid"
 CHAT_COOKIE = "wdtsot_chat"
 MAX_PROMPT = 4000
@@ -257,7 +262,7 @@ class Handler(BaseHTTPRequestHandler):
             "resumed": resumed,
             "messages": messages or [],
             "pay_url": pay.PAY_URL,
-            "ssh": "ssh -t agent-guest@wdtsot.shop",
+            "ssh": "" if LOCKED else "ssh -t agent-guest@wdtsot.shop",
         }
 
     def do_HEAD(self) -> None:
@@ -273,7 +278,6 @@ class Handler(BaseHTTPRequestHandler):
                     "service": "sparetoken",
                     "version": app_version(),
                     "model": chat.MODEL,
-                    "ssh": "ssh agent-guest@wdtsot.shop",
                 },
             )
             return
@@ -299,7 +303,10 @@ class Handler(BaseHTTPRequestHandler):
             )
             return
         if path == "/api/marketplace":
-            self._json(200, {"ok": True, **marketplace.public_contract()})
+            body = {"ok": True, **marketplace.public_contract()}
+            if LOCKED:
+                body.update({"paused": True, "open": 0, "reason": "resale-off", "skills": []})
+            self._json(200, body)
             return
         if path == "/api/track/summary":
             with DB_LOCK:
@@ -318,7 +325,7 @@ class Handler(BaseHTTPRequestHandler):
                 cookies.append(self._cookie_header(token))
             with DB_LOCK:
                 referral.remember_referrer(DB, row["id"], ref)
-                if code:
+                if code and not LOCKED:
                     result = None
                     if referral.should_auto_claim(DB, row["id"], code):
                         try:
@@ -370,9 +377,15 @@ class Handler(BaseHTTPRequestHandler):
             self._track()
             return
         if path == "/api/pay":
+            if LOCKED:
+                self._json(410, {"ok": False, "error": LOCK_MSG, "paused": True})
+                return
             self._pay()
             return
         if path == "/api/claim":
+            if LOCKED:
+                self._json(410, {"ok": False, "error": LOCK_MSG, "paused": True})
+                return
             self._claim()
             return
         if path == "/api/clock":

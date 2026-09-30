@@ -93,7 +93,7 @@ function webResumeUrl(code, id) {
 }
 
 function sshResumeCmd(id) {
-  return `ssh -t agent-guest@wdtsot.shop resume ${id}`;
+  return ""; // lockdown 2026-09-30: SSH guest access off
 }
 
 async function copyLabel(btn, text, label) {
